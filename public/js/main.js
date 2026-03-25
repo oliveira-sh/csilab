@@ -145,12 +145,15 @@ const contactForm = document.getElementById('contact-form');
 contactForm?.addEventListener('submit', (e) => {
   e.preventDefault();
   const btn = contactForm.querySelector('[type="submit"]');
-  btn.textContent = 'Sending…';
+  const txtSending = btn.dataset.sending || 'Enviando…';
+  const txtSent    = btn.dataset.sent    || 'Mensagem Enviada!';
+  const txtDefault = btn.dataset.default || btn.textContent;
+  btn.textContent = txtSending;
   btn.disabled = true;
   setTimeout(() => {
-    btn.textContent = 'Message Sent!';
+    btn.textContent = txtSent;
     contactForm.reset();
-    setTimeout(() => { btn.textContent = 'Send Message'; btn.disabled = false; }, 3000);
+    setTimeout(() => { btn.textContent = txtDefault; btn.disabled = false; }, 3000);
   }, 1200);
 });
 

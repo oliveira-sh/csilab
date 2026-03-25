@@ -1,0 +1,172 @@
+coordinators:
+  label: "Coordinamento"
+  title: "Professori Coordinatori"
+  sub: "Dipartimento di Informatica — DECOM/UFOP"
+  members:
+    - role: "Coordinatore"
+      name: "Prof. Gladston Moreira"
+      areas: "Intelligenza Artificiale · Ottimizzazione Multi-obiettivo · Analisi Spaziale · Rilevamento di Cluster"
+      links:
+        - text: "✉ gladston@ufop.edu.br"
+          href: "mailto:gladston@ufop.edu.br"
+        - text: "Profilo →"
+          href: "https://csilab.ufop.br/people/gladston-moreira"
+    - role: "Coordinatore"
+      name: "Prof. Eduardo Luz"
+      areas: "Visione Artificiale · Biometria · Riconoscimento di Pattern · Segnali Biomedici"
+      links:
+        - text: "Profilo →"
+          href: "https://csilab.ufop.br/people/eduardo-luz"
+
+professors:
+  label: "Corpo Docente"
+  title: "Professori Ricercatori"
+  sub: "Dipartimento di Informatica — DECOM/UFOP"
+  members:
+    - role: "Professore Associato"
+      name: "Prof. Vander Freitas"
+      areas: "Machine Learning · Elaborazione del Linguaggio Naturale · Serie Temporali"
+      links:
+        - text: "Profilo →"
+          href: "https://csilab.ufop.br/people/vander-freitas"
+    - role: "Professore Associato"
+      name: "Prof. Pedro Silva"
+      areas: "Visione Artificiale · Biometria Perioculare · Deep Learning · Metric Learning"
+      links:
+        - text: "Profilo →"
+          href: "https://csilab.ufop.br/people/pedro-silva"
+    - role: "Professore Associato"
+      name: "Prof. Jadson Castro"
+      areas: "Basi di Dati · Riconoscimento di Pattern · Analisi di Segnali Biologici"
+      links:
+        - text: "Profilo →"
+          href: "https://csilab.ufop.br/people/jadson-castro"
+    - role: "Professoressa Associata"
+      name: "Prof.ssa Valéria Santos"
+      areas: "Elaborazione del Linguaggio Naturale · Machine Learning · Classificazione del Testo"
+      links:
+        - text: "Profilo →"
+          href: "https://csilab.ufop.br/people/valeria-santos"
+    - role: "Professore Associato"
+      name: "Prof. Rodrigo Silva"
+      areas: "Data Science · Intelligenza Artificiale · Machine Learning Applicato"
+      links:
+        - text: "Profilo →"
+          href: "https://csilab.ufop.br/people/rodrigo-silva"
+    - role: "Professore Associato"
+      name: "Prof. Ivair Silva"
+      areas: "Metodi Statistici · Test Sequenziali Non-parametrici · Convergenza di Campionatori"
+      links:
+        - text: "Profilo →"
+          href: "https://csilab.ufop.br/people/ivair-silva"
+
+collaborators:
+  label: "Collaboratori Esterni"
+  title: "Collaboratori"
+  members:
+    - role: "Ricercatrice Collaboratrice"
+      name: "Prof.ssa Elizabeth Wanner"
+      areas: "Ottimizzazione Multi-obiettivo · Algoritmi Evolutivi · Intelligenza Computazionale"
+      links:
+        - text: "Profilo →"
+          href: "https://csilab.ufop.br/people/elizabeth-wanner"
+    - role: "Ricercatore Collaboratore"
+      name: "Prof. David Menotti"
+      areas: "Visione Artificiale · Biometria · Riconoscimento di Pattern · Deep Learning"
+      links:
+        - text: "Profilo →"
+          href: "https://csilab.ufop.br/people/david-menotti"
+    - role: "Prof. Dottore"
+      name: "Prof. Carlos Henrique G. Ferreira"
+      areas: "Analisi delle Reti Sociali · Rilevamento di Comunità · Data Science"
+
+phd_students:
+  label: "Studi di Dottorato"
+  title: "Dottorandi"
+  sub: "Programma di Dottorato in Informatica (PPGCC) — UFOP"
+  members:
+    - name: "Pedro Castro"
+      since: "Dottorato · dal 2022"
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/1648427683361371"}]
+    - name: "Lauro Moraes"
+      since: "Dottorato · dal 2022"
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/7273329679145458"}]
+    - name: "Dênis Xavier"
+      since: "Dottorato · dal 2022"
+    - name: "Gabriel Souza"
+      since: "Dottorato · dal 2019"
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/1276963014476347"}]
+    - name: "Marcus Almeida"
+      since: "Dottorato · dal 2023"
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/9750853239897719"}]
+    - name: "Guilherme Silva"
+      since: "Dottorato · dal 2023"
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/4755584696921241"}]
+    - name: "Andressa Oliveira"
+      since: "Dottorato · dal 2023"
+    - name: "Fernando Duarte"
+      since: "Dottorato · dal 2022"
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/9331617052785818"}]
+
+masters_students:
+  title: "Magistrali"
+  members:
+    - name: "Jean Pinheiro"
+      since: "Magistrale · dal 2021"
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/1201524358960754"}]
+    - name: "Gabriel Ferreira"
+      since: "Magistrale · dal 2023"
+    - name: "Amanda Oliveira"
+      since: "Magistrale · dal 2022"
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/7187644478574662"}]
+
+undergrads:
+  label: "Ricerca Universitaria"
+  title: "Universitari — Borsisti di Ricerca"
+  members:
+    - name: "Rafael Alto"
+      since: "Ricerca · dal 2022"
+    - name: "Artur Bermond"
+      since: "Ricerca · dal 2023"
+    - name: "Luísa Cizilio"
+      since: "Ricerca · dal 2021"
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/0273287843002956"}]
+    - name: "Gustavo Vieira"
+      since: "Ricerca · dal 2023"
+    - name: "Vinicius Silva"
+      since: "Ricerca · dal 2021"
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/6046796826385547"}]
+    - name: "João Zenóbio"
+      since: "Ricerca · dal 2021"
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/6135972089163105"}]
+    - name: "Suleimane Ducure"
+      since: "Ricerca · dal 2021"
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/4547014379251202"}]
+
+alumni_grad:
+  label: "Alumni"
+  title: "Alumni del Dottorato"
+  members:
+    - "Rafael Oliveira"
+    - "João Alvarenga"
+    - "Pedro Silva"
+    - "Thiago Schons"
+    - "Felipe de Oliveira Mota"
+
+alumni_undergrad:
+  title: "Alumni Universitari"
+  members:
+    - "Carlos Freitas"
+    - "Filipe Ramos"
+    - "Mariana Mota"
+    - "Gabriel Ferreira"
+    - "Alan Santandrea"
+    - "Kleuber Nascimento"
+    - "Guilherme Silva"
+    - "Gabriel Garcia"
+    - "Fernando Torres Bernardo"
+    - "Henrique Alvares"
+    - "Dayane Morais"
+    - "Renata Lisboa"
+    - "Vinícius Zanini"
+    - "Vinícius Augusto Pereira Queiroz"

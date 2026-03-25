@@ -1,0 +1,15 @@
+---
+title: "Contatto — CSI Lab · UFOP"
+description: "Contatta il CSI Lab per collaborazioni di ricerca, candidature di studenti o progetti di R&S."
+page_label: "Contattaci"
+page_title: "Contatto"
+page_sub: "Contatta il CSI Lab per collaborazioni di ricerca, candidature di studenti o progetti di R&S con aziende e istituzioni."
+form_name: "Il tuo nome completo"
+form_phone: "Telefono (opzionale)"
+form_email: "E-mail"
+form_subject: "Oggetto (es.: collaborazione, candidatura, R&S)"
+form_message: "Il tuo messaggio…"
+form_submit: "Invia Messaggio"
+form_sending: "Invio in corso…"
+form_sent: "Messaggio Inviato!"
+---

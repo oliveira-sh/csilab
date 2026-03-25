@@ -1,0 +1,160 @@
+{% extends "base.njk" %}
+
+{% block head %}
+<style>
+  .member-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; margin-top:1.75rem; }
+  .member-grid--wide { grid-template-columns:repeat(2,1fr); }
+  .member-card { background:var(--color-surface); border:1px solid rgba(86,101,115,0.22); border-radius:8px; padding:1.5rem 1.75rem; transition:border-color 0.2s, transform 0.2s; display:flex; flex-direction:column; gap:0.35rem; }
+  .member-card:hover { border-color:rgba(233,79,55,0.4); transform:translateY(-3px); }
+  .member-card--coordinator { border-left:3px solid var(--color-accent); }
+  .member-card--collaborator { border-left:3px solid var(--color-steel); }
+  .member-name { font-family:var(--font-primary); font-size:1.0625rem; font-weight:700; color:var(--color-text); }
+  .member-role { font-size:0.8125rem; font-weight:600; color:var(--color-accent); text-transform:uppercase; letter-spacing:0.06em; }
+  .member-areas { font-size:0.875rem; color:var(--color-muted); line-height:1.55; margin-top:0.25rem; }
+  .member-links { display:flex; gap:0.75rem; margin-top:0.75rem; flex-wrap:wrap; }
+  .member-link { font-size:0.8rem; color:var(--color-accent); text-decoration:none; border:1px solid rgba(233,79,55,0.3); border-radius:4px; padding:0.2rem 0.6rem; transition:background 0.15s; }
+  .member-link:hover { background:rgba(233,79,55,0.1); }
+  .member-since { font-size:0.8rem; color:rgba(136,146,176,0.55); margin-top:0.15rem; }
+  .section-divider { border:none; border-top:1px solid rgba(86,101,115,0.18); margin:3.5rem 0 0; }
+  .group-heading { font-family:var(--font-primary); font-size:1.5rem; font-weight:800; color:var(--color-text); margin:2.5rem 0 0.25rem; }
+  .group-sub { font-size:0.9375rem; color:var(--color-muted); margin-bottom:0.25rem; }
+  @media (max-width:900px) { .member-grid { grid-template-columns:repeat(2,1fr); } .member-grid--wide { grid-template-columns:1fr; } }
+  @media (max-width:560px) { .member-grid { grid-template-columns:1fr; } }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<section style="padding-top:8rem;padding-bottom:2rem;">
+  <div class="container">
+    <span class="section-label">{{ page.page_label }}</span>
+    <h1 class="d2c_title" style="margin-top:0.75rem;margin-bottom:0.75rem;">{{ page.page_title }}</h1>
+    <p class="text-lavender" style="font-size:1rem;max-width:640px;line-height:1.75;">{{ page.page_sub }}</p>
+  </div>
+</section>
+
+<section style="padding-top:0.5rem;">
+  <div class="container">
+
+    {# ── Coordenadores ── #}
+    <hr class="section-divider" style="margin-top:0;" />
+    <span class="section-label" style="margin-top:2.5rem;display:inline-block;">{{ data.team.coordinators.label }}</span>
+    <h2 class="group-heading">{{ data.team.coordinators.title }}</h2>
+    <p class="group-sub">{{ data.team.coordinators.sub }}</p>
+    <div class="member-grid member-grid--wide" data-aos="fade-up">
+      {% for m in data.team.coordinators.members %}
+      <div class="member-card member-card--coordinator">
+        <div class="member-role">{{ m.role }}</div>
+        <div class="member-name">{{ m.name }}</div>
+        <div class="member-areas">{{ m.areas }}</div>
+        {% if m.links %}
+        <div class="member-links">
+          {% for l in m.links %}<a href="{{ l.href }}" target="_blank" class="member-link">{{ l.text }}</a>{% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+    {# ── Professores Pesquisadores ── #}
+    <hr class="section-divider" />
+    <span class="section-label" style="margin-top:2.5rem;display:inline-block;">{{ data.team.professors.label }}</span>
+    <h2 class="group-heading">{{ data.team.professors.title }}</h2>
+    <p class="group-sub">{{ data.team.professors.sub }}</p>
+    <div class="member-grid" data-aos="fade-up">
+      {% for m in data.team.professors.members %}
+      <div class="member-card">
+        <div class="member-role">{{ m.role }}</div>
+        <div class="member-name">{{ m.name }}</div>
+        <div class="member-areas">{{ m.areas }}</div>
+        {% if m.links %}
+        <div class="member-links">
+          {% for l in m.links %}<a href="{{ l.href }}" target="_blank" class="member-link">{{ l.text }}</a>{% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+    {# ── Colaboradores ── #}
+    <hr class="section-divider" />
+    <span class="section-label" style="margin-top:2.5rem;display:inline-block;">{{ data.team.collaborators.label }}</span>
+    <h2 class="group-heading">{{ data.team.collaborators.title }}</h2>
+    <div class="member-grid member-grid--wide" data-aos="fade-up">
+      {% for m in data.team.collaborators.members %}
+      <div class="member-card member-card--collaborator">
+        <div class="member-role">{{ m.role }}</div>
+        <div class="member-name">{{ m.name }}</div>
+        <div class="member-areas">{{ m.areas }}</div>
+        {% if m.links %}
+        <div class="member-links">
+          {% for l in m.links %}<a href="{{ l.href }}" target="_blank" class="member-link">{{ l.text }}</a>{% endfor %}
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+    {# ── Doutorandos ── #}
+    <hr class="section-divider" />
+    <span class="section-label" style="margin-top:2.5rem;display:inline-block;">{{ data.team.phd_students.label }}</span>
+    <h2 class="group-heading">{{ data.team.phd_students.title }}</h2>
+    <p class="group-sub">{{ data.team.phd_students.sub }}</p>
+    <div class="member-grid" data-aos="fade-up">
+      {% for m in data.team.phd_students.members %}
+      <div class="member-card">
+        <div class="member-name">{{ m.name }}</div>
+        <div class="member-since">{{ m.since }}</div>
+        {% if m.links %}<div class="member-links">{% for l in m.links %}<a href="{{ l.href }}" target="_blank" class="member-link">{{ l.text }}</a>{% endfor %}</div>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+    {# ── Mestrandos ── #}
+    <h2 class="group-heading" style="margin-top:2.5rem;">{{ data.team.masters_students.title }}</h2>
+    <div class="member-grid" data-aos="fade-up">
+      {% for m in data.team.masters_students.members %}
+      <div class="member-card">
+        <div class="member-name">{{ m.name }}</div>
+        <div class="member-since">{{ m.since }}</div>
+        {% if m.links %}<div class="member-links">{% for l in m.links %}<a href="{{ l.href }}" target="_blank" class="member-link">{{ l.text }}</a>{% endfor %}</div>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+    {# ── Graduandos ── #}
+    <hr class="section-divider" />
+    <span class="section-label" style="margin-top:2.5rem;display:inline-block;">{{ data.team.undergrads.label }}</span>
+    <h2 class="group-heading">{{ data.team.undergrads.title }}</h2>
+    <div class="member-grid" data-aos="fade-up">
+      {% for m in data.team.undergrads.members %}
+      <div class="member-card">
+        <div class="member-name">{{ m.name }}</div>
+        <div class="member-since">{{ m.since }}</div>
+        {% if m.links %}<div class="member-links">{% for l in m.links %}<a href="{{ l.href }}" target="_blank" class="member-link">{{ l.text }}</a>{% endfor %}</div>{% endif %}
+      </div>
+      {% endfor %}
+    </div>
+
+    {# ── Egressos ── #}
+    <hr class="section-divider" />
+    <span class="section-label" style="margin-top:2.5rem;display:inline-block;">{{ data.team.alumni_grad.label }}</span>
+    <h2 class="group-heading">{{ data.team.alumni_grad.title }}</h2>
+    <div class="alumni-list" data-aos="fade-up">
+      {% for name in data.team.alumni_grad.members %}<span class="alumni-pill">{{ name }}</span>{% endfor %}
+    </div>
+
+    <h2 class="group-heading" style="margin-top:2.5rem;">{{ data.team.alumni_undergrad.title }}</h2>
+    <div class="alumni-list" data-aos="fade-up">
+      {% for name in data.team.alumni_undergrad.members %}<span class="alumni-pill">{{ name }}</span>{% endfor %}
+    </div>
+
+    <div style="margin:4rem 0 2rem;text-align:center;">
+      <p class="text-lavender" style="margin-bottom:1rem;">{{ page.join_text }}</p>
+      <a href="{{ base_url }}/contato" class="btn-primary">{{ page.join_btn }}</a>
+    </div>
+
+  </div>
+</section>
+
+{% endblock %}
