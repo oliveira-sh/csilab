@@ -22,31 +22,20 @@ const PORT   = process.env.PORT || 3001;
 const DIST   = path.join(__dirname, '..', 'dist');
 const PUBLIC = path.join(__dirname, '..', 'public');
 
-const LANGS  = ['pt', 'en', 'es', 'it'];
-const PAGES  = ['', 'equipe', 'publicacoes', 'contato'];  // '' = home
+const PAGES = ['equipe', 'publicacoes', 'contato'];
 
-// Build full list of [route, output-file] pairs
-const ROUTES = [];
-for (const lang of LANGS) {
-  for (const page of PAGES) {
-    const route   = page ? `/${lang}/${page}` : `/${lang}`;
-    const outFile = page
-      ? path.join(lang, page, 'index.html')
-      : path.join(lang, 'index.html');
-    ROUTES.push([route, outFile]);
-  }
-}
-
-// Root: meta-refresh to /pt so GitHub Pages root URL works
-const ROOT_HTML = `<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="0;url=/pt" />
-  <title>CSI Lab</title>
-</head>
-<body><a href="/pt">CSI Lab</a></body>
-</html>`;
+// PT is the default language — served at the root path (no /pt prefix).
+// Other languages get their own prefix (/en, /es, /it).
+const ROUTES = [
+  // Portuguese (root-level)
+  ['/', 'index.html'],
+  ...PAGES.map(p => [`/${p}`, `${p}/index.html`]),
+  // Other languages
+  ...['en', 'es', 'it'].flatMap(lang => [
+    [`/${lang}`, `${lang}/index.html`],
+    ...PAGES.map(p => [`/${lang}/${p}`, `${lang}/${p}/index.html`]),
+  ]),
+];
 
 function fetchPage(route) {
   return new Promise((resolve, reject) => {
@@ -85,10 +74,6 @@ async function main() {
   await fsp.rm(DIST, { recursive: true, force: true });
   await fsp.mkdir(DIST, { recursive: true });
 
-  // Root redirect
-  await fsp.writeFile(path.join(DIST, 'index.html'), ROOT_HTML);
-  console.log('  wrote  dist/index.html  (root redirect → /pt)');
-
   // Render each route
   for (const [route, outFile] of ROUTES) {
     const html    = await fetchPage(route);
@@ -102,7 +87,7 @@ async function main() {
   await copyDir(PUBLIC, DIST);
   console.log('  copied public/ → dist/');
 
-  console.log(`\nBuild complete — ${ROUTES.length + 1} pages, assets copied.`);
+  console.log(`\nBuild complete — ${ROUTES.length} pages, assets copied.`);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
