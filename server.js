@@ -8,6 +8,10 @@ const yaml     = require('js-yaml');
 const app  = express();
 const PORT = process.env.PORT || 3001;
 
+// Set BASE_PATH when deploying to a sub-path (e.g. BASE_PATH=/csilab for GitHub Pages).
+// Leave empty for localhost.
+const BASE_PATH = process.env.BASE_PATH || '';
+
 const LANGS    = ['pt', 'en', 'es', 'it'];
 const LANG_HTML = { pt: 'pt-BR', en: 'en', es: 'es', it: 'it' };
 const CONTENT_DIR = path.join(__dirname, 'content');
@@ -45,33 +49,37 @@ function loadYamlDir(dir, data) {
 
 function loadContent(lang, page) {
   const langDir = path.join(CONTENT_DIR, lang);
-
-  // Page frontmatter
   const pageData = parseFrontmatter(path.join(langDir, `${page}.md`));
-
-  // Load shared data first, then lang-specific overrides
   const data = {};
   loadYamlDir(path.join(CONTENT_DIR, '_shared', 'data'), data);
   loadYamlDir(path.join(langDir, 'data'), data);
-
   return { page: pageData, data };
 }
 
+// Build lang-switcher URLs for a given page.
+// PT has no lang prefix: BASE_PATH/ instead of BASE_PATH/pt/
 function langUrls(page) {
   const urls = {};
   for (const l of LANGS) {
-    urls[l] = page === 'index' ? `/${l}` : `/${l}/${page}`;
+    if (l === 'pt') {
+      urls.pt = page === 'index' ? (BASE_PATH || '/') : `${BASE_PATH}/${page}`;
+    } else {
+      urls[l] = page === 'index' ? `${BASE_PATH}/${l}` : `${BASE_PATH}/${l}/${page}`;
+    }
   }
   return urls;
 }
 
 function ctx(lang, page, extra = {}) {
   const { page: p, data } = loadContent(lang, page);
+  // base_url: '' for PT on localhost, '/csilab' for PT on GH Pages, '/csilab/en' for EN, etc.
+  const base_url = lang === 'pt' ? BASE_PATH : `${BASE_PATH}/${lang}`;
   return {
     lang,
     lang_html: LANG_HTML[lang],
     currentPage: page,
-    base_url:  `/${lang}`,
+    base_url,
+    base_path: BASE_PATH,
     lang_urls: langUrls(page),
     page: p,
     data,
@@ -79,21 +87,28 @@ function ctx(lang, page, extra = {}) {
   };
 }
 
-/* ── Redirects for legacy .html URLs ─────────────────────── */
-app.get('/index.html',      (req, res) => res.redirect(301, '/pt'));
-app.get('/equipe.html',      (req, res) => res.redirect(301, '/pt/equipe'));
-app.get('/publicacoes.html', (req, res) => res.redirect(301, '/pt/publicacoes'));
-app.get('/contato.html',     (req, res) => res.redirect(301, '/pt/contato'));
+/* ── Legacy redirects ─────────────────────────────────────── */
+app.get('/index.html',       (req, res) => res.redirect(301, BASE_PATH || '/'));
+app.get('/equipe.html',       (req, res) => res.redirect(301, `${BASE_PATH}/equipe`));
+app.get('/publicacoes.html',  (req, res) => res.redirect(301, `${BASE_PATH}/publicacoes`));
+app.get('/contato.html',      (req, res) => res.redirect(301, `${BASE_PATH}/contato`));
+app.get('/pt',                (req, res) => res.redirect(301, BASE_PATH || '/'));
+app.get('/pt/equipe',         (req, res) => res.redirect(301, `${BASE_PATH}/equipe`));
+app.get('/pt/publicacoes',    (req, res) => res.redirect(301, `${BASE_PATH}/publicacoes`));
+app.get('/pt/contato',        (req, res) => res.redirect(301, `${BASE_PATH}/contato`));
 
-/* ── Root ────────────────────────────────────────────────── */
-app.get('/', (req, res) => res.redirect('/pt'));
+/* ── PT routes (default language, no prefix) ──────────────── */
+app.get('/',             (req, res) => res.render('index.njk',       ctx('pt', 'index')));
+app.get('/equipe',       (req, res) => res.render('equipe.njk',      ctx('pt', 'equipe')));
+app.get('/publicacoes',  (req, res) => res.render('publicacoes.njk', ctx('pt', 'publicacoes')));
+app.get('/contato',      (req, res) => res.render('contato.njk',     ctx('pt', 'contato')));
 
-/* ── Language routes ──────────────────────────────────────── */
-for (const lang of LANGS) {
-  app.get(`/${lang}`,              (req, res) => res.render('index.njk',       ctx(lang, 'index')));
-  app.get(`/${lang}/equipe`,       (req, res) => res.render('equipe.njk',      ctx(lang, 'equipe')));
-  app.get(`/${lang}/publicacoes`,  (req, res) => res.render('publicacoes.njk', ctx(lang, 'publicacoes')));
-  app.get(`/${lang}/contato`,      (req, res) => res.render('contato.njk',     ctx(lang, 'contato')));
+/* ── Other language routes ────────────────────────────────── */
+for (const lang of LANGS.filter(l => l !== 'pt')) {
+  app.get(`/${lang}`,             (req, res) => res.render('index.njk',       ctx(lang, 'index')));
+  app.get(`/${lang}/equipe`,      (req, res) => res.render('equipe.njk',      ctx(lang, 'equipe')));
+  app.get(`/${lang}/publicacoes`, (req, res) => res.render('publicacoes.njk', ctx(lang, 'publicacoes')));
+  app.get(`/${lang}/contato`,     (req, res) => res.render('contato.njk',     ctx(lang, 'contato')));
 }
 
 /* ── Static assets (after routes) ────────────────────────── */

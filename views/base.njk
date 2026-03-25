@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="{{ page.description }}" />
   <title>{{ page.title }}</title>
-  <link rel="icon" href="/images/ufop-logo.png" />
-  <link rel="stylesheet" href="/css/main.css" />
-  <link rel="stylesheet" href="/css/dropdown.css" />
+  <link rel="icon" href="{{ base_path }}/images/ufop-logo.png" />
+  <link rel="stylesheet" href="{{ base_path }}/css/main.css" />
+  <link rel="stylesheet" href="{{ base_path }}/css/dropdown.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
   {% block head %}{% endblock %}
 </head>
@@ -31,15 +31,15 @@
 <nav id="navbar">
   <div class="container">
     <div class="nav-inner">
-      <a href="{{ base_url }}" class="nav-logo">
-        <img src="/images/logo-csilab.png" alt="CSI Lab" style="height:36px;"
+      <a href="{{ base_url or '/' }}" class="nav-logo">
+        <img src="{{ base_path }}/images/logo-csilab.png" alt="CSI Lab" style="height:36px;"
              onerror="this.style.display='none';this.nextElementSibling.style.display='inline'" />
         <span style="display:none;font-family:'Funnel Sans',sans-serif;font-size:1.25rem;font-weight:800;letter-spacing:-0.02em;">
           <span style="color:#E2E8F0;">CSI</span><span style="color:#E94F37;">Lab</span>
         </span>
       </a>
       <ul class="nav-links">
-        <li><a href="{{ base_url }}">{{ data.nav.home }}</a></li>
+        <li><a href="{{ base_url or '/' }}">{{ data.nav.home }}</a></li>
         <li><a href="{{ base_url }}#pesquisa">{{ data.nav.research }}</a></li>
         <li><a href="{{ base_url }}/equipe"{% if currentPage == 'equipe' %} style="color:var(--color-accent);"{% endif %}>{{ data.nav.team }}</a></li>
         <li><a href="{{ base_url }}/publicacoes"{% if currentPage == 'publicacoes' %} style="color:var(--color-accent);"{% endif %}>{{ data.nav.publications }}</a></li>
@@ -66,8 +66,8 @@
 <div class="nav-overlay" id="nav-overlay"></div>
 <div class="mobile-nav" id="mobile-nav">
   <span class="mobile-close" id="mobile-close">&#x2715;</span>
-  <a href="{{ base_url }}">{{ data.nav.home }}</a>
-  <a href="{{ base_url }}#pesquisa">{{ data.nav.research }}</a>
+  <a href="{{ base_url or '/' }}">{{ data.nav.home }}</a>
+  <a href="{{ base_url or '/' }}#pesquisa">{{ data.nav.research }}</a>
   <a href="{{ base_url }}/equipe">{{ data.nav.team }}</a>
   <a href="{{ base_url }}/publicacoes">{{ data.nav.publications }}</a>
   <a href="{{ base_url }}#consultorias">{{ data.nav.consulting }}</a>
@@ -90,21 +90,21 @@
     {% block footer_top %}
     <div class="footer-top">
       <div class="footer-brand">
-        <img src="/images/logo-csilab.png" alt="CSI Lab" style="height:48px;margin-bottom:1rem;"
+        <img src="{{ base_path }}/images/logo-csilab.png" alt="CSI Lab" style="height:48px;margin-bottom:1rem;"
              onerror="this.style.display='none';this.nextElementSibling.style.display='block'" />
         <div style="display:none;font-family:'Funnel Sans',sans-serif;font-size:1.5rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:1rem;">
           <span style="color:#E2E8F0;">CSI</span><span style="color:#E94F37;">Lab</span>
         </div>
         <p>{{ data.footer.brand_text }}</p>
         <div style="margin-top:1rem;">
-          <img src="/images/logo-ufop.png" alt="UFOP" style="height:36px;opacity:0.7;"
+          <img src="{{ base_path }}/images/logo-ufop.png" alt="UFOP" style="height:36px;opacity:0.7;"
                onerror="this.style.display='none'" />
         </div>
       </div>
       <div class="footer-col">
         <h4>{{ data.footer.nav_heading }}</h4>
         <ul>
-          <li><a href="{{ base_url }}" class="d2c_footer_link">{{ data.nav.home }}</a></li>
+          <li><a href="{{ base_url or '/' }}" class="d2c_footer_link">{{ data.nav.home }}</a></li>
           <li><a href="{{ base_url }}#pesquisa" class="d2c_footer_link">{{ data.nav.research }}</a></li>
           <li><a href="{{ base_url }}/equipe" class="d2c_footer_link">{{ data.nav.team }}</a></li>
           <li><a href="{{ base_url }}/publicacoes" class="d2c_footer_link">{{ data.nav.publications }}</a></li>
@@ -154,6 +154,6 @@
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script src="/js/main.js"></script>
+<script src="{{ base_path }}/js/main.js"></script>
 </body>
 </html>

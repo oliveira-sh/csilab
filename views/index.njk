@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="hero-card" data-aos="zoom-in">
-        <img src="/images/foto-equipe.png" alt="CSI Lab — Equipe" onerror="this.src='/images/about-image-1.jpg'" />
+        <img src="{{ base_path }}/images/foto-equipe.png" alt="CSI Lab — Equipe" onerror="this.src='{{ base_path }}/images/about-image-1.jpg'" />
         <div class="hero-card-body">
           <h3>{{ page.hero_card_title }}</h3>
           <p>{{ page.hero_card_text }}</p>
@@ -42,9 +42,9 @@
   <div class="container">
     <div class="about-grid">
       <div class="about-images" data-aos="fade-right">
-        <img src="/images/csilab-marca.png" alt="CSI Lab" onerror="this.src='/images/about-image-2.jpg'" />
-        <img src="/images/evento-2023.png" alt="Evento CSI Lab 2023" onerror="this.src='/images/about-image-3.jpg'" />
-        <img src="/images/evento-2024.jpg" alt="CSI Lab 2024" onerror="this.src='/images/about-image-4.jpg'" />
+        <img src="{{ base_path }}/images/csilab-marca.png" alt="CSI Lab" onerror="this.src='{{ base_path }}/images/about-image-2.jpg'" />
+        <img src="{{ base_path }}/images/evento-2023.png" alt="Evento CSI Lab 2023" onerror="this.src='{{ base_path }}/images/about-image-3.jpg'" />
+        <img src="{{ base_path }}/images/evento-2024.jpg" alt="CSI Lab 2024" onerror="this.src='{{ base_path }}/images/about-image-4.jpg'" />
         <div class="about-counter-badge">
           <div class="big">{{ page.about_years }}</div>
           <div class="small">{{ page.about_years_label }}</div>

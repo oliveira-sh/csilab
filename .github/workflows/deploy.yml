@@ -36,13 +36,15 @@ jobs:
 
       - name: Start server and pre-render static HTML
         run: |
-          node server.js &
+          # BASE_PATH must be set when starting the server so rendered HTML
+          # contains the correct /csilab/... href and src attributes.
+          BASE_PATH=/csilab node server.js &
           SERVER_PID=$!
           echo "Server PID: $SERVER_PID"
 
           # Wait until the server responds (up to 15s)
           for i in $(seq 1 15); do
-            curl -s -o /dev/null http://localhost:3001/pt && break
+            curl -s -o /dev/null http://localhost:3001/ && break
             echo "Waiting for server... ($i)"
             sleep 1
           done
