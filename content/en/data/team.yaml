@@ -59,6 +59,10 @@ professors:
       links:
         - text: "Profile →"
           href: "https://csilab.ufop.br/people/ivair-silva"
+    - role: "Associate Professor"
+      name: "Prof. Carlos Henrique G. Ferreira"
+      areas: "Social Network Analysis · Community Detection · Data Science"
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/0748942455194916"}]
 
 collaborators:
   label: "External Collaborators"
@@ -76,9 +80,6 @@ collaborators:
       links:
         - text: "Profile →"
           href: "https://csilab.ufop.br/people/david-menotti"
-    - role: "Collaborating Researcher (Prof. Doctor)"
-      name: "Prof. Carlos Henrique G. Ferreira"
-      areas: "Social Network Analysis · Community Detection · Data Science"
 
 phd_students:
   label: "Graduate Studies"
