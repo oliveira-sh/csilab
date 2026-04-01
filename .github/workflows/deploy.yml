@@ -38,7 +38,7 @@ jobs:
         run: |
           # BASE_PATH must be set when starting the server so rendered HTML
           # contains the correct /csilab/... href and src attributes.
-          BASE_PATH=/csilab node server.js &
+          BASE_PATH=/website node server.js &
           SERVER_PID=$!
           echo "Server PID: $SERVER_PID"
 
