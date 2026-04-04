@@ -11,6 +11,6 @@
   suffix: ""
   label: "Parcerias Industriais"
 - id: c-egressos
-  target: 40
+  target: 50
   suffix: "+"
   label: "Alunos Formados"

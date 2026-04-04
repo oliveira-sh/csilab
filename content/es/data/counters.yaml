@@ -11,6 +11,6 @@
   suffix: ""
   label: "Alianzas Industriales"
 - id: c-egressos
-  target: 40
+  target: 50
   suffix: "+"
   label: "Egresados"

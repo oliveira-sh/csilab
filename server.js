@@ -80,8 +80,7 @@ function computeCounterTargets(data) {
       .reduce((s, yg) => s + (yg.items?.length || 0), 0),
     'c-professores': ['coordinators', 'professors', 'collaborators']
       .reduce((s, g) => s + (team[g]?.members?.length || 0), 0),
-    'c-egressos': (team.alumni_grad?.members?.length || 0)
-      + (team.alumni_undergrad?.members?.length || 0),
+    // 'c-egressos' intentionally omitted — kept hardcoded at 50+ in counters.yaml
   };
   data.counters = data.counters.map(c =>
     overrides[c.id] !== undefined ? { ...c, target: overrides[c.id] } : c
