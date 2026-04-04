@@ -17,8 +17,7 @@
  *   openalex_id → used directly           (anchor ✓, pre-verified)
  *   neither     → member is skipped entirely (no name guessing)
  *
- * Filter applied to raw API results:
- *   Primary topic field must be CS / Engineering / Math.
+ * No domain filter — ORCID resolution is reliable enough on its own.
  *
  * Also writes `country_counts` — a map of ISO-3166-1 alpha-2 codes to the
  * number of CSI Lab papers that have at least one author from that country.
@@ -87,19 +86,6 @@ async function fetchWorksForAuthors(ids) {
     works.push(...results);
   }
   return works;
-}
-
-// ── Domain filter ─────────────────────────────────────────────────────────────
-
-const CS_FIELDS = new Set([
-  'Computer Science', 'Mathematics', 'Engineering',
-  'Decision Sciences', 'Information Systems',
-  'Electrical and Electronic Engineering', 'Artificial Intelligence',
-]);
-
-function isDomainCS(w) {
-  const f = w.primary_topic?.field?.display_name;
-  return !f || CS_FIELDS.has(f);
 }
 
 // ── Country aggregation ───────────────────────────────────────────────────────
@@ -204,12 +190,12 @@ async function main() {
   const works = await fetchWorksForAuthors(allIds);
   console.log(`  Received ${works.length} works`);
 
-  // 4. Filter (anchor + domain)
+  // 4. Filter — ORCID-based anchors are reliable, no domain filter needed
   const anchorFull = new Set([...anchorIds].map(id => `https://openalex.org/${id}`));
   const filtered   = works.filter(w =>
-    w.authorships.some(a => anchorFull.has(a.author.id)) && isDomainCS(w)
+    w.authorships.some(a => anchorFull.has(a.author.id))
   );
-  console.log(`  After anchor + domain filter: ${filtered.length} works`);
+  console.log(`  After anchor filter: ${filtered.length} works`);
 
   // 5. Aggregate country contributions from filtered works
   const country_counts = aggregateCountries(filtered);
