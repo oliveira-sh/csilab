@@ -125,17 +125,18 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <script>
 (function () {
-  // Serialize publication data from server-side YAML into JS
+  // Papers per year — grouped by publication year
   const _pubData = {{ data.publications.years | dump | safe }};
+  const sorted   = [..._pubData].sort((a, b) => a.year - b.year);
+  const years    = sorted.map(g => String(g.year));
+  const perYear  = sorted.map(g => (g.items || []).length);
 
-  // Sort ascending for left-to-right time axis
-  const sorted = [..._pubData].sort((a, b) => a.year - b.year);
-
-  const years     = sorted.map(g => String(g.year));
-  const perYear   = sorted.map(g => (g.items || []).length);
-  const citeYear  = sorted.map(g =>
-    (g.items || []).reduce((sum, p) => sum + (p.cited_by_count || 0), 0)
-  );
+  // Citations by year — each bar shows how many times CSI Lab papers
+  // were cited BY papers published in that year (not when the paper was published).
+  // Sourced from OpenAlex counts_by_year per work.
+  const _citeRaw  = {{ data.publications.citations_by_year | dump | safe }} || {};
+  const citeYears  = Object.keys(_citeRaw).map(Number).sort((a, b) => a - b).map(String);
+  const citeValues = citeYears.map(y => _citeRaw[y] || 0);
 
   // Shared dark-theme defaults
   Chart.defaults.color          = '#8892B0';
@@ -180,13 +181,13 @@
     },
   });
 
-  // Citations per year
+  // Citations per year (year the citing paper was published)
   new Chart(document.getElementById('chart-citations'), {
     type: 'bar',
     data: {
-      labels: years,
+      labels: citeYears,
       datasets: [{
-        data: citeYear,
+        data: citeValues,
         backgroundColor: 'rgba(86,101,115,0.55)',
         borderColor:     'rgba(86,101,115,0.85)',
         borderWidth: 1,
@@ -197,18 +198,7 @@
     options: {
       responsive: true,
       maintainAspectRatio: false,
-      plugins: {
-        ...sharedPlugins,
-        tooltip: {
-          ...sharedPlugins.tooltip,
-          callbacks: {
-            footer: (items) => {
-              const val = items[0]?.raw;
-              return val === 0 ? 'Run npm run fetch:pubs to populate' : '';
-            },
-          },
-        },
-      },
+      plugins: sharedPlugins,
       scales: sharedScales,
     },
   });

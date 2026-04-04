@@ -76,7 +76,7 @@
     <div class="counter-grid">
       {% for c in data.counters %}
       <div class="counter-item" data-aos="fade-up" data-aos-delay="{{ loop.index0 * 100 }}">
-        <div class="number" id="{{ c.id }}">0{{ c.suffix }}</div>
+        <div class="number" id="{{ c.id }}" data-target="{{ c.target }}" data-suffix="{{ c.suffix }}">0{{ c.suffix }}</div>
         <div class="label">{{ c.label }}</div>
       </div>
       {% endfor %}

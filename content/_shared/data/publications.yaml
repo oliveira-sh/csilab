@@ -1,22 +1,27 @@
 country_counts:
-  BR: 216
-  CA: 27
-  GB: 15
-  US: 14
-  DE: 13
-  PT: 11
-  IT: 9
-  AU: 6
-  MD: 3
-  DK: 3
-  RS: 2
-  ES: 1
-  FI: 1
-  FR: 1
-  BE: 1
+  BR: 154
+  US: 12
+  DE: 11
+  GB: 7
+  IT: 6
+  PT: 5
+  MD: 2
   IN: 1
   IL: 1
-  CZ: 1
+citations_by_year:
+  "2012": 1
+  "2015": 2
+  "2016": 13
+  "2017": 52
+  "2018": 144
+  "2019": 221
+  "2020": 300
+  "2021": 554
+  "2022": 539
+  "2023": 491
+  "2024": 430
+  "2025": 342
+  "2026": 51
 years:
   - year: 2026
     items:
@@ -30,75 +35,10 @@ years:
         url: https://doi.org/10.1007/978-3-032-15984-7_11
   - year: 2025
     items:
-      - authors: Stefan Walzer, Rodrigo Silva, Dana C. Krueger, L. Vollmer
-        title: >-
-          OP20 Qualitative Insights Into Artificial Intelligence (AI) and Virtual Reality (VR) Training for Value Communication: Comparing
-          Innovative Technologies With Traditional Methods in Pharma
-        journal: Value in Health
-        url: https://doi.org/10.1016/j.jval.2025.09.2467
-      - authors: Michael Jackson Oliveira de Andrade, Guilherme Silva, Valéria Santos, Gladston Moreira, Eduardo Luz
-        title: Investigating the Impact of Large -Scale Pre-training on Nutritional Content Estimation from 2D Images
-        journal: Unknown venue
-        url: https://doi.org/10.21528/cbic2025-1176001
-      - authors: Gustavo Nascimento, Ivan Reinaldo Meneghini, Valéria de Carvalho Santos, Eduardo Luz, Gladston Moreira
-        title: Enhancing Decision Space Diversity in Multi -Objective Evolutionary Optimization for the Diet Problem
-        journal: Unknown venue
-        url: https://doi.org/10.21528/cbic2025-1168382
-      - authors: Pedro de Almeida, Guilherme Silva, Valéria Santos, Gladston Moreira, Pedro Silva, Eduardo Luz
-        title: "Deep Learning for School Dropout Detection: A Comparison of Tabular and Graph -Based Models for Predicting At-Risk Students"
-        journal: Unknown venue
-        url: https://doi.org/10.21528/cbic2025-1191400
-      - authors: Lucas Pereira, Pedro Teixeira Castro, Valéria de Carvalho Santos, André Luiz Carvalho Ottoni, Gladston Moreira, Eduardo Luz
-        title: Robust Landmark Recognition with Out -of-Distribution Detection using Deep Features and K -Nearest Neighbors
-        journal: Unknown venue
-        url: https://doi.org/10.21528/cbic2025-1175623
       - authors: Guilherme O. Santos, Luís Vieira, Giulio Rossetti, Carlos H. G. Ferreira, Gladston Moreira
         title: A high-performance evolutionary multiobjective community detection algorithm
         journal: Social Network Analysis and Mining
         url: https://doi.org/10.1007/s13278-025-01519-7
-      - authors: Jessica Costa, Leonardo Cristian Rocha, Carlos H. G. Ferreira
-        title: "Modelos de Linguagem na Análise da Promoção de Jogos de Azar Online: Estudo de Caso do Jogo do Tigrinho no YouTube"
-        journal: Unknown venue
-        url: https://doi.org/10.5753/webmedia_estendido.2025.16067
-      - authors: Gustavo Fonseca, Guilherme S. Patrício, Carlos H. G. Ferreira, Alexandre Magno Sousa
-        title: A WhatsApp-Based Application for Automatic Data Collection and Crime Monitoring in Belo Horizonte
-        journal: Unknown venue
-        url: https://doi.org/10.5753/webmedia_estendido.2025.16398
-      - authors: >-
-          Saul Sousa da Rocha, Cintia Correa e Silva, Mateus José da Silva, Jose Rodrigues Torres Neto, Carlos H. G. Ferreira, Glauber Dias
-          Gonçalves
-        title: Uso de Características Temporais e Semânticas para Detectar Eventos em Vídeos de Violência Urbana
-        journal: Unknown venue
-        url: https://doi.org/10.5753/webmedia.2025.16150
-      - authors: Jéssika de Lima Silva, Fábio Silva de Souza, C. Ferreira, Vander L. S. Freitas
-        title: "DengueMG: Um Dashboard Interativo para o Monitoramento de Dengue em Minas Gerais"
-        journal: Unknown venue
-        url: https://doi.org/10.5753/webmedia_estendido.2025.15983
-      - authors: Nara Raquel D. Andrade, Oscar William N. de Carvalho, Carlos H. G. Ferreira, Glauber Dias Gonçalves
-        title: "Decifrando o Mercado de NFTs: A Influência das Conexões de Rede e Transações no Valor de Ativos"
-        journal: Unknown venue
-        url: https://doi.org/10.5753/webmedia_estendido.2025.16386
-      - authors: Victor Martins, S. Serafim, Leila Maria Moreira Beltrão Pereira, Ana Rita Alves, Carlos H. G. Ferreira, Jussara M. Almeida
-        title: "A Misoginia no YouTube Brasileiro: Um Estudo de Caso sobre o Conteúdo Produzido pela Comunidade Red Pill"
-        journal: Unknown venue
-        url: https://doi.org/10.5753/webmedia.2025.16070
-      - authors: >-
-          Laura Coura, Júlia Gonzaga, Rone Ilídio da Silva, Ticianne Darin, Jadson Castro Gertrudes, Andrea Bianchi, Reinaldo Fortes, Sérgio
-          de Oliveira, Saul Delabrida
-        title: "UAI Canvas: Empowering Teachers to Design Immersive VR Learning Games"
-        journal: Unknown venue
-        url: https://doi.org/10.36227/techrxiv.176238023.30095352/v1
-      - authors: Valéria Santos, Gisele Leite Padilha, Ana Paula Monteiro de Oliveira, Jucicléia Teodoro de Lima Izidora
-        title: CONTABILIDADE RURAL E GESTÃO FINANCEIRA DIANTE DE FATORES EXTERNOS
-        journal: Revista Foco
-        url: https://doi.org/10.54751/revistafoco.v18n10-183
-      - authors: >-
-          Alejandro Bernal‐Ibáñez, Jordi Boada, Eva Cacabelos, Marta Florido, Raül Triay‐Portella, Patrício Ramalhosa, Rodrigo Silva, João
-          Canning‐Clode, Ignácio Gestoso
-        title: Concomitant effects of algae invasion and sea urchin mass mortality drive the shift from barrens to turf grounds
-        journal: Marine Environmental Research
-        url: https://doi.org/10.1016/j.marenvres.2025.107646
-        cited_by_count: 1
       - authors: Pedro Silva, Guilherme Silva, Pablo Coelho, Vander L. S. Freitas, Gladston Moreira, David Menotti, Eduardo Luz
         title: "PD-Loss: Proxy-Decidability for Efficient Metric Learning"
         journal: Unknown venue
@@ -113,10 +53,6 @@ years:
         title: Mitigando Impactos de Distribuições Não-IID em Aprendizagem Federada para Sistemas de Recomendação
         journal: Unknown venue
         url: https://doi.org/10.5753/sbbd.2025.247258
-      - authors: Sara Câmara, Eduardo Luz, Valéria Carvalho, Ivan Reinaldo Meneghini, Gladston Moreira
-        title: "MOPrompt: Multi-objective Semantic Evolution for Prompt Optimization"
-        journal: Unknown venue
-        url: https://doi.org/10.5753/stil.2025.37815
       - authors: >-
           GERARDO SÉRGIO FRANCELINO DE OLIVEIRA, João Pedro Lobo, Otávio Venâncio, Vinícius da Fonseca Vieira Vieira, Jussara M. Almeida,
           Ana Paula Couto da Silva, Ronan S. Ferreira, Carlos H. G. Ferreira
@@ -131,12 +67,6 @@ years:
         title: Exact non-parametric sequential convergence test for samplers
         journal: Journal of Computational and Applied Mathematics
         url: https://doi.org/10.1016/j.cam.2025.117051
-      - authors: >-
-          Mustafa Khanbhai, Giovanni Di Nardo, Jun Ma, Vander L. S. Freitas, Caterina Masino, Ali Arhami Dolatabadi, Zhaoxun Liu, Wey Leong,
-          Wagner H. Souza, Amin Madani
-        title: "Artificial Intelligence in Breast Cancer Care: Transforming Preoperative Planning and Patient Education with 3D Reconstruction"
-        journal: ArXiv.org
-        url: https://doi.org/10.48550/arxiv.2509.12242
       - authors: Laura Coura, Júlia Gonzaga, Andrea Bianchi, Rone Ilídio da Silva, Jadson Castro Gertrudes, Reinaldo Silva Fortes, Saul Delabrida
         title: "Treinando professores em design de jogos em realidade virtual usando design participatório: um relato de experiência"
         journal: Unknown venue
@@ -146,38 +76,6 @@ years:
         journal: Social Network Analysis and Mining
         url: https://doi.org/10.1007/s13278-025-01504-0
         cited_by_count: 1
-      - authors: Pedro Silva
-        title: "Analgésicos, antimaláricos e anti-inflamatórios em Odontologia: análise de eventos adversos e uso racional para o controle da dor"
-        journal: Unknown venue
-        url: https://doi.org/10.14393/ufu.te.2025.433
-      - authors: Pilar Simões, Cristina Jorge, Pedro Silva
-        title: "Doença Renal Poliquística: Relato de uma Nefrectomia Invulgar"
-        journal: Acta Urológica Portuguesa
-        url: https://doi.org/10.24915/aup.234
-      - authors: Daniel M. Prates, Guilherme O. Santos, Vinícius da Fonseca Vieira, Carlos H. G. Ferreira
-        title: Análise da Percepção Pública sobre Ministros da Área Econômica Brasileira no YouTube com PLN
-        journal: Unknown venue
-        url: https://doi.org/10.5753/brasnam.2025.8940
-      - authors: >-
-          Icaro Luiz Lage Vasconcelos, Augusto Ferreira Guilarducci, Jadson Castro Gertrudes, Gladston Moreira, Vander L. S. Freitas,
-          Eduardo Luz
-        title: Uncovering Collaboration Patterns in Brazilian Computer Science Graduate Programs Through Network Embeddings
-        journal: Unknown venue
-        url: https://doi.org/10.5753/brasnam.2025.8840
-        cited_by_count: 1
-      - authors: Daniel N. Junqueira, Carlos H. G. Ferreira, Giordano Paoletti, Jussara M. Almeida
-        title: "Revelando a dinâmica das discussões em grupos públicos do Telegram: um estudo sobre as eleições no Brasil em 2022"
-        journal: Unknown venue
-        url: https://doi.org/10.5753/brasnam.2025.9250
-      - authors: Richardy R. Tanure, Aline Peçanha Muzy Dias, Lucas A. Camelo, Jussara M. Almeida, Helen C. S. C. Lima, Carlos H. G. Ferreira
-        title: "Caracterização do debate online sobre cigarro eletrônico no Brasil: Uma análise de tópicos de discussão no YouTube"
-        journal: Unknown venue
-        url: https://doi.org/10.5753/brasnam.2025.8544
-        cited_by_count: 2
-      - authors: Augusto Ferreira Guilarducci, Icaro Luiz Lage Vasconcelos, Eduardo Luz, Vander L. S. Freitas
-        title: Institutional Hierarchy and Asymmetry in Brazilian Computer Science Faculty Hiring Network
-        journal: Unknown venue
-        url: https://doi.org/10.5753/brasnam.2025.8934
       - authors: Cátia Souza do Nascimento Sepetauskas, Vander L. S. Freitas, Hugo Saba, Leonardo Bacelar Lima Santos
         title: "Unveiling connections: Mobility and dengue case networks on an intraurban scale"
         journal: Physica D Nonlinear Phenomena
@@ -202,101 +100,24 @@ years:
         title: Uncertainty Quantification in Measuring Ore Mass Flow Rate with Data-Driven Soft Sensors
         journal: Unknown venue
         url: https://doi.org/10.1109/i2mtc62753.2025.11079114
-      - authors: R. Mateus, Carlos H. G. Ferreira, Ana Paula Couto da Silva
-        title: Explorando os Limites da Reprodutibilidade na Tarefa de Detecção de Comunidades em Modelos de Redes
-        journal: Unknown venue
-        url: https://doi.org/10.5753/sbsi.2025.246558
-      - authors: Vander L. S. Freitas, Adriano dos Santos Iurconvite
-        title: A INEFICÁCIA DO PERT-COVID/19 COMO INSTRUMENTO DE JUSTIÇA TRIBUTÁRIA DURANTE A PANDEMIA
-        journal: Unknown venue
-        url: https://doi.org/10.22533/at.ed.975132505057
-      - authors: Luiz Antonio Nicolau Anghinoni, Gustavo Weber Denardin, Jadson Castro Gertrudes, Dalcimar Casanova, Jefferson Tales Oliva
-        title: >-
-          The use of Multi-domain Electroencephalogram Representations in the building of Models based on Convolutional and Recurrent Neural
-          Networks for Epilepsy Detection
-        journal: ArXiv.org
-        url: https://doi.org/10.48550/arxiv.2504.17908
-      - authors: Pedro Silva, Yasmin Alaby Martins Ferreira, Igor Lima, Esa Vakkilainen, Gustavo Almeida, Antônio P. Braga
-        title: >-
-          Improving interpretability for fault diagnosis in complex chemical processes using combined regularization and linearization in
-          neural network modeling
-        journal: Unknown venue
-        url: https://doi.org/10.1109/citrex64975.2025.10974942
       - authors: Dênis Ricardo Xavier de Oliveira, Gladston Moreira, Anderson Ribeiro Duarte
         title: Arbitrarily shaped spatial cluster detection via reinforcement learning algorithms
         journal: Environmental and Ecological Statistics
         url: https://doi.org/10.1007/s10651-025-00649-7
         cited_by_count: 2
-      - authors: M. Khanbhai, Jianmin Ma, Vander L. S. Freitas, Caterina Masino, Wei Qi Leong, Bo Wang, Ariana Madani
-        title: >-
-          P103: Artificial Intelligence in Breast Cancer Care: Transforming Preoperative Planning and Patient Education with 3D
-          Reconstruction
-        journal: The Breast
-        url: https://doi.org/10.1016/j.breast.2025.103970
-      - authors: >-
-          João Queirós, Rodrigo Silva, Catarina J. Pinho, Hélia Vale‐Gonçalves, Ricardo Pita, Paulo C. Alves, Pedro Beja, Joana Paupério,
-          Miguel Porto
-        title: >-
-          The InBIO Barcoding Initiative Database: contribution to the knowledge of DNA barcodes of the vascular plants of north-eastern
-          Portugal
-        journal: Biodiversity Data Journal
-        url: https://doi.org/10.3897/bdj.13.e142020
-        cited_by_count: 1
-      - authors: Fernando Henrique Oliveira Duarte, Gladston Moreira, Eduardo Luz, Leonardo Bacelar Lima Santos, Vander L. S. Freitas
-        title: Leveraging graph neural networks and mobility data for COVID-19 forecasting
-        journal: ArXiv.org
-        url: https://doi.org/10.48550/arxiv.2501.11711
-      - authors: >-
-          Adryana Cordeiro, STEFANIE BARBOSA DA SILVA, Lara Andrade Souza, Luana Silva André, LETICIA CARDOSO SILVA, BRENDA RIBEIRO PARIS,
-          Jocelyne Neto de Vasconcelos, Pedro Silva, ROSINEIDE RIBEIRO DA COSTA SILVA, Lílian Machado Vilarinho de Moraes
-        title: "A UTILIZAÇÃO DE ESCALA MEOWS NA SALA VERMELHA OBSTÉTRICA: RELATO DE EXPERIÊNCIA"
-        journal: Unknown venue
-        url: https://doi.org/10.58871/conaeti.v4.08
-      - authors: >-
-          Emanuel Thiago De Andrade Da Silva, Brenda Jennifer Sousa Nogueira, Villaneve de O. Soares, Pedro Silva, Carlos Danilo Miranda
-          Regis
-        title: "Identification of\_Different Types of\_Ischemic Stroke"
-        journal: World Congress on Medical Physics and Biomedical Engineering, September 7 - 12, 2009, Munich, Germany
-        url: https://doi.org/10.1007/978-3-031-94934-0_119
-      - authors: Edgar Soares, Diogo Ribeiro, Rodrigo Silva, Rafael Marqués García
-        title: Anomalies of Sandwich Panels in Industrial Assets – Bibliographic Review
-        journal: Lecture notes in civil engineering
-        url: https://doi.org/10.1007/978-3-032-08224-4_12
-      - authors: >-
-          Marco Santos, Greice Maria Silva da Conceição, Ana Silva, Andreia Bento‐Silva, Gevaldo L. de Almeida, Leandro Lomar, Mariana Lopes
-          Borges, Rodrigo Silva, Paulo Miranda
-        title: Economical production of critical culture media for self-sufficient quality control in a public pharmaceutical industry
-        journal: Unknown venue
-        url: https://doi.org/10.35259/isi.2025_70078
-      - authors: Pedro Silva, Pablo dos Santos Souza
-        title: AS PREMISSAS DE GOVERNANÇA PROMOVIDAS NA GESTÃO DE PROJETOS DE UMA INCUBADORA DE ECONOMIA SOLIDÁRIA EM VOLTA REDONDA
-        journal: Unknown venue
-        url: https://doi.org/10.29327/si-educacao-empreendedorismo-gestao-projetos.955106
-      - authors: Josemar Coelho Felix, Rodrigo Silva, Andrea Gomes Campos
-        title: "Boosting Industrial Efficiency with Machine Learning: Enhancing Railway Car Availability in a Brazilian Logistics Company"
-        journal: International Journal of Industrial and Systems Engineering
-        url: https://doi.org/10.1504/ijise.2025.10073080
       - authors: Francisco José dos Santos Diniz, Thomás V. B. Pinto, Saulo N. Matos, Eduardo Luz, Gustavo Pessin, Jó Ueyama
         title: Enhancing Operational Safety with Conformal Prediction in Soft Sensors
         journal: IFAC-PapersOnLine
         url: https://doi.org/10.1016/j.ifacol.2025.12.401
-      - authors: Lucas Antônio Miranda Ferreira, Renan Galaverna, Tom McBride, Rodrigo Silva, Duncan L. Browne, Julio Cezar Pastre
-        title: Fast and scalable continuous flow synthesis of butenolides and coumarins
-        journal: Reaction Chemistry & Engineering
-        url: https://doi.org/10.1039/d4re00567h
-      - authors: Villeneve de O. Soares, Pedro Silva, Emanuel Thiago De Andrade Da Silva, Leonardo Vidal Batista, Carlos Danilo Miranda Regis
-        title: "Classification of\_Diabetic Retinopathy with\_Different Combinations of\_Levels Using Xception Architecture"
-        journal: World Congress on Medical Physics and Biomedical Engineering, September 7 - 12, 2009, Munich, Germany
-        url: https://doi.org/10.1007/978-3-031-94934-0_120
-      - authors: Rayson Laroca, Valter Estevam, Gladston Moreira, Rodrigo Minetto, David Menotti
-        title: "Advancing Multinational License Plate Recognition Through Synthetic and Real Data Fusion: A Comprehensive Evaluation"
-        journal: IET Intelligent Transport Systems
-        url: https://doi.org/10.1049/itr2.70086
       - authors: Guilherme O. Santos, Luís Vieira, Giulio Rossetti, Carlos H. G. Ferreira, Gladston Moreira
         title: A high-performance evolutionary multiobjective community detection algorithm
         journal: ISTI Open Portal
         url: https://doi.org/10.1007/s13278-025-01519-7
         cited_by_count: 2
+      - authors: Rayson Laroca, Valter Estevam, Gladston Moreira, Rodrigo Minetto, David Menotti
+        title: "Advancing Multinational License Plate Recognition Through Synthetic and Real Data Fusion: A Comprehensive Evaluation"
+        journal: IET Intelligent Transport Systems
+        url: https://doi.org/10.1049/itr2.70086
       - authors: Arthur Negrão, Guilherme Silva, Rodrigo Pinto Pedrosa, Eduardo Luz, Pedro Silva
         title: "Adaptive Client-Dropping in\_Federated Learning: Preserving Data Integrity in\_Medical Domains"
         journal: Lecture notes in computer science
@@ -318,36 +139,11 @@ years:
         title: Classificação das Tags dos pedidos de acesso à informação por meio do ChatGPT
         journal: Código 31 .
         url: https://doi.org/10.70493/cod31.v2i2.10186
-      - authors: >-
-          Gary Ko, Elliott J. Yee, Amanda Roberts, Qian Li, Ning Liu, Toni Zhong, Eitan Amir, Anne Koch, A. Covelli, Vander L. S. Freitas,
-          Antoine Eskander, Tulin Cil
-        title: >-
-          Regional variation in breast cancer surgery volumes during the immediate COVID-19 pandemic and recovery period: A population-based
-          analysis
-        journal: European Journal of Surgical Oncology
-        url: https://doi.org/10.1016/j.ejso.2024.109010
       - authors: Paulo Miguel Santos, Valéria de Carvalho Santos, Eduardo Luz
         title: Towards robust ferrous scrap material classification with deep learning and conformal prediction
         journal: Engineering Applications of Artificial Intelligence
         url: https://doi.org/10.1016/j.engappai.2024.109724
         cited_by_count: 6
-      - authors: Rodrigo Silva, Augusto Etchegaray Júnior
-        title: Comparação laboratorial entre pacientes falecidos por infecções virais na pandemia do SARS-CoV-2
-        journal: Contribuciones a las Ciencias Sociales
-        url: https://doi.org/10.55905/revconv.17n.12-327
-      - authors: Marcos F. Pontes, Rodrigo Silva, Pedro Lopes, Eduardo Luz
-        title: Evaluating Federated Learning with Homomorphic Encryption for Medical Named Entity Recognition Using Compact BERT Models
-        journal: Unknown venue
-        url: https://doi.org/10.5753/stil.2024.245381
-      - authors: José Cirı́aco Pinheiro, V. Pinheiro, Rodrigo Silva, Gladston Moreira, Pedro Silva, Eduardo Luz
-        title: Zero-Shot Skull Stripping for Alzheimer’s Disease Classification With the Segment Anything Model
-        journal: Unknown venue
-        url: https://doi.org/10.5753/eniac.2024.245169
-      - authors: Amanda Szekir de Oliveira, Pedro Silva, Valéria Santos, Gladston Moreira, Vander L. S. Freitas, Eduardo Luz
-        title: "Toxic Text Classification in Portuguese: Is LLaMA 3.1 8B All You Need?"
-        journal: Unknown venue
-        url: https://doi.org/10.5753/stil.2024.245416
-        cited_by_count: 4
       - authors: Dênis Oliveira, Anderson Ribeiro Duarte, Eduardo Luz, Gladston Moreira
         title: Reinforcement Learning for the Detection of Arbitrary Shaped Spatial Clusters
         journal: Unknown venue
@@ -366,10 +162,6 @@ years:
         journal: Unknown venue
         url: https://doi.org/10.5753/sbie.2024.242440
         cited_by_count: 2
-      - authors: Renata Camponogara, Rodrigo Silva, Thieli Smidt Gabbi, Gustavo G. Koch, H.A. Gründling
-        title: Rotor Speed Observer Based on Extended Stator Current Model of Interior Permanent Magnet Synchronous Motors
-        journal: Unknown venue
-        url: https://doi.org/10.1109/sepoc63090.2024.10747455
       - authors: Francisco José dos Santos Diniz, Eduardo Luz, Gustavo Pessin
         title: Predição Conforme para Quantificação de Incertezas no Monitoramento de Estruturas Geotécnicas
         journal: Congresso Brasileiro de Automática
@@ -378,106 +170,15 @@ years:
         title: "ShpStreetGraph: From spatial relations of streets to graph representations"
         journal: Software Impacts
         url: https://doi.org/10.1016/j.simpa.2024.100711
-      - authors: Aline Peçanha Muzy Dias, Richardy R. Tanure, Jussara M. Almeida, Helen C. S. C. Lima, Carlos H. G. Ferreira
-        title: Análise da Percepção do Uso de Cigarros Eletrônicos no Brasil por meio de Comentários no YouTube
-        journal: Unknown venue
-        url: https://doi.org/10.5753/webmedia.2024.241958
-        cited_by_count: 5
-      - authors: >-
-          Márcio Silva, Marcelo M. R. Araújo, Carlos H. G. Ferreira, Júlio C. S. Reis, Ana Paula Couto da Silva, Jussara M. Almeida,
-          Fabrí­cio Benevenuto
-        title: "Campanha Eleitoral Legal: Detecção de Propaganda Eleitoral e Ações Coordenadas de Campanha"
-        journal: Unknown venue
-        url: https://doi.org/10.5753/webmedia_estendido.2024.243924
       - authors: Josemar Coelho Felix, Rodrigo Silva, Andrea Bianchi
         title: "Seleção de Atributos para Predição de Tempo de Manutenção em Vagões Ferroviários: Uma Análise com Métodos de Filtro"
         journal: Unknown venue
         url: https://doi.org/10.5753/sbbd.2024.243228
-      - authors: Larissa Malagoli, Giovana Piorino, Carlos H. G. Ferreira, Ana Paula Couto da Silva
-        title: "Twitter and the 2022 Brazilian Elections Portrait: A Network and Content-Driven Analysis"
-        journal: Unknown venue
-        url: https://doi.org/10.5753/webmedia.2024.241926
-        cited_by_count: 4
-      - authors: >-
-          GERARDO SÉRGIO FRANCELINO DE OLIVEIRA, Otávio Venâncio, Vinícius Vieira, Jussara M. Almeida, Ana Paula Couto da Silva, Ronan S.
-          Ferreira, Carlos H. G. Ferreira
-        title: Um Framework para Análise Bidimensional de Disseminação de Informações em Plataformas de Mídias Sociais
-        journal: Unknown venue
-        url: https://doi.org/10.5753/webmedia.2024.241957
-        cited_by_count: 2
-      - authors: Otávio Venâncio, Gabriel Coutinho Gonçalves, Carlos H. G. Ferreira, Ana Paula Couto da Silva
-        title: Evidências de disseminação de conteúdo no Telegram durante o ataque aos órgãos públicos brasileiros em 2023
-        journal: Unknown venue
-        url: https://doi.org/10.5753/webmedia.2024.241972
-        cited_by_count: 7
-      - authors: Filipe Moura, Carlos H. G. Ferreira, Helen C. S. C. Lima
-        title: "Characterization of the Brazilian musical landscape: a study of regional preferences based on the Spotify charts"
-        journal: Unknown venue
-        url: https://doi.org/10.5753/webmedia.2024.242290
-        cited_by_count: 3
-      - authors: Pedro Silva, GUSTAVO DE MACEDO KNOLL, Rafael Rodrigues Carvalho, GIOVANA MARQUES FARGIANI, ANA CAROLINA PADILHA SEGALA
-        title: >-
-          CORRELAÇÃO ENTRE NÚMERO DE INTERNAÇÕES EM PACIENTES COM INSUFICIÊNCIA CARDÍACA E A PANDEMIA DO COVID-19 NO ESTADO DE SÃO
-          PAULO-BRASIL
-        journal: Unknown venue
-        url: https://doi.org/10.51161/ii-conpeds/43438
-      - authors: Pedro Silva, GUSTAVO DE MACEDO KNOLL, Rafael Rodrigues Carvalho, GIOVANA MARQUES FARGIANI, ANA CAROLINA PADILHA SEGALA
-        title: >-
-          CORRELAÇÃO ENTRE NÚMERO DE INTERNAÇÕES EM PACIENTES COM INSUFICIÊNCIA CARDÍACA E A PANDEMIA DO COVID-19 NO ESTADO DE SÃO
-          PAULO-BRASIL
-        journal: Unknown venue
-        url: https://doi.org/10.51161/iii-conpeds/43438
-      - authors: Pedro Silva, GUSTAVO DE MACEDO KNOLL, Rafael Rodrigues Carvalho, GIOVANA MARQUES FARGIANI, ANA CAROLINA PADILHA SEGALA
-        title: >-
-          CORRELAÇÃO ENTRE NÚMERO DE INTERNAÇÕES EM PACIENTES COM INSUFICIÊNCIA CARDÍACA E A PANDEMIA DO COVID-19 NO ESTADO DE SÃO
-          PAULO-BRASIL
-        journal: Unknown venue
-        url: https://doi.org/10.51161/conpeds2024/43438
-      - authors: >-
-          Gladys Ko, Amanda Roberts, Qing Li, Nan Liu, Toni Zhong, Eitan Amir, Anne Koch, A. Covelli, Vander L. S. Freitas, Antoine
-          Eskander, Tulin Cil
-        title: "Contemporary Trends in Radiation Protocols for Breast Cancer Treatment: A Population-Based Analysis"
-        journal: International Journal of Radiation Oncology*Biology*Physics
-        url: https://doi.org/10.1016/j.ijrobp.2024.07.697
-      - authors: >-
-          Daniel Rodrigues Moura, Pablo Barcellos, Fabio Rodrigo Grubert, Leonardo Rodrigues Araújo Xavier Menezes, Pedro Silva, Luciane
-          Calabria
-        title: Identification of anomalies using AI in assets by drones
-        journal: Technical Papers ... Rio Oil & Gas
-        url: https://doi.org/10.48072/2525-7579.roge.2024.3410
-      - authors: >-
-          Manuel Vieira, Noelia Ríos, Sebastián Muñoz-Duque, Jodanne Pereira, Rita Carriço, Marc Fernández, João Gama Monteiro, Miguel
-          Pessanha Pais, Bernardo R. Quintella, Gonçalo Silva, Rodrigo Silva, Paulo J. Fonseca, M. Clara P. Amorim
-        title: "Cross-referencing unidentified fish sound data sets to unravel sound sources: a case study from the Temperate Northern Atlantic"
-        journal: Frontiers in Remote Sensing
-        url: https://doi.org/10.3389/frsen.2024.1377206
-        cited_by_count: 3
-      - authors: Saul Sousa da Rocha, Carlos Henrique do Vale e Silva, Carlos H. G. Ferreira, Glauber Dias Gonçalves, Jussara M. Almeida
-        title: Monitorando a Opinião Pública sobre Operações Policiais no Brasil via Comentários de Vídeos no YouTube
-        journal: Unknown venue
-        url: https://doi.org/10.5753/brasnam.2024.3101
-        cited_by_count: 2
-      - authors: Rodrigo Silva
-        title: Quantum bungee jumping
-        journal: arXiv (Cornell University)
-        url: https://doi.org/10.48550/arxiv.2407.11137
-      - authors: >-
-          Kayo Lucas, Paula Nascimento, Denys Matheus Santana Costa Souza, Pedro Silva, Luan Nascimento da Silva, Tatiane Kelly Barbosa de
-          Azevêdo
-        title: >-
-          Utilização de agitação mecânica na extração de taninos do resíduo oriundo da indústria de beneficiamento de &lt;i&gt;Cocos
-          nucifera&lt;/i&gt;
-        journal: AGROPECUÁRIA CIENTÍFICA NO SEMIÁRIDO
-        url: https://doi.org/10.30969/bfxw5130
       - authors: Caio Viana, Carlos H. G. Ferreira, Fabrício Murai, Aldri Santos, Lourenço Alves Pereira
         title: "Devil in the Noise: Detecting Advanced Persistent Threats with Backbone Extraction"
         journal: Unknown venue
         url: https://doi.org/10.1109/iscc61673.2024.10733665
         cited_by_count: 1
-      - authors: Guilherme Silva, Arthur Negrão, Gladston Moreira, Eduardo Luz, Pedro Silva
-        title: An Embedding Multitask Neural Network for Efficient Arrhythmia Detection
-        journal: Unknown venue
-        url: https://doi.org/10.5753/sbcas.2024.2378
       - authors: Francisco Zacaron Werneck, Emerson Filipino Coelho, Marcelo de Oliveira Matta, Rodrigo Silva, António J. Figueiredo
         title: "Goldfit Soccer: A Multidimensional Model for Talent Identification of Young Soccer Players"
         journal: Research Quarterly for Exercise and Sport
@@ -500,25 +201,6 @@ years:
         journal: Unknown venue
         url: https://doi.org/10.1145/3658271.3658343
         cited_by_count: 1
-      - authors: Rafael F. Oliveira, Gladston Moreira, Vander L. S. Freitas, Eduardo Luz
-        title: Leveraging Visibility Graphs for Enhanced Arrhythmia Classification with Graph Convolutional Networks
-        journal: arXiv (Cornell University)
-        url: https://doi.org/10.48550/arxiv.2404.15367
-      - authors: Paulo Henrique dos Santos, Valéria de Carvalho Santos, Eduardo Luz
-        title: Towards Robust Ferrous Scrap Material Classification with Deep Learning and Conformal Prediction
-        journal: arXiv (Cornell University)
-        url: https://doi.org/10.48550/arxiv.2404.13002
-        cited_by_count: 1
-      - authors: >-
-          Marielle Dantas, Joanna Helena Correia, Mariana Pereira, Clara Menegale, Silvio Okubo, Erika Lamkowski Naka, Ana Gabriela Melo,
-          Rodrigo Silva, Severino Brito, João Pedro Meneses, Larri Junior
-        title: WCN24-2652 VARIABLES ASSOCIATED WITH WORSE OUTCOMES IN AN ELDERY POPULATION HOSPITALIZED WITH ACUTE KIDNEY INJURY
-        journal: Kidney International Reports
-        url: https://doi.org/10.1016/j.ekir.2024.02.079
-      - authors: Josemar Coelho Felix, Rodrigo Silva
-        title: Uma reflexão da literatura sobre técnicas computacionais aplicadas à gestão da manutenção de trens
-        journal: Exacta
-        url: https://doi.org/10.5585/2024.22639
       - authors: >-
           Vinícius da Fonseca Vieira, Carlos H. G. Ferreira, Jussara M. Almeida, Edré Moreira, Alberto H. F. Laender, Wagner Meira, Marcos
           André Gonçalves
@@ -534,22 +216,6 @@ years:
         title: Spatial Cluster Detection Through a Dynamic Programming Approach
         journal: Unknown venue
         url: https://doi.org/10.1007/978-1-4614-8033-4_40
-      - authors: >-
-          Patrick Cristian Lima Orihuela, Leonardo Moraes Armesto, Thabata Roberto Alonso, Caroline de Oliveira Nieblas, LAÍS FERREIRA
-          STAHL, DIEGO MOREIRA KNOBLOCH, Pedro Silva, GUSTAVO DE MACEDO KNOLL, GIOVANA MARQUES FARGIANI, Rafael Rodrigues Carvalho, ISABELLA
-          SICILIANO MONTALTO, Paulo Roberto Honório de Souza, MARIA EDUARDA MEIRELES CONTE, Ana Carla Marques Pinheiro, Eduardo Gregório
-          Chamlian
-        title: NANOTECNOLOGIA NA IMPRESSÃO 3D PARCIAL OU TOTAL DE ESTRUTURAS CARDÍACAS MAL FORMADAS OU PATOLOGICAMENTE ACOMETIDAS
-        journal: Revista Multidisciplinar de Ciências Gerais in FOCUS
-        url: https://doi.org/10.70853/arqh8845
-      - authors: >-
-          Pedro Silva, GIOVANA MARQUES FARGIANI, Robson Amparo de Carvalho, GUSTAVO DE MACEDO KNOLL, Ana Carolina Padilha Segalla, Patrick
-          Cristian Lima Orihuela, Leonardo Moraes Armesto, EDUARDO GREGÓRIO CHAMLIAM
-        title: >-
-          CORRELAÇÃO ENTRE NÚMERO DE INTERNAÇÕES EM PACIENTES COM INSUFICIÊNCIA CARDÍACA E A PANDEMIA DO COVID-19 EM ESTADO DE SÃO PAULO-
-          BRASIL
-        journal: Revista Multidisciplinar de Ciências Gerais in FOCUS
-        url: https://doi.org/10.70853/edgq7784
   - year: 2023
     items:
       - authors: >-
@@ -558,11 +224,6 @@ years:
         title: Study of links between people in urban areas based on mobility data for the city of São Paulo
         journal: Proceeding Series of the Brazilian Society of Computational and Applied Mathematics
         url: https://doi.org/10.5540/03.2023.010.01.0104
-      - authors: Carlos H. G. Ferreira, Marco Mellia, Jussara M. Almeida
-        title: Modeling and Analyzing Collective Behavior Captured by Many-to-Many Networks
-        journal: Unknown venue
-        url: https://doi.org/10.5753/webmedia_estendido.2023.233759
-        cited_by_count: 5
       - authors: >-
           Gabriel Corrêa Veríssimo, Simone Queiroz Pantaleão, Philipe Oliveira Fernandes, Jadson Castro Gertrudes, Thales Kronenberger,
           Káthia M. Honório, Vinícius Gonçalves Maltarollo
@@ -597,27 +258,10 @@ years:
         journal: Epidemiology and Health
         url: https://doi.org/10.4178/epih.e2023079
         cited_by_count: 6
-      - authors: Paulo Henrique dos Santos, Andrew Gonzaga de Souza, Diego Silva Melo, Eduardo Luz
-        title: DETECÇÃO E CLASSIFICAÇÃO DE SUCATAS FERROSAS APLICANDO TÉCNICAS DE DEEP LEARNING
-        journal: ABM Proceedings
-        url: https://doi.org/10.5151/2594-5335-39567
-      - authors: Marcelo M. R. Araujo, Carlos H. G. Ferreira, Júlio C. S. Reis, Ana Paula Couto da Silva, Jussara M. Almeida
-        title: Identificação e Caracterização de Campanhas de Propagandas Eleitorais Antecipadas Brasileiras no Twitter
-        journal: Unknown venue
-        url: https://doi.org/10.5753/brasnam.2023.229879
-        cited_by_count: 9
-      - authors: Samuel S. Gomes, Carlos H. G. Ferreira, Alexandre Magno Sousa
-        title: Criação de um Dataset de Múltiplos Domínios para a Plataforma de Jogos Online da Epic Games
-        journal: Unknown venue
-        url: https://doi.org/10.5753/brasnam.2023.230878
       - authors: Aurelienne A. S. Jorge, Vander L. S. Freitas, Izabelly Carvalho da Costa, Leonardo Bacelar Lima Santos
         title: "Graph4GIS: Geographical graphs for GIS platforms based on weather radar dataset"
         journal: Software Impacts
         url: https://doi.org/10.1016/j.simpa.2023.100530
-      - authors: Pedro Castro, Gabriel Cássia Fortuna, Rafael Alves Bonfim de Queiroz, Gladston Moreira, Eduardo Luz
-        title: "Regularization Through Simultaneous Learning: A Case Study on Plant Classification"
-        journal: arXiv (Cornell University)
-        url: https://doi.org/10.48550/arxiv.2305.13447
       - authors: >-
           Gabriel Corrêa Veríssimo, Simone Queiroz Panteleão, Jadson Castro Gertrudes, Thales Kronenberger, Káthia M. Honório, Vinícius
           Gonçalves Maltarollo
@@ -674,23 +318,19 @@ years:
         journal: Lecture notes in computer science
         url: https://doi.org/10.1007/978-3-031-45368-7_17
         cited_by_count: 1
-      - authors: Filipe Ramos, Guilherme Silva, Eduardo Luz, Pedro Silva
-        title: "Enhancing Stock Market Predictions Through the\_Integration of\_Convolutional and\_Recursive LSTM Blocks: A Cross-market Analysis"
-        journal: Lecture notes in computer science
-        url: https://doi.org/10.1007/978-3-031-45389-2_7
       - authors: Pedro Castro, Gabriel Cássia Fortuna, Pedro Silva, Andrea Bianchi, Gladston Moreira, Eduardo Luz
         title: "Merging Traditional Feature Extraction and\_Deep Learning for\_Enhanced Hop Variety Classification: A Comparative Study Using the\_UFOP-HVD Dataset"
         journal: Lecture notes in computer science
         url: https://doi.org/10.1007/978-3-031-45389-2_21
+      - authors: Filipe Ramos, Guilherme Silva, Eduardo Luz, Pedro Silva
+        title: "Enhancing Stock Market Predictions Through the\_Integration of\_Convolutional and\_Recursive LSTM Blocks: A Cross-market Analysis"
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-031-45389-2_7
       - authors: Marcel Chacon Gonçalves, Rodrigo Silva
         title: "The Effect of\_Statistical Hypothesis Testing on\_Machine Learning Model Selection"
         journal: Lecture notes in computer science
         url: https://doi.org/10.1007/978-3-031-45389-2_28
         cited_by_count: 5
-      - authors: Elisângela dos Santos, Marina Silva, Amanda Távora Oliveira, Kaique Santos, Valéria Santos
-        title: "QUÍMICA É SHOW: POPULARIZANDO A CIÊNCIA QUÍMICA"
-        journal: Unknown venue
-        url: https://doi.org/10.61917/2764-684x.2023.079
       - authors: Fernando Henrique Oliveira Duarte, Gladston Moreira, Eduardo Luz, Leonardo Bacelar Lima Santos, Vander L. S. Freitas
         title: "Time Series Forecasting of\_COVID-19 Cases in\_Brazil with\_GNN and\_Mobility Networks"
         journal: Lecture notes in computer science
@@ -705,19 +345,10 @@ years:
         journal: AppliedMath
         url: https://doi.org/10.3390/appliedmath2040038
         cited_by_count: 6
-      - authors: Andressa O. Souza, Mariana Mota, Helen C. S. C. Lima, Wellington Souza, Marcos Nicolau, Gladston Moreira, Eduardo Luz
-        title: Fraudulent Account Detection Using Hierarchical Classification
-        journal: Unknown venue
-        url: https://doi.org/10.5753/eniac.2022.227330
       - authors: Josemar Coelho Felix, Vanessa Miranda Oliveira, Rodrigo Silva
         title: A Machine Learning with an Inlier/Outlier Separation Approach for the Prediction of Wagon Maintenance Times
         journal: Unknown venue
         url: https://doi.org/10.5753/kdmile.2022.227789
-        cited_by_count: 1
-      - authors: Marcus Vinicius Teixeira de Almeida, Mariana Mota, Wellington Souza, Marcos Nicolau, Eduardo Luz, Gladston Moreira
-        title: "A Temporal Approach to Customer Churn Prediction: A Case Study for Financial Services"
-        journal: Unknown venue
-        url: https://doi.org/10.5753/eniac.2022.227571
         cited_by_count: 1
       - authors: Renan Saldanha Linhares, Jose Martins da Rosa, Carlos H. G. Ferreira, Fabrício Murai, Gabriel Peres Nobre, Jussara M. Almeida
         title: Uncovering Coordinated Communities on Twitter During the 2020 U.S. Election
@@ -752,11 +383,6 @@ years:
         journal: PLoS ONE
         url: https://doi.org/10.1371/journal.pone.0274218
         cited_by_count: 31
-      - authors: Rayson Laroca, Marcelo Santos, Valter Estevam, Eduardo Luz, David Menotti
-        title: A First Look at Dataset Bias in License Plate Recognition
-        journal: arXiv (Cornell University)
-        url: https://doi.org/10.48550/arxiv.2208.10657
-        cited_by_count: 1
       - authors: >-
           Gabriel Corrêa Veríssimo, Simone Queiroz Panteleão, Jadson Castro Gertrudes, Thales Kronenberger, Káthia M. Honório, Vinícius
           Gonçalves Maltarollo
@@ -772,16 +398,6 @@ years:
         journal: 2022 International Joint Conference on Neural Networks (IJCNN)
         url: https://doi.org/10.1109/ijcnn55064.2022.9891934
         cited_by_count: 1
-      - authors: Marcos Paulo Fontes Feitosa, Carlos H. G. Ferreira, Glauber Dias Gonçalves, Jussara M. Almeida
-        title: Análise da Percepção das Pessoas no Twitter Sobre Ações Policiais
-        journal: Unknown venue
-        url: https://doi.org/10.5753/brasnam.2022.223267
-        cited_by_count: 2
-      - authors: Sammuel Ramos da Silva, Jadson Castro Gertrudes
-        title: Chaotic genetic bee colony
-        journal: Proceedings of the Genetic and Evolutionary Computation Conference Companion
-        url: https://doi.org/10.1145/3520304.3528901
-        cited_by_count: 2
       - authors: >-
           Lívia Rodrigues Tomás, Giovanni G. Soares, Aurelienne A. S. Jorge, Jeferson Feitosa Mendes, Vander L. S. Freitas, Leonardo Bacelar
           Lima Santos
@@ -798,21 +414,12 @@ years:
         journal: Unknown venue
         url: https://doi.org/10.5753/sbcas.2022.222647
         cited_by_count: 2
-      - authors: Rafael F. Oliveira, Vander L. S. Freitas, Gladston Moreira, Eduardo Luz
-        title: Explorando Redes Neurais de Grafos para Classificação de Arritmias
-        journal: Unknown venue
-        url: https://doi.org/10.5753/sbcas.2022.222510
-        cited_by_count: 2
       - authors: >-
           Julia Beatriz A. Teixeira, Mariana T. Rezende, Débora N. Diniz, Cláudia Martins Carneiro, Eduardo Luz, Marcone Jamilson Freitas
           Souza, Daniela Ushizima, Fátima N. S. de Medeiros, Andrea Bianchi
         title: Segmentação automática de núcleos cervicais em imagens de Papanicolaou
         journal: Unknown venue
         url: https://doi.org/10.5753/sbcas.2022.222682
-      - authors: Rafael F. Oliveira, Anderson A. Ferreira, Gladston Moreira, Eduardo Luz
-        title: "Um Método Ensemble para Classificação de Arritmias: Uma Avaliação Com Mais de 10 Mil Registros de Sinais de ECG"
-        journal: Unknown venue
-        url: https://doi.org/10.5753/sbcas.2022.222429
       - authors: Matheus F. C. Barros, Carlos H. G. Ferreira, Lourenço Alves Pereira, Marco Mellia, Jussara M. Almeida, Bruno P. Santos
         title: Understanding mobility in networks
         journal: ACM SIGMETRICS Performance Evaluation Review
@@ -828,22 +435,6 @@ years:
         journal: arXiv (Cornell University)
         url: https://doi.org/10.1111/tgis.12962
         cited_by_count: 18
-      - authors: >-
-          Leonardo Seligra Lopes, Rodrigo Silva, Joaquim Lorenzetti, Winter Figueiredo, Thais Eduarda Caetano Feitosa, Rafaella Medugno,
-          Ivan Yoshida, Caio Parente Barbosa, Roberto Juliano, Sidney Glina
-        title: MP34-12 OPEN TESTICULAR MAPPING TECHNIQUE FOR SPERM RETRIEVAL IN MEN WITH NON-OBSTRUCTIVE AZOOSPERMIA
-        journal: The Journal of Urology
-        url: https://doi.org/10.1097/ju.0000000000002588.12
-      - authors: Issah Ibrahim, Rodrigo Silva, David A. Lowther
-        title: Application of Surrogate Models to the Multiphysics Sizing of Permanent Magnet Synchronous Motors
-        journal: IEEE Transactions on Magnetics
-        url: https://doi.org/10.1109/tmag.2022.3165396
-        cited_by_count: 17
-        badge: IEEE
-      - authors: Aurelienne A. S. Jorge, Iuri da Silva Diniz, Vander L. S. Freitas, Izabelly Carvalho da Costa, Leonardo Bacelar Lima Santos
-        title: Global-threshold and backbone high-resolution weather radar networks are significantly complementary in a watershed
-        journal: arXiv (Cornell University)
-        url: https://doi.org/10.48550/arxiv.2201.05503
       - authors: Jose Martins da Rosa, Renan Saldanha Linhares, Carlos H. G. Ferreira, Gabriel Peres Nobre, Fabrício Murai, Jussara M. Almeida
         title: "Uncovering Discussion Groups on\_Claims of\_Election Fraud from\_Twitter"
         journal: Lecture notes in computer science
@@ -857,11 +448,6 @@ years:
         title: An Efficient Contact Lens Spoofing Classification
         journal: Unknown venue
         url: https://doi.org/10.5220/0010868500003179
-      - authors: Gabriel Peres Nobre, Carlos H. G. Ferreira, Jussara M. Almeida
-        title: "More of\_the\_Same? A\_Study of\_Images Shared on\_Mastodon’s Federated Timeline"
-        journal: Lecture notes in computer science
-        url: https://doi.org/10.1007/978-3-031-19097-1_11
-        cited_by_count: 3
   - year: 2021
     items:
       - authors: Pedro Castro, Gladston Moreira, Eduardo Luz
@@ -870,34 +456,16 @@ years:
         url: https://doi.org/10.1109/tla.2022.9667141
         cited_by_count: 3
         badge: IEEE
-      - authors: Matheus F. C. Barros, Carlos H. G. Ferreira, Bruno P. Santos, Lourenço Alves Pereira, Marco Mellia, Jussara M. Almeida
-        title: "Understanding mobility in networks: A node embedding approach"
-        journal: arXiv (Cornell University)
-        url: https://doi.org/10.48550/arxiv.2111.06161
-        cited_by_count: 1
       - authors: Gabriel Peres Nobre, Carlos H. G. Ferreira, Jussara M. Almeida
         title: A hierarchical network-oriented analysis of user participation in misinformation spread on WhatsApp
         journal: Information Processing & Management
         url: https://doi.org/10.1016/j.ipm.2021.102757
         cited_by_count: 55
-      - authors: Gabriel Peres Nobre, Carlos H. G. Ferreira, Jussara M. Almeida
-        title: A Hierarchical Network-Oriented Analysis of User Participation in Misinformation Spread on WhatsApp
-        journal: arXiv (Cornell University)
-        url: https://doi.org/10.48550/arxiv.2109.10462
-        cited_by_count: 1
-      - authors: Pedro Silva, Gladston Moreira, Vander L. S. Freitas, Rodrigo Silva, David Menotti, Eduardo Luz
-        title: A Decidability-Based Loss Function
-        journal: arXiv (Cornell University)
-        url: https://doi.org/10.48550/arxiv.2109.05524
       - authors: Pedro Castro, Eduardo Luz, Gladston Moreira
         title: Dataset for Hop varieties classification
         journal: Data in Brief
         url: https://doi.org/10.1016/j.dib.2021.107312
         cited_by_count: 7
-      - authors: Larissa Malagoli, Júlia Stancioli, Carlos H. G. Ferreira, Marisa Vasconcelos, Ana Paula Couto da Silva, Jussara M. Almeida
-        title: Caracterização do debate no Twitter sobre a vacinação contra a COVID-19 no Brasil
-        journal: Zenodo (CERN European Organization for Nuclear Research)
-        url: https://doi.org/10.5281/zenodo.4818622
       - authors: Larissa Malagoli, Júlia Stancioli, Carlos H. G. Ferreira, Marisa Vasconcelos, Ana Paula Couto da Silva, Jussara M. Almeida
         title: Caracterização do debate no Twitter sobre a vacinação contra a COVID-19 no Brasil
         journal: Unknown venue
@@ -921,24 +489,6 @@ years:
         url: https://doi.org/10.1109/tla.2021.9468443
         cited_by_count: 3
         badge: IEEE
-      - authors: Gabriel Peres Nobre, Carlos H. G. Ferreira, Jussara M. Almeida
-        title: A Hierarchical Network-Oriented Analysis of UserParticipation in Misinformation Spread on WhatsApp
-        journal: Figshare
-        url: https://doi.org/10.5281/zenodo.4774375
-      - authors: Gabriel Peres Nobre, Carlos H. G. Ferreira, Jussara M. Almeida
-        title: A Hierarchical Network-Oriented Analysis of UserParticipation in Misinformation Spread on WhatsApp
-        journal: Zenodo (CERN European Organization for Nuclear Research)
-        url: https://doi.org/10.5281/zenodo.4774374
-        cited_by_count: 7
-      - authors: Larissa Malagoli, Júlia Stancioli, Carlos H. G. Ferreira, Marisa Vasconcelos, Ana Paula Couto da Silva, Jussara M. Almeida
-        title: A Look into COVID-19 Vaccination Debate on Twitter
-        journal: Unknown venue
-        url: https://doi.org/10.1145/3447535.3462498
-        cited_by_count: 26
-      - authors: Larissa Malagoli, Júlia Stancioli, Carlos H. G. Ferreira, Ana Paula Couto da Silva, Jussara M. Almeida, Marisa Vasconcelos
-        title: A Look into COVID-19 Vaccination Debate on Twitter
-        journal: Zenodo (CERN European Organization for Nuclear Research)
-        url: https://doi.org/10.5281/zenodo.4721643
       - authors: Vander L. S. Freitas, Serhiy Yanchuk, Helder L. C. Grande, Elbert E. N. Macau
         title: The effects of time-delay and phase lags on symmetric circular formations of mobile agents
         journal: The European Physical Journal Special Topics
@@ -968,26 +518,12 @@ years:
         url: https://doi.org/10.7717/peerj-cs.549
         cited_by_count: 9
       - authors: >-
-          Vitória Felício Dornelas, Cristiano Severo Aiolfi, Valéria Santos, Daniel da Cunha Ribeiro, Fábio de Assis Ressel Pereira, André
-          Leibshon, Ana Paula Meneguelo
-        title: >-
-          BaSO_4 Precipitation Impact on the Permeability of a Pressure Porous Medium/ BaSO 4 Impacto da Precipitação sobre a Permeabilidade
-          de um Meio Poroso de Pressão
-        journal: Brazilian Journal of Development
-        url: https://doi.org/10.34117/bjdv7n5-337
-      - authors: >-
           Mateus Sá Magalhães Serafim, Valtair Severino dos Santos, Jadson Castro Gertrudes, Vinícius Gonçalves Maltarollo, Káthia M.
           Honório
         title: "Machine learning techniques applied to the drug design and discovery of new antivirals: a brief look over the past decade"
         journal: Expert Opinion on Drug Discovery
         url: https://doi.org/10.1080/17460441.2021.1918098
         cited_by_count: 33
-      - authors: Issah Ibrahim, Rodrigo Silva, Mohammad Hossain Mohammadi, Vahid Ghorbanian, David A. Lowther
-        title: Surrogate Models for Design and Optimization of Inverter-Fed Synchronous Motor Drives
-        journal: IEEE Transactions on Magnetics
-        url: https://doi.org/10.1109/tmag.2021.3070486
-        cited_by_count: 12
-        badge: IEEE
       - authors: Rodolfo A. Lopes, Alan Robert Resende de Freitas, Rodrigo Silva
         title: Local Search with Groups of Step Sizes
         journal: Operations Research Letters
@@ -1009,11 +545,6 @@ years:
         journal: Bioscience Reports
         url: https://doi.org/10.1042/bsr20202616
         cited_by_count: 20
-      - authors: Dilson Borges Ribeiro, Jéferson Macedo Vianna, Hélder Zimmermann Oliveira, Rodrigo Silva, Francisco Zacaron Werneck
-        title: GOLD SCORE BASKETBALL
-        journal: SHILAP Revista de lepidopterología
-        url: https://doi.org/10.6063/motricidade.22607
-        cited_by_count: 7
       - authors: Felipe Meneguitti Dias, Henrique Luis Moreira Monteiro, Thales Wulfert Cabral, Rayen Naji, Michael Kuehni, Eduardo Luz
         title: Arrhythmia classification from single-lead ECG signals using the inter-patient paradigm
         journal: Computer Methods and Programs in Biomedicine
@@ -1023,15 +554,6 @@ years:
         title: "Laboratório virtual de sistemas embarcados: uma abordagem de ensino remoto usando softwares gratuitos"
         journal: Anais do ... Simpósio Brasileiro de Automação Inteligente/Simpósio Brasileiro de Automação Inteligente
         url: https://doi.org/10.20906/sbai.v1i1.2843
-      - authors: >-
-          Vander L. S. Freitas, Thais Cláudia Roma de Oliveira Konstantyner, Jeferson Feitosa Mendes, Cátia Souza do Nascimento Sepetauskas,
-          Leonardo Bacelar Lima Santos
-        title: The correspondence between the structure of the terrestrial mobility network and the spreading of COVID-19 in Brazil
-        journal: Figshare
-        url: https://doi.org/10.6084/m9.figshare.14280840
-      - authors: G. Ko, Sharmy Sarvanantham, Sofía Cortés Sequeira, Vimal H. Prajapati, David R. McCready, Vander L. S. Freitas, Tulin Cil
-        title: Benefits of a rapid diagnostic centre for breast cancer care during the COVID-19 pandemic
-        journal: Cancer Research
   - year: 2020
     items:
       - authors: Pedro Silva, Eduardo Luz, Guilherme Silva, Gladston Moreira, Elizabeth F. Wanner, Flávio de Barros Vidal, David Menotti
@@ -1073,18 +595,6 @@ years:
         journal: Communications in Nonlinear Science and Numerical Simulation
         url: https://doi.org/10.1016/j.cnsns.2020.105543
         cited_by_count: 8
-      - authors: Jadson Castro Gertrudes, Arthur Zimek, Jörg Sander, Ricardo J. G. B. Campello
-        title: "Correction to: A unified view of density-based methods for semi-supervised clustering and classification"
-        journal: Data Mining and Knowledge Discovery
-        url: https://doi.org/10.1007/s10618-020-00707-7
-        cited_by_count: 1
-      - authors: >-
-          Rafael Gomes Mantovani, André Luis Debiaso Rossi, Edesio Alcobaça, Jadson Castro Gertrudes, Sylvio Barbon, André C. P. L. F. de
-          Carvalho
-        title: "Rethinking Default Values: a Low Cost and Efficient Strategy to Define Hyperparameters"
-        journal: arXiv (Cornell University)
-        url: https://doi.org/10.48550/arxiv.2008.00025
-        cited_by_count: 10
       - authors: Pedro Silva, Eduardo Luz, Guilherme Silva, Gladston Moreira, Rodrigo Silva, Diego Rafael Lucio, David Menottu
         title: "Efficient Deep Learning Model for COVID-19 Detection in large CT images datasets: A cross-dataset analysis"
         journal: Research Square
@@ -1119,41 +629,11 @@ years:
         journal: Unknown venue
         url: https://doi.org/10.21203/rs.3.rs-37908/v1
         cited_by_count: 4
-      - authors: >-
-          Carlos H. G. Ferreira, Fabrício Murai, Ana Paula Couto da Silva, Jussara M. Almeida, Martino Trevisan, Luca Vassio, Idílio Drago,
-          Marco Mellia
-        title: Unveiling Community Dynamics on Instagram Political Network
-        journal: Unknown venue
-        url: https://doi.org/10.1145/3394231.3397913
-        cited_by_count: 19
       - authors: Vander L. S. Freitas, Thais C. R. O. Konstantyner, Jeferson Feitosa, Catia S. N. Sepetauskas, Leonardo Bacelar Lima Santos
         title: The correspondence between the structure of the terrestrial mobility network and the emergence of COVID-19 in Brazil
         journal: medRxiv
         url: https://doi.org/10.1101/2020.05.17.20104612
         cited_by_count: 2
-      - authors: Eduardo Luz, Pedro Silva, Rodrigo Silva, Gladston Moreira
-        title: Towards an Efficient Deep Learning Model for COVID-19 Patterns Detection in X-ray Images
-        journal: arXiv (Cornell University)
-        cited_by_count: 37
-      - authors: Carlos H. G. Ferreira, Fabricio Murai Ferreira, Breno de Sousa Matos, Jussara M. Almeida
-        title: Modeling Dynamic Ideological Behavior in Political Networks
-        journal: Forschungszentrum L3S
-        url: https://doi.org/10.34962/jws-80
-        cited_by_count: 17
-      - authors: Vander L. S. Freitas, Jeferson Feitosa, Catia S. N. Sepetauskas, Leonardo Bacelar Lima Santos
-        title: "Robustness analysis in an inter-cities mobility network: modeling municipal, state and federal initiatives as failures and attacks"
-        journal: arXiv (Cornell University)
-        url: https://doi.org/10.48550/arxiv.2004.02648
-        cited_by_count: 1
-      - authors: Vander L. S. Freitas, Serhiy Yanchuk, Michael A. Zaks, Elbert E. N. Macau
-        title: Unitary speed particles in circular symmetric patterns
-        journal: Biblioteca Digital da Memória Científica do INPE (National Institute for Space Research)
-      - authors: Issah Ibrahim, Rodrigo Silva, Mohammad Hossain Mohammadi, Vahid Ghorbanian, David A. Lowther
-        title: Surrogate-Based Acoustic Noise Prediction of Electric Motors
-        journal: IEEE Transactions on Magnetics
-        url: https://doi.org/10.1109/tmag.2019.2945407
-        cited_by_count: 34
-        badge: IEEE
       - authors: >-
           Vander L. S. Freitas, Thais Cláudia Roma de Oliveira Konstantyner, Jeferson Feitosa Mendes, Cátia Souza do Nascimento Sepetauskas,
           Leonardo Bacelar Lima Santos
@@ -1165,12 +645,6 @@ years:
         title: Análise e Abordagens Multiobjetivo para o Problema deEscalonamento de Pátio Operado por Guindastes
         journal: Anais do Simpósio Brasileiro de Pesquisa Operacional
         url: https://doi.org/10.59254/sbpo-2020-122639
-      - authors: >-
-          Vitória Felício Dornelas, Cristiano Severo Aiolfi, Valéria Santos, Daniel da Cunha Ribeiro, Fábio de Assis Ressel Pereira, A. L.
-          Martins, Ana Paula Meneguelo
-        title: Effect of barium sulphate precipitation in a pressurized environment
-        journal: Procceedings of the 18th Brazilian Congress of Thermal Sciences and Engineering
-        url: https://doi.org/10.26678/abcm.encit2020.cit20-0668
       - authors: Pedro Silva, Eduardo Luz, Guilherme Silva, Gladston Moreira, Rodrigo Silva, Diego Rafael Lucio, David Menotti
         title: "COVID-19 detection in CT images with deep learning: A voting-based scheme and cross-datasets analysis"
         journal: Informatics in Medicine Unlocked
@@ -1181,40 +655,13 @@ years:
         journal: Lecture notes in computer science
         url: https://doi.org/10.1007/978-3-030-60975-7_19
         cited_by_count: 24
-      - authors: >-
-          Vander L. S. Freitas, Thais Cláudia Roma de Oliveira Konstantyner, Jeferson Feitosa Mendes, Cátia Souza do Nascimento Sepetauskas,
-          Leonardo Bacelar Lima Santos
-        title: >-
-          The correspondence between the structure of the terrestrial mobility network and the spreading of COVID-19 in Brazil/ A
-          correspondência entre a estrutura da rede de mobilidade terrestre e a propagação da COVID-19 no Brasil/ La correspondencia entre
-          la estructura de la red de movilidad terrestre y la propagación de la COVID-19 en Brasil
-        journal: Unknown venue
   - year: 2019
     items:
-      - authors: Vander L. S. Freitas, Juliana C. Lacerda, Elbert E. N. Macau
-        title: Complex Networks Approach for Dynamical Characterization of Nonlinear Systems
-        journal: International Journal of Bifurcation and Chaos
-        url: https://doi.org/10.1142/s0218127419501888
-        cited_by_count: 6
-      - authors: Gladston Moreira, Luís Paquete
-        title: Guiding under uniformity measure in the decision space
-        journal: Unknown venue
-        url: https://doi.org/10.1109/la-cci47412.2019.9037034
-        cited_by_count: 12
-      - authors: Jadson Castro Gertrudes
-        title: Semi-supervised learning approaches with applications in Medicinal Chemistry
-        journal: Unknown venue
-        url: https://doi.org/10.11606/t.55.2019.tde-22082019-105334
       - authors: Emerson Cotta Bodevan, Luiz H. Duczmal, Anderson Ribeiro Duarte, Pedro Silva, Gladston Moreira
         title: Multi-objective approach for multiple clusters detection in data points events
         journal: Communications in Statistics - Simulation and Computation
         url: https://doi.org/10.1080/03610918.2019.1667392
         cited_by_count: 4
-      - authors: Jadson Castro Gertrudes, Arthur Zimek, Jörg Sander, Ricardo J. G. B. Campello
-        title: A unified view of density-based methods forsemi-supervised clustering and classification
-        journal: Data Mining and Knowledge Discovery
-        url: https://doi.org/10.1007/s10618-019-00651-1
-        cited_by_count: 27
       - authors: Gabriel Peres Nobre, Jussara M. Almeida, Carlos H. G. Ferreira
         title: Caracterização de bots no Twitter durante as Eleições Presidenciais no Brasil em 2018
         journal: Anais do Brazilian Workshop on Social Network Analysis and Mining (BraSNAM)
@@ -1225,15 +672,6 @@ years:
         journal: Sensors
         url: https://doi.org/10.3390/s19132968
         cited_by_count: 13
-      - authors: Chetan Midha, Mohammad Hossain Mohammadi, Rodrigo Silva, David A. Lowther
-        title: Selection of Spatial Filters for ON/OFF Based Topology Optimization of a C-Core Electromagnetic Actuator
-        journal: IEEE Transactions on Magnetics
-        url: https://doi.org/10.1109/tmag.2019.2919152
-        cited_by_count: 13
-        badge: IEEE
-      - authors: Jadson Castro Gertrudes
-        title: Abordagens de aprendizado semissupervisionado com aplicações em Química Medicinal
-        journal: Digital Library of Theses and Dissertations of the University of São Paulo (Universidade de São Paulo)
       - authors: >-
           Petrônio Cândido de Lima e Silva, Carlos Alberto Severiano Júnior, Marcos Antônio Alves, Rodrigo Silva, Gustavo Linhares Vieira,
           Patrícia de Oliveira e Lucas, Hossein Javedani Sadaei, Frederico Gadelha Guimarães
@@ -1252,39 +690,16 @@ years:
         url: https://doi.org/10.1080/03610918.2018.1563152
         cited_by_count: 4
       - authors: >-
-          Dionisio Leite, Maycon Peixoto, Carlos H. G. Ferreira, Bruno Guazzelli Batista, Danilo Costa Marim Segura, Marcos José Santana,
-          Regina Helena Carlucci Santana
-        title: A cloud computing price model based on virtual machine performance degradation
-        journal: International Journal of Computational Science and Engineering
-        url: https://doi.org/10.1504/ijcse.2019.099082
-        cited_by_count: 1
-      - authors: >-
           Marcos Antônio Alves, Lucas Vieira Vilas Boas de Almeida, Tamires Martins Rezende, Petrônio Cândido de Lima e Silva, Carlos
           Alberto Severiano, Rodrigo Silva, Frederico Gadelha Guimarães
         title: Otimização Dinâmica Evolucionária para Despacho de Energia em uma Microrrede usando Veículos Elétricos
         journal: Anais do 14º Simpósio Brasileiro de Automação Inteligente
         url: https://doi.org/10.17648/sbai-2019-111524
-      - authors: Eduardo Luz
-        title: Exploring deep learning representations for biometric multimodal systems.
-        journal: Unknown venue
-      - authors: Nina Barreira, Rodrigo Silva, Tatiana Martins Tilli, Patrícia Neves
-        title: Identification of breast cancer neoantigens using in silico methodologies
-        journal: Anais do IV International Symposium on Immunobiological e VII Seminário Anual Científico e Tecnológico de Bio-Manguinhos
-        url: https://doi.org/10.35259/isi.sact.2019_32690
       - authors: Pedro Silva, Eduardo Luz, Elizabeth F. Wanner, David Menotti, Gladston Moreira
         title: QRS Detection in ECG Signal with Convolutional Network
         journal: Lecture notes in computer science
         url: https://doi.org/10.1007/978-3-030-13469-3_93
         cited_by_count: 16
-      - authors: Francisco de Assis Rodrigues dos Anjos, Jadson Castro Gertrudes, Jörg Sander, Ricardo J. G. B. Campello
-        title: A Modularity-Based Measure for Cluster Selection from Clustering Hierarchies
-        journal: Communications in computer and information science
-        url: https://doi.org/10.1007/978-981-13-6661-1_20
-        cited_by_count: 4
-      - authors: Thiago Chaves, Beatriz Chaves, Fernando Conte, Rodrigo Silva, Patrícia Neves
-        title: "In silico directed evolution in antibody engineering: a promising approach to improvement antitumor biopharmaceuticals"
-        journal: Anais do IV International Symposium on Immunobiological e VII Seminário Anual Científico e Tecnológico de Bio-Manguinhos
-        url: https://doi.org/10.35259/isi.sact.2019_32699
   - year: 2018
     items:
       - authors: Luiz A. Zanlorensi, Eduardo Luz, Rayson Laroca, Alceu S. Britto, Luiz S. Oliveira, David Menotti
@@ -1292,22 +707,6 @@ years:
         journal: Unknown venue
         url: https://doi.org/10.1109/sibgrapi.2018.00044
         cited_by_count: 29
-      - authors: J. Noetel, Vander L. S. Freitas, Elbert E. N. Macau, Lutz Schimansky-Geier
-        title: Optimal noise in a stochastic model for local search
-        journal: Physical review. E
-        url: https://doi.org/10.1103/physreve.98.022128
-        cited_by_count: 7
-      - authors: Breno de Sousa Matos, Carlos H. G. Ferreira, Jussara M. Almeida
-        title: >-
-          Analisando a governabilidade presidencial a partir de padrões de homofilia na Câmara dos Deputados: Estudos de Casos no Brasil e
-          nos EUA
-        journal: Unknown venue
-        url: https://doi.org/10.5753/brasnam.2018.3592
-      - authors: Jadson Castro Gertrudes, Arthur Zimek, Jörg Sander, Ricardo J. G. B. Campello
-        title: A unified framework of density-based clustering for semi-supervised classification
-        journal: Unknown venue
-        url: https://doi.org/10.1145/3221269.3223037
-        cited_by_count: 14
       - authors: Felipe O. Mota, Vinícius Augusto Reis Almeida, Elizabeth F. Wanner, Gladston Moreira
         title: Hybrid PSO Algorithm with Iterated Local Search Operator for Equality Constraints Problems
         journal: Unknown venue
@@ -1318,16 +717,6 @@ years:
         journal: Unknown venue
         url: https://doi.org/10.1109/cec.2018.8477817
         cited_by_count: 37
-      - authors: Vander L. S. Freitas, Elbert E. N. Macau
-        title: Collision Avoidance Mechanism for Symmetric Circular Formations of Unitary Mass Autonomous Vehicles at Constant Speed
-        journal: Mathematical Problems in Engineering
-        url: https://doi.org/10.1155/2018/6291082
-        cited_by_count: 5
-      - authors: Vander L. S. Freitas, Fabiano Luís de Sousa, Elbert E. N. Macau
-        title: Reactive model for autonomous vehicles formation following a mobile reference
-        journal: Applied Mathematical Modelling
-        url: https://doi.org/10.1016/j.apm.2018.04.011
-        cited_by_count: 7
       - authors: Felipe O. Mota, Elizabeth F. Wanner, Eduardo Luz, Gladston Moreira
         title: VND-based Local Search Operator for Equality Constraint Problems in PSO Algorithm
         journal: Electronic Notes in Discrete Mathematics
@@ -1338,15 +727,6 @@ years:
         journal: International Journal of Health Geographics
         url: https://doi.org/10.1186/s12942-018-0124-1
         cited_by_count: 24
-      - authors: Vander L. S. Freitas, Marcos G. Quiles, Elbert E. N. Macau
-        title: Controle baseado em redes neurais artificiais para agentes móveis em formação
-        journal: Proceeding Series of the Brazilian Society of Computational and Applied Mathematics
-        url: https://doi.org/10.5540/03.2018.006.01.0345
-      - authors: Pedro Simões, Pedro Silva, Miguel Cordeiro, Maria Picoto, F Vaz
-        title: >-
-          Evaluation of Geographic Atrophy Progression Secondary to Age-related Macular Degeneration Using a Medical Image Processing
-          Software
-        journal: Unknown venue
       - authors: Leonardo Bombonato, Guillermo Cámara-Chávez, Pedro Silva
         title: Real-Time Brand Logo Recognition
         journal: Lecture notes in computer science
@@ -1356,19 +736,6 @@ years:
         journal: Lecture notes in computer science
         url: https://doi.org/10.1007/978-3-319-75193-1_72
         cited_by_count: 46
-      - authors: Rodrigo Silva, Min Li, Vahid Ghorbanian, Frederico Gadelha Guimarães, David A. Lowther
-        title: "Robust Design with Surrogate-Assisted Evolutionary Algorithm: Does It Work?"
-        journal: Lecture notes in computer science
-        url: https://doi.org/10.1007/978-3-319-91641-5_25
-        cited_by_count: 1
-      - authors: >-
-          Aline Rafaela Nascimento, Andressa Aparecida Santana Furtini, Carlos H. G. Ferreira, Daniela Meirelles Andrade, Monique Scalco
-          Soares Siqueira, Stephan Araújo Costa
-        title: Relatório do projeto “empreendedorismo na escola”
-        journal: LA Referencia (Red Federada de Repositorios Institucionales de Publicaciones Científicas)
-      - authors: Rodrigo Silva, Craig Purdam, A. Fearon, Wayne Spratford, Peter Preston, Fábio Viadanna Serrão, James E. Gaida
-        title: Lower ankle dorsiflexion is associated with tendon pathology, disability and pain in elite jumping athletes
-        journal: Unknown venue
   - year: 2017
     items:
       - authors: Eduardo Luz, Gladston Moreira, Luiz S. Oliveira, William Robson Schwartz, David Menotti
@@ -1382,34 +749,11 @@ years:
         journal: Pattern Recognition Letters
         url: https://doi.org/10.1016/j.patrec.2017.12.009
         cited_by_count: 37
-      - authors: Vander L. S. Freitas, Barbara Maximino da Fonseca Reis, Antônio Maria Garcia Tommaselli
-        title: AUTOMATIC SHADOW DETECTION IN AERIAL AND TERRESTRIAL IMAGES
-        journal: Boletim de Ciências Geodésicas
-        url: https://doi.org/10.1590/s1982-21702017000400038
-        cited_by_count: 17
-      - authors: Mohammad Hossain Mohammadi, Tanvir Rahman, Rodrigo Silva, B. Wang, Kang Chang, David A. Lowther
-        title: Effect of Acoustic Noise on Optimal SynRM Design Regions
-        journal: IEEE Transactions on Magnetics
-        url: https://doi.org/10.1109/tmag.2017.2760859
-        cited_by_count: 23
-        badge: IEEE
       - authors: Leonardo Bombonato, Guillermo Cámara-Chávez, Pedro Silva
         title: Real-Time Single-Shot Brand Logo Recognition
         journal: Unknown venue
         url: https://doi.org/10.1109/sibgrapi.2017.24
         cited_by_count: 4
-      - authors: Rodrigo Silva, Tanvir Rahman, Mohammad Hossain Mohammadi, David A. Lowther
-        title: "Multiple Operating Points Based Optimization: Application to Fractional Slot Concentrated Winding Electric Motors"
-        journal: IEEE Transactions on Industrial Electronics
-        url: https://doi.org/10.1109/tie.2017.2756586
-        cited_by_count: 36
-        badge: IEEE
-      - authors: Mohammad Hossain Mohammadi, Rodrigo Silva, David A. Lowther
-        title: "Incorporating Control Strategies Into the Optimization of Synchronous AC Machines: A Comparison of Methodologies"
-        journal: IEEE Transactions on Magnetics
-        url: https://doi.org/10.1109/tmag.2017.2748099
-        cited_by_count: 6
-        badge: IEEE
       - authors: Gabriel García, Gladston Moreira, David Menotti, Eduardo Luz
         title: Inter-Patient ECG Heartbeat Classification with Temporal VCG Optimized by PSO
         journal: Scientific Reports
@@ -1433,10 +777,6 @@ years:
         title: Effects of Different Resistance Training Protocols on Performance, Metabolic and Perceptual Responses in Trained Men
         journal: Medicine & Science in Sports & Exercise
         url: https://doi.org/10.1249/01.mss.0000517182.51720.35
-      - authors: Dionisio Leite, Maycon Peixoto, Bruno Guazzelli Batista, Bruno Tardiole Kuehne, Carlos H. G. Ferreira
-        title: The influence of resource allocation on cloud computing performance
-        journal: Unknown venue
-        url: https://doi.org/10.1145/3019612.3019736
       - authors: >-
           Vitor N. Coelho, Igor Machado Coelho, Bruno N. Coelho, Marcone Jamilson Freitas Souza, Frederico Gadelha Guimarães, Eduardo Luz,
           Alexandre Carvalho Barbosa, Mateus Nazário Coelho, Guilherme G. Netto, Renan Costa, Alysson A. Pinto, Augusto Figueiredo, Mohammed
@@ -1445,35 +785,6 @@ years:
         journal: Electronic Notes in Discrete Mathematics
         url: https://doi.org/10.1016/j.endm.2017.03.011
         cited_by_count: 9
-      - authors: >-
-          Carlos H. G. Ferreira, Júlio Cézar Estrella, Luiz H. Nunes, Luis Hideo Vasconcelos Nakamura, Rafael M. de O. Libardi, Bruno
-          Guazzelli Batista, Maycon Peixoto, Dionisio Leite, Stephan Reiff‐Marganiec
-        title: A low cost workload generation approach through the cloud for capacity planning in service-oriented systems
-        journal: Unknown venue
-        url: https://doi.org/10.1145/3018896.3018900
-        cited_by_count: 2
-      - authors: Bruno Guazzelli Batista, Carlos H. G. Ferreira, Danilo Costa Marim Segura, Dionisio Machado Leite Filho, Maycon Peixoto
-        title: >-
-          Corrigendum to “A QoS-driven approach for cloud computing addressing attributes of performance and security” [Future Gener.
-          Comput. Syst. 68 (March) (2017) 260–274]
-        journal: Future Generation Computer Systems
-        url: https://doi.org/10.1016/j.future.2016.11.018
-        cited_by_count: 2
-      - authors: Ana Carolina Carlos, Bruno Freischlag, Eduardo Luz, Natália Berne Pinto, Nikollas Junior Barreto, Rafael Lucena
-        title: O PRECONCEITO COM PORTADORES DO VÍRUS HIV/AIDS
-        journal: Unknown venue
-      - authors: Rodrigo Silva, Min Li, Tanvir Rahman, David A. Lowther
-        title: Surrogate-Based MOEA/D for Electric Motor Design With Scarce Function Evaluations
-        journal: IEEE Transactions on Magnetics
-        url: https://doi.org/10.1109/tmag.2017.2661987
-        cited_by_count: 28
-        badge: IEEE
-      - authors: Mohammad Hossain Mohammadi, Rodrigo Silva, David A. Lowther
-        title: Finding Optimal Performance Indices of Synchronous AC Motors
-        journal: IEEE Transactions on Magnetics
-        url: https://doi.org/10.1109/tmag.2017.2662705
-        cited_by_count: 8
-        badge: IEEE
       - authors: Igor Machado Coelho, Vitor N. Coelho, Eduardo Luz, Luiz Satoru Ochi, Frederico Gadelha Guimarães, Eyder Rios
         title: A GPU deep learning metaheuristic based model for time series forecasting
         journal: Applied Energy
@@ -1488,17 +799,6 @@ years:
         title: Spatial Cluster Detection Through a Dynamic Programming Approach
         journal: Unknown venue
         url: https://doi.org/10.1007/978-1-4614-8414-1_40-1
-      - authors: Vander L. S. Freitas, Elbert E. N. Macau
-        title: >-
-          Reactive Agent-based Model for Convergence of Autonomous Vehicles to Parallel Formations Heading to Predefined Directions of
-          Motion
-        journal: Unknown venue
-        url: https://doi.org/10.5220/0006187201660173
-        cited_by_count: 2
-      - authors: Vander L. S. Freitas, Barbara Maximino da Fonseca Reis, Antônio Maria Garcia Tommaselli
-        title: AUTOMATIC SHADOW DETECTION IN AERIAL AND TERRESTRIAL IMAGES
-        journal: Figshare
-        url: https://doi.org/10.6084/m9.figshare.5718697
       - authors: David Menotti, Luiz Henrique de Campos Merschmann, Eduardo Luz, Gladston Moreira
         title: Evaluating a hierarchical approach for heartbeat classification from ECG
         journal: International Journal of Bioinformatics Research and Applications
@@ -1509,25 +809,6 @@ years:
         url: https://doi.org/10.1163/15685381-00003094
   - year: 2016
     items:
-      - authors: Elizabeth F. Wanner, Gladston Moreira, Eduardo G. Carrano, Ricardo H. C. Takahashi, Luiz H. Duczmal
-        title: MULTI-OBJECTIVE TRAINING OF RBF NETWORKS FOR LARGE DATA SETS WITH LMI’S
-        journal: Unknown venue
-        url: https://doi.org/10.21528/cbrn2009-001
-      - authors: Rodrigo Silva, Min Li, Tanvir Rahman, David A. Lowther
-        title: Surrogate-based MOEA/D for electric motor design with scarce function evaluations
-        journal: Unknown venue
-        url: https://doi.org/10.1109/cefc.2016.7816151
-        cited_by_count: 5
-      - authors: Mohammad Hossain Mohammadi, Rodrigo Silva, David A. Lowther
-        title: Finding optimal performance indices of synchronous AC motors
-        journal: Unknown venue
-        url: https://doi.org/10.1109/cefc.2016.7816156
-        cited_by_count: 2
-      - authors: Bruno Guazzelli Batista, Carlos H. G. Ferreira, Danilo Costa Marim Segura, Dionisio Machado Leite Filho, Maycon Peixoto
-        title: A QoS-driven approach for cloud computing addressing attributes of performance and security
-        journal: Future Generation Computer Systems
-        url: https://doi.org/10.1016/j.future.2016.09.018
-        cited_by_count: 41
       - authors: >-
           Victor Hugo C. de Albuquerque, Thiago Nunes, Danillo Roberto Pereira, Eduardo Luz, David Menotti, João Paulo Papa, João Manuel R.
           S. Tavares
@@ -1550,109 +831,13 @@ years:
         journal: Unknown venue
         url: https://doi.org/10.1109/ijcnn.2016.7727704
         cited_by_count: 11
-      - authors: >-
-          Luiz H. Nunes, Júlio Cézar Estrella, Luis Hideo Vasconcelos Nakamura, Rafael de Libardi, Carlos H. G. Ferreira, Liuri Jorge,
-          Charith Perera, Stephan Reiff‐Marganiec
-        title: A Distributed Sensor Data Search Platform for Internet of Things Environments
-        journal: ORCA Online Research @Cardiff (Cardiff University)
-        url: https://doi.org/10.48550/arxiv.1606.07932
-        cited_by_count: 5
-      - authors: >-
-          Vitor N. Coelho, Igor Machado Coelho, Marcone Jamilson Freitas Souza, Thiago Azevedo de Oliveira, Luciano Perdig�ão Cota, Marwan
-          Haddad, Nenad Mladenović, Rodrigo Silva, Frederico Gadelha Guimarães
-        title: Hybrid Self-Adaptive Evolution Strategies Guided by Neighborhood Structures for Combinatorial Optimization Problems
-        journal: Evolutionary Computation
-        url: https://doi.org/10.1162/evco_a_00187
-        cited_by_count: 16
-      - authors: Tanvir Rahman, Rodrigo Silva, Kieran Humphries, Mohammad Hossain Mohammadi, David A. Lowther
-        title: Design and optimization of fractional slot concentrated winding permanent magnet machines for class IV electric vehicles
-        journal: Unknown venue
-        url: https://doi.org/10.1109/itec.2016.7520199
-        cited_by_count: 4
-      - authors: Min Li, Rodrigo Silva, David A. Lowther
-        title: Global and local meta-models for the robust design of electrical machines
-        journal: International Journal of Applied Electromagnetics and Mechanics
-        url: https://doi.org/10.3233/jae-2013
-        cited_by_count: 7
-      - authors: Rodrigo Silva, Min Li, David A. Lowther
-        title: "The role of coarse models in space-mapping: A study on an IPM motor optimization"
-        journal: International Journal of Applied Electromagnetics and Mechanics
-        url: https://doi.org/10.3233/jae-2020
-      - authors: >-
-          Regina Helena Carlucci Santana, Marcos José Santana, Bruno C. Batista, Danilo Vaz-Curado R. M. Costa, Dionisio Leite, Maycon
-          Peixoto, Carlos H. G. Ferreira
-        title: A cloud computing price model based on virtual machine performance degradation
-        journal: International Journal of Computational Science and Engineering
-        url: https://doi.org/10.1504/ijcse.2016.10011343
-      - authors: Juliana C. Lacerda, Vander L. S. Freitas, Elbert E. N. Macau
-        title: Dynamical Characterization Of Nonlinear Systems Through Complex Networks
-        journal: Anais da ... Semana Jurídica
-        url: https://doi.org/10.20906/cps/nsc2016-0034
-        cited_by_count: 2
-      - authors: Vander L. S. Freitas, Elbert E. N. Macau
-        title: Reactive model for convergence of active agents to moving formations
-        journal: Anais da ... Semana Jurídica
-        url: https://doi.org/10.20906/cps/nsc2016-0035
   - year: 2015
     items:
       - authors: Eduardo Luz, William Robson Schwartz, Guillermo Cámara-Chávez, David Menotti
         title: "ECG-based heartbeat classification for arrhythmia detection: A survey"
         journal: Computer Methods and Programs in Biomedicine
         url: https://doi.org/10.1016/j.cmpb.2015.12.008
-        cited_by_count: 865
-      - authors: >-
-          Bruno Guazzelli Batista, Júlio Cézar Estrella, Carlos H. G. Ferreira, Dionisio Machado Leite Filho, Luis Hideo Vasconcelos
-          Nakamura, Stephan Reiff‐Marganiec, Marcos José Santana, Regina Helena Carlucci Santana
-        title: Performance Evaluation of Resource Management in Cloud Computing Environments
-        journal: PLoS ONE
-        url: https://doi.org/10.1371/journal.pone.0141914
-        cited_by_count: 35
-      - authors: Mohammad Hossain Mohammadi, Tanvir Rahman, Rodrigo Silva, M. Li, David A. Lowther
-        title: A Computationally Efficient Algorithm for Rotor Design Optimization of Synchronous Reluctance Machines
-        journal: IEEE Transactions on Magnetics
-        url: https://doi.org/10.1109/tmag.2015.2491306
-        cited_by_count: 53
-        badge: IEEE
-      - authors: Gladston Moreira, Anderson Ribeiro Duarte, David Menotti
-        title: Um Algoritmo Enxame de Partículas Binário para Detecção de Clusters Irregulares
-        journal: Unknown venue
-        url: https://doi.org/10.21528/cbic2015-027
-      - authors: Rodrigo Silva, Armin Salimi, Min Li, Alan Robert Resende de Freitas, Frederico Gadelha Guimarães, David A. Lowther
-        title: "Visualization and Analysis of Tradeoffs in Many-Objective Optimization: A Case Study on the Interior Permanent Magnet Motor Design"
-        journal: IEEE Transactions on Magnetics
-        url: https://doi.org/10.1109/tmag.2015.2487979
-        cited_by_count: 36
-        badge: IEEE
-      - authors: Sajid Hussain, Rodrigo Silva, David A. Lowther
-        title: Implementation of Iron Loss Model on Graphic Processing Units
-        journal: IEEE Transactions on Magnetics
-        url: https://doi.org/10.1109/tmag.2015.2487959
-        cited_by_count: 10
-        badge: IEEE
-      - authors: >-
-          Luiz H. Nunes, Júlio Cézar Estrella, Carlos H. G. Ferreira, Luis Hideo Vasconcelos Nakamura, Rafael M. de O. Libardi, Edvard
-          Martins de Oliveira, Bruno Tardiole Kuehne, Paulo Sérgio Lopes de Souza, Regina Helena Carlucci Santana, Marcos José Santana,
-          Stephan Reiff‐Marganiec
-        title: "DCA-SERVICES: A DISTRIBUTED AND COLLABORATIVE ARCHITECTURE FOR CONDUCTING EXPERIMENTS IN SERVICE ORIENTED SYSTEMS"
-        journal: Services Transactions on Services Computing
-        url: https://doi.org/10.29268/stsc.2015.3.4.2
-        cited_by_count: 6
-      - authors: >-
-          Victor Zuniga Dourado, Evandro Fornias Sperandio, Agatha Caveda Matheus, Vinícius Tonon Lauria, Rodrigo Silva, Antônio Ricardo de
-          Toledo Gagliardi, Marcello Romiti, Rodolfo Leite Arantes
-        title: >-
-          V'E/V'CO2 Slope in Asymptomatic Subjects Submitted to a Treadmill Ramp-Incremental Cardiopulmonary Exercise Testing: Associated
-          Factors and One-Year Follow-up
-        journal: CHEST Journal
-        url: https://doi.org/10.1378/chest.2278823
-      - authors: Valéria Santos, Marcos Galindo Lima, Sandra Verrissimo Soares
-        title: "INFORMAÇÃO E MEMÓRIA ARQUIVÍSTICA: O CUSTODIALISMO E OUTRAS DISCUSSÕES PARADIGMÁTICAS"
-        journal: XVI Encontro Nacional de Pesquisa em Pós-Graduação em Ciência da Informação
-      - authors: Simone Queiroz Pantaleão, Vinícius Gonçalves Maltarollo, Sheila Cruz Araújo, Jadson Castro Gertrudes, Káthia M. Honório
-        title: Molecular docking studies and 2D analyses of DPP-4 inhibitors as candidates in the treatment of diabetes
-        journal: Molecular BioSystems
-        url: https://doi.org/10.1039/c5mb00493d
-        cited_by_count: 18
+        cited_by_count: 867
       - authors: Vinícius Andrade Queiroz, Eduardo Luz, Gladston Moreira, Álvaro Guarda, David Menotti
         title: Automatic cardiac arrhythmia detection and classification using vectorcardiograms and complex networks
         journal: Unknown venue
@@ -1663,39 +848,11 @@ years:
         journal: Unknown venue
         url: https://doi.org/10.1109/sibgrapi.2015.16
         cited_by_count: 69
-      - authors: >-
-          Bruno Tardiole Kuehne, Júlio Cézar Estrella, Luiz Henrique Nunes, Edvard Martins de Oliveira, Luis Hideo Vasconcelos Nakamura,
-          Carlos H. G. Ferreira, Regina Helena Carlucci Santana, Stephan Reiff‐Marganiec, Marcos José Santana
-        title: AWSCS-A System to Evaluate Different Approaches for the Automatic Composition and Execution of Web Services Flows
-        journal: PLoS ONE
-        url: https://doi.org/10.1371/journal.pone.0127677
-        cited_by_count: 2
-      - authors: >-
-          Rafael M. de O. Libardi, Stephan Reiff‐Marganiec, Luiz Henrique Nunes, Lucas Junqueira Adami, Carlos H. G. Ferreira, Júlio Cézar
-          Estrella
-        title: "MSSF: User-Friendly Multi-cloud Data Dispersal"
-        journal: Unknown venue
-        url: https://doi.org/10.1109/cloud.2015.53
-        cited_by_count: 2
-      - authors: Min Li, Rodrigo Silva, Frederico Gadelha Guimarães, David A. Lowther
-        title: A New Robust Dominance Criterion for Multiobjective Optimization
-        journal: IEEE Transactions on Magnetics
-        url: https://doi.org/10.1109/tmag.2014.2372692
-        cited_by_count: 33
-        badge: IEEE
       - authors: Luiz H. Duczmal, Gladston Moreira, Luís Paquete, David Menotti, Ricardo H. C. Takahashi, Denise Burgarelli
         title: "Dry Climate as a Predictor of Chagas’ Disease Irregular Clusters: A Covariate Study"
         journal: Online Journal of Public Health Informatics
         url: https://doi.org/10.5210/ojphi.v7i1.5790
         cited_by_count: 1
-      - authors: Sheila Cruz Araújo, Vinícius Gonçalves Maltarollo, Danielle C. Silva, Jadson Castro Gertrudes, Káthia M. Honório
-        title: "ALK-5 Inhibition: A Molecular Interpretation of the Main Physicochemical Properties Related to Bioactive Ligands"
-        journal: Journal of the Brazilian Chemical Society
-        url: https://doi.org/10.5935/0103-5053.20150172
-        cited_by_count: 11
-      - authors: Pedro Silva
-        title: Avanços no Tratamento das Fraturas Expostas
-        journal: Revista Brasileira de Ortopedia (English Edition)
       - authors: Eduardo Luz, David Menotti
         title: Denoising Autoencoder for Iris Recognition in Noncooperative Environments
         journal: Lecture notes in computer science

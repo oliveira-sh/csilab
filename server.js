@@ -70,8 +70,27 @@ function langUrls(page) {
   return urls;
 }
 
+// Overrides counter targets with values computed from live data so the homepage
+// stats stay in sync with team.yaml and publications.yaml automatically.
+function computeCounterTargets(data) {
+  if (!Array.isArray(data.counters)) return;
+  const team = data.team || {};
+  const overrides = {
+    'c-publicacoes': (data.publications?.years || [])
+      .reduce((s, yg) => s + (yg.items?.length || 0), 0),
+    'c-professores': ['coordinators', 'professors', 'collaborators']
+      .reduce((s, g) => s + (team[g]?.members?.length || 0), 0),
+    'c-egressos': (team.alumni_grad?.members?.length || 0)
+      + (team.alumni_undergrad?.members?.length || 0),
+  };
+  data.counters = data.counters.map(c =>
+    overrides[c.id] !== undefined ? { ...c, target: overrides[c.id] } : c
+  );
+}
+
 function ctx(lang, page, extra = {}) {
   const { page: p, data } = loadContent(lang, page);
+  computeCounterTargets(data);
   // base_url: '' for PT on localhost, '/csilab' for PT on GH Pages, '/csilab/en' for EN, etc.
   const base_url = lang === 'pt' ? BASE_PATH : `${BASE_PATH}/${lang}`;
   return {

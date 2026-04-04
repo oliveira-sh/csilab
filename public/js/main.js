@@ -36,12 +36,8 @@ navOverlay?.addEventListener('click', closeMobileNav);
 document.querySelectorAll('.mobile-nav a').forEach(a => a.addEventListener('click', closeMobileNav));
 
 /* ─── Animated Counters ──────────────────────────────────── */
-const counterData = [
-  { target: 20,  suffix: '+', id: 'c-publicacoes', label: 'Publicações' },
-  { target: 10,  suffix: '',  id: 'c-professores', label: 'Professores' },
-  { target: 5,   suffix: '',  id: 'c-parcerias',   label: 'Parcerias' },
-  { target: 40,  suffix: '+', id: 'c-egressos',    label: 'Egressos' },
-];
+// Targets are embedded server-side as data-target / data-suffix attributes,
+// keeping numbers in sync with team.yaml and publications.yaml automatically.
 
 function animateCounter(el, target, suffix, duration = 1800) {
   const start = performance.now();
@@ -62,9 +58,10 @@ let countersTriggered = false;
 const counterObserver = new IntersectionObserver((entries) => {
   if (entries[0].isIntersecting && !countersTriggered) {
     countersTriggered = true;
-    counterData.forEach(({ id, target, suffix }) => {
-      const el = document.getElementById(id);
-      if (el) animateCounter(el, target, suffix);
+    counterSection.querySelectorAll('.number[data-target]').forEach(el => {
+      const target = parseInt(el.dataset.target, 10);
+      const suffix = el.dataset.suffix || '';
+      if (!isNaN(target)) animateCounter(el, target, suffix);
     });
   }
 }, { threshold: 0.3 });

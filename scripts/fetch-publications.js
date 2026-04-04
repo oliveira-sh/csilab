@@ -17,11 +17,11 @@
  *   openalex_id → used directly           (anchor ✓, pre-verified)
  *   neither     → member is skipped entirely (no name guessing)
  *
- * No domain filter — ORCID resolution is reliable enough on its own.
- *
- * Also writes `country_counts` — a map of ISO-3166-1 alpha-2 codes to the
- * number of CSI Lab papers that have at least one author from that country.
- * Used by the publications page world-map heatmap.
+ * Institution guard (UFOP):
+ *   A paper is only kept when the matching anchor author's affiliation
+ *   in *that specific paper* includes "Ouro Preto".
+ *   This eliminates false positives from authors who share a name with
+ *   a faculty member or who published from a different institution.
  *
  * TO ADD A NEW MEMBER
  * ────────────────────
@@ -70,11 +70,17 @@ async function resolveByOrcid(orcid) {
   return results[0]?.id?.replace('https://openalex.org/', '') ?? null;
 }
 
+// Fields we actually need — keeps response payloads smaller.
+const SELECT_FIELDS = [
+  'id', 'doi', 'title', 'authorships', 'publication_year',
+  'primary_location', 'cited_by_count', 'counts_by_year',
+].join(',');
 
 async function fetchWorksForAuthors(ids) {
   const base =
     `${OPENALEX_BASE}/works` +
     `?filter=author.id:${ids.join('|')}` +
+    `&select=${SELECT_FIELDS}` +
     `&sort=publication_year:desc` +
     `&per-page=${PER_PAGE}`;
   const first = await fetchJson(`${base}&page=1`);
@@ -86,6 +92,20 @@ async function fetchWorksForAuthors(ids) {
     works.push(...results);
   }
   return works;
+}
+
+// ── Institution guards ────────────────────────────────────────────────────────
+
+// Returns true when the authorship lists "Ouro Preto" (UFOP) as an affiliation.
+function hasUFOPAffiliation(authorship) {
+  return (authorship.institutions || []).some(inst =>
+    /ouro preto/i.test(inst.display_name || '')
+  );
+}
+
+// Returns true when ANY institution in the authorship is Brazilian (country_code BR).
+function hasBrazilianAffiliation(authorship) {
+  return (authorship.institutions || []).some(inst => inst.country_code === 'BR');
 }
 
 // ── Country aggregation ───────────────────────────────────────────────────────
@@ -105,9 +125,27 @@ function aggregateCountries(works) {
       }
     }
   }
-  // Sort descending by count for readability in the YAML
   return Object.fromEntries(
     Object.entries(counts).sort(([, a], [, b]) => b - a)
+  );
+}
+
+// ── Citations by year ─────────────────────────────────────────────────────────
+// For each year Y, counts how many times CSI Lab papers were cited by papers
+// published in Y — NOT the total citations of papers published in Y.
+// Uses the `counts_by_year` field returned by OpenAlex per work.
+
+function aggregateCitationsByYear(works) {
+  const byYear = {};
+  for (const w of works) {
+    for (const { year, cited_by_count } of (w.counts_by_year || [])) {
+      byYear[year] = (byYear[year] || 0) + cited_by_count;
+    }
+  }
+  return Object.fromEntries(
+    Object.entries(byYear)
+      .map(([k, v]) => [Number(k), v])
+      .sort(([a], [b]) => a - b)
   );
 }
 
@@ -180,7 +218,7 @@ async function main() {
   }
 
   const allIds    = resolved.map(r => r.resolvedId);
-  const anchorIds = new Set(resolved.map(r => r.resolvedId)); // all resolved are anchors now
+  const anchorIds = new Set(resolved.map(r => r.resolvedId));
   console.log(`\n  ${allIds.length} resolved, ${anchorIds.size} anchors\n`);
 
   if (!anchorIds.size) throw new Error('No anchor authors — aborting.');
@@ -190,18 +228,54 @@ async function main() {
   const works = await fetchWorksForAuthors(allIds);
   console.log(`  Received ${works.length} works`);
 
-  // 4. Filter — anchor check + year >= 2016
-  const anchorFull = new Set([...anchorIds].map(id => `https://openalex.org/${id}`));
-  const filtered   = works.filter(w =>
-    w.authorships.some(a => anchorFull.has(a.author.id)) &&
-    w.publication_year >= 2015
-  );
-  console.log(`  After anchor + year filter: ${filtered.length} works`);
+  // 4. Filter — three conditions must hold:
+  //
+  //    a) publication year >= 2015
+  //    b) at least one anchor author is listed as UFOP-affiliated in this paper
+  //    c) co-author plausibility:
+  //       • if 2+ CSI Lab members appear → accept (strong team signal)
+  //       • if sole-authored → accept
+  //       • if only 1 CSI Lab member → at least one non-anchor author must be
+  //         affiliated with a Brazilian institution.
+  //         Rationale: OpenAlex sometimes merges different people who share a
+  //         name (e.g. two "Rodrigo Silva"s). The merging can preserve a UFOP
+  //         affiliation tag while the paper itself is from a different researcher
+  //         whose co-authors are all outside Brazil.  Requiring a Brazilian
+  //         co-author closes this gap without over-filtering legitimate
+  //         interdisciplinary papers (which are co-authored by Brazilian
+  //         university colleagues).
 
-  // 5. Aggregate country contributions from filtered works
-  const country_counts = aggregateCountries(filtered);
+  const anchorFull = new Set([...anchorIds].map(id => `https://openalex.org/${id}`));
+
+  const filtered = works.filter(w => {
+    if (w.publication_year < 2015) return false;
+
+    const allAnchors  = w.authorships.filter(a => anchorFull.has(a.author.id));
+    const ufopAnchors = allAnchors.filter(a => hasUFOPAffiliation(a));
+
+    // (b) must have at least one UFOP-affiliated anchor
+    if (ufopAnchors.length === 0) return false;
+
+    // (c) multiple CSI Lab members → strong signal, accept
+    if (allAnchors.length >= 2) return true;
+
+    // (c) sole-authored → accept
+    if (w.authorships.length === 1) return true;
+
+    // (c) single anchor: require at least one non-anchor Brazilian co-author
+    return w.authorships.some(a =>
+      !anchorFull.has(a.author.id) && hasBrazilianAffiliation(a)
+    );
+  });
+  console.log(`  After year + UFOP + co-author plausibility filter: ${filtered.length} works`);
+
+  // 5. Aggregate data for visualisations
+  const country_counts    = aggregateCountries(filtered);
+  const citations_by_year = aggregateCitationsByYear(filtered);
+
   const topCountries = Object.entries(country_counts).slice(0, 5).map(([k, v]) => `${k}:${v}`).join(' ');
   console.log(`  Country contributions: ${Object.keys(country_counts).length} countries (top: ${topCountries})`);
+  console.log(`  Citations timeline: ${Object.keys(citations_by_year).length} years`);
 
   // 6. Write (fresh data only — no merge with existing)
   const byYear = groupByYear(filtered.map(workToEntry));
@@ -209,8 +283,7 @@ async function main() {
     .map(Number).sort((a, b) => b - a)
     .map(year => ({ year, items: byYear[year] }));
 
-  // country_counts goes at the top of the file for clarity
-  const output = yaml.dump({ country_counts, years }, { lineWidth: 140, quotingType: '"' });
+  const output = yaml.dump({ country_counts, citations_by_year, years }, { lineWidth: 140, quotingType: '"' });
   fs.writeFileSync(OUT_FILE, output, 'utf8');
   console.log(`\nDone — written to ${OUT_FILE}`);
   console.log('Review the file, then commit.');
