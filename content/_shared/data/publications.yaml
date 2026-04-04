@@ -1,10 +1,10 @@
 country_counts:
-  BR: 100
+  BR: 106
+  GB: 9
   IT: 9
-  GB: 6
   US: 6
+  PT: 4
   DE: 3
-  PT: 3
   CA: 1
 years:
   - year: 2026
@@ -723,3 +723,53 @@ years:
         title: A cloud computing price model based on virtual machine performance degradation
         journal: International Journal of Computational Science and Engineering
         url: https://doi.org/10.1504/ijcse.2016.10011343
+  - year: 2015
+    items:
+      - authors: >-
+          Bruno Guazzelli Batista, Júlio Cézar Estrella, Carlos H. G. Ferreira, Dionisio Machado Leite Filho, Luis Hideo Vasconcelos
+          Nakamura, Stephan Reiff‐Marganiec, Marcos José Santana, Regina Helena Carlucci Santana
+        title: Performance Evaluation of Resource Management in Cloud Computing Environments
+        journal: PLoS ONE
+        url: https://doi.org/10.1371/journal.pone.0141914
+        cited_by_count: 35
+      - authors: Gladston Moreira, Anderson Ribeiro Duarte, David Menotti
+        title: Um Algoritmo Enxame de Partículas Binário para Detecção de Clusters Irregulares
+        journal: Unknown venue
+        url: https://doi.org/10.21528/cbic2015-027
+      - authors: >-
+          Luiz H. Nunes, Júlio Cézar Estrella, Carlos H. G. Ferreira, Luis Hideo Vasconcelos Nakamura, Rafael M. de O. Libardi, Edvard
+          Martins de Oliveira, Bruno Tardiole Kuehne, Paulo Sérgio Lopes de Souza, Regina Helena Carlucci Santana, Marcos José Santana,
+          Stephan Reiff‐Marganiec
+        title: "DCA-SERVICES: A DISTRIBUTED AND COLLABORATIVE ARCHITECTURE FOR CONDUCTING EXPERIMENTS IN SERVICE ORIENTED SYSTEMS"
+        journal: Services Transactions on Services Computing
+        url: https://doi.org/10.29268/stsc.2015.3.4.2
+        cited_by_count: 6
+      - authors: Vinícius Andrade Queiroz, Eduardo Luz, Gladston Moreira, Álvaro Guarda, David Menotti
+        title: Automatic cardiac arrhythmia detection and classification using vectorcardiograms and complex networks
+        journal: Unknown venue
+        url: https://doi.org/10.1109/embc.2015.7319564
+        cited_by_count: 12
+      - authors: >-
+          Bruno Tardiole Kuehne, Júlio Cézar Estrella, Luiz Henrique Nunes, Edvard Martins de Oliveira, Luis Hideo Vasconcelos Nakamura,
+          Carlos H. G. Ferreira, Regina Helena Carlucci Santana, Stephan Reiff‐Marganiec, Marcos José Santana
+        title: AWSCS-A System to Evaluate Different Approaches for the Automatic Composition and Execution of Web Services Flows
+        journal: PLoS ONE
+        url: https://doi.org/10.1371/journal.pone.0127677
+        cited_by_count: 2
+      - authors: >-
+          Rafael M. de O. Libardi, Stephan Reiff‐Marganiec, Luiz Henrique Nunes, Lucas Junqueira Adami, Carlos H. G. Ferreira, Júlio Cézar
+          Estrella
+        title: "MSSF: User-Friendly Multi-cloud Data Dispersal"
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cloud.2015.53
+        cited_by_count: 2
+      - authors: Luiz H. Duczmal, Gladston Moreira, Luís Paquete, David Menotti, Ricardo H. C. Takahashi, Denise Burgarelli
+        title: "Dry Climate as a Predictor of Chagas’ Disease Irregular Clusters: A Covariate Study"
+        journal: Online Journal of Public Health Informatics
+        url: https://doi.org/10.5210/ojphi.v7i1.5790
+        cited_by_count: 1
+      - authors: S. L. J. L. Tinoco, David Menotti, Jefersson A. dos Santos, Gladston Moreira
+        title: A Multi-objective Approach for Building Hyperspectral Remote Sensed Image Classifier Combiners
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-319-15892-1_37
+        cited_by_count: 1

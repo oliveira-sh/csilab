@@ -194,7 +194,7 @@ async function main() {
   const anchorFull = new Set([...anchorIds].map(id => `https://openalex.org/${id}`));
   const filtered   = works.filter(w =>
     w.authorships.some(a => anchorFull.has(a.author.id)) &&
-    w.publication_year >= 2016
+    w.publication_year >= 2015
   );
   console.log(`  After anchor + year filter: ${filtered.length} works`);
 
