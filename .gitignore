@@ -3,3 +3,5 @@ dist/
 .DS_Store
 *.log
 npm-debug.log*
+# stray root-level image (canonical copy lives in public/images/)
+banner.jpg

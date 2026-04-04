@@ -23,7 +23,6 @@
 #
 #   links       – list of link objects:
 #       { text: "static text", href: "..." }   ← for email, Lattes, etc.
-#       { key: profile, href: "..." }           ← for profile links (auto-translated)
 #
 # Fields for students (phd_students, masters_students, undergrads):
 #   name        – full name, no prefix needed
@@ -42,15 +41,10 @@ coordinators:
       links:
         - text: "✉ gladston@ufop.edu.br"
           href: "mailto:gladston@ufop.edu.br"
-        - key: profile
-          href: "https://csilab.ufop.br/people/gladston-moreira"
     - name: "Eduardo Luz"
       orcid: "0000-0001-5249-1559"
       role_key: coordinator
       tags: [computer_vision, biometrics, pattern_recognition, biomedical_signals]
-      links:
-        - key: profile
-          href: "https://csilab.ufop.br/people/eduardo-luz"
 
 professors:
   members:
@@ -58,44 +52,26 @@ professors:
       orcid: "0000-0001-7989-0816"
       role_key: associate_professor
       tags: [machine_learning, nlp, time_series]
-      links:
-        - key: profile
-          href: "https://csilab.ufop.br/people/vander-freitas"
     - name: "Pedro Silva"
       orcid: "0000-0002-5525-6121"
       role_key: associate_professor
       tags: [computer_vision, periocular_biometrics, deep_learning, metric_learning]
-      links:
-        - key: profile
-          href: "https://csilab.ufop.br/people/pedro-silva"
     - name: "Jadson Castro"
       orcid: "0000-0002-0861-6681"
       role_key: associate_professor
       tags: [databases, pattern_recognition, biological_signal_analysis]
-      links:
-        - key: profile
-          href: "https://csilab.ufop.br/people/jadson-castro"
     - name: "Valéria Santos"
       orcid: "0000-0002-7892-4954"
       gender: f
       role_key: associate_professor_f
       tags: [nlp, machine_learning, text_classification]
-      links:
-        - key: profile
-          href: "https://csilab.ufop.br/people/valeria-santos"
     - name: "Rodrigo Silva"
       orcid: "0000-0003-2547-3835"
       role_key: associate_professor
       tags: [data_science, artificial_intelligence, applied_ml]
-      links:
-        - key: profile
-          href: "https://csilab.ufop.br/people/rodrigo-silva"
     - name: "Ivair Silva"
       role_key: associate_professor
       tags: [statistical_methods, sequential_tests, sampler_convergence]
-      links:
-        - key: profile
-          href: "https://csilab.ufop.br/people/ivair-silva"
     - name: "Carlos Henrique G. Ferreira"
       orcid: "0000-0001-9107-6884"
       role_key: associate_professor
@@ -110,15 +86,9 @@ collaborators:
       gender: f
       role_key: collaborating_researcher_f
       tags: [multiobjective_optimization, evolutionary_algorithms, computational_intelligence]
-      links:
-        - key: profile
-          href: "https://csilab.ufop.br/people/elizabeth-wanner"
     - name: "David Menotti"
       role_key: collaborating_researcher
       tags: [computer_vision, biometrics, pattern_recognition, deep_learning]
-      links:
-        - key: profile
-          href: "https://csilab.ufop.br/people/david-menotti"
 
 phd_students:
   members:
