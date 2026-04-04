@@ -1,129 +1,775 @@
+country_counts:
+  BR: 106
+  GB: 9
+  IT: 9
+  US: 6
+  PT: 4
+  DE: 3
+  CA: 1
 years:
   - year: 2026
     items:
-      - authors: "Ivair R. Silva, Roger C.N. Ngassi, Gladston J. P. Moreira"
-        title: "Exact non-parametric sequential convergence test for samplers"
-        journal: "Journal of Computational and Applied Mathematics"
-        venue_suffix: "475:117051"
-        url: "https://www.sciencedirect.com/science/article/pii/S0377042725005655"
-        badge: "ScienceDirect"
-      - authors: "Gladston Moreira, Ivan Meneghini, Elizabeth Wanner"
-        title: "Maximum Dispersion, Maximum Concentration: Enhancing the Quality of MOP Solutions"
-        venue_prefix: "In: "
-        journal: "Intelligent Systems"
-        venue_suffix: "(eds. Rosiane de Freitas, Diego Furtado), pp. 150–165. Springer Nature Switzerland"
-        badge: "Springer"
-      - authors: "Marcus Almeida, Ivair Silva, Vander Freitas, Eduardo Luz, Gladston Moreira"
-        title: "A NAS-Optimized Deep Learning Model for Customer Churn Prediction in Financial Services"
-        venue_prefix: "In: "
-        journal: "Intelligent Systems"
-        venue_suffix: "(eds. Rosiane de Freitas, Diego Furtado), pp. 66–81. Springer Nature Switzerland"
-        badge: "Springer"
-
+      - authors: Marcus Vinicius Santana Lima ALMEIDA, Ivair R. Silva, Vander Freitas, Eduardo Luz, Gladston Moreira
+        title: "A NAS-Optimized Deep Learning Model for\_Customer Churn Prediction in\_Financial Services"
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-032-15987-8_5
+      - authors: Gladston Moreira, Ivan Meneghini, Elizabeth F. Wanner
+        title: "Maximum Dispersion, Maximum Concentration: Enhancing the\_Quality of\_MOP Solutions"
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-032-15984-7_11
   - year: 2025
     items:
-      - authors: "Dênis R. X. Oliveira, Gladston J. P. Moreira, Anderson R. Duarte"
-        title: "Arbitrarily shaped spatial cluster detection via reinforcement learning algorithms"
-        journal: "Environmental and Ecological Statistics"
-        venue_suffix: "32(2):385–407"
-        url: "https://doi.org/10.1007/s10651-025-00649-7"
-        badge: "Springer"
-      - authors: "Guilherme O. Santos, Lucas S. Vieira, Giulio Rossetti, Carlos H. G. Ferreira, Gladston J. P. Moreira"
-        title: "A high-performance evolutionary multiobjective community detection algorithm"
-        journal: "Social Network Analysis and Mining"
-        venue_suffix: "15(1):110"
-        url: "https://doi.org/10.1007/s13278-025-01519-7"
-        badge: "Springer"
-      - authors: "Sara Câmara, Eduardo Luz, Valéria Carvalho, Ivan Meneghini, Gladston Moreira"
-        title: "MOPrompt: Multi-objective Semantic Evolution for Prompt Optimization"
-        journal: "Anais do XVI Simpósio Brasileiro de Tecnologia da Informação e da Linguagem Humana"
-        venue_suffix: "pp. 78–89. SBC"
-        url: "https://sol.sbc.org.br/index.php/stil/article/view/37815"
-        badge: "STIL 2025"
-      - authors: "Pedro H.L. Silva, Guilherme A. L. Silva, Pablo Coelho, Vander Freitas, Gladston Moreira, David Menotti, Eduardo Luz"
+      - authors: Michael Jackson Oliveira de Andrade, Guilherme Silva, Valéria Santos, Gladston Moreira, Eduardo Luz
+        title: Investigating the Impact of Large -Scale Pre-training on Nutritional Content Estimation from 2D Images
+        journal: Unknown venue
+        url: https://doi.org/10.21528/cbic2025-1176001
+      - authors: Gustavo Nascimento, Ivan Reinaldo Meneghini, Valéria de Carvalho Santos, Eduardo Luz, Gladston Moreira
+        title: Enhancing Decision Space Diversity in Multi -Objective Evolutionary Optimization for the Diet Problem
+        journal: Unknown venue
+        url: https://doi.org/10.21528/cbic2025-1168382
+      - authors: Pedro de Almeida, Guilherme Silva, Valéria Santos, Gladston Moreira, Pedro Silva, Eduardo Luz
+        title: "Deep Learning for School Dropout Detection: A Comparison of Tabular and Graph -Based Models for Predicting At-Risk Students"
+        journal: Unknown venue
+        url: https://doi.org/10.21528/cbic2025-1191400
+      - authors: Guilherme O. Santos, Luís Vieira, Giulio Rossetti, Carlos H. G. Ferreira, Gladston Moreira
+        title: A high-performance evolutionary multiobjective community detection algorithm
+        journal: Social Network Analysis and Mining
+        url: https://doi.org/10.1007/s13278-025-01519-7
+      - authors: Jessica Costa, Leonardo Cristian Rocha, Carlos H. G. Ferreira
+        title: "Modelos de Linguagem na Análise da Promoção de Jogos de Azar Online: Estudo de Caso do Jogo do Tigrinho no YouTube"
+        journal: Unknown venue
+        url: https://doi.org/10.5753/webmedia_estendido.2025.16067
+      - authors: Gustavo Fonseca, Guilherme S. Patrício, Carlos H. G. Ferreira, Alexandre Magno Sousa
+        title: A WhatsApp-Based Application for Automatic Data Collection and Crime Monitoring in Belo Horizonte
+        journal: Unknown venue
+        url: https://doi.org/10.5753/webmedia_estendido.2025.16398
+      - authors: >-
+          Saul Sousa da Rocha, Cintia Correa e Silva, Mateus José da Silva, Jose Rodrigues Torres Neto, Carlos H. G. Ferreira, Glauber Dias
+          Gonçalves
+        title: Uso de Características Temporais e Semânticas para Detectar Eventos em Vídeos de Violência Urbana
+        journal: Unknown venue
+        url: https://doi.org/10.5753/webmedia.2025.16150
+      - authors: Nara Raquel D. Andrade, Oscar William N. de Carvalho, Carlos H. G. Ferreira, Glauber Dias Gonçalves
+        title: "Decifrando o Mercado de NFTs: A Influência das Conexões de Rede e Transações no Valor de Ativos"
+        journal: Unknown venue
+        url: https://doi.org/10.5753/webmedia_estendido.2025.16386
+      - authors: Victor Martins, S. Serafim, Leila Maria Moreira Beltrão Pereira, Ana Rita Alves, Carlos H. G. Ferreira, Jussara M. Almeida
+        title: "A Misoginia no YouTube Brasileiro: Um Estudo de Caso sobre o Conteúdo Produzido pela Comunidade Red Pill"
+        journal: Unknown venue
+        url: https://doi.org/10.5753/webmedia.2025.16070
+      - authors: Pedro Silva, Guilherme Silva, Pablo Coelho, Vander L. S. Freitas, Gladston Moreira, David Menotti, Eduardo Luz
         title: "PD-Loss: Proxy-Decidability for Efficient Metric Learning"
-        journal: "2025 38th SIBGRAPI Conference on Graphics, Patterns and Images"
-        venue_suffix: "pp. 1–6"
-        badge: "SIBGRAPI 2025"
-      - authors: "Pedro Castro, Pedro H.L. Silva, David Menotti, Gladston Moreira, Eduardo Luz"
-        title: "Simultaneous Learning Loss for Improved Cross-Domain Knowledge Transfer"
-        journal: "2025 38th SIBGRAPI Conference on Graphics, Patterns and Images"
-        venue_suffix: "pp. 1–6"
-        badge: "SIBGRAPI 2025"
-
+        journal: Unknown venue
+        url: https://doi.org/10.1109/sibgrapi67909.2025.11223414
+      - authors: Pedro Castro, Pedro Silva, David Menotti, Gladston Moreira, Eduardo Luz
+        title: Simultaneous Learning Loss for Improved Cross-Domain Knowledge Transfer
+        journal: Unknown venue
+        url: https://doi.org/10.1109/sibgrapi67909.2025.11223408
+      - authors: Sara Câmara, Eduardo Luz, Valéria Carvalho, Ivan Reinaldo Meneghini, Gladston Moreira
+        title: "MOPrompt: Multi-objective Semantic Evolution for Prompt Optimization"
+        journal: Unknown venue
+        url: https://doi.org/10.5753/stil.2025.37815
+      - authors: >-
+          GERARDO SÉRGIO FRANCELINO DE OLIVEIRA, João Pedro Lobo, Otávio Venâncio, Vinícius da Fonseca Vieira Vieira, Jussara M. Almeida,
+          Ana Paula Couto da Silva, Ronan S. Ferreira, Carlos H. G. Ferreira
+        title: A Network-Driven Framework for Bidimensional Analysis of Information Dissemination on Social Media Platforms
+        journal: Journal on Interactive Systems
+        url: https://doi.org/10.5753/jis.2025.5526
+      - authors: Dênis Oliveira, Anderson Ribeiro Duarte, André Luiz Carvalho Ottoni, Gladston Moreira
+        title: "Multi-Objective Reinforcement Learning Algorithm for\_Irregular Spatial Clusters Detection"
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-032-05176-9_32
+      - authors: Ivair R. Silva, Roger C.N. Ngassi, Gladston Moreira
+        title: Exact non-parametric sequential convergence test for samplers
+        journal: Journal of Computational and Applied Mathematics
+        url: https://doi.org/10.1016/j.cam.2025.117051
+      - authors: Giordano Paoletti, Carlos H. G. Ferreira, Luca Vassio, Leonardo Rocha, Jussara M. Almeida
+        title: Tracing the 2024 U.S. election debate on Telegram with LLMs and graph analysis
+        journal: Social Network Analysis and Mining
+        url: https://doi.org/10.1007/s13278-025-01504-0
+        cited_by_count: 1
+      - authors: Daniel M. Prates, Guilherme O. Santos, Vinícius da Fonseca Vieira, Carlos H. G. Ferreira
+        title: Análise da Percepção Pública sobre Ministros da Área Econômica Brasileira no YouTube com PLN
+        journal: Unknown venue
+        url: https://doi.org/10.5753/brasnam.2025.8940
+      - authors: >-
+          Icaro Luiz Lage Vasconcelos, Augusto Ferreira Guilarducci, Jadson Castro Gertrudes, Gladston Moreira, Vander L. S. Freitas,
+          Eduardo Luz
+        title: Uncovering Collaboration Patterns in Brazilian Computer Science Graduate Programs Through Network Embeddings
+        journal: Unknown venue
+        url: https://doi.org/10.5753/brasnam.2025.8840
+        cited_by_count: 1
+      - authors: Daniel N. Junqueira, Carlos H. G. Ferreira, Giordano Paoletti, Jussara M. Almeida
+        title: "Revelando a dinâmica das discussões em grupos públicos do Telegram: um estudo sobre as eleições no Brasil em 2022"
+        journal: Unknown venue
+        url: https://doi.org/10.5753/brasnam.2025.9250
+      - authors: Richardy R. Tanure, Aline Peçanha Muzy Dias, Lucas A. Camelo, Jussara M. Almeida, Helen C. S. C. Lima, Carlos H. G. Ferreira
+        title: "Caracterização do debate online sobre cigarro eletrônico no Brasil: Uma análise de tópicos de discussão no YouTube"
+        journal: Unknown venue
+        url: https://doi.org/10.5753/brasnam.2025.8544
+        cited_by_count: 2
+      - authors: Francisco Figueiredo Vasconcelos, Carlos H. G. Ferreira, Alexandre Magno Sousa, Jussara M. Almeida
+        title: "The Role of Curiosity in Information Dissemination on Telegram: A Case Study from the 2022 Brazilian Elections"
+        journal: Unknown venue
+        url: https://doi.org/10.1145/3717867.3717911
+      - authors: >-
+          Jessica Costa, G.C. Oliveira, Guilherme Fonseca, Davi Reis, Gabriela Miranda Teixeira, Washington Cunha, Leonardo Rocha, Carlos H.
+          G. Ferreira
+        title: "Characterizing YouTube's Role in Online Gambling Promotion: A Case Study of Fortune Tiger in Brazil"
+        journal: Unknown venue
+        url: https://doi.org/10.1145/3717867.3717905
+        cited_by_count: 4
+      - authors: R. Mateus, Carlos H. G. Ferreira, Ana Paula Couto da Silva
+        title: Explorando os Limites da Reprodutibilidade na Tarefa de Detecção de Comunidades em Modelos de Redes
+        journal: Unknown venue
+        url: https://doi.org/10.5753/sbsi.2025.246558
+      - authors: Dênis Ricardo Xavier de Oliveira, Gladston Moreira, Anderson Ribeiro Duarte
+        title: Arbitrarily shaped spatial cluster detection via reinforcement learning algorithms
+        journal: Environmental and Ecological Statistics
+        url: https://doi.org/10.1007/s10651-025-00649-7
+        cited_by_count: 2
+      - authors: Fernando Henrique Oliveira Duarte, Gladston Moreira, Eduardo Luz, Leonardo Bacelar Lima Santos, Vander L. S. Freitas
+        title: Leveraging graph neural networks and mobility data for COVID-19 forecasting
+        journal: ArXiv.org
+        url: https://doi.org/10.48550/arxiv.2501.11711
+      - authors: Rayson Laroca, Valter Estevam, Gladston Moreira, Rodrigo Minetto, David Menotti
+        title: "Advancing Multinational License Plate Recognition Through Synthetic and Real Data Fusion: A Comprehensive Evaluation"
+        journal: IET Intelligent Transport Systems
+        url: https://doi.org/10.1049/itr2.70086
+      - authors: Guilherme O. Santos, Luís Vieira, Giulio Rossetti, Carlos H. G. Ferreira, Gladston Moreira
+        title: A high-performance evolutionary multiobjective community detection algorithm
+        journal: ISTI Open Portal
+        url: https://doi.org/10.1007/s13278-025-01519-7
+        cited_by_count: 2
   - year: 2024
     items:
-      - authors: "Guilherme Silva, Pedro Silva, Gladston Moreira, Eduardo Luz"
-        title: "Bridging the Gap in ECG Classification: Integrating Self-supervised Learning with Human-in-the-Loop Amid Medical Equipment Hardware Constraints"
-        venue_prefix: "In: "
-        journal: "Applied Reconfigurable Computing"
-        venue_suffix: "pp. 63–74. Springer Nature Switzerland"
-        badge: "Springer"
-      - authors: "Guilherme Silva, Arthur Negrão, Gladston Moreira, Eduardo Luz, Pedro Silva"
-        title: "An Embedding Multitask Neural Network for Efficient Arrhythmia Detection"
-        journal: "Anais do XXIV Simpósio Brasileiro de Computação Aplicada à Saúde"
-        venue_suffix: "pp. 412–423. SBC"
-        url: "https://sol.sbc.org.br/index.php/sbcas/article/view/28836"
-        badge: "SBCAS 2024"
-      - authors: "Dênis Oliveira, Anderson R. Duarte, Eduardo Luz, Gladston Moreira"
-        title: "Reinforcement Learning for the Detection of Arbitrary Shaped Spatial Clusters"
-        journal: "2024 IEEE Latin American Conference on Computational Intelligence (LA-CCI)"
-        venue_suffix: "pp. 1–6"
-        badge: "IEEE LACCI 2024"
-      - authors: "Amanda Oliveira, Pedro H. Silva, Valéria Santos, Gladston Moreira, Vander L. Freitas, Eduardo J. Luz"
+      - authors: José Cirı́aco Pinheiro, V. Pinheiro, Rodrigo Silva, Gladston Moreira, Pedro Silva, Eduardo Luz
+        title: Zero-Shot Skull Stripping for Alzheimer’s Disease Classification With the Segment Anything Model
+        journal: Unknown venue
+        url: https://doi.org/10.5753/eniac.2024.245169
+      - authors: Amanda Szekir de Oliveira, Pedro Silva, Valéria Santos, Gladston Moreira, Vander L. S. Freitas, Eduardo Luz
         title: "Toxic Text Classification in Portuguese: Is LLaMA 3.1 8B All You Need?"
-        journal: "Anais do XV Simpósio Brasileiro de Tecnologia da Informação e da Linguagem Humana"
-        venue_suffix: "pp. 57–66. SBC"
-        url: "https://sol.sbc.org.br/index.php/stil/article/view/31116"
-        badge: "STIL 2024"
-
+        journal: Unknown venue
+        url: https://doi.org/10.5753/stil.2024.245416
+        cited_by_count: 4
+      - authors: Dênis Oliveira, Anderson Ribeiro Duarte, Eduardo Luz, Gladston Moreira
+        title: Reinforcement Learning for the Detection of Arbitrary Shaped Spatial Clusters
+        journal: Unknown venue
+        url: https://doi.org/10.1109/la-cci62337.2024.10814900
+      - authors: Adriano de Oliveira Andrade, Guilherme Silva, Pedro Silva, Dênis Oliveira, Gladston Moreira, Eduardo Luz
+        title: "Exploring Remote Cardiac Signals for Biometric Verification: A Study Using Eulerian Video Magnification"
+        journal: Unknown venue
+        url: https://doi.org/10.1109/la-cci62337.2024.10814755
+      - authors: Pablo Coelho, Guilherme Silva, Dênis Oliveira, Gladston Moreira, Eduardo Luz, Pedro Silva
+        title: "Periocular EfficientNet: A Deep Model for Periocular Recognition"
+        journal: Unknown venue
+        url: https://doi.org/10.1109/la-cci62337.2024.10814790
+        cited_by_count: 2
+      - authors: Aline Peçanha Muzy Dias, Richardy R. Tanure, Jussara M. Almeida, Helen C. S. C. Lima, Carlos H. G. Ferreira
+        title: Análise da Percepção do Uso de Cigarros Eletrônicos no Brasil por meio de Comentários no YouTube
+        journal: Unknown venue
+        url: https://doi.org/10.5753/webmedia.2024.241958
+        cited_by_count: 5
+      - authors: >-
+          Márcio Silva, Marcelo M. R. Araújo, Carlos H. G. Ferreira, Júlio C. S. Reis, Ana Paula Couto da Silva, Jussara M. Almeida,
+          Fabrí­cio Benevenuto
+        title: "Campanha Eleitoral Legal: Detecção de Propaganda Eleitoral e Ações Coordenadas de Campanha"
+        journal: Unknown venue
+        url: https://doi.org/10.5753/webmedia_estendido.2024.243924
+      - authors: Larissa Malagoli, Giovana Piorino, Carlos H. G. Ferreira, Ana Paula Couto da Silva
+        title: "Twitter and the 2022 Brazilian Elections Portrait: A Network and Content-Driven Analysis"
+        journal: Unknown venue
+        url: https://doi.org/10.5753/webmedia.2024.241926
+        cited_by_count: 4
+      - authors: >-
+          GERARDO SÉRGIO FRANCELINO DE OLIVEIRA, Otávio Venâncio, Vinícius Vieira, Jussara M. Almeida, Ana Paula Couto da Silva, Ronan S.
+          Ferreira, Carlos H. G. Ferreira
+        title: Um Framework para Análise Bidimensional de Disseminação de Informações em Plataformas de Mídias Sociais
+        journal: Unknown venue
+        url: https://doi.org/10.5753/webmedia.2024.241957
+        cited_by_count: 2
+      - authors: Otávio Venâncio, Gabriel Coutinho Gonçalves, Carlos H. G. Ferreira, Ana Paula Couto da Silva
+        title: Evidências de disseminação de conteúdo no Telegram durante o ataque aos órgãos públicos brasileiros em 2023
+        journal: Unknown venue
+        url: https://doi.org/10.5753/webmedia.2024.241972
+        cited_by_count: 7
+      - authors: Filipe Moura, Carlos H. G. Ferreira, Helen C. S. C. Lima
+        title: "Characterization of the Brazilian musical landscape: a study of regional preferences based on the Spotify charts"
+        journal: Unknown venue
+        url: https://doi.org/10.5753/webmedia.2024.242290
+        cited_by_count: 3
+      - authors: Saul Sousa da Rocha, Carlos Henrique do Vale e Silva, Carlos H. G. Ferreira, Glauber Dias Gonçalves, Jussara M. Almeida
+        title: Monitorando a Opinião Pública sobre Operações Policiais no Brasil via Comentários de Vídeos no YouTube
+        journal: Unknown venue
+        url: https://doi.org/10.5753/brasnam.2024.3101
+        cited_by_count: 2
+      - authors: Caio Viana, Carlos H. G. Ferreira, Fabrício Murai, Aldri Santos, Lourenço Alves Pereira
+        title: "Devil in the Noise: Detecting Advanced Persistent Threats with Backbone Extraction"
+        journal: Unknown venue
+        url: https://doi.org/10.1109/iscc61673.2024.10733665
+        cited_by_count: 1
+      - authors: Guilherme Silva, Arthur Negrão, Gladston Moreira, Eduardo Luz, Pedro Silva
+        title: An Embedding Multitask Neural Network for Efficient Arrhythmia Detection
+        journal: Unknown venue
+        url: https://doi.org/10.5753/sbcas.2024.2378
+      - authors: Otávio Venâncio, Carlos H. G. Ferreira, Jussara M. Almeida, Ana Paula Couto da Silva
+        title: >-
+          Unraveling User Coordination on Telegram: A Comprehensive Analysis of Political Mobilization during the 2022 Brazilian
+          Presidential Election
+        journal: Proceedings of the International AAAI Conference on Web and Social Media
+        url: https://doi.org/10.1609/icwsm.v18i1.31408
+        cited_by_count: 16
+      - authors: Luis Fonseca, Carlos H. G. Ferreira, Júlio C. S. Reis
+        title: "The Role of News Source Certification in Shaping Tweet Content: Textual and Dissemination Patterns in Brazil's 2022 Elections"
+        journal: Unknown venue
+        url: https://doi.org/10.1145/3658271.3658303
+        cited_by_count: 5
+      - authors: Frank Castilio Alencar, Carlos H. G. Ferreira, Dionisio Leite
+        title: "Developing Decentralized Applications: A Framework Approach on Blockchain Networks"
+        journal: Unknown venue
+        url: https://doi.org/10.1145/3658271.3658343
+        cited_by_count: 1
+      - authors: Rafael F. Oliveira, Gladston Moreira, Vander L. S. Freitas, Eduardo Luz
+        title: Leveraging Visibility Graphs for Enhanced Arrhythmia Classification with Graph Convolutional Networks
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2404.15367
+      - authors: >-
+          Vinícius da Fonseca Vieira, Carlos H. G. Ferreira, Jussara M. Almeida, Edré Moreira, Alberto H. F. Laender, Wagner Meira, Marcos
+          André Gonçalves
+        title: A network-driven study of hyperprolific authors in computer science
+        journal: Scientometrics
+        url: https://doi.org/10.1007/s11192-024-04940-5
+        cited_by_count: 6
+      - authors: Guilherme Silva, Pedro Silva, Gladston Moreira, Eduardo Luz
+        title: "Bridging the\_Gap in\_ECG Classification: Integrating Self-supervised Learning with\_Human-in-the-Loop Amid\_Medical Equipment Hardware Constraints"
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-031-55673-9_5
+      - authors: Gladston Moreira, Luís Paquete, Luiz H. Duczmal, David Menotti, Ricardo H. C. Takahashi
+        title: Spatial Cluster Detection Through a Dynamic Programming Approach
+        journal: Unknown venue
+        url: https://doi.org/10.1007/978-1-4614-8033-4_40
   - year: 2023
     items:
-      - authors: "Fernando H. O. Duarte, Vander L.S. Freitas, Gladston Moreira, Eduardo Luz, Leonardo B.L. Santos"
-        title: "Correlations Between Epidemiological Time Series Forecasting and Influence Regions of Brazilian Cities"
-        journal: "XXIV Brazilian Symposium on Geoinformatics — GEOINFO 2023"
-        venue_suffix: "pp. 340–345. MCTI/INPE"
-        badge: "GEOINFO 2023"
-      - authors: "João Paulo Reis Alvarenga, Luiz Henrique Campos de Merschmann, Eduardo José Silva da Luz"
-        title: "A Data-Centric Approach for Portuguese Speech Recognition: Language Model And Its Implications"
-        journal: "IEEE Latin America Transactions"
-        venue_suffix: "21(4):546–556"
-        badge: "IEEE"
-      - authors: "Pedro Castro, Gabriel Fortuna, Pedro Silva, Andrea G. C. Bianchi, Gladston Moreira, Eduardo Luz"
-        title: "Merging Traditional Feature Extraction and Deep Learning for Enhanced Hop Variety Classification"
-        venue_prefix: "In: "
-        journal: "Intelligent Systems"
-        venue_suffix: "(eds. Naldi, Bianchi), pp. 307–322. Springer Nature Switzerland"
-        badge: "Springer BRACIS 2023"
-      - authors: "Lauro Moraes, Eduardo Luz, Gladston Moreira"
-        title: "Physicochemical Properties for Promoter Classification"
-        venue_prefix: "In: "
-        journal: "Intelligent Systems"
-        venue_suffix: "(eds. Naldi, Bianchi), pp. 368–382. Springer Nature Switzerland"
-        badge: "Springer BRACIS 2023"
-      - authors: "Gabriel Souza, Anderson Duarte, Gladston Moreira, Frederico Cruz"
-        title: "Post-processing Improvements in Multi-objective Optimization of General Single-server Finite Queueing Networks"
-        journal: "IEEE Latin America Transactions"
-        venue_suffix: "21(3):381–388"
-        badge: "IEEE"
-      - authors: "João Fernandes Zenóbio, Pedro Lopes Silva, Eduardo Silva da Luz, Gladston Moreira, Conrado Galdino, Jadson Castro Gertrudes"
-        title: "Reptilerecon: A Framework for Extraction and Analysis of Lizard Signals"
-        journal: "Anais do XXXVIII Simpósio Brasileiro de Bancos de Dados"
-        venue_suffix: "pp. 154–166. SBC"
-        url: "https://sol.sbc.org.br/index.php/sbbd/article/view/25524"
-        badge: "SBBD 2023"
-      - authors: "Fernando Henrique Oliveira Duarte, Gladston J. P. Moreira, Eduardo J. S. Luz, Leonardo B.L. Santos, Vander L.S. Freitas"
-        title: "Time Series Forecasting of COVID-19 Cases in Brazil with GNN and Mobility Networks"
-        venue_prefix: "In: "
-        journal: "Intelligent Systems"
-        venue_suffix: "(eds. Naldi, Bianchi), pp. 361–375. Springer Nature Switzerland"
-        badge: "Springer BRACIS 2023"
-
+      - authors: Carlos H. G. Ferreira, Marco Mellia, Jussara M. Almeida
+        title: Modeling and Analyzing Collective Behavior Captured by Many-to-Many Networks
+        journal: Unknown venue
+        url: https://doi.org/10.5753/webmedia_estendido.2023.233759
+        cited_by_count: 5
+      - authors: >-
+          João Gabriel Fernandes Zenóbio, Pedro Henrique Lopes Silva, Eduardo Luz, Gladston Moreira, Conrado A. B. Galdino, Jadson Castro
+          Gertrudes
+        title: "Reptilerecon: Um Arcabouço para Extração e Análise de Sinais de Lagartos"
+        journal: Unknown venue
+        url: https://doi.org/10.5753/sbbd.2023.231703
+      - authors: Marcelo M. R. Araujo, Carlos H. G. Ferreira, Júlio C. S. Reis, Ana Paula Couto da Silva, Jussara M. Almeida
+        title: Identificação e Caracterização de Campanhas de Propagandas Eleitorais Antecipadas Brasileiras no Twitter
+        journal: Unknown venue
+        url: https://doi.org/10.5753/brasnam.2023.229879
+        cited_by_count: 9
+      - authors: Samuel S. Gomes, Carlos H. G. Ferreira, Alexandre Magno Sousa
+        title: Criação de um Dataset de Múltiplos Domínios para a Plataforma de Jogos Online da Epic Games
+        journal: Unknown venue
+        url: https://doi.org/10.5753/brasnam.2023.230878
+      - authors: Pedro Castro, Gabriel Cássia Fortuna, Rafael Alves Bonfim de Queiroz, Gladston Moreira, Eduardo Luz
+        title: "Regularization Through Simultaneous Learning: A Case Study on Plant Classification"
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2305.13447
+      - authors: G. L. Souza, Anderson Ribeiro Duarte, Gladston Moreira, F.R.B. Cruz
+        title: Post-processing Improvements in Multi-objective Optimization of General Single-server Finite Queueing Networks
+        journal: IEEE Latin America Transactions
+        url: https://doi.org/10.1109/tla.2023.10068841
+        cited_by_count: 1
+        badge: IEEE
+      - authors: Lauro Moraes, Eduardo Luz, Gladston Moreira
+        title: "Physicochemical Properties for\_Promoter Classification"
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-031-45389-2_25
+      - authors: Pedro Castro, Gabriel Cássia Fortuna, Pedro Silva, Andrea Bianchi, Gladston Moreira, Eduardo Luz
+        title: "Merging Traditional Feature Extraction and\_Deep Learning for\_Enhanced Hop Variety Classification: A Comparative Study Using the\_UFOP-HVD Dataset"
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-031-45389-2_21
+      - authors: Fernando Henrique Oliveira Duarte, Gladston Moreira, Eduardo Luz, Leonardo Bacelar Lima Santos, Vander L. S. Freitas
+        title: "Time Series Forecasting of\_COVID-19 Cases in\_Brazil with\_GNN and\_Mobility Networks"
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-031-45392-2_24
+        cited_by_count: 3
   - year: 2022
     items:
-      - authors: "Andressa Souza, Mariana Mota, Helen Lima, Wellington Souza, Marcos Nicolau, Gladston Moreira, Eduardo Luz"
-        title: "Fraudulent Account Detection Using Hierarchical Classification"
-        journal: "Anais do XIX Encontro Nacional de Inteligência Artificial e Computacional"
-        venue_suffix: "pp. 306–317. SBC"
-        url: "https://sol.sbc.org.br/index.php/eniac/article/view/22791"
-        badge: "ENIAC 2022"
+      - authors: Andressa O. Souza, Mariana Mota, Helen C. S. C. Lima, Wellington Souza, Marcos Nicolau, Gladston Moreira, Eduardo Luz
+        title: Fraudulent Account Detection Using Hierarchical Classification
+        journal: Unknown venue
+        url: https://doi.org/10.5753/eniac.2022.227330
+      - authors: Marcus Vinicius Teixeira de Almeida, Mariana Mota, Wellington Souza, Marcos Nicolau, Eduardo Luz, Gladston Moreira
+        title: "A Temporal Approach to Customer Churn Prediction: A Case Study for Financial Services"
+        journal: Unknown venue
+        url: https://doi.org/10.5753/eniac.2022.227571
+        cited_by_count: 1
+      - authors: Renan Saldanha Linhares, Jose Martins da Rosa, Carlos H. G. Ferreira, Fabrício Murai, Gabriel Peres Nobre, Jussara M. Almeida
+        title: Uncovering Coordinated Communities on Twitter During the 2020 U.S. Election
+        journal: Unknown venue
+        url: https://doi.org/10.1109/asonam55673.2022.10068628
+        cited_by_count: 17
+      - authors: >-
+          Carlos H. G. Ferreira, Fabrício Murai, Ana Paula Couto da Silva, Martino Trevisan, Luca Vassio, Idílio Drago, Marco Mellia,
+          Jussara M. Almeida
+        title: On network backbone extraction for modeling online collective behavior
+        journal: PLoS ONE
+        url: https://doi.org/10.1371/journal.pone.0274218
+        cited_by_count: 31
+      - authors: Gabriel Peres Nobre, Carlos H. G. Ferreira, Jussara M. Almeida
+        title: More of the Same? A Study of Images Shared on Mastodon's Federated Timeline
+        journal: Zenodo (CERN European Organization for Nuclear Research)
+        url: https://doi.org/10.5281/zenodo.6977415
+      - authors: Pedro H. Silva, Gladston Moreira, Vander L. S. Freitas, Rodrigo Silva, David Menotti, Eduardo Luz
+        title: A Decidability-Based Loss Function
+        journal: 2022 International Joint Conference on Neural Networks (IJCNN)
+        url: https://doi.org/10.1109/ijcnn55064.2022.9891934
+        cited_by_count: 1
+      - authors: Marcos Paulo Fontes Feitosa, Carlos H. G. Ferreira, Glauber Dias Gonçalves, Jussara M. Almeida
+        title: Análise da Percepção das Pessoas no Twitter Sobre Ações Policiais
+        journal: Unknown venue
+        url: https://doi.org/10.5753/brasnam.2022.223267
+        cited_by_count: 2
+      - authors: Guilherme Silva, Pedro Silva, Vander L. S. Freitas, Gladston Moreira, Eduardo Luz
+        title: Cardiac Arrhythmia Detection in ECG Signals Using Graph Convolutional Network
+        journal: Unknown venue
+        url: https://doi.org/10.5753/sbcas.2022.222434
+        cited_by_count: 3
+      - authors: Carlos Machado de Freitas, Pedro Silva, Gladston Moreira, Eduardo Luz
+        title: Rede Neural Convolucional e LSTM para Biometria Baseada em EEG no Modo de Identificação
+        journal: Unknown venue
+        url: https://doi.org/10.5753/sbcas.2022.222647
+        cited_by_count: 2
+      - authors: Rafael F. Oliveira, Vander L. S. Freitas, Gladston Moreira, Eduardo Luz
+        title: Explorando Redes Neurais de Grafos para Classificação de Arritmias
+        journal: Unknown venue
+        url: https://doi.org/10.5753/sbcas.2022.222510
+        cited_by_count: 2
+      - authors: Rafael F. Oliveira, Anderson A. Ferreira, Gladston Moreira, Eduardo Luz
+        title: "Um Método Ensemble para Classificação de Arritmias: Uma Avaliação Com Mais de 10 Mil Registros de Sinais de ECG"
+        journal: Unknown venue
+        url: https://doi.org/10.5753/sbcas.2022.222429
+      - authors: Matheus F. C. Barros, Carlos H. G. Ferreira, Lourenço Alves Pereira, Marco Mellia, Jussara M. Almeida, Bruno P. Santos
+        title: Understanding mobility in networks
+        journal: ACM SIGMETRICS Performance Evaluation Review
+        url: https://doi.org/10.1145/3543146.3543173
+      - authors: Lauro Almeida de Moraes, Pedro Silva, Eduardo Luz, Gladston Moreira
+        title: "CapsProm: a capsule network for promoter prediction"
+        journal: Computers in Biology and Medicine
+        url: https://doi.org/10.1016/j.compbiomed.2022.105627
+      - authors: Jose Martins da Rosa, Renan Saldanha Linhares, Carlos H. G. Ferreira, Gabriel Peres Nobre, Fabrício Murai, Jussara M. Almeida
+        title: "Uncovering Discussion Groups on\_Claims of\_Election Fraud from\_Twitter"
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-031-19097-1_20
+        cited_by_count: 14
+      - authors: Pedro Silva, Eduardo Luz, Larissa Silva, Caio César Soares Gonçalves, Dênis Oliveira, Rodrigo Silva, Gladston Moreira
+        title: "Deep Learning-Based COVID-19 Screening Using Photographs of\_Chest X-Rays Displayed in\_Computer Monitors"
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-031-21689-3_36
+      - authors: Guilherme Silva, Pedro Silva, Mariana Mota, Eduardo Luz, Gladston Moreira
+        title: An Efficient Contact Lens Spoofing Classification
+        journal: Unknown venue
+        url: https://doi.org/10.5220/0010868500003179
+      - authors: Gabriel Peres Nobre, Carlos H. G. Ferreira, Jussara M. Almeida
+        title: "More of\_the\_Same? A\_Study of\_Images Shared on\_Mastodon’s Federated Timeline"
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-031-19097-1_11
+        cited_by_count: 3
+  - year: 2021
+    items:
+      - authors: Pedro Castro, Gladston Moreira, Eduardo Luz
+        title: An End-to-End Deep Learning System for Hop Classification
+        journal: IEEE Latin America Transactions
+        url: https://doi.org/10.1109/tla.2022.9667141
+        cited_by_count: 3
+        badge: IEEE
+      - authors: Matheus F. C. Barros, Carlos H. G. Ferreira, Bruno P. Santos, Lourenço Alves Pereira, Marco Mellia, Jussara M. Almeida
+        title: "Understanding mobility in networks: A node embedding approach"
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2111.06161
+        cited_by_count: 1
+      - authors: Gabriel Peres Nobre, Carlos H. G. Ferreira, Jussara M. Almeida
+        title: A hierarchical network-oriented analysis of user participation in misinformation spread on WhatsApp
+        journal: Information Processing & Management
+        url: https://doi.org/10.1016/j.ipm.2021.102757
+        cited_by_count: 55
+      - authors: Gabriel Peres Nobre, Carlos H. G. Ferreira, Jussara M. Almeida
+        title: A Hierarchical Network-Oriented Analysis of User Participation in Misinformation Spread on WhatsApp
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2109.10462
+        cited_by_count: 1
+      - authors: Pedro Silva, Gladston Moreira, Vander L. S. Freitas, Rodrigo Silva, David Menotti, Eduardo Luz
+        title: A Decidability-Based Loss Function
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2109.05524
+      - authors: Pedro Castro, Eduardo Luz, Gladston Moreira
+        title: Dataset for Hop varieties classification
+        journal: Data in Brief
+        url: https://doi.org/10.1016/j.dib.2021.107312
+        cited_by_count: 7
+      - authors: Larissa Malagoli, Júlia Stancioli, Carlos H. G. Ferreira, Marisa Vasconcelos, Ana Paula Couto da Silva, Jussara M. Almeida
+        title: Caracterização do debate no Twitter sobre a vacinação contra a COVID-19 no Brasil
+        journal: Zenodo (CERN European Organization for Nuclear Research)
+        url: https://doi.org/10.5281/zenodo.4818622
+      - authors: Larissa Malagoli, Júlia Stancioli, Carlos H. G. Ferreira, Marisa Vasconcelos, Ana Paula Couto da Silva, Jussara M. Almeida
+        title: Caracterização do debate no Twitter sobre a vacinação contra a COVID-19 no Brasil
+        journal: Unknown venue
+        url: https://doi.org/10.5753/brasnam.2021.16125
+        cited_by_count: 5
+      - authors: >-
+          Débora N. Diniz, Mariana T. Rezende, Andrea Bianchi, Cláudia Martins Carneiro, Eduardo Luz, Gladston Moreira, Daniela Ushizima,
+          Fátima N. S. de Medeiros, Marcone Jamilson Freitas Souza
+        title: A Deep Learning Ensemble Method to Assist Cytopathologists in Pap Test Image Classification
+        journal: Journal of Imaging
+        url: https://doi.org/10.3390/jimaging7070111
+        cited_by_count: 53
+      - authors: Guilherme Silva, Pedro Silva, Valéria de Carvalho Santos, Alan Kardek Rêgo Segundo, Eduardo Luz, Gladston Moreira
+        title: "A VNS Algorithm for PID Controller: Hardware-In-The-Loop Approach"
+        journal: IEEE Latin America Transactions
+        url: https://doi.org/10.1109/tla.2021.9468443
+        cited_by_count: 3
+        badge: IEEE
+      - authors: Gabriel Peres Nobre, Carlos H. G. Ferreira, Jussara M. Almeida
+        title: A Hierarchical Network-Oriented Analysis of UserParticipation in Misinformation Spread on WhatsApp
+        journal: Figshare
+        url: https://doi.org/10.5281/zenodo.4774375
+      - authors: Gabriel Peres Nobre, Carlos H. G. Ferreira, Jussara M. Almeida
+        title: A Hierarchical Network-Oriented Analysis of UserParticipation in Misinformation Spread on WhatsApp
+        journal: Zenodo (CERN European Organization for Nuclear Research)
+        url: https://doi.org/10.5281/zenodo.4774374
+        cited_by_count: 7
+      - authors: Larissa Malagoli, Júlia Stancioli, Carlos H. G. Ferreira, Marisa Vasconcelos, Ana Paula Couto da Silva, Jussara M. Almeida
+        title: A Look into COVID-19 Vaccination Debate on Twitter
+        journal: Unknown venue
+        url: https://doi.org/10.1145/3447535.3462498
+        cited_by_count: 26
+      - authors: Larissa Malagoli, Júlia Stancioli, Carlos H. G. Ferreira, Ana Paula Couto da Silva, Jussara M. Almeida, Marisa Vasconcelos
+        title: A Look into COVID-19 Vaccination Debate on Twitter
+        journal: Zenodo (CERN European Organization for Nuclear Research)
+        url: https://doi.org/10.5281/zenodo.4721643
+      - authors: >-
+          Mariana Mota, Pedro Silva, Eduardo Luz, Gladston Jp, Moreira Corresp, Thiago Schons, Lauro Moraes, David Menotti, Gladston
+          Moreira, Mariana Mota, Z Alyasseri, A Khader, M Al-Betar, O Alomari, M Boubakeur, G Wang, C Zhang, K Liu, D Carrin-Ojeda, R
+          Fonseca-Delgado, I Pineda, R Das, E Maiorana, P Campisi, R Das, E Maiorana, P Campisi, Del Pozo-Banos, M Alonso, J Ticay-Rivas, J
+          Travieso, C, A Delorme, T Sejnowski, S Makeig, M Delpozo-Banos, C Travieso, J Alonso, A John, H El-Fiqi, M Wang, N Salimi, K
+          Kasmarik, M Barlow, H Abbass, M Fraschini, A Hillebrand, M Demuru, L Didaci, G Marcialis, M Fraschini, S Pani, L Didaci, G
+          Marcialis, G Garcia, G Moreira, D Menotti, Luz, E, H Ghandeharion, H Ahmadi-Noubari, A Goldberger, L Amaral, L Glass, J Hausdorff,
+          P Ivanov, R Mark, J Mietus, G Moody, C.-K Peng, H Stanley, Q Gui, M Ruiz-Blondet, S Laszlo, Jin, Z, J Hu, L Shen, G Sun, M Islam,
+          A Rastegarnia, Z Yang, A Jain, A Ross, S Prabhakar, X Kong, W Kong, Q Fan, Q Zhao, A Cichocki, M Kostlek, J t'astn, M Kumar, M
+          Saranya, S Narayanan, M Sur, H Murthy, P Kumar, R Arumuganathan, K Sivakumar
+        title: "Peer Review #3 of \"A deep descriptor for cross-tasking EEG-based recognition (v0.1)\""
+        journal: Unknown venue
+        url: https://doi.org/10.7287/peerj-cs.549v0.1/reviews/3
+      - authors: Mariana R.F. Mota, Pedro Silva, Eduardo Luz, Gladston Moreira, Thiago Schons, Lauro Moraes, David Menotti
+        title: A deep descriptor for cross-tasking EEG-based recognition
+        journal: PeerJ Computer Science
+        url: https://doi.org/10.7717/peerj-cs.549
+        cited_by_count: 9
+  - year: 2020
+    items:
+      - authors: Pedro Silva, Eduardo Luz, Guilherme Silva, Gladston Moreira, Elizabeth F. Wanner, Flávio de Barros Vidal, David Menotti
+        title: Towards better heartbeat segmentation with deep learning classification
+        journal: Scientific Reports
+        url: https://doi.org/10.1038/s41598-020-77745-0
+        cited_by_count: 34
+      - authors: Vander L. S. Freitas, Gladston Moreira, Leonardo Bacelar Lima Santos
+        title: >-
+          Robustness analysis in an inter-cities mobility network: modeling municipal, state and federal initiatives as failures and attacks
+          toward SARS-CoV-2 containment
+        journal: PeerJ
+        url: https://doi.org/10.7717/peerj.10287
+        cited_by_count: 11
+      - authors: >-
+          Vander L. S. Freitas, Gladston Moreira, Leonardo Bacelar Lima Santos, H Barbosa, M Barthelemy, G Ghoshal, C James, M Lenormand, T
+          Louail, R Menezes, J Ramasco, F Simini, M Tomasini, M Barthlemy, D Callaway, M Newman, S Strogatz, D Watts, R Cohen, K Erez, D
+          Ben-Avraham, S Havlin, W Cota, V Freitas, T Konstantyner, J Mendes, C Sepetauskas, L Santos, J Gaskell, G Stoker, P Guimares, D
+          Muniz, L Giacobelli, K Maia, M Gaiarsa, A Assis, P Santana, E Santana, I Birskis-Barros, L Medeiros, V Burin, G Marquitti, F
+          Dttilo, W Cantor, M Lemos-Costa, P Raimundo, R Andreazzi, C Pires, M Crtes, M Migon, E, R Haffajee, M Mello, P Hallal, F Hartwig,
+          B Horta, G Victora, M Silveira, C Struchiner, L Vidaletti, N Neumann, L Pellanda, O Dellagostin, M Burattini, A Menezes, F Barros,
+          A Barros, C Victora, S Iyer, T Killingback, B Sundaram, Z Wang, Y Kim, S Oh, C Wang, Q Li, X Guan, P Wu, X Wang, L Zhou, Y Tong, R
+          Ren, K Leung, E Lau, J Wong, R Li, S Pei, B Chen, Y Song, T Zhang, W Yang, J Shaman, L Santos, L Carvalho, W Seron, F Coelho, E
+          Macau, M Quiles, A Monteiro, L Santos
+        title: >-
+          Peer Review #2 of "Robustness analysis in an inter-cities mobility network: modeling municipal, state and federal initiatives as
+          failures and attacks toward SARS-CoV-2 containment (v0.1)"
+        journal: Unknown venue
+        url: https://doi.org/10.7287/peerj.10287v0.1/reviews/2
+      - authors: Pedro Silva, Eduardo Luz, Guilherme Silva, Gladston Moreira, Rodrigo Silva, Diego Rafael Lucio, David Menottu
+        title: "Efficient Deep Learning Model for COVID-19 Detection in large CT images datasets: A cross-dataset analysis"
+        journal: Research Square
+        url: https://doi.org/10.21203/rs.3.rs-41062/v1
+        cited_by_count: 12
+      - authors: G. L. Souza, Anderson Ribeiro Duarte, Gladston Moreira, F.R.B. Cruz
+        title: A Novel Formulation for Multi-objective optimization of General Finite Single-Server Queueing Networks
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cec48606.2020.9185827
+        cited_by_count: 3
+      - authors: Pedro Silva, Eduardo Luz, Gladston Moreira, Caio Gomes, Larissa Vanessa Machado Viana, Rodrigo Silva
+        title: >-
+          Pictures of X-Rays Displayed in Monitors for Deep Learning-Based COVID-19 Screening: Implications for Mobile Application
+          Development
+        journal: Unknown venue
+        url: https://doi.org/10.21203/rs.3.rs-37908/v1
+        cited_by_count: 4
+      - authors: >-
+          Carlos H. G. Ferreira, Fabrício Murai, Ana Paula Couto da Silva, Jussara M. Almeida, Martino Trevisan, Luca Vassio, Idílio Drago,
+          Marco Mellia
+        title: Unveiling Community Dynamics on Instagram Political Network
+        journal: Unknown venue
+        url: https://doi.org/10.1145/3394231.3397913
+        cited_by_count: 19
+      - authors: Eduardo Luz, Pedro Silva, Rodrigo Silva, Gladston Moreira
+        title: Towards an Efficient Deep Learning Model for COVID-19 Patterns Detection in X-ray Images
+        journal: arXiv (Cornell University)
+        cited_by_count: 37
+      - authors: Carlos H. G. Ferreira, Fabricio Murai Ferreira, Breno de Sousa Matos, Jussara M. Almeida
+        title: Modeling Dynamic Ideological Behavior in Political Networks
+        journal: Forschungszentrum L3S
+        url: https://doi.org/10.34962/jws-80
+        cited_by_count: 17
+      - authors: Pedro Silva, Eduardo Luz, Guilherme Silva, Gladston Moreira, Rodrigo Silva, Diego Rafael Lucio, David Menotti
+        title: "COVID-19 detection in CT images with deep learning: A voting-based scheme and cross-datasets analysis"
+        journal: Informatics in Medicine Unlocked
+        url: https://doi.org/10.1016/j.imu.2020.100427
+        cited_by_count: 238
+      - authors: Gabriel Peres Nobre, Carlos H. G. Ferreira, Jussara M. Almeida
+        title: "Beyond Groups: Uncovering Dynamic Communities on the WhatsApp Network of Information Dissemination"
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-030-60975-7_19
+        cited_by_count: 24
+  - year: 2019
+    items:
+      - authors: Gladston Moreira, Luís Paquete
+        title: Guiding under uniformity measure in the decision space
+        journal: Unknown venue
+        url: https://doi.org/10.1109/la-cci47412.2019.9037034
+        cited_by_count: 12
+      - authors: Emerson Cotta Bodevan, Luiz H. Duczmal, Anderson Ribeiro Duarte, Pedro Silva, Gladston Moreira
+        title: Multi-objective approach for multiple clusters detection in data points events
+        journal: Communications in Statistics - Simulation and Computation
+        url: https://doi.org/10.1080/03610918.2019.1667392
+        cited_by_count: 4
+      - authors: Gabriel Peres Nobre, Jussara M. Almeida, Carlos H. G. Ferreira
+        title: Caracterização de bots no Twitter durante as Eleições Presidenciais no Brasil em 2018
+        journal: Anais do Brazilian Workshop on Social Network Analysis and Mining (BraSNAM)
+        url: https://doi.org/10.5753/brasnam.2019.6553
+        cited_by_count: 4
+      - authors: Pedro Silva, Eduardo Luz, Gladston Moreira, Lauro Moraes, David Menotti
+        title: "Chimerical Dataset Creation Protocol Based on Doddington Zoo: A Biometric Application with Face, Eye, and ECG"
+        journal: Sensors
+        url: https://doi.org/10.3390/s19132968
+        cited_by_count: 13
+      - authors: Dênis Ricardo Xavier de Oliveira, Gladston Moreira, Anderson Ribeiro Duarte, André L. F. Cançado, Eduardo Luz
+        title: Spatial cluster analysis using particle swarm optimization and dispersion function
+        journal: Communications in Statistics - Simulation and Computation
+        url: https://doi.org/10.1080/03610918.2019.1602731
+        cited_by_count: 6
+      - authors: Ricardo Fonseca Couto, Luiz H. Duczmal, Denise Burgarelli, Felipe Álvares, Gladston Moreira
+        title: "Nonparametric dependence modeling via cluster analysis: A financial contagion application"
+        journal: Communications in Statistics - Simulation and Computation
+        url: https://doi.org/10.1080/03610918.2018.1563152
+        cited_by_count: 4
+      - authors: >-
+          Dionisio Leite, Maycon Peixoto, Carlos H. G. Ferreira, Bruno Guazzelli Batista, Danilo Costa Marim Segura, Marcos José Santana,
+          Regina Helena Carlucci Santana
+        title: A cloud computing price model based on virtual machine performance degradation
+        journal: International Journal of Computational Science and Engineering
+        url: https://doi.org/10.1504/ijcse.2019.099082
+        cited_by_count: 1
+      - authors: Pedro Silva, Eduardo Luz, Elizabeth F. Wanner, David Menotti, Gladston Moreira
+        title: QRS Detection in ECG Signal with Convolutional Network
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-030-13469-3_93
+        cited_by_count: 16
+  - year: 2018
+    items:
+      - authors: Breno de Sousa Matos, Carlos H. G. Ferreira, Jussara M. Almeida
+        title: >-
+          Analisando a governabilidade presidencial a partir de padrões de homofilia na Câmara dos Deputados: Estudos de Casos no Brasil e
+          nos EUA
+        journal: Unknown venue
+        url: https://doi.org/10.5753/brasnam.2018.3592
+      - authors: Felipe O. Mota, Vinícius Augusto Reis Almeida, Elizabeth F. Wanner, Gladston Moreira
+        title: Hybrid PSO Algorithm with Iterated Local Search Operator for Equality Constraints Problems
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cec.2018.8477884
+        cited_by_count: 3
+      - authors: Pedro H. Silva, Eduardo Luz, Luiz A. Zanlorensi, David Menotti, Gladston Moreira
+        title: Multimodal Feature Level Fusion based on Particle Swarm Optimization with Deep Transfer Learning
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cec.2018.8477817
+        cited_by_count: 37
+      - authors: Felipe O. Mota, Elizabeth F. Wanner, Eduardo Luz, Gladston Moreira
+        title: VND-based Local Search Operator for Equality Constraint Problems in PSO Algorithm
+        journal: Electronic Notes in Discrete Mathematics
+        url: https://doi.org/10.1016/j.endm.2018.03.015
+        cited_by_count: 1
+      - authors: Fernando Luiz Pereira de Oliveira, André L. F. Cançado, Gustavo de Souza, Gladston Moreira, Martin Kulldorff
+        title: Border analysis for spatial clusters
+        journal: International Journal of Health Geographics
+        url: https://doi.org/10.1186/s12942-018-0124-1
+        cited_by_count: 24
+      - authors: Thiago Schons, Gladston Moreira, Pedro Silva, Vitor N. Coelho, Eduardo Luz
+        title: Convolutional Network for EEG-Based Biometric
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-319-75193-1_72
+        cited_by_count: 46
+      - authors: >-
+          Aline Rafaela Nascimento, Andressa Aparecida Santana Furtini, Carlos H. G. Ferreira, Daniela Meirelles Andrade, Monique Scalco
+          Soares Siqueira, Stephan Araújo Costa
+        title: Relatório do projeto “empreendedorismo na escola”
+        journal: LA Referencia (Red Federada de Repositorios Institucionales de Publicaciones Científicas)
+  - year: 2017
+    items:
+      - authors: Eduardo Luz, Gladston Moreira, Luiz S. Oliveira, William Robson Schwartz, David Menotti
+        title: Learning Deep Off-the-Person Heart Biometrics Representations
+        journal: IEEE Transactions on Information Forensics and Security
+        url: https://doi.org/10.1109/tifs.2017.2784362
+        cited_by_count: 106
+        badge: IEEE
+      - authors: Eduardo Luz, Gladston Moreira, Luiz A. Zanlorensi, David Menotti
+        title: Deep periocular representation aiming video surveillance
+        journal: Pattern Recognition Letters
+        url: https://doi.org/10.1016/j.patrec.2017.12.009
+        cited_by_count: 37
+      - authors: Gabriel García, Gladston Moreira, David Menotti, Eduardo Luz
+        title: Inter-Patient ECG Heartbeat Classification with Temporal VCG Optimized by PSO
+        journal: Scientific Reports
+        url: https://doi.org/10.1038/s41598-017-09837-3
+        cited_by_count: 141
+      - authors: >-
+          Paulo H. C. Oliveira, Gladston Moreira, Daniela Ushizima, Cláudia Martins Carneiro, Fátima N. S. de Medeiros, Flávio H. D. Araújo,
+          Romuere Silva, Andrea Bianchi
+        title: A multi-objective approach for calibration and detection of cervical cells nuclei
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cec.2017.7969586
+        cited_by_count: 11
+      - authors: Fernando Bernardo, Gladston Moreira, Eduardo Luz, Paulo H. C. Oliveira, Alvaro Gaurda
+        title: Exploring the scalability of multiple signatures in iris recognition using GA on the acceptance frontier search
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cec.2017.7969525
+        cited_by_count: 2
+      - authors: Dionisio Leite, Maycon Peixoto, Bruno Guazzelli Batista, Bruno Tardiole Kuehne, Carlos H. G. Ferreira
+        title: The influence of resource allocation on cloud computing performance
+        journal: Unknown venue
+        url: https://doi.org/10.1145/3019612.3019736
+      - authors: >-
+          Carlos H. G. Ferreira, Júlio Cézar Estrella, Luiz H. Nunes, Luis Hideo Vasconcelos Nakamura, Rafael M. de O. Libardi, Bruno
+          Guazzelli Batista, Maycon Peixoto, Dionisio Leite, Stephan Reiff‐Marganiec
+        title: A low cost workload generation approach through the cloud for capacity planning in service-oriented systems
+        journal: Unknown venue
+        url: https://doi.org/10.1145/3018896.3018900
+        cited_by_count: 2
+      - authors: Bruno Guazzelli Batista, Carlos H. G. Ferreira, Danilo Costa Marim Segura, Dionisio Machado Leite Filho, Maycon Peixoto
+        title: >-
+          Corrigendum to “A QoS-driven approach for cloud computing addressing attributes of performance and security” [Future Gener.
+          Comput. Syst. 68 (March) (2017) 260–274]
+        journal: Future Generation Computer Systems
+        url: https://doi.org/10.1016/j.future.2016.11.018
+        cited_by_count: 2
+      - authors: Eduardo Luz, Luiz Henrique de Campos Merschmann, David Menotti, Gladston Moreira
+        title: Evaluating a hierarchical approach for heartbeat classification from ECG
+        journal: International Journal of Bioinformatics Research and Applications
+        url: https://doi.org/10.1504/ijbra.2017.083148
+        cited_by_count: 4
+      - authors: Gladston Moreira, Luís Paquete, Luiz H. Duczmal, David Menotti, Ricardo H. C. Takahashi
+        title: Spatial Cluster Detection Through a Dynamic Programming Approach
+        journal: Unknown venue
+        url: https://doi.org/10.1007/978-1-4614-8414-1_40-1
+      - authors: David Menotti, Luiz Henrique de Campos Merschmann, Eduardo Luz, Gladston Moreira
+        title: Evaluating a hierarchical approach for heartbeat classification from ECG
+        journal: International Journal of Bioinformatics Research and Applications
+        url: https://doi.org/10.1504/ijbra.2017.10003488
+      - authors: Conrado A. B. Galdino, Stefânia P. R. Ventura, Gladston Moreira
+        title: Unveiling a spatial tail breakage outbreak in a lizard population
+        journal: Amphibia-Reptilia
+        url: https://doi.org/10.1163/15685381-00003094
+  - year: 2016
+    items:
+      - authors: Elizabeth F. Wanner, Gladston Moreira, Eduardo G. Carrano, Ricardo H. C. Takahashi, Luiz H. Duczmal
+        title: MULTI-OBJECTIVE TRAINING OF RBF NETWORKS FOR LARGE DATA SETS WITH LMI’S
+        journal: Unknown venue
+        url: https://doi.org/10.21528/cbrn2009-001
+      - authors: Bruno Guazzelli Batista, Carlos H. G. Ferreira, Danilo Costa Marim Segura, Dionisio Machado Leite Filho, Maycon Peixoto
+        title: A QoS-driven approach for cloud computing addressing attributes of performance and security
+        journal: Future Generation Computer Systems
+        url: https://doi.org/10.1016/j.future.2016.09.018
+        cited_by_count: 41
+      - authors: Denis Xavier, Gladston Moreira, Eduardo Luz, Marcone Jamilson Freitas Souza
+        title: A new irregular spatial cluster detection through multi-objective particle swarm optimization
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cec.2016.7743822
+        cited_by_count: 3
+      - authors: Gladston Moreira, Eduardo Luz, David Menotti
+        title: Optimizing acceptance frontier using PSO and GA for multiple signature iris recognition
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cec.2016.7744375
+        cited_by_count: 1
+      - authors: Gabriel García, Gladston Moreira, Eduardo Luz, David Menotti
+        title: "Improving automatic cardiac arrhythmia classification: Joining temporal-VCG, complex networks and SVM classifier"
+        journal: Unknown venue
+        url: https://doi.org/10.1109/ijcnn.2016.7727704
+        cited_by_count: 11
+      - authors: >-
+          Luiz H. Nunes, Júlio Cézar Estrella, Luis Hideo Vasconcelos Nakamura, Rafael de Libardi, Carlos H. G. Ferreira, Liuri Jorge,
+          Charith Perera, Stephan Reiff‐Marganiec
+        title: A Distributed Sensor Data Search Platform for Internet of Things Environments
+        journal: ORCA Online Research @Cardiff (Cardiff University)
+        url: https://doi.org/10.48550/arxiv.1606.07932
+        cited_by_count: 5
+      - authors: >-
+          Regina Helena Carlucci Santana, Marcos José Santana, Bruno C. Batista, Danilo Vaz-Curado R. M. Costa, Dionisio Leite, Maycon
+          Peixoto, Carlos H. G. Ferreira
+        title: A cloud computing price model based on virtual machine performance degradation
+        journal: International Journal of Computational Science and Engineering
+        url: https://doi.org/10.1504/ijcse.2016.10011343
+  - year: 2015
+    items:
+      - authors: >-
+          Bruno Guazzelli Batista, Júlio Cézar Estrella, Carlos H. G. Ferreira, Dionisio Machado Leite Filho, Luis Hideo Vasconcelos
+          Nakamura, Stephan Reiff‐Marganiec, Marcos José Santana, Regina Helena Carlucci Santana
+        title: Performance Evaluation of Resource Management in Cloud Computing Environments
+        journal: PLoS ONE
+        url: https://doi.org/10.1371/journal.pone.0141914
+        cited_by_count: 35
+      - authors: Gladston Moreira, Anderson Ribeiro Duarte, David Menotti
+        title: Um Algoritmo Enxame de Partículas Binário para Detecção de Clusters Irregulares
+        journal: Unknown venue
+        url: https://doi.org/10.21528/cbic2015-027
+      - authors: >-
+          Luiz H. Nunes, Júlio Cézar Estrella, Carlos H. G. Ferreira, Luis Hideo Vasconcelos Nakamura, Rafael M. de O. Libardi, Edvard
+          Martins de Oliveira, Bruno Tardiole Kuehne, Paulo Sérgio Lopes de Souza, Regina Helena Carlucci Santana, Marcos José Santana,
+          Stephan Reiff‐Marganiec
+        title: "DCA-SERVICES: A DISTRIBUTED AND COLLABORATIVE ARCHITECTURE FOR CONDUCTING EXPERIMENTS IN SERVICE ORIENTED SYSTEMS"
+        journal: Services Transactions on Services Computing
+        url: https://doi.org/10.29268/stsc.2015.3.4.2
+        cited_by_count: 6
+      - authors: Vinícius Andrade Queiroz, Eduardo Luz, Gladston Moreira, Álvaro Guarda, David Menotti
+        title: Automatic cardiac arrhythmia detection and classification using vectorcardiograms and complex networks
+        journal: Unknown venue
+        url: https://doi.org/10.1109/embc.2015.7319564
+        cited_by_count: 12
+      - authors: >-
+          Bruno Tardiole Kuehne, Júlio Cézar Estrella, Luiz Henrique Nunes, Edvard Martins de Oliveira, Luis Hideo Vasconcelos Nakamura,
+          Carlos H. G. Ferreira, Regina Helena Carlucci Santana, Stephan Reiff‐Marganiec, Marcos José Santana
+        title: AWSCS-A System to Evaluate Different Approaches for the Automatic Composition and Execution of Web Services Flows
+        journal: PLoS ONE
+        url: https://doi.org/10.1371/journal.pone.0127677
+        cited_by_count: 2
+      - authors: >-
+          Rafael M. de O. Libardi, Stephan Reiff‐Marganiec, Luiz Henrique Nunes, Lucas Junqueira Adami, Carlos H. G. Ferreira, Júlio Cézar
+          Estrella
+        title: "MSSF: User-Friendly Multi-cloud Data Dispersal"
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cloud.2015.53
+        cited_by_count: 2
+      - authors: Luiz H. Duczmal, Gladston Moreira, Luís Paquete, David Menotti, Ricardo H. C. Takahashi, Denise Burgarelli
+        title: "Dry Climate as a Predictor of Chagas’ Disease Irregular Clusters: A Covariate Study"
+        journal: Online Journal of Public Health Informatics
+        url: https://doi.org/10.5210/ojphi.v7i1.5790
+        cited_by_count: 1
+      - authors: S. L. J. L. Tinoco, David Menotti, Jefersson A. dos Santos, Gladston Moreira
+        title: A Multi-objective Approach for Building Hyperspectral Remote Sensed Image Classifier Combiners
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-319-15892-1_37
+        cited_by_count: 1

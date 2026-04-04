@@ -34,6 +34,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Fetch publications from OpenAlex
+        run: node scripts/fetch-publications.js --force
+
       - name: Start server and pre-render static HTML
         run: |
           # BASE_PATH must be set when starting the server so rendered HTML

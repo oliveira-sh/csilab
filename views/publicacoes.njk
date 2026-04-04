@@ -1,5 +1,63 @@
 {% extends "base.njk" %}
 
+{% block head %}
+<style>
+.pub-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin: 2rem 0 1.25rem;
+}
+.pub-chart-card {
+  background: var(--color-surface);
+  border: 1px solid rgba(86,101,115,0.2);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem 1rem;
+}
+.pub-chart-title {
+  font-family: var(--font-primary);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--color-muted);
+  margin-bottom: 0.875rem;
+}
+.pub-chart-canvas-wrap { position: relative; height: 160px; }
+@media (max-width: 640px) {
+  .pub-charts { grid-template-columns: 1fr; }
+  .pub-chart-canvas-wrap { height: 140px; }
+}
+
+/* World map */
+.pub-map-card {
+  background: var(--color-surface);
+  border: 1px solid rgba(86,101,115,0.2);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem 0.75rem;
+  margin-bottom: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.pub-map-card svg { width: 100%; height: auto; display: block; }
+.pub-map-tip {
+  position: absolute;
+  pointer-events: none;
+  background: #0B0C10;
+  border: 1px solid rgba(86,101,115,0.45);
+  color: #E2E8F0;
+  font-family: var(--font-secondary), sans-serif;
+  font-size: 0.8rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.1s;
+  z-index: 5;
+}
+</style>
+{% endblock %}
+
 {% block content %}
 
 <section style="padding-top:8rem;padding-bottom:3rem;">
@@ -16,6 +74,27 @@
 <section style="padding-top:0;">
   <div class="container">
 
+    {# ── Charts ── #}
+    <div class="pub-charts" data-aos="fade-up">
+      <div class="pub-chart-card">
+        <div class="pub-chart-title">{{ page.chart_papers_label or "Papers per Year" }}</div>
+        <div class="pub-chart-canvas-wrap"><canvas id="chart-papers"></canvas></div>
+      </div>
+      <div class="pub-chart-card">
+        <div class="pub-chart-title">{{ page.chart_cites_label or "Citations per Year" }}</div>
+        <div class="pub-chart-canvas-wrap"><canvas id="chart-citations"></canvas></div>
+      </div>
+    </div>
+
+    {# ── World map ── #}
+    {% if data.publications.country_counts %}
+    <div class="pub-map-card" data-aos="fade-up">
+      <div class="pub-chart-title">{{ page.chart_world_label or "Global Collaboration" }}</div>
+      <div id="pub-worldmap"></div>
+    </div>
+    {% endif %}
+
+    {# ── Publication list ── #}
     {% for year_group in data.publications.years %}
     <h2 class="pub-year-heading">{{ year_group.year }}</h2>
     <div class="pub-list">
@@ -41,5 +120,188 @@
 
   </div>
 </section>
+
+{# ── Chart.js ── #}
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script>
+(function () {
+  // Serialize publication data from server-side YAML into JS
+  const _pubData = {{ data.publications.years | dump | safe }};
+
+  // Sort ascending for left-to-right time axis
+  const sorted = [..._pubData].sort((a, b) => a.year - b.year);
+
+  const years     = sorted.map(g => String(g.year));
+  const perYear   = sorted.map(g => (g.items || []).length);
+  const citeYear  = sorted.map(g =>
+    (g.items || []).reduce((sum, p) => sum + (p.cited_by_count || 0), 0)
+  );
+
+  // Shared dark-theme defaults
+  Chart.defaults.color          = '#8892B0';
+  Chart.defaults.borderColor    = 'rgba(86,101,115,0.18)';
+  Chart.defaults.font.family    = '"Inter", sans-serif';
+  Chart.defaults.font.size      = 11;
+
+  const sharedScales = {
+    x: { grid: { color: 'rgba(86,101,115,0.13)' }, ticks: { maxRotation: 45 } },
+    y: { grid: { color: 'rgba(86,101,115,0.13)' }, beginAtZero: true, ticks: { precision: 0 } },
+  };
+  const sharedPlugins = {
+    legend: { display: false },
+    tooltip: {
+      backgroundColor: '#1F2833',
+      borderColor: 'rgba(86,101,115,0.4)',
+      borderWidth: 1,
+      titleColor: '#E2E8F0',
+      bodyColor: '#8892B0',
+    },
+  };
+
+  // Papers per year
+  new Chart(document.getElementById('chart-papers'), {
+    type: 'bar',
+    data: {
+      labels: years,
+      datasets: [{
+        data: perYear,
+        backgroundColor: 'rgba(233,79,55,0.65)',
+        borderColor:     'rgba(233,79,55,0.9)',
+        borderWidth: 1,
+        borderRadius: 3,
+        hoverBackgroundColor: 'rgba(233,79,55,0.85)',
+      }],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: sharedPlugins,
+      scales: sharedScales,
+    },
+  });
+
+  // Citations per year
+  new Chart(document.getElementById('chart-citations'), {
+    type: 'bar',
+    data: {
+      labels: years,
+      datasets: [{
+        data: citeYear,
+        backgroundColor: 'rgba(86,101,115,0.55)',
+        borderColor:     'rgba(86,101,115,0.85)',
+        borderWidth: 1,
+        borderRadius: 3,
+        hoverBackgroundColor: 'rgba(86,101,115,0.75)',
+      }],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        ...sharedPlugins,
+        tooltip: {
+          ...sharedPlugins.tooltip,
+          callbacks: {
+            footer: (items) => {
+              const val = items[0]?.raw;
+              return val === 0 ? 'Run npm run fetch:pubs to populate' : '';
+            },
+          },
+        },
+      },
+      scales: sharedScales,
+    },
+  });
+})();
+</script>
+
+{# ── D3 World Choropleth ── #}
+{% if data.publications.country_counts %}
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script>
+(function () {
+  const counts = {{ data.publications.country_counts | dump | safe }};
+  if (!counts || !Object.keys(counts).length) return;
+
+  // ISO 3166-1 alpha-2 → numeric
+  const a2n = {
+    AF:4,AL:8,DZ:12,AD:20,AO:24,AG:28,AR:32,AM:51,AU:36,AT:40,AZ:31,
+    BS:44,BH:48,BD:50,BB:52,BY:112,BE:56,BZ:84,BJ:204,BT:64,BO:68,BA:70,
+    BW:72,BR:76,BN:96,BG:100,BF:854,BI:108,CV:132,KH:116,CM:120,CA:124,
+    CF:140,TD:148,CL:152,CN:156,CO:170,KM:174,CG:178,CD:180,CR:188,HR:191,
+    CU:192,CY:196,CZ:203,DK:208,DJ:262,DM:212,DO:214,EC:218,EG:818,SV:222,
+    GQ:226,ER:232,EE:233,SZ:748,ET:231,FJ:242,FI:246,FR:250,GA:266,GM:270,
+    GE:268,DE:276,GH:288,GR:300,GD:308,GT:320,GN:324,GW:624,GY:328,HT:332,
+    HN:340,HU:348,IS:352,IN:356,ID:360,IR:364,IQ:368,IE:372,IL:376,IT:380,
+    JM:388,JP:392,JO:400,KZ:398,KE:404,KI:296,KP:408,KR:410,KW:414,KG:417,
+    LA:418,LV:428,LB:422,LS:426,LR:430,LY:434,LI:438,LT:440,LU:442,MG:450,
+    MW:454,MY:458,MV:462,ML:466,MT:470,MH:584,MR:478,MU:480,MX:484,FM:583,
+    MD:498,MC:492,MN:496,ME:499,MA:504,MZ:508,MM:104,NA:516,NR:520,NP:524,
+    NL:528,NZ:554,NI:558,NE:562,NG:566,MK:807,NO:578,OM:512,PK:586,PW:585,
+    PA:591,PG:598,PY:600,PE:604,PH:608,PL:616,PT:620,QA:634,RO:642,RU:643,
+    RW:646,KN:659,LC:662,VC:670,WS:882,SM:674,ST:678,SA:682,SN:686,RS:688,
+    SC:690,SL:694,SG:702,SK:703,SI:705,SB:90,SO:706,ZA:710,SS:728,ES:724,
+    LK:144,SD:729,SR:740,SE:752,CH:756,SY:760,TW:158,TJ:762,TZ:834,TH:764,
+    TL:626,TG:768,TO:776,TT:780,TN:788,TR:792,TM:795,UG:800,UA:804,AE:784,
+    GB:826,US:840,UY:858,UZ:860,VU:548,VE:862,VN:704,YE:887,ZM:894,ZW:716
+  };
+
+  // Build numeric-id lookup
+  const byId = {};
+  for (const [a2, n] of Object.entries(counts)) {
+    const num = a2n[a2];
+    if (num != null) byId[num] = { a2, n };
+  }
+
+  const maxN  = Math.max(...Object.values(counts));
+  const color = d3.scaleLog()
+    .domain([1, Math.max(2, maxN)])
+    .range(['rgba(233,79,55,0.22)', '#E94F37'])
+    .clamp(true);
+
+  const W = 960, H = 490;
+
+  const wrap = document.getElementById('pub-worldmap');
+  const svg  = d3.select(wrap).append('svg')
+    .attr('viewBox', `0 0 ${W} ${H}`)
+    .attr('preserveAspectRatio', 'xMidYMid meet');
+
+  // Tooltip appended after SVG so it sits on top
+  const tip = document.createElement('div');
+  tip.className = 'pub-map-tip';
+  wrap.appendChild(tip);
+
+  const proj = d3.geoNaturalEarth1().scale(153).translate([W / 2, H / 2]);
+  const path = d3.geoPath().projection(proj);
+
+  fetch('https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json')
+    .then(r => r.json())
+    .then(world => {
+      svg.selectAll('path')
+        .data(topojson.feature(world, world.objects.countries).features)
+        .join('path')
+        .attr('d', path)
+        .attr('fill', d => {
+          const info = byId[+d.id];
+          return info ? color(info.n) : '#253040';
+        })
+        .attr('stroke', 'rgba(86,101,115,0.22)')
+        .attr('stroke-width', 0.4)
+        .on('mousemove', function (ev, d) {
+          const info = byId[+d.id];
+          if (!info) return;
+          const r = wrap.getBoundingClientRect();
+          tip.style.opacity = '1';
+          tip.style.left = (ev.clientX - r.left + 14) + 'px';
+          tip.style.top  = (ev.clientY - r.top  - 36) + 'px';
+          tip.textContent = info.a2 + ' \u2014 ' + info.n + ' paper' + (info.n !== 1 ? 's' : '');
+        })
+        .on('mouseleave', () => { tip.style.opacity = '0'; });
+    })
+    .catch(() => {});
+})();
+</script>
+{% endif %}
 
 {% endblock %}
