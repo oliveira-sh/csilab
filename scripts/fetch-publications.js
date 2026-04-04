@@ -190,12 +190,13 @@ async function main() {
   const works = await fetchWorksForAuthors(allIds);
   console.log(`  Received ${works.length} works`);
 
-  // 4. Filter — ORCID-based anchors are reliable, no domain filter needed
+  // 4. Filter — anchor check + year >= 2016
   const anchorFull = new Set([...anchorIds].map(id => `https://openalex.org/${id}`));
   const filtered   = works.filter(w =>
-    w.authorships.some(a => anchorFull.has(a.author.id))
+    w.authorships.some(a => anchorFull.has(a.author.id)) &&
+    w.publication_year >= 2016
   );
-  console.log(`  After anchor filter: ${filtered.length} works`);
+  console.log(`  After anchor + year filter: ${filtered.length} works`);
 
   // 5. Aggregate country contributions from filtered works
   const country_counts = aggregateCountries(filtered);
