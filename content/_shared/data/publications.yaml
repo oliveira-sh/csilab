@@ -1,129 +1,1442 @@
+country_counts:
+  BR: 68
+  GB: 13
+  US: 6
+  CA: 2
+  PT: 2
+  IT: 1
+  AR: 1
+  CY: 1
+  MX: 1
+  IE: 1
 years:
   - year: 2026
     items:
-      - authors: "Ivair R. Silva, Roger C.N. Ngassi, Gladston J. P. Moreira"
-        title: "Exact non-parametric sequential convergence test for samplers"
-        journal: "Journal of Computational and Applied Mathematics"
-        venue_suffix: "475:117051"
-        url: "https://www.sciencedirect.com/science/article/pii/S0377042725005655"
-        badge: "ScienceDirect"
-      - authors: "Gladston Moreira, Ivan Meneghini, Elizabeth Wanner"
-        title: "Maximum Dispersion, Maximum Concentration: Enhancing the Quality of MOP Solutions"
-        venue_prefix: "In: "
-        journal: "Intelligent Systems"
-        venue_suffix: "(eds. Rosiane de Freitas, Diego Furtado), pp. 150–165. Springer Nature Switzerland"
-        badge: "Springer"
-      - authors: "Marcus Almeida, Ivair Silva, Vander Freitas, Eduardo Luz, Gladston Moreira"
-        title: "A NAS-Optimized Deep Learning Model for Customer Churn Prediction in Financial Services"
-        venue_prefix: "In: "
-        journal: "Intelligent Systems"
-        venue_suffix: "(eds. Rosiane de Freitas, Diego Furtado), pp. 66–81. Springer Nature Switzerland"
-        badge: "Springer"
-
+      - authors: Glender Brás, Flávio V. C. Martins, Elizabeth F. Wanner, Alisson M. Silva
+        title: Incremental evolutionary neuro-fuzzy system with dynamic population and diversity control
+        journal: Evolutionary Intelligence
+        url: https://doi.org/10.1007/s12065-026-01184-5
+      - authors: >-
+          Gabriel Matos Cardoso Leite, Carolina G. Marcelino, S. Jiménez‐Fernández, Elizabeth F. Wanner, Sancho Salcedo-Sanz, Carlos E.
+          Pedreira
+        title: A cross-entropy based direct policy search algorithm for multi-objective energy storage control
+        journal: Neural Computing and Applications
+        url: https://doi.org/10.1007/s00521-025-11785-3
+      - authors: Cláudio Lúcio do Val Lopes, Flávio Vinícius Cruzeiro Martins, Elizabeth F. Wanner, Kalyanmoy Deb
+        title: A Fast Dominance Move Calculation Using Mixed-Integer Programming for Many-objective Optimization
+        journal: IEEE Transactions on Evolutionary Computation
+        url: https://doi.org/10.1109/tevc.2026.3673109
+        badge: IEEE
+      - authors: Gladston Moreira, Ivan Meneghini, Elizabeth F. Wanner
+        title: "Maximum Dispersion, Maximum Concentration: Enhancing the\_Quality of\_MOP Solutions"
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-032-15984-7_11
+      - authors: Nadeesha Pathirana, Amal Htait, Elizabeth F. Wanner
+        title: Empathy-Inspired Voice Companion Design for Older Adults
+        journal: Communications in computer and information science
+        url: https://doi.org/10.1007/978-3-032-12764-8_26
   - year: 2025
     items:
-      - authors: "Dênis R. X. Oliveira, Gladston J. P. Moreira, Anderson R. Duarte"
-        title: "Arbitrarily shaped spatial cluster detection via reinforcement learning algorithms"
-        journal: "Environmental and Ecological Statistics"
-        venue_suffix: "32(2):385–407"
-        url: "https://doi.org/10.1007/s10651-025-00649-7"
-        badge: "Springer"
-      - authors: "Guilherme O. Santos, Lucas S. Vieira, Giulio Rossetti, Carlos H. G. Ferreira, Gladston J. P. Moreira"
-        title: "A high-performance evolutionary multiobjective community detection algorithm"
-        journal: "Social Network Analysis and Mining"
-        venue_suffix: "15(1):110"
-        url: "https://doi.org/10.1007/s13278-025-01519-7"
-        badge: "Springer"
-      - authors: "Sara Câmara, Eduardo Luz, Valéria Carvalho, Ivan Meneghini, Gladston Moreira"
-        title: "MOPrompt: Multi-objective Semantic Evolution for Prompt Optimization"
-        journal: "Anais do XVI Simpósio Brasileiro de Tecnologia da Informação e da Linguagem Humana"
-        venue_suffix: "pp. 78–89. SBC"
-        url: "https://sol.sbc.org.br/index.php/stil/article/view/37815"
-        badge: "STIL 2025"
-      - authors: "Pedro H.L. Silva, Guilherme A. L. Silva, Pablo Coelho, Vander Freitas, Gladston Moreira, David Menotti, Eduardo Luz"
+      - authors: >-
+          Ronaldo Ferreira do Nascimento, RODRIGO G. FIGUEIREDO, Mirelle Cristina De Abreu Quintela, Marcella Bastos Cacciari, Fernanda
+          Cristina de Abreu Quintela Castro, Kelly Cristina Mota Braga Chiepe, Tatiani Bellettini dos Santos, Clécio José Morandi de Assis
+          Lemos
+        title: "INTERDISCIPLINARITY IN HEALTH: THE MEDICAL HUMANITIES"
+        journal: Unesc em Revista
+        url: https://doi.org/10.54578/unesc.v9i2.570
+      - authors: Pedro Marques‐Vidal, Bernardo Biesseck, Luiz E. L. Coelho, Roger Granada, David Menotti
+        title: A Comparative Study on Synthetic Facial Data Generation Techniques for Face Recognition
+        journal: ArXiv.org
+        url: https://doi.org/10.48550/arxiv.2512.05928
+      - authors: >-
+          Ronaldo Ferreira do Nascimento, Ari Clecius Alves de Lima, Carla Bastos Vidal, Diego de Quadros Melo, Giselle Santiago Cabral
+          Raulino, Vicente de Oliveira Sousa Neto
+        title: Adsorption
+        journal: Unknown venue
+        url: https://doi.org/10.1201/9781003654391
+      - authors: Gustavo Nascimento, Ivan Reinaldo Meneghini, Valéria de Carvalho Santos, Eduardo Luz, Gladston Moreira
+        title: Enhancing Decision Space Diversity in Multi -Objective Evolutionary Optimization for the Diet Problem
+        journal: Unknown venue
+        url: https://doi.org/10.21528/cbic2025-1168382
+      - authors: Pedro de Almeida, Guilherme Silva, Valéria Santos, Gladston Moreira, Pedro Silva, Eduardo Luz
+        title: "Deep Learning for School Dropout Detection: A Comparison of Tabular and Graph -Based Models for Predicting At-Risk Students"
+        journal: Unknown venue
+        url: https://doi.org/10.21528/cbic2025-1191400
+      - authors: >-
+          Saul Sousa da Rocha, Cintia Correa e Silva, Mateus José da Silva, Jose Rodrigues Torres Neto, Carlos H. G. Ferreira, Glauber Dias
+          Gonçalves
+        title: Uso de Características Temporais e Semânticas para Detectar Eventos em Vídeos de Violência Urbana
+        journal: Unknown venue
+        url: https://doi.org/10.5753/webmedia.2025.16150
+      - authors: Victor Martins, S. Serafim, Leila Maria Moreira Beltrão Pereira, Ana Rita Alves, Carlos H. G. Ferreira, Jussara M. Almeida
+        title: "A Misoginia no YouTube Brasileiro: Um Estudo de Caso sobre o Conteúdo Produzido pela Comunidade Red Pill"
+        journal: Unknown venue
+        url: https://doi.org/10.5753/webmedia.2025.16070
+      - authors: Raul Almeida, Bruno Kamarowski, Bernardo Biesseck, Luiz Coelho, Roger Granada, David Menotti
+        title: An Unbiased Benchmark for Domain Generalization Face Anti-Spoofing
+        journal: Unknown venue
+        url: https://doi.org/10.5753/sibgrapi.est.2025.38278
+      - authors: Pedro Silva, Guilherme Silva, Pablo Coelho, Vander L. S. Freitas, Gladston Moreira, David Menotti, Eduardo Luz
         title: "PD-Loss: Proxy-Decidability for Efficient Metric Learning"
-        journal: "2025 38th SIBGRAPI Conference on Graphics, Patterns and Images"
-        venue_suffix: "pp. 1–6"
-        badge: "SIBGRAPI 2025"
-      - authors: "Pedro Castro, Pedro H.L. Silva, David Menotti, Gladston Moreira, Eduardo Luz"
-        title: "Simultaneous Learning Loss for Improved Cross-Domain Knowledge Transfer"
-        journal: "2025 38th SIBGRAPI Conference on Graphics, Patterns and Images"
-        venue_suffix: "pp. 1–6"
-        badge: "SIBGRAPI 2025"
-
+        journal: Unknown venue
+        url: https://doi.org/10.1109/sibgrapi67909.2025.11223414
+      - authors: Lucas Wojcik, Luiz Coelho, Roger Granada, David Menotti
+        title: Exploring Light-Weight Object Recognition for Real-Time Document Detection
+        journal: Unknown venue
+        url: https://doi.org/10.1109/sibgrapi67909.2025.11223364
+      - authors: Pedro Castro, Pedro Silva, David Menotti, Gladston Moreira, Eduardo Luz
+        title: Simultaneous Learning Loss for Improved Cross-Domain Knowledge Transfer
+        journal: Unknown venue
+        url: https://doi.org/10.1109/sibgrapi67909.2025.11223408
+      - authors: Sara Câmara, Eduardo Luz, Valéria Carvalho, Ivan Reinaldo Meneghini, Gladston Moreira
+        title: "MOPrompt: Multi-objective Semantic Evolution for Prompt Optimization"
+        journal: Unknown venue
+        url: https://doi.org/10.5753/stil.2025.37815
+      - authors: >-
+          Caio César de Azevedo, Fernanda Menezes de Oliveira e; Universidade de Fortaleza – fernanda.menezes@unifor.br Silva, Ivair R.
+          Silva, Caio César de Azevedo, Fernanda Menezes de Oliveira e; Universidade de Fortaleza – fernanda.menezes@unifor.br Silva, Ivair
+          R. Silva, Caio César de Azevedo, Fernanda Menezes de Oliveira e; Universidade de Fortaleza – fernanda.menezes@unifor.br Silva,
+          Ivair R. Silva
+        title: "A política monetária e impactos regionais: evidência empírica para os estados brasileiros"
+        journal: LA Referencia (Red Federada de Repositorios Institucionales de Publicaciones Científicas)
+      - authors: Glender Brás, Alisson Marques da Silva, Elizabeth F. Wanner
+        title: "EvoNFuzz: A New Evolutionary Neuro-Fuzzy Network with\_Genetic Programming-Based Learning"
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-032-05179-0_37
+      - authors: Ivair R. Silva, Roger C.N. Ngassi, Gladston Moreira
+        title: Exact non-parametric sequential convergence test for samplers
+        journal: Journal of Computational and Applied Mathematics
+        url: https://doi.org/10.1016/j.cam.2025.117051
+      - authors: Valfride Nascimento, Gabriel E. Lima, Rafael O. Ribeiro, William Robson Schwartz, Rayson Laroca, David Menotti
+        title: "Toward Advancing License Plate Super-Resolution in Real-World Scenarios: A Dataset and Benchmark"
+        journal: Journal of the Brazilian Computer Society
+        url: https://doi.org/10.5753/jbcs.2025.5159
+        cited_by_count: 4
+      - authors: Daniel Faustino Lacerda de Souza, Thais Webber, Elizabeth F. Wanner
+        title: Towards Federated, Autonomous and Cognitive Digital Twins with DARLING
+        journal: Unknown venue
+        url: https://doi.org/10.1109/sose66311.2025.11083783
+      - authors: Else Betânia Gomes da Rocha, Ester Morais Neves, Elizabeth F. Wanner, Ricardo H. C. Takahashi, André Rodrigues da Cruz
+        title: An Experimental Study of Noisy Optimization with RPS Over Different Distributions
+        journal: SN Computer Science
+        url: https://doi.org/10.1007/s42979-025-03984-5
+        cited_by_count: 1
+      - authors: >-
+          Ivan DeAndres-Tame, Rubén Tolosana, Pietro Melzi, Rubén Vera-Rodríguez, Minchul Kim, Christian Rathgeb, Xiaoming Liu, Luis F.
+          Gomez, Aythami Morales, Julián Fiérrez, Javier Ortega-García, Z. Zhong, Yuge Huang, Yuxi Mi, Shouhong Ding, Shuigeng Zhou, Shuai
+          He, Lingzhi Fu, Heng Cong, Rongyu Zhang, Zhihong Xiao, Evgeny Smirnov, Anton Pimenov, Aleksey Grigorev, Denis Timoshenko, Kaleb
+          Mesfin Asfaw, Cheng-Yaw Low, Hao Liu, Chuyi Wang, Qing Zuo, Zhixiang He, Hatef Otroshi Shahreza, Anjith George, Alexander
+          Unnervik, Parsa Rahimi, Sébastien Marcel, Pedro C. Neto, Marco Huber, Jan Niklas Kolf, Naser Damer, Fadi Boutros, Jaime S.
+          Cardoso, Ana F. Sequeira, Andrea Atzori, Gianni Fenu, Mirko Marras, Vitomir Štruc, Yu Jiang, Zhangjie Li, Jichun Li, Weisong Zhao,
+          Zhen Lei, Xiangyu Zhu, Xiaoyu Zhang, Bernardo Biesseck, Pedro Marques‐Vidal, Luiz Coelho, Roger Granada, David Menotti
+        title: "Second FRCSyn-onGoing: Winning solutions and post-challenge analysis to improve face recognition with synthetic data"
+        journal: Information Fusion
+        url: https://doi.org/10.1016/j.inffus.2025.103099
+        cited_by_count: 12
+      - authors: Elisama de Araújo Silva Oliveira, Elizabeth F. Wanner, Elisangela Martins de Sá, Sérgio Ricardo de Souza
+        title: A local branching-based solution for the multi-period cutting stock problem with tardiness, earliness, and setup costs
+        journal: Journal of Heuristics
+        url: https://doi.org/10.1007/s10732-025-09547-4
+        cited_by_count: 1
+      - authors: Regina Carla Lima Corrêa de Sousa, Victor Samuel Levindo Mont’Mor, Dênis E. C. Vargas, Elizabeth F. Wanner
+        title: Análise de uma versão híbrida do algoritmo NSGA-III em problemas de otimização com muitos objetivos
+        journal: Proceeding Series of the Brazilian Society of Computational and Applied Mathematics
+        url: https://doi.org/10.5540/03.2025.011.01.0346
+      - authors: Regina Carla Lima Corrêa de Sousa, Filipe Goulart, Dênis E. C. Vargas, Felipe Campelo, Elizabeth F. Wanner
+        title: Optimizing Multi- and Many-Objective Problems on Varied Budgets
+        journal: Proceeding Series of the Brazilian Society of Computational and Applied Mathematics
+        url: https://doi.org/10.5540/03.2025.011.01.0454
+      - authors: Elisama de Araújo Silva Oliveira, Elisangela Martins de Sá, Sérgio Ricardo de Souza, Elizabeth F. Wanner
+        title: O Problema de Corte de Estoque com Datas de entrega, Setup e Estoque
+        journal: Anais do Simpósio Brasileiro de Pesquisa Operacional
+        url: https://doi.org/10.59254/sbpo-2025-212317
+      - authors: >-
+          Renato Lara de Assis, Marcelo Campos, Marcone Jamilson Freitas Souza, Maria Augusta Leite de Oliveira e Souza, Eduardo Camargo de
+          Siqueira, Elizabeth F. Wanner, Sérgio Ricardo de Souza
+        title: A Solution Procedure for Fixed Mammography Unit Location-Allocation and Mobile Mammography Unit Routing Problems
+        journal: Unknown venue
+        url: https://doi.org/10.5220/0013293700003929
+      - authors: Daniel Leto, Elizabeth F. Wanner, Roberto C. Alamino, Thais Webber
+        title: "Modelling COVID-19 with\_a\_SIR Variant Using Real-World Data: A\_Case Study in\_Brazil"
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-031-87908-1_3
+      - authors: Lucas Wojcik, Luiz Coelho, Roger Granada, David Menotti
+        title: New Paths in Document Data Augmentation Using Templates and Language Models
+        journal: Unknown venue
+        url: https://doi.org/10.5220/0013145900003912
+      - authors: Diego Rafael Lucio, Luiz A. Zanlorensi, Vincent Besson, Yandre M. G. Costa, David Menotti
+        title: "Pupil Constrictions and\_Dilations Effects as\_Data Augmentation on\_an\_Iris Recognition CNN Approach"
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-031-81596-6_28
+      - authors: Rayson Laroca, Valter Estevam, Gladston Moreira, Rodrigo Minetto, David Menotti
+        title: "Advancing Multinational License Plate Recognition Through Synthetic and Real Data Fusion: A Comprehensive Evaluation"
+        journal: IET Intelligent Transport Systems
+        url: https://doi.org/10.1049/itr2.70086
+      - authors: Renan José dos Santos Viana, Flávio Vinícius Cruzeiro Martins, Elizabeth F. Wanner, Kalyanmoy Deb
+        title: >-
+          An Innovative Divide and Conquer Approach for Many-Objective Optimization: Inducing Artificial Correlations and Enhancing MOEA
+          Performance
+        journal: SSRN Electronic Journal
+        url: https://doi.org/10.2139/ssrn.5644073
+      - authors: Regina Carla Lima Corrêa de Sousa, Dênis E. C. Vargas, Elizabeth F. Wanner, Joshua Knowles
+        title: "An MaOEA/Local Search Hybrid Based on\_a\_Fast, Stochastic BFGS Using Achievement Scalarizing Search Directions"
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-981-96-3506-1_2
   - year: 2024
     items:
-      - authors: "Guilherme Silva, Pedro Silva, Gladston Moreira, Eduardo Luz"
-        title: "Bridging the Gap in ECG Classification: Integrating Self-supervised Learning with Human-in-the-Loop Amid Medical Equipment Hardware Constraints"
-        venue_prefix: "In: "
-        journal: "Applied Reconfigurable Computing"
-        venue_suffix: "pp. 63–74. Springer Nature Switzerland"
-        badge: "Springer"
-      - authors: "Guilherme Silva, Arthur Negrão, Gladston Moreira, Eduardo Luz, Pedro Silva"
-        title: "An Embedding Multitask Neural Network for Efficient Arrhythmia Detection"
-        journal: "Anais do XXIV Simpósio Brasileiro de Computação Aplicada à Saúde"
-        venue_suffix: "pp. 412–423. SBC"
-        url: "https://sol.sbc.org.br/index.php/sbcas/article/view/28836"
-        badge: "SBCAS 2024"
-      - authors: "Dênis Oliveira, Anderson R. Duarte, Eduardo Luz, Gladston Moreira"
-        title: "Reinforcement Learning for the Detection of Arbitrary Shaped Spatial Clusters"
-        journal: "2024 IEEE Latin American Conference on Computational Intelligence (LA-CCI)"
-        venue_suffix: "pp. 1–6"
-        badge: "IEEE LACCI 2024"
-      - authors: "Amanda Oliveira, Pedro H. Silva, Valéria Santos, Gladston Moreira, Vander L. Freitas, Eduardo J. Luz"
+      - authors: L. L. Lima, Elizabeth F. Wanner, A. P. F. Atman
+        title: Understanding the Role of Daily Activities in the Transmission of COVID-19 in Urban Settings Using an Agent-Based Model
+        journal: Complex Systems
+        url: https://doi.org/10.25088/complexsystems.33.3.333
+      - authors: >-
+          Ivan DeAndres-Tame, Rubén Tolosana, Pietro Melzi, Rubén Vera-Rodríguez, Minchul Kim, Christian Rathgeb, Xiaoming Liu, Luis F.
+          Gomez, Aythami Morales, Julián Fiérrez, Javier Ortega-García, Z. Zhong, Yuge Huang, Yuxi Mi, Shouhong Ding, Shuigeng Zhou, Shuai
+          He, Lingzhi Fu, Heng Cong, Rongyu Zhang, Zhihong Xiao, Evgeny Smirnov, Anton Pimenov, Aleksey Grigorev, Denis Timoshenko, Kaleb
+          Mesfin Asfaw, Cheng-Yaw Low, Hao Liu, Chuyi Wang, Qing Zuo, Zhixiang He, Hatef Otroshi Shahreza, Anjith George, Alexander
+          Unnervik, Parsa Rahimi, Sébastien Marcel, Pedro C. Neto, Marco Huber, Jan Niklas Kolf, Naser Damer, Fadi Boutros, Jaime S.
+          Cardoso, Ana F. Sequeira, Andrea Atzori, Gianni Fenu, Mirko Marras, Vitomir Štruc, Yu Jiang, Zhangjie Li, Jichun Li, Weisong Zhao,
+          Zhen Lei, Xiangyu Zhu, Xiaoyu Zhang, Bernardo Biesseck, Pedro Marques‐Vidal, Luiz Coelho, Roger Granada, David Menotti
+        title: "Second FRCSyn-onGoing: Winning Solutions and Post-Challenge Analysis to Improve Face Recognition with Synthetic Data"
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2412.01383
+      - authors: Amanda Szekir de Oliveira, Pedro Silva, Valéria Santos, Gladston Moreira, Vander L. S. Freitas, Eduardo Luz
         title: "Toxic Text Classification in Portuguese: Is LLaMA 3.1 8B All You Need?"
-        journal: "Anais do XV Simpósio Brasileiro de Tecnologia da Informação e da Linguagem Humana"
-        venue_suffix: "pp. 57–66. SBC"
-        url: "https://sol.sbc.org.br/index.php/stil/article/view/31116"
-        badge: "STIL 2024"
-
+        journal: Unknown venue
+        url: https://doi.org/10.5753/stil.2024.245416
+        cited_by_count: 4
+      - authors: Dênis Oliveira, Anderson Ribeiro Duarte, Eduardo Luz, Gladston Moreira
+        title: Reinforcement Learning for the Detection of Arbitrary Shaped Spatial Clusters
+        journal: Unknown venue
+        url: https://doi.org/10.1109/la-cci62337.2024.10814900
+      - authors: Adriano de Oliveira Andrade, Guilherme Silva, Pedro Silva, Dênis Oliveira, Gladston Moreira, Eduardo Luz
+        title: "Exploring Remote Cardiac Signals for Biometric Verification: A Study Using Eulerian Video Magnification"
+        journal: Unknown venue
+        url: https://doi.org/10.1109/la-cci62337.2024.10814755
+      - authors: Pablo Coelho, Guilherme Silva, Dênis Oliveira, Gladston Moreira, Eduardo Luz, Pedro Silva
+        title: "Periocular EfficientNet: A Deep Model for Periocular Recognition"
+        journal: Unknown venue
+        url: https://doi.org/10.1109/la-cci62337.2024.10814790
+        cited_by_count: 2
+      - authors: Paulo Lopes do Nascimento, Dênis E. C. Vargas, Elizabeth F. Wanner
+        title: Performance Evaluation of a Hybrid NSGA-III for Multi and Many-Objective Optimization in Real-World Problems
+        journal: Unknown venue
+        url: https://doi.org/10.5753/wsis.2024.33677
+        cited_by_count: 1
+      - authors: >-
+          Antônio Carlos Vargas Motta, Letícia de Pierri, Bernardo Lipski, Vander Freitas Melo, Maria Fernanda Dames Santos Lima, Tamires
+          Maiara Ercole, Leonardo Pussieldi Bastos, Rodrigo Studart Corrêa
+        title: >-
+          An overview of soil and plant assessment for predicting site quality and recovery strategies of one the largest tailings dam
+          failures worldwide
+        journal: Environmental Monitoring and Assessment
+        url: https://doi.org/10.1007/s10661-024-13237-2
+        cited_by_count: 1
+      - authors: >-
+          Francisco Thiago Correia de Souza, Maria Zillene Franklin da Silva, Humberto H de Carvalho, Carla Bastos Vidal, Ronaldo Ferreira
+          do Nascimento, Elisane Longhinotti
+        title: "Evaluating BTEX in vehicle exhaust gas: A fast and efficient approach using SPME and GC-BID"
+        journal: Journal of Chromatography A
+        url: https://doi.org/10.1016/j.chroma.2024.465417
+        cited_by_count: 3
+      - authors: Lucas Wojcik, Luiz Coelho, Roger Granada, David Menotti
+        title: Novos Caminhos para Aumento de Documentos com templates e Modelos de Linguagem
+        journal: Unknown venue
+        url: https://doi.org/10.5753/sibgrapi.est.2024.31652
+      - authors: David Silva, Valter Estevam, David Menotti
+        title: "Less is More: Concatenating Videos for Sign Language Translation from a Small Set of Signs"
+        journal: Unknown venue
+        url: https://doi.org/10.1109/sibgrapi62404.2024.10716311
+        cited_by_count: 2
+      - authors: Bruno Kamarowski, Raul Almeida, Bernardo Biesseck, Roger Granada, Luiz Coelho, David Menotti
+        title: Hybrid method for active face anti-spoofing based on close-up challenge
+        journal: Unknown venue
+        url: https://doi.org/10.5753/sibgrapi.est.2024.31653
+      - authors: Luiz Guilherme Fonseca Carreira, David Menotti, William Robson Schwartz
+        title: "DPR-V2S: A Deep Framework for Periocular Recognition in Surveillance Environments"
+        journal: Unknown venue
+        url: https://doi.org/10.1109/sibgrapi62404.2024.10716296
+        cited_by_count: 1
+      - authors: Bernardo Biesseck, Pedro Marques‐Vidal, Luiz Coelho, Roger Granada, David Menotti
+        title: "TCDiff: Triple Condition Diffusion Model with 3D Constraints for Stylizing Synthetic Faces"
+        journal: Unknown venue
+        url: https://doi.org/10.1109/sibgrapi62404.2024.10716345
+        cited_by_count: 1
+      - authors: Pedro Marques‐Vidal, Bernardo Biesseck, Luiz Coelho, Roger Granada, David Menotti
+        title: A Comparative Study on Synthetic Facial Data Generation Techniques for Face Recognition
+        journal: Unknown venue
+        url: https://doi.org/10.5753/sibgrapi.est.2024.31662
+      - authors: >-
+          Farizul Hafiz Kasim, T.E. Boult, Rodrígo Mora, Bernardo Biesseck, Richardson Ribeiro, June Schlueter, Tomáš Repák, Rafael Henrique
+          Vareto, David Menotti, William Robson Schwartz, Manuel Günther
+        title: "Watchlist Challenge: 3<sup>rd</sup> Open-set Face Detection and Identification"
+        journal: Unknown venue
+        url: https://doi.org/10.1109/ijcb62174.2024.10744535
+        cited_by_count: 1
+      - authors: >-
+          Farizul Hafiz Kasim, Terrance E. Boult, Rensso Mora, Bernardo Biesseck, Rafael O. Ribeiro, Jan Schlueter, Tomáš Repák, Rafael
+          Henrique Vareto, David Menotti, William Robson Schwartz, Manuel Günther
+        title: "Watchlist Challenge: 3rd Open-set Face Detection and Identification"
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2409.07220
+      - authors: Marcelo dos Santos, Rayson Laroca, Rafael O. Ribeiro, João C. Neves, David Menotti
+        title: Multi-Feature Aggregation in Diffusion Models for Enhanced Face Super-Resolution
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2408.15386
+      - authors: Valfride Nascimento, Rayson Laroca, Rafael O. Ribeiro, William Robson Schwartz, David Menotti
+        title: "Enhancing License Plate Super-Resolution: A Layout-Aware and Character-Driven Approach"
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2408.15103
+      - authors: Valfride Nascimento, Rayson Laroca, David Menotti
+        title: Super-Resolution Towards License Plate Recognition
+        journal: Unknown venue
+        url: https://doi.org/10.5753/ctd.2024.1999
+        cited_by_count: 2
+      - authors: Saul Sousa da Rocha, Carlos Henrique do Vale e Silva, Carlos H. G. Ferreira, Glauber Dias Gonçalves, Jussara M. Almeida
+        title: Monitorando a Opinião Pública sobre Operações Policiais no Brasil via Comentários de Vídeos no YouTube
+        journal: Unknown venue
+        url: https://doi.org/10.5753/brasnam.2024.3101
+        cited_by_count: 2
+      - authors: Caio Viana, Carlos H. G. Ferreira, Fabrício Murai, Aldri Santos, Lourenço Alves Pereira
+        title: "Devil in the Noise: Detecting Advanced Persistent Threats with Backbone Extraction"
+        journal: Unknown venue
+        url: https://doi.org/10.1109/iscc61673.2024.10733665
+        cited_by_count: 1
+      - authors: Mateus Roveda Pilar, Vander Freitas Melo, Luís Fernando Roveda, Marcelo Ricardo Lima, Jairo Calderari de Oliveira
+        title: >-
+          Organic carbon and short-range order minerals responsible for cementation of the spodic horizon (ortstein): a new proposal of
+          chemical extractions in undisturbed samples
+        journal: Soil Research
+        url: https://doi.org/10.1071/sr24034
+        cited_by_count: 1
+      - authors: >-
+          Hatef Otroshi Shahreza, Christophe Ecabert, Anjith George, Alexander Unnervik, Sébastien Marcel, Nicolò Di Domenico, Guido Borghi,
+          Davide Maltoni, Fadi Boutros, Julia Vogel, Naser Damer, Ángela Sánchez-Pérez, Enrique Mas-Candela, Jorge Calvo-Zaragoza, Bernardo
+          Biesseck, Pedro Marques‐Vidal, Roger Granada, David Menotti, Ivan DeAndres-Tame, Simone Maurizio La Cava, Sara Concas, Pietro
+          Melzi, Rubén Tolosana, Rubén Vera-Rodríguez, Gianpaolo Perelli, Giulia Orrù, Gian Luca Marcialis, Julián Fiérrez
+        title: "SDFR: Synthetic Data for Face Recognition Competition"
+        journal: Unknown venue
+        url: https://doi.org/10.1109/fg59268.2024.10581946
+        cited_by_count: 20
+      - authors: Frank Castilio Alencar, Carlos H. G. Ferreira, Dionisio Leite
+        title: "Developing Decentralized Applications: A Framework Approach on Blockchain Networks"
+        journal: Unknown venue
+        url: https://doi.org/10.1145/3658271.3658343
+        cited_by_count: 1
+      - authors: Roberto Casadei, Lukas Esterle, Rose Gamble, Paul Harvey, Elizabeth F. Wanner
+        title: "Editorial: Understanding and engineering cyber-physical collectives"
+        journal: Frontiers in Robotics and AI
+        url: https://doi.org/10.3389/frobt.2024.1407421
+        cited_by_count: 2
+      - authors: Glender Brás, Alisson Marques da Silva, Elizabeth F. Wanner
+        title: A genetic algorithm for rule extraction in fuzzy adaptive learning control networks
+        journal: Genetic Programming and Evolvable Machines
+        url: https://doi.org/10.1007/s10710-024-09486-2
+        cited_by_count: 4
+      - authors: >-
+          Pietro Melzi, Rubén Tolosana, Rubén Vera-Rodríguez, Minchul Kim, Christian Rathgeb, Xiaoming Liu, Ivan DeAndres-Tame, Aythami
+          Morales, Julián Fiérrez, Javier Ortega-García, Weisong Zhao, Xiangyu Zhu, Zheyu Yan, Xiaoyu Zhang, Jinlin Wu, Zhen Lei, Suvidha
+          Tripathi, Mahak Kothari, Md Haider Zama, Debayan Deb, Bernardo Biesseck, Pedro Marques‐Vidal, Roger Granada, Guilherme Fickel,
+          Gustavo Führ, David Menotti, Alexander Unnervik, Anjith George, Christophe Ecabert, Hatef Otroshi Shahreza, Parsa Rahimi,
+          Sébastien Marcel, Ioannis Sarridis, Christos Koutlis, Georgia Baltsou, Symeon Papadopoulos, Christos Diou, Nicolò Di Domenico,
+          Guido Borghi, Lorenzo Pellegrini, Enrique Mas-Candela, Ángela Sánchez-Pérez, Andrea Atzori, Fadi Boutros, Naser Damer, Gianni
+          Fenu, Mirko Marras
+        title: "FRCSyn-onGoing: Benchmarking and comprehensive evaluation of real and synthetic data to improve face recognition systems"
+        journal: Information Fusion
+        url: https://doi.org/10.1016/j.inffus.2024.102322
+        cited_by_count: 49
+      - authors: >-
+          Nádia Guimarães Sousa, João F. S. Salgueira, Luiz Thiago Vasconcelos da Silva, Ronaldo Ferreira do Nascimento, Pedro de Lima‐Neto,
+          Adriana N. Correia, Ayesha Mubshrah, W. Schwarzacher
+        title: Nanoscale Metal/Metal Multilayers Electrodeposited from Ethaline
+        journal: Journal of The Electrochemical Society
+        url: https://doi.org/10.1149/1945-7111/ad2957
+      - authors: Dênis Emanuel da Costa Vargas, Marcela C. Caram Peito, Elizabeth F. Wanner
+        title: ANÁLISE DO DESEMPENHO DE ALGORITMOS EVOLUTIVOS BASEADOS EM DECOMPOSIÇÃO NA RESOLUÇÃO DE PROBLEMAS DE OTIMIZAÇÃO MULTIOBJETIVO
+        journal: Unknown venue
+        url: https://doi.org/10.29327/1340957.26-11
+      - authors: Vitor Gomes Soares Lins Peixoto, Elizabeth F. Wanner, André Rodrigues da Cruz
+        title: "A Multiobjective Tuning of\_a\_Procedural Content Generator for\_Game Level Design via\_Evolutionary Algorithms"
+        journal: Communications in computer and information science
+        url: https://doi.org/10.1007/978-3-031-53025-8_37
+      - authors: Sérgio Ricardo de Souza, Elisangela Martins De Sá, Elizabeth F. Wanner, Evandro Chaves de Oliveira
+        title: Matheuristic Applied to the Cutting Stock Problem with Due Dates
+        journal: International Journal of Services and Operations Management
+        url: https://doi.org/10.1504/ijsom.2024.10068561
+      - authors: Else Betânia Gomes da Rocha, Ester Morais Neves, Elizabeth F. Wanner, Ricardo H. C. Takahashi, André Rodrigues da Cruz
+        title: Nelder-Mead Based Algorithms for Noisy Functions
+        journal: Communications in computer and information science
+        url: https://doi.org/10.1007/978-3-031-77432-4_19
+        cited_by_count: 1
   - year: 2023
     items:
-      - authors: "Fernando H. O. Duarte, Vander L.S. Freitas, Gladston Moreira, Eduardo Luz, Leonardo B.L. Santos"
-        title: "Correlations Between Epidemiological Time Series Forecasting and Influence Regions of Brazilian Cities"
-        journal: "XXIV Brazilian Symposium on Geoinformatics — GEOINFO 2023"
-        venue_suffix: "pp. 340–345. MCTI/INPE"
-        badge: "GEOINFO 2023"
-      - authors: "João Paulo Reis Alvarenga, Luiz Henrique Campos de Merschmann, Eduardo José Silva da Luz"
-        title: "A Data-Centric Approach for Portuguese Speech Recognition: Language Model And Its Implications"
-        journal: "IEEE Latin America Transactions"
-        venue_suffix: "21(4):546–556"
-        badge: "IEEE"
-      - authors: "Pedro Castro, Gabriel Fortuna, Pedro Silva, Andrea G. C. Bianchi, Gladston Moreira, Eduardo Luz"
-        title: "Merging Traditional Feature Extraction and Deep Learning for Enhanced Hop Variety Classification"
-        venue_prefix: "In: "
-        journal: "Intelligent Systems"
-        venue_suffix: "(eds. Naldi, Bianchi), pp. 307–322. Springer Nature Switzerland"
-        badge: "Springer BRACIS 2023"
-      - authors: "Lauro Moraes, Eduardo Luz, Gladston Moreira"
-        title: "Physicochemical Properties for Promoter Classification"
-        venue_prefix: "In: "
-        journal: "Intelligent Systems"
-        venue_suffix: "(eds. Naldi, Bianchi), pp. 368–382. Springer Nature Switzerland"
-        badge: "Springer BRACIS 2023"
-      - authors: "Gabriel Souza, Anderson Duarte, Gladston Moreira, Frederico Cruz"
-        title: "Post-processing Improvements in Multi-objective Optimization of General Single-server Finite Queueing Networks"
-        journal: "IEEE Latin America Transactions"
-        venue_suffix: "21(3):381–388"
-        badge: "IEEE"
-      - authors: "João Fernandes Zenóbio, Pedro Lopes Silva, Eduardo Silva da Luz, Gladston Moreira, Conrado Galdino, Jadson Castro Gertrudes"
-        title: "Reptilerecon: A Framework for Extraction and Analysis of Lizard Signals"
-        journal: "Anais do XXXVIII Simpósio Brasileiro de Bancos de Dados"
-        venue_suffix: "pp. 154–166. SBC"
-        url: "https://sol.sbc.org.br/index.php/sbbd/article/view/25524"
-        badge: "SBBD 2023"
-      - authors: "Fernando Henrique Oliveira Duarte, Gladston J. P. Moreira, Eduardo J. S. Luz, Leonardo B.L. Santos, Vander L.S. Freitas"
-        title: "Time Series Forecasting of COVID-19 Cases in Brazil with GNN and Mobility Networks"
-        venue_prefix: "In: "
-        journal: "Intelligent Systems"
-        venue_suffix: "(eds. Naldi, Bianchi), pp. 361–375. Springer Nature Switzerland"
-        badge: "Springer BRACIS 2023"
-
+      - authors: Walisson Chaves Ferreira Pinto, Antonio Pinto, Paulo Cavalin, David Menotti, Igor Braga de Paula, Helon Vicente Hultmann Ayala
+        title: Bubble Detection with Semantic Segmentation for Multiphase Flow Particle Image Velocimetry
+        journal: Unknown venue
+        url: https://doi.org/10.21528/cbic2023-030
+      - authors: Rayson Laroca, Luiz A. Zanlorensi, Valter Estevam, Rodrigo Minetto, David Menotti
+        title: "Leveraging Model Fusion for\_Improved License Plate Recognition"
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-031-49249-5_5
+        cited_by_count: 15
+      - authors: >-
+          Pietro Melzi, Rubén Tolosana, Rubén Vera-Rodríguez, Minchul Kim, Christian Rathgeb, Xiaoming Liu, Ivan DeAndres-Tame, Aythami
+          Morales, Julián Fiérrez, Javier Ortega-García, Weisong Zhao, Xiangyu Zhu, Zheyu Yan, Xiaoyu Zhang, Jinlin Wu, Zhen Lei, Suvidha
+          Tripathi, Mahak Kothari, Md Haider Zama, Debayan Deb, Bernardo Biesseck, Pedro Marques‐Vidal, Roger Granada, Guilherme Fickel,
+          Gustavo Führ, David Menotti, Alexander Unnervik, Anjith George, Christophe Ecabert, Hatef Otroshi Shahreza, Parsa Rahimi,
+          Sébastien Marcel, Ioannis Sarridis, Christos Koutlis, Georgia Baltsou, Symeon Papadopoulos, Christos Diou, Nicolò Di Domenico,
+          Guido Borghi, Lorenzo Pellegrini, Enrique Mas-Candela, Ángela Sánchez-Pérez, Andrea Atzori, Fadi Boutros, Naser Damer, Gianni
+          Fenu, Mirko Marras
+        title: FRCSyn Challenge at WACV 2024:Face Recognition Challenge in the Era of Synthetic Data
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2311.10476
+        cited_by_count: 2
+      - authors: Bruno Kamarowski, Raul Almeida, Bernardo Biesseck, Roger Granada, Gustavo Führ, David Menotti
+        title: Multi-challenge database for active liveness
+        journal: Unknown venue
+        url: https://doi.org/10.5753/sibgrapi.est.2023.27461
+      - authors: Bernardo Biesseck, Pedro Marques‐Vidal, Roger Granada, Guilherme Fickel, Gustavo Führ, David Menotti
+        title: 3D Face Reconstruction as Complementary Data to Enhance Face Recognition
+        journal: Unknown venue
+        url: https://doi.org/10.1109/sibgrapi59091.2023.10347162
+      - authors: Lucas Wojcik, Luiz Coelho, Roger Granada, Gustavo Führ, David Menotti
+        title: "NBID Dataset: Towards Robust Information Extraction in Official Documents"
+        journal: Unknown venue
+        url: https://doi.org/10.1109/sibgrapi59091.2023.10347174
+        cited_by_count: 1
+      - authors: Pedro Marques‐Vidal, Henry Chu, Bernardo Biesseck, Roger Granada, Gustavo Führ, David Menotti
+        title: Extending Earth Mover's Distance to Occluded Face Verification
+        journal: Unknown venue
+        url: https://doi.org/10.1109/sibgrapi59091.2023.10347147
+      - authors: Valfride Nascimento, Rayson Laroca, David Menotti
+        title: Super-Resolution Towards License Plate Recognition
+        journal: Unknown venue
+        url: https://doi.org/10.5753/sibgrapi.est.2023.27448
+        cited_by_count: 2
+      - authors: Cristiano Bacelar de Oliveira, João C. Neves, Rafael O. Ribeiro, David Menotti
+        title: People Tracking Methods Applied to Planalto Palace Security Videos
+        journal: Unknown venue
+        url: https://doi.org/10.5753/sibgrapi.est.2023.27462
+        cited_by_count: 1
+      - authors: Valter Estevam, Rayson Laroca, Hélio Pedrini, David Menotti
+        title: "Tell me what you see: A zero-shot action recognition method based on natural language descriptions"
+        journal: Multimedia Tools and Applications
+        url: https://doi.org/10.1007/s11042-023-16566-5
+        cited_by_count: 10
+      - authors: André O. Martins, Marcela C. Caram Peito, Dênis E. C. Vargas, Elizabeth F. Wanner
+        title: >-
+          Development of a Bio-inspired Hybrid Decomposition Algorithm Based on Whale and Differential Evolution Strategies for
+          Multiobjective Optimization
+        journal: VETOR - Revista de Ciências Exatas e Engenharias
+        url: https://doi.org/10.14295/vetor.v33i1.15567
+        cited_by_count: 2
+      - authors: Rayson Laroca, Valter Estevam, Alceu S. Britto, Rodrigo Minetto, David Menotti
+        title: Do We Train on Test Data? The Impact of Near-Duplicates on License Plate Recognition
+        journal: Unknown venue
+        url: https://doi.org/10.1109/ijcnn54540.2023.10191584
+        cited_by_count: 16
+      - authors: Ivair R. Silva, Fernando Luiz Pereira de Oliveira
+        title: Matching ratio and sample size for optimal sequential testing with binomial data
+        journal: Statistical Methods in Medical Research
+        url: https://doi.org/10.1177/09622802231176031
+      - authors: Valfride Nascimento, Rayson Laroca, Jorge de A. Lambert, William Robson Schwartz, David Menotti
+        title: Super-resolution of license plate images using attention modules and sub-pixel convolution layers
+        journal: Computers & Graphics
+        url: https://doi.org/10.1016/j.cag.2023.05.005
+        cited_by_count: 26
+      - authors: Pedro Castro, Gabriel Cássia Fortuna, Rafael Alves Bonfim de Queiroz, Gladston Moreira, Eduardo Luz
+        title: "Regularization Through Simultaneous Learning: A Case Study on Plant Classification"
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2305.13447
+      - authors: Ivair R. Silva, Debanjan Bhattacharjee, Yan Zhuang
+        title: "Fixed-length interval estimation of population sizes: sequential adaptive Monte Carlo mark–recapture–mark sampling"
+        journal: Computational and Applied Mathematics
+        url: https://doi.org/10.1007/s40314-023-02320-y
+        cited_by_count: 1
+      - authors: >-
+          Vander Freitas Melo, Bernardo Lipski, Antônio Carlos Vargas Motta, Letícia de Pierri, Daniela Morais Leme, Tamires Maiara Ercole,
+          Maria Fernanda D. d. S. Lima, Emanoela Lundgren Thá, Leonardo Pussieldi Bastos
+        title: Integrated environmental assessment of iron ore tailings in floodplain soils and plants after the Fundão Dam disaster in Brazil
+        journal: Integrated Environmental Assessment and Management
+        url: https://doi.org/10.1002/ieam.4780
+        cited_by_count: 8
+      - authors: >-
+          Carolina G. Marcelino, Jorge Pérez‐Aracil, Elizabeth F. Wanner, S. Jiménez‐Fernández, Gabriel Matos Cardoso Leite, Sancho
+          Salcedo‐Sanz
+        title: Cross-entropy boosted CRO-SL for optimal power flow in smart grids
+        journal: Soft Computing
+        url: https://doi.org/10.1007/s00500-023-07900-y
+        cited_by_count: 13
+      - authors: Kalyanmoy Deb, Claudio Lucio do Val Lopes, Flávio Vinícius Cruzeiro Martins, Elizabeth F. Wanner
+        title: Identifying Pareto Fronts Reliably Using a Multistage Reference-Vector-Based Framework
+        journal: IEEE Transactions on Evolutionary Computation
+        url: https://doi.org/10.1109/tevc.2023.3246922
+        cited_by_count: 13
+        badge: IEEE
+      - authors: Ivair R. Silva, Yan Zhuang, Debanjan Bhattacharjee, Igor Rodrigues de Almeida
+        title: Regression model for the reported infected during emerging pandemics under the stochastic SEIR
+        journal: Computational and Applied Mathematics
+        url: https://doi.org/10.1007/s40314-023-02241-w
+        cited_by_count: 2
+      - authors: >-
+          Sarthak Pati, Ujjwal Baid, Brandon Edwards, Micah Sheller, Shih-Han Wang, G. Anthony Reina, Patrick Foley, Alexey Gruzdev, Deepthi
+          Karkada, Christos Davatzikos, Chiharu Sako, Satyam Ghodasara, Michel Bilello, Suyash Mohan, Philipp Kickingereder, Gianluca
+          Brugnara, Chandrakanth Jayachandran Preetha, Felix Sahm, Klaus Maier‐Hein, Maximilian Zenk, Martin Bendszus, Wolfgang Wick, Evan
+          Calabrese, Jeffrey D. Rudie, Javier Villanueva‐Meyer, Soonmee Cha, Madhura Ingalhalikar, Manali Jadhav, Umang Pandey, Jitender
+          Saini, John W. Garrett, Matthew Larson, Robert Jeraj, Stuart Currie, Russell Frood, Kavi Fatania, Raymond Y. Huang, Ken Chang,
+          Carmen Balañá, Jaume Capellades, Josep Puig, Johannes Trenkler, Josef Pichler, Georg Necker, Andreas Haunschmidt, Stephan Meckel,
+          Gaurav Shukla, Spencer Liem, Gregory S. Alexander, Joseph Lombardo, Joshua D. Palmer, Adam E. Flanders, Adam P. Dicker, Haris I.
+          Sair, Craig Jones, Archana Venkataraman, Meirui Jiang, Tiffany Y. So, Cheng Chen, Pheng‐Ann Heng, Qi Dou, Michal Kozubek, Filip
+          Lux, Jan Michálek, Petr Matula, Miloš Keřkovský, Tereza Kopřivová, Marek Dostál, Václav Vybíhal, Michael A. Vogelbaum, J. Ross
+          Mitchell, Joaquim M. Farinhas, Joseph A. Maldjian, Chandan Ganesh Bangalore Yogananda, Marco C. Pinho, Divya Reddy, James M.
+          Holcomb, Benjamin Wagner, Benjamin M. Ellingson, Timothy F. Cloughesy, Catalina Raymond, Talia C. Oughourlian, Akifumi Hagiwara,
+          Chencai Wang, Minh‐Son To, Sargam Bhardwaj, Chee Chong, Marc Agzarian, Alexandre X. Falcão, Samuel Botter Martins, Bernardo Corrêa
+          de Almeida Teixeira, F Sprenger, David Menotti, Diego Rafael Lucio, Pamela LaMontagne, Daniel Marcus, Benedikt Wiestler, Florian
+          Kofler, Ivan Ezhov, Marie Metz
+        title: "Author Correction: Federated learning enables big data for rare cancer boundary detection"
+        journal: Nature Communications
+        url: https://doi.org/10.1038/s41467-023-36188-7
+        cited_by_count: 5
+      - authors: Fernando Henrique Oliveira Duarte, Gladston Moreira, Eduardo Luz, Leonardo Bacelar Lima Santos, Vander L. S. Freitas
+        title: "Time Series Forecasting of\_COVID-19 Cases in\_Brazil with\_GNN and\_Mobility Networks"
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-031-45392-2_24
+        cited_by_count: 3
   - year: 2022
     items:
-      - authors: "Andressa Souza, Mariana Mota, Helen Lima, Wellington Souza, Marcos Nicolau, Gladston Moreira, Eduardo Luz"
-        title: "Fraudulent Account Detection Using Hierarchical Classification"
-        journal: "Anais do XIX Encontro Nacional de Inteligência Artificial e Computacional"
-        venue_suffix: "pp. 306–317. SBC"
-        url: "https://sol.sbc.org.br/index.php/eniac/article/view/22791"
-        badge: "ENIAC 2022"
+      - authors: Dênis E. C. Vargas, Afonso Celso de Castro Lemonge, Elizabeth F. Wanner
+        title: >-
+          Análise do algoritmo IWOA acoplado a uma técnica de penalização adaptativa em problemas de otimização com restrições aplicados a
+          projetos de engenharia
+        journal: Proceeding Series of the Brazilian Society of Computational and Applied Mathematics
+        url: https://doi.org/10.5540/03.2022.009.01.0237
+      - authors: Elisama de Araújo Silva Oliveira, Elisangela Martins De Sá, Sérgio Ricardo de Souza, Elizabeth F. Wanner
+        title: >-
+          Uma proposta de solução via Local Branching do Problema de Corte de Estoque com Data de Entrega e Setup de troca de Padrão de
+          corte
+        journal: Proceeding Series of the Brazilian Society of Computational and Applied Mathematics
+        url: https://doi.org/10.5540/03.2022.009.01.0325
+      - authors: Carolina G. Marcelino, Gabriel Matos Cardoso Leite, Elizabeth F. Wanner, S. Jiménez‐Fernández, Sancho Salcedo‐Sanz
+        title: Evaluating the use of a Net-Metering mechanism in microgrids to reduce power generation costs with a swarm-intelligent algorithm
+        journal: Energy
+        url: https://doi.org/10.1016/j.energy.2022.126317
+        cited_by_count: 34
+      - authors: Hugo Proença, David Menotti, Afonso Paiva, Gladimir V. G. Baranoski
+        title: Conference on graphics, patterns and images
+        journal: Pattern Recognition Letters
+        url: https://doi.org/10.1016/j.patrec.2022.12.002
+        cited_by_count: 7
+      - authors: Andressa O. Souza, Mariana Mota, Helen C. S. C. Lima, Wellington Souza, Marcos Nicolau, Gladston Moreira, Eduardo Luz
+        title: Fraudulent Account Detection Using Hierarchical Classification
+        journal: Unknown venue
+        url: https://doi.org/10.5753/eniac.2022.227330
+      - authors: Matheus P.N. e Silva, Carlos Conforti Ferreira Guedes, Vander Freitas Melo, Ricardo de Oliveira Mascarenhas, Fábio A. S. Salvador
+        title: >-
+          Evaluating geostatistical methods along with semi-destructive analysis for forensic provenancing organic-rich soils in humid
+          subtropical climate
+        journal: Forensic Science International
+        url: https://doi.org/10.1016/j.forsciint.2022.111508
+        cited_by_count: 7
+      - authors: Valfride Nascimento, Rayson Laroca, Jorge de A. Lambert, William Robson Schwartz, David Menotti
+        title: Combining Attention Module and Pixel Shuffle for License Plate Super-Resolution
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2210.16836
+        cited_by_count: 3
+      - authors: Luiz A. Zanlorensi, Rayson Laroca, Diego Rafael Lucio, Lucas R. Santos, Alceu S. Britto, David Menotti
+        title: A new periocular dataset collected by mobile devices in unconstrained scenarios
+        journal: Scientific Reports
+        url: https://doi.org/10.1038/s41598-022-22811-y
+        cited_by_count: 24
+      - authors: Pedro Marques‐Vidal, Roger Granada, Gustavo Fuuhr, Vanessa Testoni, David Menotti
+        title: A Benchmark on Masked Face Recognition
+        journal: Unknown venue
+        url: https://doi.org/10.1109/sibgrapi55357.2022.9991785
+        cited_by_count: 2
+      - authors: Gabriel Salomon, Rayson Laroca, David Menotti
+        title: Image-based Automatic Dial Meter Reading in Unconstrained Scenarios
+        journal: Measurement
+        url: https://doi.org/10.1016/j.measurement.2022.112025
+      - authors: >-
+          Pedro C. Neto, Fadi Boutros, João Ribeiro Pinto, Naser Damer, Ana F. Sequeira, Jaime S. Cardoso, Messaoud Bengherabi, Abderaouf
+          Bousnat, Sana Boucheta, Nesrine Hebbadj, Mustafa Ekrem Erakın, Uğur Demir, Hazım Kemal Ekenel, Pedro Beber De Queiroz Vidal, David
+          Menotti
+        title: "OCFR 2022: Competition on Occluded Face Recognition from Synthetically Generated Structure-Aware Occlusions"
+        journal: Unknown venue
+        url: https://doi.org/10.1109/ijcb54206.2022.10007963
+        cited_by_count: 11
+      - authors: Marcelo dos Santos, Rayson Laroca, Rafael O. Ribeiro, João C. Neves, Hugo Proença, David Menotti
+        title: Face Super-Resolution Using Stochastic Differential Equations
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2209.12064
+        cited_by_count: 2
+      - authors: Ivair R. Silva, Yan Zhuang
+        title: Bounded-width confidence interval following optimal sequential analysis of adverse events with binary data
+        journal: Statistical Methods in Medical Research
+        url: https://doi.org/10.1177/09622802221122383
+        cited_by_count: 3
+      - authors: Rayson Laroca, Marcelo Santos, Valter Estevam, Eduardo Luz, David Menotti
+        title: A First Look at Dataset Bias in License Plate Recognition
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2208.10657
+        cited_by_count: 1
+      - authors: Gabriel Peres Nobre, Carlos H. G. Ferreira, Jussara M. Almeida
+        title: More of the Same? A Study of Images Shared on Mastodon's Federated Timeline
+        journal: Zenodo (CERN European Organization for Nuclear Research)
+        url: https://doi.org/10.5281/zenodo.6977415
+      - authors: >-
+          Carolina G. Marcelino, Elizabeth F. Wanner, Flávio Vinícius Cruzeiro Martins, Jorge Pérez‐Aracil, S. Jiménez‐Fernández, Sancho
+          Salcedo‐Sanz
+        title: Solving the Optimal Active–Reactive Power Dispatch Problem in Smart Grids with the C-DEEPSO Algorithm
+        journal: 2022 IEEE Congress on Evolutionary Computation (CEC)
+        url: https://doi.org/10.1109/cec55065.2022.9870385
+        badge: IEEE
+      - authors: Pedro H. Silva, Gladston Moreira, Vander L. S. Freitas, Rodrigo Silva, David Menotti, Eduardo Luz
+        title: A Decidability-Based Loss Function
+        journal: 2022 International Joint Conference on Neural Networks (IJCNN)
+        url: https://doi.org/10.1109/ijcnn55064.2022.9891934
+        cited_by_count: 1
+      - authors: Thiago Figueiredo Costa, Elizabeth F. Wanner, Flávio Vinícius Cruzeiro Martins, André Rodrigues da Cruz
+        title: A Methodology for Definition and Refinement of a LSTM Stock Predictor Architecture using iRace and NSGA-II
+        journal: Unknown venue
+        url: https://doi.org/10.5753/bwaif.2022.222869
+        cited_by_count: 1
+      - authors: Samara Alves Testoni, Luis Valério Prandel, Vander Freitas Melo, Lorna Dawson, Fábio Augusto da Silva Salvador
+        title: Conjunctive use of synchrotron X‐ray diffraction and Rietveld refinement in Fe‐oxide clays for forensic applications
+        journal: Journal of Forensic Sciences
+        url: https://doi.org/10.1111/1556-4029.15098
+        cited_by_count: 6
+      - authors: Claudio Lucio do Val Lopes, Flávio Vinícius Cruzeiro Martins, Elizabeth F. Wanner, Kalyanmoy Deb
+        title: A computationally fast but approximate MIP-DoM calculation for multi-objective optimization
+        journal: Proceedings of the Genetic and Evolutionary Computation Conference Companion
+        url: https://doi.org/10.1145/3520304.3529070
+      - authors: >-
+          Hélio Oliveira do Nascimento, Maria Zillene Franklin da Silva, Jéssica Beserra Alexandre, Carla Bastos Vidal, Técia Vieira
+          Carvalho, Ronaldo Ferreira do Nascimento
+        title: New HS-SPME-GC-BID method for the determination of volatile constituents in distilled beverages
+        journal: Microchemical Journal
+        url: https://doi.org/10.1016/j.microc.2022.107669
+        cited_by_count: 10
+      - authors: Matheus F. C. Barros, Carlos H. G. Ferreira, Lourenço Alves Pereira, Marco Mellia, Jussara M. Almeida, Bruno P. Santos
+        title: Understanding mobility in networks
+        journal: ACM SIGMETRICS Performance Evaluation Review
+        url: https://doi.org/10.1145/3543146.3543173
+      - authors: Felipe Dias dos Reis, Tales B. Nascimento, Carolina G. Marcelino, Elizabeth F. Wanner, Henrique E. Borges, Sancho Salcedo‐Sanz
+        title: "Asynchronous and\_Distributed Multi-agent Systems: An Approach Using Actor Model"
+        journal: Communications in computer and information science
+        url: https://doi.org/10.1007/978-3-031-23236-7_48
+      - authors: Valter Estevam, Rayson Laroca, Hélio Pedrini, David Menotti
+        title: Global Semantic Descriptors for Zero-Shot Action Recognition
+        journal: IEEE Signal Processing Letters
+        url: https://doi.org/10.1109/lsp.2022.3200605
+        cited_by_count: 4
+        badge: IEEE
+      - authors: Vicente de Oliveira Sousa Neto, A.J. Ramiro de Castro, Gilberto D. Saraiva, Ronaldo Ferreira do Nascimento
+        title: Nanomaterials for groundwater remediation
+        journal: Comprehensive analytical chemistry
+        url: https://doi.org/10.1016/bs.coac.2021.11.005
+        cited_by_count: 18
+      - authors: Jose Martins da Rosa, Renan Saldanha Linhares, Carlos H. G. Ferreira, Gabriel Peres Nobre, Fabrício Murai, Jussara M. Almeida
+        title: "Uncovering Discussion Groups on\_Claims of\_Election Fraud from\_Twitter"
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-031-19097-1_20
+        cited_by_count: 14
+      - authors: >-
+          Rafaela Priscila Cruz Moreira, Carolina G. Marcelino, Flávio Vinícius Cruzeiro Martins, Elizabeth F. Wanner, S. Jiménez‐Fernández,
+          Sancho Salcedo‐Sanz
+        title: "A Multi-objective Approach for the Menu Planning Problem: A Brazilian Case\_Study"
+        journal: Communications in computer and information science
+        url: https://doi.org/10.1007/978-3-031-23236-7_20
+      - authors: Guilherme Silva, Pedro Silva, Mariana Mota, Eduardo Luz, Gladston Moreira
+        title: An Efficient Contact Lens Spoofing Classification
+        journal: Unknown venue
+        url: https://doi.org/10.5220/0010868500003179
+      - authors: Daniel Fonseca, Elizabeth F. Wanner, Carolina G. Marcelino, Gabriel P. Silva, S. Jiménez‐Fernández, Sancho Salcedo‐Sanz
+        title: "Active GA Accelerated by\_Simulated Annealing to\_Solve SPP in\_Packet Networks"
+        journal: Communications in computer and information science
+        url: https://doi.org/10.1007/978-3-031-23236-7_24
+      - authors: Rayson Laroca, E.S. Cardoso, Diego Rafael Lucio, Valter Estevam, David Menotti
+        title: On the Cross-dataset Generalization in License Plate Recognition
+        journal: Proceedings of the 17th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications
+        url: https://doi.org/10.5220/0010846800003124
+        cited_by_count: 66
+  - year: 2021
+    items:
+      - authors: >-
+          Wendy Fernandes Lavigne Quintanilha, Maxwell Lima Maia, Bruno Vieira Bertoncini, Jefferson Pereira Ribeiro, Demostenis Ramos
+          Cassiano, Francisco W. Sousa, Ronaldo Ferreira do Nascimento
+        title: Avaliação dos níveis de NO2 atmosféricos em corredores de transporte público
+        journal: Transportes
+        url: https://doi.org/10.14295/transportes.v29i4.2508
+        cited_by_count: 2
+      - authors: Renan José dos Santos Viana, Flávio Vinícius Cruzeiro Martins, Elizabeth F. Wanner
+        title: "An Investigation into Many-objective Optimization Problems: A Case Study of the Dial-a-Ride Problem"
+        journal: IEEE Latin America Transactions
+        url: https://doi.org/10.1109/tla.2022.9662175
+        cited_by_count: 2
+        badge: IEEE
+      - authors: Valter Estevam, Rayson Laroca, Hélio Pedrini, David Menotti
+        title: Dense Video Captioning Using Unsupervised Semantic Information
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2112.08455
+        cited_by_count: 9
+      - authors: Matheus F. C. Barros, Carlos H. G. Ferreira, Bruno P. Santos, Lourenço Alves Pereira, Marco Mellia, Jussara M. Almeida
+        title: "Understanding mobility in networks: A node embedding approach"
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2111.06161
+        cited_by_count: 1
+      - authors: Carolina G. Marcelino, João V. C. Avancini, Carla Delgado, Elizabeth F. Wanner, S. Jiménez‐Fernández, Sancho Salcedo‐Sanz
+        title: "Dynamic Electric Dispatch for Wind Power Plants: A New Automatic Controller System Using Evolutionary Algorithms"
+        journal: Sustainability
+        url: https://doi.org/10.3390/su132111924
+        cited_by_count: 10
+      - authors: Eduardo Gastal, Marcelo Walter, Afonso Paiva, David Menotti, Hugo Proença, Leandro Carlos Fernandes
+        title: Organizing Committee
+        journal: Unknown venue
+        url: https://doi.org/10.1109/sibgrapi54419.2021.00006
+      - authors: Amanda Fonseca Lopes, Tatiana Sainara Maia Fernandes, Ronaldo Ferreira do Nascimento
+        title: "Barrier Discharge Ionization Detector in Gas Chromatography: A Review on Applications"
+        journal: Critical Reviews in Analytical Chemistry
+        url: https://doi.org/10.1080/10408347.2021.1969885
+        cited_by_count: 17
+      - authors: Pedro Silva, Gladston Moreira, Vander L. S. Freitas, Rodrigo Silva, David Menotti, Eduardo Luz
+        title: A Decidability-Based Loss Function
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2109.05524
+      - authors: >-
+          Gabriela Cavalcante da Silva, Fernanda Monteiro de Almeida, Sabrina Oliveira, Elizabeth F. Wanner, Leonardo C. T. Bezerra, Ricardo
+          H. C. Takahashi, Luciana Conceição de Lima
+        title: Comparing community mobility reduction between first and second COVID-19 waves
+        journal: Transport Policy
+        url: https://doi.org/10.1016/j.tranpol.2021.08.004
+        cited_by_count: 15
+      - authors: >-
+          Carolina G. Marcelino, Gabriel Matos Cardoso Leite, Carla Delgado, Lucas Braga de Oliveira, Elizabeth F. Wanner, S.
+          Jiménez‐Fernández, Sancho Salcedo‐Sanz
+        title: >-
+          An efficient multi-objective evolutionary approach for solving the operation of multi-reservoir system scheduling in hydro-power
+          plants
+        journal: Expert Systems with Applications
+        url: https://doi.org/10.1016/j.eswa.2021.115638
+        cited_by_count: 54
+      - authors: Claudio Lucio do Val Lopes, Flávio Vinícius Cruzeiro Martins, Elizabeth F. Wanner, Kalyanmoy Deb
+        title: Analyzing Dominance Move (MIP-DoM) Indicator for Multiobjective and Many-Objective Optimization
+        journal: IEEE Transactions on Evolutionary Computation
+        url: https://doi.org/10.1109/tevc.2021.3096669
+        cited_by_count: 14
+        badge: IEEE
+      - authors: >-
+          Débora N. Diniz, Mariana T. Rezende, Andrea Bianchi, Cláudia Martins Carneiro, Eduardo Luz, Gladston Moreira, Daniela Ushizima,
+          Fátima N. S. de Medeiros, Marcone Jamilson Freitas Souza
+        title: A Deep Learning Ensemble Method to Assist Cytopathologists in Pap Test Image Classification
+        journal: Journal of Imaging
+        url: https://doi.org/10.3390/jimaging7070111
+        cited_by_count: 53
+      - authors: Claudio L. V. Lopes, Flávio Vinícius Cruzeiro Martins, Elizabeth F. Wanner, Kalyanmoy Deb
+        title: An approximate MIP-DoM calculation for multi-objective optimization using affinity propagation clustering algorithm
+        journal: Proceedings of the Genetic and Evolutionary Computation Conference Companion
+        url: https://doi.org/10.1145/3449726.3459445
+      - authors: Ivair R. Silva, Debanjan Bhattacharjee, Nitis Mukhopadhyay
+        title: Numerical versus asymptotic sequential interval estimation of population sizes
+        journal: Journal of Computational and Applied Mathematics
+        url: https://doi.org/10.1016/j.cam.2021.113718
+        cited_by_count: 1
+      - authors: Gabriela Cavalcante da Silva, Elizabeth F. Wanner, Leonardo Bezerra, Thomas Stützle
+        title: Revisiting Pareto-optimal Multi- and Many-objective Reference Fronts for Continuous Optimization
+        journal: Dépôt institutionnel de l'Université libre de Bruxelles (Université Libre de Bruxelles)
+      - authors: Guilherme Silva, Pedro Silva, Valéria de Carvalho Santos, Alan Kardek Rêgo Segundo, Eduardo Luz, Gladston Moreira
+        title: "A VNS Algorithm for PID Controller: Hardware-In-The-Loop Approach"
+        journal: IEEE Latin America Transactions
+        url: https://doi.org/10.1109/tla.2021.9468443
+        cited_by_count: 3
+        badge: IEEE
+      - authors: Renan Santos Mendes, Elizabeth F. Wanner, Flávio Vinícius Cruzeiro Martins, Kalyanmoy Deb
+        title: Aggregation or Selection? Clustering Many Objectives for Vehicle Routing Problem with Demand Responsive Transport
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cec45853.2021.9504919
+        cited_by_count: 1
+      - authors: Carolina G. Marcelino, Lucas Braga de Oliveira, Elizabeth F. Wanner, Carla Delgado, S. Jiménez‐Fernández, Sancho Salcedo‐Sanz
+        title: "A Hybrid Multiobjective Solution for the Short-term Hydro-power Dispatch Problem: a Swarm Evolutionary Approach"
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cec45853.2021.9504898
+        cited_by_count: 3
+      - authors: >-
+          Gabriel Matos Cardoso Leite, Carolina G. Marcelino, Elizabeth F. Wanner, Carlos E. Pedreira, S. Jiménez‐Fernández, Sancho
+          Salcedo‐Sanz
+        title: "Pattern Classification Applying Neighbourhood Component Analysis and Swarm Evolutionary Algorithms: A Coupled Methodology"
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cec45853.2021.9504702
+        cited_by_count: 6
+      - authors: Gabriel Peres Nobre, Carlos H. G. Ferreira, Jussara M. Almeida
+        title: A Hierarchical Network-Oriented Analysis of UserParticipation in Misinformation Spread on WhatsApp
+        journal: Figshare
+        url: https://doi.org/10.5281/zenodo.4774375
+      - authors: Ivair R. Silva, Judith C. Maro, Martin Kulldorff
+        title: Exact sequential test for clinical trials and post‐market drug and vaccine safety surveillance with Poisson and binary data
+        journal: Statistics in Medicine
+        url: https://doi.org/10.1002/sim.9094
+        cited_by_count: 9
+      - authors: Luiz A. Zanlorensi, Rayson Laroca, Eduardo Luz, Alceu S. Britto, Luiz S. Oliveira, David Menotti
+        title: "Ocular recognition databases and competitions: a survey"
+        journal: Artificial Intelligence Review
+        url: https://doi.org/10.1007/s10462-021-10028-w
+        cited_by_count: 4
+      - authors: Ivair R. Silva, Yan Zhuang, Julio C. A. da Silva
+        title: Kronecker delta method for testing independence between two vectors in high-dimension
+        journal: Statistical Papers
+        url: https://doi.org/10.1007/s00362-021-01238-z
+        cited_by_count: 5
+      - authors: Glender Brás, Alisson Marques da Silva, Elizabeth F. Wanner
+        title: Multi-gene genetic programming to building up fuzzy rule-base in Neo-Fuzzy-Neuron networks
+        journal: Journal of Intelligent & Fuzzy Systems
+        url: https://doi.org/10.3233/jifs-202146
+        cited_by_count: 1
+      - authors: Sabrina Oliveira, Leonardo C. T. Bezerra, Thomas Stützle, Marco Dorigo, Elizabeth F. Wanner, Sérgio R. de Souza
+        title: A computational study on ant colony optimization for the traveling salesman problem with dynamic demands
+        journal: Computers & Operations Research
+        url: https://doi.org/10.1016/j.cor.2021.105359
+        cited_by_count: 30
+      - authors: Rodney Oliveira Marinho Diana, Sérgio Ricardo de Souza, Elizabeth F. Wanner
+        title: A robust multi-response VNS-aiNet approach for solving scheduling problems under unrelated parallel machines environments
+        journal: Expert Systems with Applications
+        url: https://doi.org/10.1016/j.eswa.2021.115140
+        cited_by_count: 9
+      - authors: >-
+          Ivair R. Silva, Dulcídia Carlos Guezimane Ernesto, Fernando Luiz Pereira de Oliveira, Reinaldo Marques, Anderson Castro Soares de
+          Oliveira
+        title: Monte Carlo Test for Stochastic Trend in Space State Models for the Location-Scale Family
+        journal: Brazilian Review of Econometrics
+        url: https://doi.org/10.12660/bre.v40n22020.81082
+        cited_by_count: 1
+      - authors: >-
+          Gabriela Cavalcante da Silva, Fernanda Monteiro de Almeida, Sabrina Oliveira, Leonardo C. T. Bezerra, Elizabeth F. Wanner, Ricardo
+          H. C. Takahashi
+        title: A multi-objective time series analysis of community mobility reduction\n comparing first and second COVID-19 waves
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2103.00535
+        cited_by_count: 1
+      - authors: >-
+          Gabriela Cavalcante da Silva, Fernanda Monteiro de Almeida, Sabrina Oliveira, Leonardo C. T. Bezerra, Elizabeth F. Wanner, Ricardo
+          H. C. Takahashi
+        title: A multi-objective time series analysis of community mobility reduction comparing first and second COVID-19 waves
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2103.00535
+      - authors: Rayson Laroca, Luiz A. Zanlorensi, Gabriel Resende Gonçalves, Eduardo Todt, William Robson Schwartz, David Menotti
+        title: An efficient and layout‐independent automatic license plate recognition system based on the YOLO detector
+        journal: IET Intelligent Transport Systems
+        url: https://doi.org/10.1049/itr2.12030
+        cited_by_count: 186
+      - authors: Valter Estevam, Hélio Pedrini, David Menotti
+        title: "Zero-shot action recognition in videos: A survey"
+        journal: Neurocomputing
+        url: https://doi.org/10.1016/j.neucom.2021.01.036
+        cited_by_count: 10
+      - authors: Ícaro Oliveira de Oliveira, Rayson Laroca, David Menotti, Keiko V. O. Fonseca, Rodrigo Minetto
+        title: "Vehicle-Rear: A New Dataset to Explore Feature Fusion for Vehicle Identification Using Convolutional Neural Networks"
+        journal: IEEE Access
+        url: https://doi.org/10.1109/access.2021.3097964
+        cited_by_count: 36
+        badge: IEEE
+      - authors: Ruan Gustavo Rezende Silva, Aldo Giuntini de Magalhães, Christopher Augusto Campos, Ivair R. Silva
+        title: >-
+          Assessment of the effect of changes in consolidation conditions in the advance of the carbonation front in cementitious matrix
+          composites
+        journal: Revista IBRACON de Estruturas e Materiais
+        url: https://doi.org/10.1590/s1983-41952021000500012
+        cited_by_count: 4
+      - authors: Ronaldo Ferreira do Nascimento, Vicente de Oliveira Sousa Neto, Pierre Basílio Almeida Fechine, Paulo Freire
+        title: Nanomaterials and Nanotechnology
+        journal: Materials horizons
+        url: https://doi.org/10.1007/978-981-33-6056-3
+        cited_by_count: 7
+      - authors: Rayson Laroca, Alessandra B. Araujo, Luiz A. Zanlorensi, Eduardo Cunha de Almeida, David Menotti
+        title: "Towards Image-Based Automatic Meter Reading in Unconstrained Scenarios: A Robust and Efficient Approach"
+        journal: IEEE Access
+        url: https://doi.org/10.1109/access.2021.3077415
+        cited_by_count: 49
+        badge: IEEE
+  - year: 2020
+    items:
+      - authors: >-
+          Renan Santos Mendes, Victoria Lush, Elizabeth F. Wanner, Flávio Vinícius Cruzeiro Martins, João Fernando Machry Sarubbi, Kalyanmoy
+          Deb
+        title: >-
+          Online clustering reduction based on parametric and non-parametric correlation for a many-objective vehicle routing problem with
+          demand responsive transport
+        journal: Expert Systems with Applications
+        url: https://doi.org/10.1016/j.eswa.2020.114467
+        cited_by_count: 13
+      - authors: Luiz A. Zanlorensi, Rayson Laroca, Diego Rafael Lucio, Lucas R. Santos, Alceu S. Britto, David Menotti
+        title: "UFPR-Periocular: A Periocular Dataset Collected by Mobile Devices in Unconstrained Scenarios."
+        journal: arXiv (Cornell University)
+        cited_by_count: 6
+      - authors: Luiz A. Zanlorensi, Rayson Laroca, Diego Rafael Lucio, Lucas Rodrigues dos Santos, Alceu S. Britto, David Menotti
+        title: A New Periocular Dataset Collected by Mobile Devices in Unconstrained Scenarios
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2011.12427
+        cited_by_count: 4
+      - authors: Rayson Laroca, David Menotti
+        title: "Automatic License Plate Recognition: An Efficient and Layout-Independent System Based on the YOLO Detector"
+        journal: Unknown venue
+        url: https://doi.org/10.5753/sibgrapi.est.2020.12978
+        cited_by_count: 8
+      - authors: Rayson Laroca, Alessander Cidral Boslooper, David Menotti
+        title: Automatic Counting and Identification of Train Wagons Based on Computer\n Vision and Deep Learning
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2010.16307
+        cited_by_count: 4
+      - authors: Rayson Laroca, Alessander Cidral Boslooper, David Menotti
+        title: Automatic Counting and Identification of Train Wagons Based on Computer Vision and Deep Learning
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2010.16307
+        cited_by_count: 1
+      - authors: Lourdes Ramírez Cerna, Edwin Jonathan Escobedo Cárdenas, Dayse Garcia Miranda, David Menotti, Guillermo Cámara-Chávez
+        title: A multimodal LIBRAS-UFOP Brazilian sign language dataset of minimal pairs using a microsoft Kinect sensor
+        journal: Expert Systems with Applications
+        url: https://doi.org/10.1016/j.eswa.2020.114179
+        cited_by_count: 37
+      - authors: Allini Klos Rodrigues de Campos, Karina Maria Vieira Cavalieri-Polizeli, Vander Freitas Melo
+        title: Effects of compaction on lead availability in contaminated soils with contrasting texture
+        journal: Environmental Monitoring and Assessment
+        url: https://doi.org/10.1007/s10661-020-08648-w
+        cited_by_count: 3
+      - authors: Sergio Stempliuk, David Menotti
+        title: Agriculture Multispectral Uav Image Registration Using Salient Features and Mutual Information
+        journal: Unknown venue
+        url: https://doi.org/10.1109/igarss39084.2020.9323325
+        cited_by_count: 6
+      - authors: Gabriela Cavalcante da Silvaa, Sabrina Oliveirab, Elizabeth F. Wanner, Leonardo C. T. Bezerra
+        title: "Google COVID-19 community mobility reports: insights from multi-criteria\\n decision making"
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2009.10648
+        cited_by_count: 1
+      - authors: Gabriela Cavalcante da Silvaa, Sabrina Oliveirab, Elizabeth F. Wanner, Leonardo C. T. Bezerra
+        title: "Google COVID-19 community mobility reports: insights from multi-criteria decision making"
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.2009.10648
+        cited_by_count: 1
+      - authors: Felipe Campelo, Elizabeth F. Wanner
+        title: Sample size calculations for the experimental comparison of multiple algorithms on multiple problem instances
+        journal: Journal of Heuristics
+        url: https://doi.org/10.1007/s10732-020-09454-w
+        cited_by_count: 1
+      - authors: Aamir Akbar, Peter R. Lewis, Elizabeth F. Wanner
+        title: A Self-Aware and Scalable Solution for Efficient Mobile-Cloud Hybrid Robotics
+        journal: Frontiers in Robotics and AI
+        url: https://doi.org/10.3389/frobt.2020.00102
+        cited_by_count: 5
+      - authors: Claudio Lucio do Val Lopes, Flávio Vinícius Cruzeiro Martins, Elizabeth F. Wanner
+        title: An Assignment Problem Formulation for Dominance Move Indicator
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cec48606.2020.9185597
+      - authors: Rayson Laroca, David Menotti
+        title: "Automatic License Plate Recognition: An Efficient and Layout-Independent Approach Based on the YOLO Detector"
+        journal: Unknown venue
+        url: https://doi.org/10.5753/ctd.2020.11372
+      - authors: Ivair R. Silva, Dionatan W. R. Oliveira
+        title: Confidence-credible intervals
+        journal: Communication in Statistics- Theory and Methods
+        url: https://doi.org/10.1080/03610926.2020.1780447
+        cited_by_count: 2
+      - authors: Ivair R. Silva, Martin Kulldorff, W. Katherine Yih
+        title: Optimal Alpha Spending for Sequential Analysis with Binomial Data
+        journal: Journal of the Royal Statistical Society Series B (Statistical Methodology)
+        url: https://doi.org/10.1111/rssb.12379
+        cited_by_count: 11
+      - authors: Jordan J. Bird, Elizabeth F. Wanner, Anikó Ekárt, Diego R. Faria
+        title: Optimisation of phonetic aware speech recognition through multi-objective evolutionary algorithms
+        journal: Expert Systems with Applications
+        url: https://doi.org/10.1016/j.eswa.2020.113402
+        cited_by_count: 17
+      - authors: Elisama de Araújo Silva Oliveira, Elisângela Martins De, Sérgio Ricardo de Souza, Elizabeth F. Wanner
+        title: Relax-and-Fix Aplicado ao Problema de Corte de Estoque com Data de Entrega
+        journal: Proceeding Series of the Brazilian Society of Computational and Applied Mathematics
+        url: https://doi.org/10.5540/03.2020.007.01.0426
+      - authors: Thierry Pinheiro Moreira, David Menotti, Hélio Pedrini
+        title: Video action recognition based on visual rhythm representation
+        journal: Journal of Visual Communication and Image Representation
+        url: https://doi.org/10.1016/j.jvcir.2020.102771
+        cited_by_count: 13
+      - authors: Claudio Lucio do Val Lopes, Flávio Vinícius Cruzeiro Martins, Elizabeth F. Wanner
+        title: Dominance Move calculation using a MIP approach for comparison of multi and many-objective optimization solution sets.
+        journal: arXiv (Cornell University)
+      - authors: >-
+          Vera A. Álvarez, Mariana Altenhofen da Silva, Ioannis Anastopoulos, Rogério Aparecido Bataglioli, Marisa Masumi Beppu, Andréa
+          Cristiane Krause Bierhalz, Fernanda Carla Bombaldi de Souza, Renata Francielle Bombaldi de Souza, Adrián Bonilla‐Petriciolet,
+          Josiane Gonçalves Borges, Tito Roberto Sant’Anna Cadaval, Bruna Gregatti de Carvalho, Rosemary Aparecida de Carvalho, Técia Vieira
+          Carvalho, Pascale Chevallier, Víktor Oswaldo Cárdenas Concha, Luana Roland Ferreira Contini, Rodrigo Cué-Sampedro, João
+          Dias-Ferreira, Guilherme Luiz Dotto, Meryem Sedef Erdal, Júlia Vaz Ernesto, Ana Rachel Cavalcante Araújo Fernandes, Emanuel M.
+          Fernandes, Eduardo de Paulo Ferreira, Classius Ferreira da Silva, Ronaldo Ferreira do Nascimento, Leonardo Fernandes Fraceto,
+          Vitor Augusto dos Santos Garcia, Lucimara Gaziola de la Torre, Sandy Danielle Lucindo Gomes, Sevgi Güngör, Saartje Hernalsteens,
+          Carmen G. Hernández-Valencia, Ahmad Hosseini–Bandegharaei, M. I. N. Isa, Emine Kahraman, Theo Guenter Kieckbusch, Henryk Koroniak,
+          Ramón Díaz de León, Éder C. Lima, Patrícia Santos Lopes, Vinícius Borges Vieira Maciel, Diego Mantovani, Gustavo
+          Martínez-Castellanos, Agnes Batista Meireles, Enayde de Almeida Mélo, Ângela Maria Moraes, Mariana Agostini de Moraes, Anaftália
+          Felismino Morais, Nur Hafiza Mr Muhamaruesa, Roberto Nasser, Beatriz Clarés Naveros, Deise Ochi, Romina P. Ollier, Yıldız Özsoy,
+          Neith Pacheco, Anderson do Espírito Santo Pereira, Laura O. Péres, Ana Luíza Resende Pires, Rui L. Reis, Ansorena María Roberta,
+          João Batista Maia Rocha Neto, Luísa C. Rodrigues, Laura M. Sánchez, José Antonio Sánchez-Fernández, Andrelina Maria Pinheiro
+          Santos, Gilberto D. Saraiva, Patrícia Severino, Keiko Shirai, Simone S. Silva, Mariangela de Fátima Silva, Jackson Wesley Silva
+          dos Santos, Vicente de Oliveira Sousa Neto, João Vinícios Wirbitzki da Silveira, José L. Soriano-Ruiz, Eliana B. Souto, Clayton
+          Campelo de Souza, Thiago B. Taketa, Bruno Thorihara Tomoda, Fernanda Maria Vanin, Anna Cecília Venturini, Rodrigo Silveira Vieira,
+          Justyna Walkowiak-Kulikowska, Joanna Wolska, Patrícia Hissae Yassue‐Cordeiro, Cristiana Maria Pedroso Yoshida
+        title: Contributors
+        journal: Elsevier eBooks
+        url: https://doi.org/10.1016/b978-0-12-818134-8.09992-2
+        badge: Elsevier
+      - authors: Gabriela Y. Kimura, Diego Rafael Lucio, Alceu S. Britto, David Menotti
+        title: CNN Hyperparameter Tuning Applied to Iris Liveness Detection
+        journal: Unknown venue
+        url: https://doi.org/10.5220/0008983904280434
+        cited_by_count: 9
+      - authors: >-
+          Luiz H. Duczmal, Alexandre C. L. Almeida, Denise Bulgarelli Duczmal, Cláudia Regina Lindgren Alves, Flávia C O Magalhães, Máx
+          Sousa de Lima, Ivair R. Silva, Ricardo H. C. Takahashi
+        title: Vertical social distancing policy is ineffective to contain the COVID-19 pandemic
+        journal: Cadernos de Saúde Pública
+        url: https://doi.org/10.1590/0102-311x00084420
+        cited_by_count: 61
+      - authors: Vander Freitas Melo, Samara Alves Testoni, Lorna Dawson, Fábio Augusto da Silva Salvador
+        title: Sand fraction is not suitable for forensic investigations in subtropical soils
+        journal: Revista Brasileira de Ciência do Solo
+        url: https://doi.org/10.36783/18069657rbcs20190174
+        cited_by_count: 11
+  - year: 2019
+    items:
+      - authors: Luis Valério Prandel, Vander Freitas Melo, Samara Alves Testoni, André Maurício Brinatti, Sérgio da Costa Saab, Lorna Dawson
+        title: Spectroscopic techniques applied to discriminate soils for forensic purposes
+        journal: Soil Research
+        url: https://doi.org/10.1071/sr19066
+        cited_by_count: 15
+      - authors: Vladimiro Miranda, Joao Vigo, Leonel Carvalho, Carolina G. Marcelino, Elizabeth F. Wanner
+        title: EPSO enhanced by adaptive scaling and sub-swarms
+        journal: Unknown venue
+        url: https://doi.org/10.1109/isap48318.2019.9065982
+        cited_by_count: 2
+      - authors: Ivair R. Silva, Joshua J. Gagne, Mehdi Najafzadeh, Martin Kulldorff
+        title: Exact sequential analysis for multiple weighted binomial end points
+        journal: Statistics in Medicine
+        url: https://doi.org/10.1002/sim.8405
+        cited_by_count: 1
+      - authors: Ícaro Oliveira de Oliveira, Rayson Laroca, David Menotti, Keiko V. O. Fonseca, Rodrigo Minetto
+        title: "Vehicle Re-identification: exploring feature fusion using multi-stream convolutional networks"
+        journal: arXiv (Cornell University)
+        cited_by_count: 8
+      - authors: Gladston Moreira, Luís Paquete
+        title: Guiding under uniformity measure in the decision space
+        journal: Unknown venue
+        url: https://doi.org/10.1109/la-cci47412.2019.9037034
+        cited_by_count: 12
+      - authors: Felipe Campelo, Elizabeth F. Wanner
+        title: Sample size calculations for the experimental comparison of multiple\n algorithms on multiple problem instances
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.1908.01720
+      - authors: Darren M. Chitty, Elizabeth F. Wanner, Rakhi Parmar, Peter R. Lewis
+        title: Scaling ACO to large-scale vehicle fleet optimisation via partial-ACO
+        journal: Proceedings of the Genetic and Evolutionary Computation Conference Companion
+        url: https://doi.org/10.1145/3319619.3322048
+        cited_by_count: 4
+      - authors: Jordan J. Bird, Elizabeth F. Wanner, Anikó Ekárt, Diego R. Faria
+        title: Phoneme aware speech recognition through evolutionary optimisation
+        journal: Proceedings of the Genetic and Evolutionary Computation Conference Companion
+        url: https://doi.org/10.1145/3319619.3321951
+        cited_by_count: 9
+      - authors: Renan J. S. Viana, André Gustavo dos Santos, Flávio Vinícius Cruzeiro Martins, Elizabeth F. Wanner
+        title: Optimization of a demand responsive transport service using multi-objective evolutionary algorithms
+        journal: Proceedings of the Genetic and Evolutionary Computation Conference Companion
+        url: https://doi.org/10.1145/3319619.3328528
+        cited_by_count: 6
+      - authors: Carolina G. Marcelino, Carlos E. Pedreira, Elizabeth F. Wanner, Leonel Carvalho, Vladimiro Miranda, Armando L. da Silva
+        title: CE+EPSO
+        journal: Proceedings of the Genetic and Evolutionary Computation Conference Companion
+        url: https://doi.org/10.1145/3319619.3326768
+      - authors: Pedro Silva, Eduardo Luz, Gladston Moreira, Lauro Moraes, David Menotti
+        title: "Chimerical Dataset Creation Protocol Based on Doddington Zoo: A Biometric Application with Face, Eye, and ECG"
+        journal: Sensors
+        url: https://doi.org/10.3390/s19132968
+        cited_by_count: 13
+      - authors: Samara Alves Testoni, Vander Freitas Melo, Lorna Dawson, Fábio A. S. Salvador, Luis Valério Prandel
+        title: "Evaluation of forensic soil traces from a crime scene: robbery of a safety deposit box in Brazil"
+        journal: Geological Society London Special Publications
+        url: https://doi.org/10.1144/sp492-2019-35
+        cited_by_count: 9
+      - authors: Gustavo R. Valiati, David Menotti
+        title: Detecting Pedestrians with YOLOv3 and Semantic Segmentation Infusion
+        journal: Unknown venue
+        url: https://doi.org/10.1109/iwssip.2019.8787210
+        cited_by_count: 6
+      - authors: Jordan J. Bird, Elizabeth F. Wanner, Anikó Ekárt, Diego R. Faria
+        title: Accent classification in human speech biometrics for native and non-native english speakers
+        journal: Unknown venue
+        url: https://doi.org/10.1145/3316782.3322780
+        cited_by_count: 20
+      - authors: Darren M. Chitty, Elizabeth F. Wanner, Rakhi Parmar, Peter R. Lewis
+        title: Can Bio-Inspired Swarm Algorithms Scale to Modern Societal Problems
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.1905.08126
+        cited_by_count: 1
+      - authors: >-
+          Carolina G. Marcelino, Manuel Baumann, Leonel Carvalho, Nelson Chibeles Martins, Marcel Weil, Paulo E. M. Almeida, Elizabeth F.
+          Wanner
+        title: A combined optimisation and decision-making approach for battery-supported HMGS
+        journal: Journal of the Operational Research Society
+        url: https://doi.org/10.1080/01605682.2019.1582590
+        cited_by_count: 27
+      - authors: Darren M. Chitty, Elizabeth F. Wanner, Rakhi Parmar, Peter R. Lewis
+        title: Applying Partial-ACO to Large-scale Vehicle Fleet Optimisation
+        journal: arXiv (Cornell University)
+        url: https://doi.org/10.48550/arxiv.1904.07636
+        cited_by_count: 1
+      - authors: Ivair R. Silva, Reinaldo Marques
+        title: Frequentist-Bayesian Monte Carlo testing
+        journal: Communication in Statistics- Theory and Methods
+        url: https://doi.org/10.1080/03610926.2019.1571610
+        cited_by_count: 3
+      - authors: Rayson Laroca, Victor Barroso, Matheus Alves Diniz, Gabriel Resende Gonçalves, William Robson Schwartz, David Menotti
+        title: Convolutional neural networks for automatic meter reading
+        journal: Journal of Electronic Imaging
+        url: https://doi.org/10.1117/1.jei.28.1.013023
+        cited_by_count: 82
+      - authors: Ivair R. Silva, Wilson M. Lopes, Philipe Ambrozio Dias, W. Katherine Yih
+        title: Alpha spending for historical versus surveillance Poisson data with CMaxSPRT
+        journal: Statistics in Medicine
+        url: https://doi.org/10.1002/sim.8097
+        cited_by_count: 9
+      - authors: Ivair R. Silva, Lingling Li, Martin Kulldorff
+        title: Exact conditional maximized sequential probability ratio test adjusted for covariates
+        journal: Sequential Analysis
+        url: https://doi.org/10.1080/07474946.2019.1574446
+        cited_by_count: 7
+      - authors: >-
+          Dionisio Leite, Maycon Peixoto, Carlos H. G. Ferreira, Bruno Guazzelli Batista, Danilo Costa Marim Segura, Marcos José Santana,
+          Regina Helena Carlucci Santana
+        title: A cloud computing price model based on virtual machine performance degradation
+        journal: International Journal of Computational Science and Engineering
+        url: https://doi.org/10.1504/ijcse.2019.099082
+        cited_by_count: 1
+      - authors: Elisama oliveira, Elisangela Martins de Sá, Sérgio Ricardo de Souza, Elizabeth F. Wanner
+        title: Local Branching Aplicado ao Problema de Corte de Estoque com Data de Entrega
+        journal: Anais do Simpósio Brasileiro de Pesquisa Operacional
+        url: https://doi.org/10.59254/sbpo-2019-106945
+      - authors: Samara Alves Testoni, Vander Freitas Melo, Lorna Dawson, Fábio Augusto da Silva Salvador, Paulo Akira Kunii
+        title: Validation of a Standard Operating Procedure (SOP) for Forensic Soils Investigation in Brazil
+        journal: Figshare
+        url: https://doi.org/10.6084/m9.figshare.9796061
+      - authors: Sabrina Oliveira, Elizabeth F. Wanner, Sérgio R. de Souza, Leonardo C. T. Bezerra, Thomas Stützle
+        title: The Hypervolume Indicator as a Performance Measure in Dynamic Optimization
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-030-12598-1_26
+        cited_by_count: 4
+      - authors: Rolff Vladimir Mitton, Vander Freitas Melo, Volnei Pauletti
+        title: Do Aggregate Size Classes of the Subsurface Soil Horizon Have Different Chemical/Mineralogical Properties?
+        journal: Figshare
+        url: https://doi.org/10.6084/m9.figshare.7743209
+      - authors: Gabriel Resende Gonçalves, Matheus Alves Diniz, Rayson Laroca, David Menotti, William Robson Schwartz
+        title: Multi-task Learning for Low-Resolution License Plate Recognition
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-030-33904-3_23
+        cited_by_count: 27
+      - authors: >-
+          Helgem de Souza Ribeiro Martins, Rosielle da Costa Farias, Ivair R. Silva, Graziela Dutra Rocha Gouvêa, Raimundo Marques do
+          Nascimento Neto, Fernando Luiz Pereira de Oliveira
+        title: Um novo método para alocação de unidades em subamostras representativas baseado em covariáveis discretas
+        journal: Sigmae
+        url: https://doi.org/10.29327/2520355.8.2-77
+        cited_by_count: 1
+      - authors: Carolina G. Marcelino, Carlos E. Pedreira, Manuel Baumann, Marcel Weil, Paulo E. M. Almeida, Elizabeth F. Wanner
+        title: A Viability Study of Renewables and Energy Storage Systems Using Multicriteria Decision Making and an Evolutionary Approach
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-030-12598-1_52
+        cited_by_count: 9
+      - authors: Samara Alves Testoni, Vander Freitas Melo, Lorna Dawson, Fábio A. S. Salvador, Luis Valério Prandel
+        title: "Evaluation of forensic soil trances from a crime scene: robbery of a safety deposit box in Brazil"
+        journal: Figshare
+        url: https://doi.org/10.6084/m9.figshare.c.4561004.v1
+        cited_by_count: 4
+      - authors: Vicente de Oliveira Sousa Neto, Paulo Freire, Ronaldo Ferreira do Nascimento
+        title: Groundwater Remediation Using Nanomaterials
+        journal: Elsevier eBooks
+        url: https://doi.org/10.1016/b978-0-12-814829-7.00012-4
+        cited_by_count: 4
+        badge: Elsevier
+  - year: 2018
+    items:
+      - authors: Verediana Fernanda Cherobim, Nerilde Favaretto, Vander Freitas Melo, Anelize Manuela Bahniuk Rumbelsperger, Chi‐hua Huang
+        title: Soil surface sealing by liquid dairy manure as analysed by X-ray computed tomography
+        journal: Agricultural Water Management
+        url: https://doi.org/10.1016/j.agwat.2018.11.026
+        cited_by_count: 6
+      - authors: Ivair R. Silva, Reinaldo Marques
+        title: Bayesian Monte Carlo testing with one-dimensional measures of evidence
+        journal: Journal of Computational and Applied Mathematics
+        url: https://doi.org/10.1016/j.cam.2018.11.016
+        cited_by_count: 1
+      - authors: Fabrício Ceschin, Felipe Pinagé, Marcos Castilho, David Menotti, Luiz S. Oliveira, André Grégio
+        title: "The Need for Speed: An Analysis of Brazilian Malware Classifiers"
+        journal: IEEE Security & Privacy
+        url: https://doi.org/10.1109/msec.2018.2875369
+        cited_by_count: 37
+        badge: IEEE
+      - authors: >-
+          Cides S. Bezerra, Rayson Laroca, Diego Rafael Lucio, Evair Borges Severo, Lucas Ferrari de Oliveira, Alceu S. Britto, David
+          Menotti
+        title: Robust Iris Segmentation Based on Fully Convolutional Networks and Generative Adversarial Networks
+        journal: Unknown venue
+        url: https://doi.org/10.1109/sibgrapi.2018.00043
+        cited_by_count: 37
+      - authors: Gabriel Resende Gonçalves, Matheus Alves Diniz, Rayson Laroca, David Menotti, William Robson Schwartz
+        title: Real-Time Automatic License Plate Recognition through Deep Multi-Task Networks
+        journal: Unknown venue
+        url: https://doi.org/10.1109/sibgrapi.2018.00021
+        cited_by_count: 59
+      - authors: Luiz A. Zanlorensi, Eduardo Luz, Rayson Laroca, Alceu S. Britto, Luiz S. Oliveira, David Menotti
+        title: The Impact of Preprocessing on Deep Representations for Iris Recognition on Unconstrained Environments
+        journal: Unknown venue
+        url: https://doi.org/10.1109/sibgrapi.2018.00044
+        cited_by_count: 29
+      - authors: >-
+          Á. A AMAZONAS, Micaelli Ciane Sobrinho de Sousa, André Guimarães de Oliveira, Eliezer Fares Abdala Neto, Jefferson Pereira
+          Ribeiro, Agustín H. Rocha, Ronaldo Ferreira do Nascimento
+        title: ESTUDO DA EFICIÊNCIA DA ELETROCOAGULAÇÃO NO TRATAMENTO DE EFLUENTE TÊXTIL UTILIZANDO ELETRODO MISTO E INVERSÃO DE POLARIDADE
+        journal: Blucher Chemical Engineering Proceedings
+        url: https://doi.org/10.5151/cobeq2018-co.004
+      - authors: Felipe O. Mota, Vinícius Augusto Reis Almeida, Elizabeth F. Wanner, Gladston Moreira
+        title: Hybrid PSO Algorithm with Iterated Local Search Operator for Equality Constraints Problems
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cec.2018.8477884
+        cited_by_count: 3
+      - authors: >-
+          Rayson Laroca, Evair Borges Severo, Luiz A. Zanlorensi, Luiz S. Oliveira, Gabriel Resende Gonçalves, William Robson Schwartz,
+          David Menotti
+        title: A Robust Real-Time Automatic License Plate Recognition Based on the YOLO Detector
+        journal: Unknown venue
+        url: https://doi.org/10.1109/ijcnn.2018.8489629
+        cited_by_count: 575
+      - authors: Rafaela Priscila Cruz Moreira, Elizabeth F. Wanner, Flávio Vinícius Cruzeiro Martins, João Fernando Machry Sarubbi
+        title: An Evolutionary Mono-Objective Approach for Solving the Menu Planning Problem
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cec.2018.8477888
+        cited_by_count: 8
+      - authors: Carolina G. Marcelino, Paulo E. M. Almeida, Carlos E. Pedreira, Leonel Caroalha, Elizabeth F. Wanner
+        title: Applying C-DEEPSO to Solve Large Scale Global Optimization Problems
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cec.2018.8477854
+        cited_by_count: 12
+      - authors: Pedro H. Silva, Eduardo Luz, Luiz A. Zanlorensi, David Menotti, Gladston Moreira
+        title: Multimodal Feature Level Fusion based on Particle Swarm Optimization with Deep Transfer Learning
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cec.2018.8477817
+        cited_by_count: 37
+      - authors: Diego Rafael Lucio, Rayson Laroca, Evair Borges Severo, Alceu S. Britto, David Menotti
+        title: Fully Connected Networks and Generative Neural Networks Applied to Sclera Segmentation.
+        journal: arXiv (Cornell University)
+        cited_by_count: 2
+      - authors: Tatiana Sainara Maia Fernandes, R. G. M. Oliveira, D. X. Gouveia, M. A. S. Silva, A. S. B. Sombra, Ronaldo Ferreira do Nascimento
+        title: Study of the structural and dielectric properties of ceramic obtained from residual electrocoagulation
+        journal: Advances in Applied Ceramics Structural Functional and Bioceramics
+        url: https://doi.org/10.1080/17436753.2018.1462296
+      - authors: Carolina G. Marcelino, Paulo E. M. Almeida, Elizabeth F. Wanner, Manuel Baumann, Marcel Weil, Leonel Carvalho, Vladimiro Miranda
+        title: "Solving security constrained optimal power flow problems: a hybrid evolutionary approach"
+        journal: Applied Intelligence
+        url: https://doi.org/10.1007/s10489-018-1167-5
+        cited_by_count: 45
+      - authors: Felipe O. Mota, Elizabeth F. Wanner, Eduardo Luz, Gladston Moreira
+        title: VND-based Local Search Operator for Equality Constraint Problems in PSO Algorithm
+        journal: Electronic Notes in Discrete Mathematics
+        url: https://doi.org/10.1016/j.endm.2018.03.015
+        cited_by_count: 1
+      - authors: Carolina G. Marcelino, Manuel Baumann, Paulo E. M. Almeida, Elizabeth F. Wanner, Marcel Weil
+        title: A new model for optimization of hybrid microgrids using evolutionary algorithms
+        journal: IEEE Latin America Transactions
+        url: https://doi.org/10.1109/tla.2018.8358658
+        cited_by_count: 6
+        badge: IEEE
+      - authors: >-
+          Jéssica Elen Costa Alexandre Martins, Eliezer Fares Abdala Neto, Ari Clecius Alves de Lima, Jefferson Pereira Ribeiro, Fábio Erlan
+          Feitosa Maia, Ronaldo Ferreira do Nascimento
+        title: Box-Behnken design for COD removal of textile wastewater using electrocoagulation with pulsed DC
+        journal: Figshare
+        url: https://doi.org/10.6084/m9.figshare.5772120
+      - authors: Lucas Saldanha Ferreira, Vinícius F. dos Santos, Elizabeth F. Wanner
+        title: Uma abordagem exata para o problema k-in-a-tree utilizando programação linear inteira
+        journal: Anais do Simpósio Brasileiro de Pesquisa Operacional
+        url: https://doi.org/10.59254/sbpo-2018-85374
+      - authors: Diego Oliveira Rabel, Antônio Carlos Vargas Motta, Julierme Zimmer Barbosa, Vander Freitas Melo, Stephen A. Prior
+        title: "Depth distribution of exchangeable aluminum in acid soils: A study from subtropical Brazil"
+        journal: Figshare
+        url: https://doi.org/10.6084/m9.figshare.6832184
+        cited_by_count: 6
+  - year: 2017
+    items:
+      - authors: Eduardo Luz, Gladston Moreira, Luiz A. Zanlorensi, David Menotti
+        title: Deep periocular representation aiming video surveillance
+        journal: Pattern Recognition Letters
+        url: https://doi.org/10.1016/j.patrec.2017.12.009
+        cited_by_count: 37
+      - authors: >-
+          Rodrigo Studart Corrêa, Vander Freitas Melo, G.G.F. Abreu, Marcelo Henrique Sousa, Juliano Alexandre Chaker, Juliano de Andrade
+          Gomes
+        title: "Soil forensics: How far can soil clay analysis distinguish between soil vestiges?"
+        journal: Science & Justice
+        url: https://doi.org/10.1016/j.scijus.2017.09.003
+        cited_by_count: 25
+      - authors: >-
+          Paulo H. C. Oliveira, Gladston Moreira, Daniela Ushizima, Cláudia Martins Carneiro, Fátima N. S. de Medeiros, Flávio H. D. Araújo,
+          Romuere Silva, Andrea Bianchi
+        title: A multi-objective approach for calibration and detection of cervical cells nuclei
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cec.2017.7969586
+        cited_by_count: 11
+      - authors: Fernando Bernardo, Gladston Moreira, Eduardo Luz, Paulo H. C. Oliveira, Alvaro Gaurda
+        title: Exploring the scalability of multiple signatures in iris recognition using GA on the acceptance frontier search
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cec.2017.7969525
+        cited_by_count: 2
+      - authors: Dionisio Leite, Maycon Peixoto, Bruno Guazzelli Batista, Bruno Tardiole Kuehne, Carlos H. G. Ferreira
+        title: The influence of resource allocation on cloud computing performance
+        journal: Unknown venue
+        url: https://doi.org/10.1145/3019612.3019736
+      - authors: >-
+          Carlos H. G. Ferreira, Júlio Cézar Estrella, Luiz H. Nunes, Luis Hideo Vasconcelos Nakamura, Rafael M. de O. Libardi, Bruno
+          Guazzelli Batista, Maycon Peixoto, Dionisio Leite, Stephan Reiff‐Marganiec
+        title: A low cost workload generation approach through the cloud for capacity planning in service-oriented systems
+        journal: Unknown venue
+        url: https://doi.org/10.1145/3018896.3018900
+        cited_by_count: 2
+      - authors: Bruno Guazzelli Batista, Carlos H. G. Ferreira, Danilo Costa Marim Segura, Dionisio Machado Leite Filho, Maycon Peixoto
+        title: >-
+          Corrigendum to “A QoS-driven approach for cloud computing addressing attributes of performance and security” [Future Gener.
+          Comput. Syst. 68 (March) (2017) 260–274]
+        journal: Future Generation Computer Systems
+        url: https://doi.org/10.1016/j.future.2016.11.018
+        cited_by_count: 2
+  - year: 2016
+    items:
+      - authors: Elizabeth F. Wanner, Gladston Moreira, Eduardo G. Carrano, Ricardo H. C. Takahashi, Luiz H. Duczmal
+        title: MULTI-OBJECTIVE TRAINING OF RBF NETWORKS FOR LARGE DATA SETS WITH LMI’S
+        journal: Unknown venue
+        url: https://doi.org/10.21528/cbrn2009-001
+      - authors: Bruno Guazzelli Batista, Carlos H. G. Ferreira, Danilo Costa Marim Segura, Dionisio Machado Leite Filho, Maycon Peixoto
+        title: A QoS-driven approach for cloud computing addressing attributes of performance and security
+        journal: Future Generation Computer Systems
+        url: https://doi.org/10.1016/j.future.2016.09.018
+        cited_by_count: 41
+      - authors: Gladston Moreira, Eduardo Luz, David Menotti
+        title: Optimizing acceptance frontier using PSO and GA for multiple signature iris recognition
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cec.2016.7744375
+        cited_by_count: 1
+      - authors: >-
+          Luiz H. Nunes, Júlio Cézar Estrella, Luis Hideo Vasconcelos Nakamura, Rafael de Libardi, Carlos H. G. Ferreira, Liuri Jorge,
+          Charith Perera, Stephan Reiff‐Marganiec
+        title: A Distributed Sensor Data Search Platform for Internet of Things Environments
+        journal: ORCA Online Research @Cardiff (Cardiff University)
+        url: https://doi.org/10.48550/arxiv.1606.07932
+        cited_by_count: 5
+      - authors: >-
+          Regina Helena Carlucci Santana, Marcos José Santana, Bruno C. Batista, Danilo Vaz-Curado R. M. Costa, Dionisio Leite, Maycon
+          Peixoto, Carlos H. G. Ferreira
+        title: A cloud computing price model based on virtual machine performance degradation
+        journal: International Journal of Computational Science and Engineering
+        url: https://doi.org/10.1504/ijcse.2016.10011343
+  - year: 2015
+    items:
+      - authors: >-
+          Bruno Guazzelli Batista, Júlio Cézar Estrella, Carlos H. G. Ferreira, Dionisio Machado Leite Filho, Luis Hideo Vasconcelos
+          Nakamura, Stephan Reiff‐Marganiec, Marcos José Santana, Regina Helena Carlucci Santana
+        title: Performance Evaluation of Resource Management in Cloud Computing Environments
+        journal: PLoS ONE
+        url: https://doi.org/10.1371/journal.pone.0141914
+        cited_by_count: 35
+      - authors: Gladston Moreira, Anderson Ribeiro Duarte, David Menotti
+        title: Um Algoritmo Enxame de Partículas Binário para Detecção de Clusters Irregulares
+        journal: Unknown venue
+        url: https://doi.org/10.21528/cbic2015-027
+      - authors: >-
+          Luiz H. Nunes, Júlio Cézar Estrella, Carlos H. G. Ferreira, Luis Hideo Vasconcelos Nakamura, Rafael M. de O. Libardi, Edvard
+          Martins de Oliveira, Bruno Tardiole Kuehne, Paulo Sérgio Lopes de Souza, Regina Helena Carlucci Santana, Marcos José Santana,
+          Stephan Reiff‐Marganiec
+        title: "DCA-SERVICES: A DISTRIBUTED AND COLLABORATIVE ARCHITECTURE FOR CONDUCTING EXPERIMENTS IN SERVICE ORIENTED SYSTEMS"
+        journal: Services Transactions on Services Computing
+        url: https://doi.org/10.29268/stsc.2015.3.4.2
+        cited_by_count: 6
+      - authors: >-
+          Bruno Tardiole Kuehne, Júlio Cézar Estrella, Luiz Henrique Nunes, Edvard Martins de Oliveira, Luis Hideo Vasconcelos Nakamura,
+          Carlos H. G. Ferreira, Regina Helena Carlucci Santana, Stephan Reiff‐Marganiec, Marcos José Santana
+        title: AWSCS-A System to Evaluate Different Approaches for the Automatic Composition and Execution of Web Services Flows
+        journal: PLoS ONE
+        url: https://doi.org/10.1371/journal.pone.0127677
+        cited_by_count: 2
+      - authors: >-
+          Rafael M. de O. Libardi, Stephan Reiff‐Marganiec, Luiz Henrique Nunes, Lucas Junqueira Adami, Carlos H. G. Ferreira, Júlio Cézar
+          Estrella
+        title: "MSSF: User-Friendly Multi-cloud Data Dispersal"
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cloud.2015.53
+        cited_by_count: 2
+      - authors: >-
+          Erika de A. S. Braga, Jackson de Queiroz Malveira, Maria Aparecida Liberato Milhome, Marisete Dantas de Aquino, Ronaldo Ferreira
+          do Nascimento
+        title: Characterization of the Fatty Acids Present in Wastewaters from Production of Biodiesel Tilapia
+        journal: Journal of Chemistry
+        url: https://doi.org/10.1155/2015/265160
+        cited_by_count: 10
+      - authors: S. L. J. L. Tinoco, David Menotti, Jefersson A. dos Santos, Gladston Moreira
+        title: A Multi-objective Approach for Building Hyperspectral Remote Sensed Image Classifier Combiners
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-319-15892-1_37
+        cited_by_count: 1
+  - year: 2014
+    items:
+      - authors: >-
+          Fernando Pedro Dias, Ana Vívian Parente Rocha Martins, Alexandre Colzi Lopes, Ronaldo Ferreira do Nascimento, Ronaldo Stefanutti,
+          Erika Almeida Sampaio Braga
+        title: QUANTIFICAÇÃO DOS PARÂMETROS FÍSICOQUÍMICOS DOS EFLUENTES ORIUNDOS DA PURIFICAÇÃO DO BIODIESEL DE ÓLEO VEGETAL E GORDURA ANIMAL
+        journal: "Revista AIDIS de Ingeniería y Ciencias Ambientales: investigación, desarrollo y práctica"
+  - year: 2012
+    items:
+      - authors: Thiago Santos, Ricardo H. C. Takahashi, Gladston Moreira
+        title: A CMA stochastic differential equation approach for many-objective optimization
+        journal: Unknown venue
+        url: https://doi.org/10.1109/cec.2012.6253014
+        cited_by_count: 2
+      - authors: >-
+          V.O. Sousa Neto, Técia Vieira Carvalho, Sara B. Honorato, Clêrton Linhares Gomes, Francisco Claudio F. Barros, Marcos Antônio
+          Araújo-Silva, Paulo Freire, Ronaldo Ferreira do Nascimento
+        title: "COCONUT BAGASSE TREATED BY THIOUREA/AMONIUM SOLUTION FOR CADMIUM REMOVAL: KINETIC AND ADSORPTION EQUILIBRIUM"
+        journal: BioResources
+        url: https://doi.org/10.15376/biores.7.2.1504-1524
+        cited_by_count: 28
+  - year: 2011
+    items:
+      - authors: Renata E. Onety, Gladston Moreira, Oriane M. Neto, Ricardo H. C. Takahashi
+        title: Variable Neighborhood Multiobjective Genetic Algorithm for the Optimization of Routes on IP Networks
+        journal: Lecture notes in computer science
+        url: https://doi.org/10.1007/978-3-642-19893-9_30
+        cited_by_count: 5
+  - year: 2010
+    items:
+      - authors: Gladston Moreira, Elizabeth F. Wanner, Frederico Gadelha Guimarães, Luiz H. Duczmal, Ricardo H. C. Takahashi
+        title: LMI formulation for multiobjective learning in Radial Basis Function neural networks
+        journal: Unknown venue
+        url: https://doi.org/10.1109/ijcnn.2010.5596964
+        cited_by_count: 1
+  - year: 2009
+    items:
+      - authors: José Roberto de França Arruda, Ronaldo Ferreira do Nascimento
+        title: Building Spectral Elements from Finite Element Models of Waveguide Slices
+        journal: Civil-comp proceedings
+        url: https://doi.org/10.4203/ccp.88.41
+        cited_by_count: 3
+  - year: 2008
+    items:
+      - authors: J.C. Delamotte, Ronaldo Ferreira do Nascimento, José Roberto de França Arruda
+        title: Simple Models for the Dynamic Modeling of Rotating Tires
+        journal: Shock and Vibration
+        url: https://doi.org/10.1155/2008/512590
+        cited_by_count: 14
+  - year: 1998
+    items:
+      - authors: Ronaldo Ferreira do Nascimento, Jefferson L. CERRONI, Daniel R. Cardoso, Benedito Santos LIMA NETO, Douglas Wagner Franco
+        title: >-
+          COMPARAÇÃO DOS MÉTODOS OFICIAIS DE ANÁLISE E CROMATOGRÁFICOS PARA A DETERMINAÇÃO DOS TEORES DE ALDEÍDOS E ÁCIDOS EM BEBIDAS
+          ALCOÓLICAS
+        journal: Food Science and Technology
+        url: https://doi.org/10.1590/s0101-20611998000300018
+        cited_by_count: 13

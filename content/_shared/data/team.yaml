@@ -1,0 +1,199 @@
+# ─────────────────────────────────────────────────────────────
+# SINGLE SOURCE OF TRUTH FOR ALL TEAM MEMBERS
+# Edit only this file when adding/removing people.
+#
+# Fields for faculty / coordinators / collaborators:
+#   name        – person's name WITHOUT the Prof./Profa. prefix
+#   gender      – omit (defaults male) or set to "f" for female
+#                 (controls the Prof./Profa./Prof.ssa prefix per language)
+#   role_key    – key that maps to a translated role string in team_i18n.yaml
+#   tags        – list of tag IDs from team_tags.yaml
+#
+#   orcid       – ORCID iD (e.g. "0000-0001-7747-5926")
+#                 ★ Preferred identifier for publication fetching.
+#                 Guarantees accurate lookup — ORCID is globally unique.
+#                 Once set, the fetch script needs no other identifier.
+#
+#   openalex_id – OpenAlex author ID fallback (e.g. "A5059546983")
+#                 Used only when ORCID is not yet available.
+#                 Verify once at https://openalex.org/authors/<id> before adding.
+#
+#   Resolution priority used by scripts/fetch-publications.js:
+#     orcid (anchor) → openalex_id (anchor) → name search (NOT anchor, unreliable)
+#
+#   links       – list of link objects:
+#       { text: "static text", href: "..." }   ← for email, Lattes, etc.
+#       { key: profile, href: "..." }           ← for profile links (auto-translated)
+#
+# Fields for students (phd_students, masters_students, undergrads):
+#   name        – full name, no prefix needed
+#   year        – year they started (integer)
+#   links       – same as above (usually just Lattes)
+#
+# Alumni: just a flat list of name strings.
+# ─────────────────────────────────────────────────────────────
+
+coordinators:
+  members:
+    - name: "Gladston Moreira"
+      orcid: "0000-0001-7747-5926"
+      role_key: coordinator
+      tags: [artificial_intelligence, multiobjective_optimization, spatial_analysis, cluster_detection]
+      links:
+        - text: "✉ gladston@ufop.edu.br"
+          href: "mailto:gladston@ufop.edu.br"
+        - key: profile
+          href: "https://csilab.ufop.br/people/gladston-moreira"
+    - name: "Eduardo Luz"
+      openalex_id: "A5059546983"
+      role_key: coordinator
+      tags: [computer_vision, biometrics, pattern_recognition, biomedical_signals]
+      links:
+        - key: profile
+          href: "https://csilab.ufop.br/people/eduardo-luz"
+
+professors:
+  members:
+    - name: "Vander Freitas"
+      openalex_id: "A5031456671"
+      role_key: associate_professor
+      tags: [machine_learning, nlp, time_series]
+      links:
+        - key: profile
+          href: "https://csilab.ufop.br/people/vander-freitas"
+    - name: "Pedro Silva"
+      role_key: associate_professor
+      tags: [computer_vision, periocular_biometrics, deep_learning, metric_learning]
+      links:
+        - key: profile
+          href: "https://csilab.ufop.br/people/pedro-silva"
+    - name: "Jadson Castro"
+      role_key: associate_professor
+      tags: [databases, pattern_recognition, biological_signal_analysis]
+      links:
+        - key: profile
+          href: "https://csilab.ufop.br/people/jadson-castro"
+    - name: "Valéria Santos"
+      gender: f
+      role_key: associate_professor_f
+      tags: [nlp, machine_learning, text_classification]
+      links:
+        - key: profile
+          href: "https://csilab.ufop.br/people/valeria-santos"
+    - name: "Rodrigo Silva"
+      role_key: associate_professor
+      tags: [data_science, artificial_intelligence, applied_ml]
+      links:
+        - key: profile
+          href: "https://csilab.ufop.br/people/rodrigo-silva"
+    - name: "Ivair Silva"
+      role_key: associate_professor
+      tags: [statistical_methods, sequential_tests, sampler_convergence]
+      links:
+        - key: profile
+          href: "https://csilab.ufop.br/people/ivair-silva"
+    - name: "Carlos Henrique G. Ferreira"
+      orcid: "0000-0001-9107-6884"
+      role_key: associate_professor
+      tags: [network_science, data_science, computational_social_science]
+      links:
+        - text: "Lattes →"
+          href: "http://lattes.cnpq.br/0748942455194916"
+
+collaborators:
+  members:
+    - name: "Elizabeth Wanner"
+      gender: f
+      role_key: collaborating_researcher_f
+      tags: [multiobjective_optimization, evolutionary_algorithms, computational_intelligence]
+      links:
+        - key: profile
+          href: "https://csilab.ufop.br/people/elizabeth-wanner"
+    - name: "David Menotti"
+      role_key: collaborating_researcher
+      tags: [computer_vision, biometrics, pattern_recognition, deep_learning]
+      links:
+        - key: profile
+          href: "https://csilab.ufop.br/people/david-menotti"
+
+phd_students:
+  members:
+    - name: "Pedro Castro"
+      year: 2022
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/1648427683361371"}]
+    - name: "Lauro Moraes"
+      year: 2022
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/7273329679145458"}]
+    - name: "Dênis Xavier"
+      year: 2022
+    - name: "Gabriel Souza"
+      year: 2019
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/1276963014476347"}]
+    - name: "Marcus Almeida"
+      year: 2023
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/9750853239897719"}]
+    - name: "Guilherme Silva"
+      year: 2023
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/4755584696921241"}]
+    - name: "Andressa Oliveira"
+      year: 2023
+    - name: "Fernando Duarte"
+      year: 2022
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/9331617052785818"}]
+
+masters_students:
+  members:
+    - name: "Jean Pinheiro"
+      year: 2021
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/1201524358960754"}]
+    - name: "Gabriel Ferreira"
+      year: 2023
+    - name: "Amanda Oliveira"
+      year: 2022
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/7187644478574662"}]
+
+undergrads:
+  members:
+    - name: "Rafael Alto"
+      year: 2022
+    - name: "Artur Bermond"
+      year: 2023
+    - name: "Luísa Cizilio"
+      year: 2021
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/0273287843002956"}]
+    - name: "Gustavo Vieira"
+      year: 2023
+    - name: "Vinicius Silva"
+      year: 2021
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/6046796826385547"}]
+    - name: "João Zenóbio"
+      year: 2021
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/6135972089163105"}]
+    - name: "Suleimane Ducure"
+      year: 2021
+      links: [{text: "Lattes →", href: "http://lattes.cnpq.br/4547014379251202"}]
+
+alumni_grad:
+  members:
+    - "Rafael Oliveira"
+    - "João Alvarenga"
+    - "Pedro Silva"
+    - "Thiago Schons"
+    - "Felipe de Oliveira Mota"
+
+alumni_undergrad:
+  members:
+    - "Carlos Freitas"
+    - "Filipe Ramos"
+    - "Mariana Mota"
+    - "Gabriel Ferreira"
+    - "Alan Santandrea"
+    - "Kleuber Nascimento"
+    - "Guilherme Silva"
+    - "Gabriel Garcia"
+    - "Fernando Torres Bernardo"
+    - "Henrique Alvares"
+    - "Dayane Morais"
+    - "Renata Lisboa"
+    - "Vinícius Zanini"
+    - "Vinícius Augusto Pereira Queiroz"
