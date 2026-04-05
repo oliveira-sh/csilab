@@ -28,6 +28,3 @@ bottom_links:
   - text: "DECOM"
     href: "http://www3.decom.ufop.br/decom/inicio/"
     external: true
-  - text: "Original Site"
-    href: "https://csilab.ufop.br"
-    external: true
