@@ -157,8 +157,23 @@ function workToEntry(w) {
     title:   w.title,
     journal: w.primary_location?.source?.display_name || 'Unknown venue',
   };
+
+  // OpenAlex work ID — used by the cited-by dropdown to fetch citing papers
+  const oid = w.id?.replace('https://openalex.org/', '');
+  if (oid) entry.oa_id = oid;
+
   if (w.doi) entry.url = `https://doi.org/${w.doi.replace(/^https?:\/\/doi\.org\//i, '')}`;
   if (w.cited_by_count > 0) entry.cited_by_count = w.cited_by_count;
+
+  // Distinct country codes of all author institutions — used by the map filter
+  const countries = new Set();
+  for (const a of w.authorships) {
+    for (const inst of (a.institutions || [])) {
+      if (inst.country_code) countries.add(inst.country_code);
+    }
+  }
+  if (countries.size) entry.author_countries = [...countries].sort();
+
   const v = entry.journal;
   if      (/springer/i.test(v))                                         entry.badge = 'Springer';
   else if (/ieee/i.test(v))                                             entry.badge = 'IEEE';

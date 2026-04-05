@@ -35,7 +35,7 @@
   border: 1px solid rgba(86,101,115,0.2);
   border-radius: 10px;
   padding: 1.25rem 1.5rem 0.75rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   position: relative;
   overflow: hidden;
 }
@@ -54,6 +54,147 @@
   opacity: 0;
   transition: opacity 0.1s;
   z-index: 5;
+}
+
+/* Year filter pills */
+.pub-year-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+.pub-year-pill {
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  border: 1px solid rgba(86,101,115,0.28);
+  background: rgba(86,101,115,0.08);
+  color: var(--color-muted);
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+.pub-year-pill:hover {
+  border-color: rgba(233,79,55,0.4);
+  color: var(--color-text);
+}
+.pub-year-pill.active {
+  background: rgba(233,79,55,0.15);
+  border-color: rgba(233,79,55,0.55);
+  color: var(--color-accent);
+}
+.pub-filter-clear {
+  padding: 0.3rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  border: 1px solid rgba(233,79,55,0.35);
+  background: rgba(233,79,55,0.1);
+  color: var(--color-accent);
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  gap: 0.35rem;
+  transition: background 0.15s;
+  margin-left: 0.5rem;
+}
+.pub-filter-clear:hover { background: rgba(233,79,55,0.2); }
+.pub-filter-clear.visible { display: inline-flex; }
+
+/* Active filter badge */
+.pub-active-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  min-height: 0;
+}
+.pub-filter-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.775rem;
+  background: rgba(233,79,55,0.12);
+  border: 1px solid rgba(233,79,55,0.3);
+  color: var(--color-accent);
+}
+.pub-filter-badge button {
+  background: none;
+  border: none;
+  color: var(--color-accent);
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.9rem;
+  line-height: 1;
+  opacity: 0.7;
+}
+.pub-filter-badge button:hover { opacity: 1; }
+
+/* Cited-by */
+.pub-cite-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.6rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 5px;
+  font-size: 0.775rem;
+  font-family: var(--font-secondary), sans-serif;
+  border: 1px solid rgba(86,101,115,0.3);
+  background: rgba(86,101,115,0.08);
+  color: var(--color-muted);
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s, background 0.15s;
+}
+.pub-cite-btn:hover {
+  border-color: rgba(233,79,55,0.4);
+  color: var(--color-text);
+  background: rgba(233,79,55,0.06);
+}
+.pub-cite-btn svg { flex-shrink: 0; }
+.pub-cite-panel {
+  display: none;
+  margin-top: 0.75rem;
+  padding: 0.875rem 1rem;
+  background: rgba(11,12,16,0.6);
+  border: 1px solid rgba(86,101,115,0.2);
+  border-radius: 6px;
+}
+.pub-cite-panel.open { display: block; }
+.pub-cite-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.pub-cite-list li {
+  font-size: 0.8125rem;
+  color: var(--color-muted);
+  line-height: 1.45;
+}
+.pub-cite-list li strong { color: var(--color-text); display: block; }
+.pub-cite-list li a { color: var(--color-accent); text-decoration: none; font-size: 0.775rem; }
+.pub-cite-list li a:hover { text-decoration: underline; }
+.pub-cite-loading { font-size: 0.8125rem; color: var(--color-muted); font-style: italic; }
+.pub-cite-count {
+  font-size: 0.775rem;
+  color: var(--color-muted);
+  margin-bottom: 0.6rem;
+}
+
+/* No-results message */
+.pub-no-results {
+  display: none;
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--color-muted);
+  font-size: 0.9375rem;
 }
 </style>
 {% endblock %}
@@ -89,29 +230,57 @@
     {# ── World map ── #}
     {% if data.publications.country_counts %}
     <div class="pub-map-card" data-aos="fade-up">
-      <div class="pub-chart-title">{{ page.chart_world_label or "Global Collaboration" }}</div>
+      <div class="pub-chart-title">{{ page.chart_world_label or "Global Collaboration" }} <span id="map-hint" style="font-weight:400;text-transform:none;letter-spacing:0;font-size:0.75rem;opacity:0.6;margin-left:0.5rem;">— click a country to filter</span></div>
       <div id="pub-worldmap"></div>
     </div>
     {% endif %}
 
-    {# ── Publication list ── #}
-    {% for year_group in data.publications.years %}
-    <h2 class="pub-year-heading">{{ year_group.year }}</h2>
-    <div class="pub-list">
-      {% for pub in year_group.items %}
-      <div class="pub-item" data-aos="fade-up">
-        <div class="pub-authors">{{ pub.authors }}</div>
-        <div class="pub-title">{{ pub.title }}</div>
-        <div class="pub-venue">
-          {% if pub.venue_prefix %}{{ pub.venue_prefix | safe }}{% endif %}
-          <em>{{ pub.journal }}</em>{% if pub.venue_suffix %}, {{ pub.venue_suffix }}{% endif %}{% if pub.venue_extra %} {{ pub.venue_extra | safe }}{% endif %}.
-          {% if pub.url %}<a href="{{ pub.url }}" target="_blank">{{ page.access_text }}</a>{% endif %}
-          {% if pub.badge %}<span class="pub-badge">{{ pub.badge }}</span>{% endif %}
-        </div>
-      </div>
+    {# ── Year filter pills ── #}
+    <div class="pub-year-filters" id="year-filters">
+      <button class="pub-year-pill active" data-year="all">All years</button>
+      {% for year_group in data.publications.years %}
+      <button class="pub-year-pill" data-year="{{ year_group.year }}">{{ year_group.year }} <span style="opacity:0.55;font-weight:400;">({{ year_group.items | length }})</span></button>
       {% endfor %}
     </div>
+
+    {# ── Active filter badges ── #}
+    <div class="pub-active-filters" id="active-filters"></div>
+
+    {# ── Publication list ── #}
+    {% for year_group in data.publications.years %}
+    <section class="pub-year-section" data-year="{{ year_group.year }}">
+      <h2 class="pub-year-heading">{{ year_group.year }}</h2>
+      <div class="pub-list">
+        {% for pub in year_group.items %}
+        <div class="pub-item" data-aos="fade-up" data-countries="{{ pub.author_countries | join(',') if pub.author_countries else '' }}">
+          <div class="pub-authors">{{ pub.authors }}</div>
+          <div class="pub-title">{{ pub.title }}</div>
+          <div class="pub-venue">
+            {% if pub.venue_prefix %}{{ pub.venue_prefix | safe }}{% endif %}
+            <em>{{ pub.journal }}</em>{% if pub.venue_suffix %}, {{ pub.venue_suffix }}{% endif %}{% if pub.venue_extra %} {{ pub.venue_extra | safe }}{% endif %}.
+            {% if pub.url %}<a href="{{ pub.url }}" target="_blank">{{ page.access_text }}</a>{% endif %}
+            {% if pub.badge %}<span class="pub-badge">{{ pub.badge }}</span>{% endif %}
+          </div>
+          {% if pub.oa_id and pub.cited_by_count and pub.cited_by_count > 0 %}
+          <div>
+            <button class="pub-cite-btn" data-id="{{ pub.oa_id }}" data-total="{{ pub.cited_by_count }}" aria-expanded="false">
+              <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm.75 12h-1.5V7h1.5v5zm0-6.5h-1.5v-1.5h1.5v1.5z"/></svg>
+              Cited by {{ pub.cited_by_count }}
+            </button>
+            <div class="pub-cite-panel" id="cite-{{ pub.oa_id }}">
+              <div class="pub-cite-loading">Loading citing papers…</div>
+            </div>
+          </div>
+          {% endif %}
+        </div>
+        {% endfor %}
+      </div>
+    </section>
     {% endfor %}
+
+    <div id="pub-no-results" class="pub-no-results">
+      No publications match the selected filters.
+    </div>
 
     <div style="margin:4rem 0 2rem;padding:2rem;background:var(--color-surface);border-radius:8px;border:1px solid rgba(86,101,115,0.2);text-align:center;">
       <p class="text-lavender" style="margin-bottom:1rem;">{{ page.github_text }}</p>
@@ -125,20 +294,15 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <script>
 (function () {
-  // Papers per year — grouped by publication year
   const _pubData = {{ data.publications.years | dump | safe }};
   const sorted   = [..._pubData].sort((a, b) => a.year - b.year);
   const years    = sorted.map(g => String(g.year));
   const perYear  = sorted.map(g => (g.items || []).length);
 
-  // Citations by year — each bar shows how many times CSI Lab papers
-  // were cited BY papers published in that year (not when the paper was published).
-  // Sourced from OpenAlex counts_by_year per work.
   const _citeRaw  = {{ data.publications.citations_by_year | dump | safe }} || {};
   const citeYears  = Object.keys(_citeRaw).map(Number).sort((a, b) => a - b).map(String);
   const citeValues = citeYears.map(y => _citeRaw[y] || 0);
 
-  // Shared dark-theme defaults
   Chart.defaults.color          = '#8892B0';
   Chart.defaults.borderColor    = 'rgba(86,101,115,0.18)';
   Chart.defaults.font.family    = '"Inter", sans-serif';
@@ -159,7 +323,6 @@
     },
   };
 
-  // Papers per year
   new Chart(document.getElementById('chart-papers'), {
     type: 'bar',
     data: {
@@ -173,15 +336,9 @@
         hoverBackgroundColor: 'rgba(233,79,55,0.85)',
       }],
     },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: sharedPlugins,
-      scales: sharedScales,
-    },
+    options: { responsive: true, maintainAspectRatio: false, plugins: sharedPlugins, scales: sharedScales },
   });
 
-  // Citations per year (year the citing paper was published)
   new Chart(document.getElementById('chart-citations'), {
     type: 'bar',
     data: {
@@ -195,12 +352,7 @@
         hoverBackgroundColor: 'rgba(86,101,115,0.75)',
       }],
     },
-    options: {
-      responsive: true,
-      maintainAspectRatio: false,
-      plugins: sharedPlugins,
-      scales: sharedScales,
-    },
+    options: { responsive: true, maintainAspectRatio: false, plugins: sharedPlugins, scales: sharedScales },
   });
 })();
 </script>
@@ -214,7 +366,6 @@
   const counts = {{ data.publications.country_counts | dump | safe }};
   if (!counts || !Object.keys(counts).length) return;
 
-  // ISO 3166-1 alpha-2 → numeric
   const a2n = {
     AF:4,AL:8,DZ:12,AD:20,AO:24,AG:28,AR:32,AM:51,AU:36,AT:40,AZ:31,
     BS:44,BH:48,BD:50,BB:52,BY:112,BE:56,BZ:84,BJ:204,BT:64,BO:68,BA:70,
@@ -237,7 +388,10 @@
     GB:826,US:840,UY:858,UZ:860,VU:548,VE:862,VN:704,YE:887,ZM:894,ZW:716
   };
 
-  // Build numeric-id lookup
+  // Build reverse: numeric → alpha-2
+  const n2a = {};
+  for (const [a2, n] of Object.entries(a2n)) n2a[n] = a2;
+
   const byId = {};
   for (const [a2, n] of Object.entries(counts)) {
     const num = a2n[a2];
@@ -251,19 +405,17 @@
     .clamp(true);
 
   const W = 960, H = 490;
-
   const wrap = document.getElementById('pub-worldmap');
   const svg  = d3.select(wrap).append('svg')
     .attr('viewBox', `0 0 ${W} ${H}`)
     .attr('preserveAspectRatio', 'xMidYMid meet');
 
-  // Tooltip appended after SVG so it sits on top
   const tip = document.createElement('div');
   tip.className = 'pub-map-tip';
   wrap.appendChild(tip);
 
   const proj = d3.geoNaturalEarth1().scale(153).translate([W / 2, H / 2]);
-  const path = d3.geoPath().projection(proj);
+  const geoPath = d3.geoPath().projection(proj);
 
   fetch('https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json')
     .then(r => r.json())
@@ -271,13 +423,15 @@
       svg.selectAll('path')
         .data(topojson.feature(world, world.objects.countries).features)
         .join('path')
-        .attr('d', path)
+        .attr('d', geoPath)
         .attr('fill', d => {
           const info = byId[+d.id];
           return info ? color(info.n) : '#253040';
         })
         .attr('stroke', 'rgba(86,101,115,0.22)')
         .attr('stroke-width', 0.4)
+        .attr('class', d => byId[+d.id] ? 'map-country clickable' : 'map-country')
+        .style('cursor', d => byId[+d.id] ? 'pointer' : 'default')
         .on('mousemove', function (ev, d) {
           const info = byId[+d.id];
           if (!info) return;
@@ -287,11 +441,160 @@
           tip.style.top  = (ev.clientY - r.top  - 36) + 'px';
           tip.textContent = info.a2 + ' \u2014 ' + info.n + ' paper' + (info.n !== 1 ? 's' : '');
         })
-        .on('mouseleave', () => { tip.style.opacity = '0'; });
+        .on('mouseleave', () => { tip.style.opacity = '0'; })
+        .on('click', function (ev, d) {
+          const info = byId[+d.id];
+          if (!info) return;
+          const cc = info.a2;
+          if (window._pubActiveCountry === cc) {
+            window._pubActiveCountry = null;
+          } else {
+            window._pubActiveCountry = cc;
+          }
+          updateMapHighlight();
+          applyFilters();
+        });
     })
     .catch(() => {});
+
+  function updateMapHighlight() {
+    const cc = window._pubActiveCountry;
+    svg.selectAll('.map-country')
+      .attr('stroke', d => {
+        const info = byId[+d.id];
+        return (info && info.a2 === cc) ? '#E94F37' : 'rgba(86,101,115,0.22)';
+      })
+      .attr('stroke-width', d => {
+        const info = byId[+d.id];
+        return (info && info.a2 === cc) ? 1.5 : 0.4;
+      });
+  }
+
+  window._pubUpdateMapHighlight = updateMapHighlight;
 })();
 </script>
 {% endif %}
+
+{# ── Filter + Cited-by JS ── #}
+<script>
+(function () {
+  window._pubActiveYear    = 'all';
+  window._pubActiveCountry = null;
+
+  const yearFilterBar  = document.getElementById('year-filters');
+  const activeFiltersEl = document.getElementById('active-filters');
+  const noResults      = document.getElementById('pub-no-results');
+
+  // ── Year pills ──
+  yearFilterBar.querySelectorAll('.pub-year-pill').forEach(btn => {
+    btn.addEventListener('click', () => {
+      window._pubActiveYear = btn.dataset.year;
+      yearFilterBar.querySelectorAll('.pub-year-pill').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      applyFilters();
+    });
+  });
+
+  // ── Apply filters ──
+  window.applyFilters = function applyFilters() {
+    const year    = window._pubActiveYear || 'all';
+    const country = window._pubActiveCountry;
+
+    let totalVisible = 0;
+
+    document.querySelectorAll('.pub-year-section').forEach(section => {
+      const sYear = String(section.dataset.year);
+      const yearMatch = (year === 'all' || year === sYear);
+
+      let sectionVisible = 0;
+      section.querySelectorAll('.pub-item').forEach(item => {
+        let countryMatch = true;
+        if (country) {
+          const cc = (item.dataset.countries || '').split(',');
+          countryMatch = cc.includes(country);
+        }
+        const visible = yearMatch && countryMatch;
+        item.style.display = visible ? '' : 'none';
+        if (visible) sectionVisible++;
+      });
+
+      section.style.display = (yearMatch && sectionVisible > 0) ? '' : 'none';
+      totalVisible += sectionVisible;
+    });
+
+    noResults.style.display = totalVisible === 0 ? 'block' : 'none';
+
+    // Update active filter badges
+    activeFiltersEl.innerHTML = '';
+    if (country) {
+      const badge = document.createElement('div');
+      badge.className = 'pub-filter-badge';
+      const n = ({{ data.publications.country_counts | dump | safe }})[country] || 0;
+      badge.innerHTML = `Country: <strong style="margin-left:0.2rem;">${country}</strong> <span style="opacity:0.6;margin-left:0.2rem;">(${n} papers)</span> <button title="Clear" onclick="clearCountryFilter()">&#x2715;</button>`;
+      activeFiltersEl.appendChild(badge);
+    }
+  };
+
+  window.clearCountryFilter = function () {
+    window._pubActiveCountry = null;
+    if (window._pubUpdateMapHighlight) window._pubUpdateMapHighlight();
+    applyFilters();
+  };
+
+  // ── Cited-by panels ──
+  document.querySelectorAll('.pub-cite-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id    = btn.dataset.id;
+      const panel = document.getElementById('cite-' + id);
+      if (!panel) return;
+
+      const isOpen = panel.classList.contains('open');
+      panel.classList.toggle('open', !isOpen);
+      btn.setAttribute('aria-expanded', String(!isOpen));
+
+      // Fetch only once
+      if (!isOpen && !panel.dataset.loaded) {
+        panel.dataset.loaded = '1';
+        fetchCiting(id, parseInt(btn.dataset.total, 10) || 0, panel);
+      }
+    });
+  });
+
+  async function fetchCiting(workId, total, panel) {
+    try {
+      const url = `https://api.openalex.org/works?filter=cites:${workId}&sort=cited_by_count:desc&per-page=10&select=id,doi,title,authorships,publication_year,cited_by_count`;
+      const res  = await fetch(url, { headers: { 'User-Agent': 'csilab-site/1.0' } });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const { results } = await res.json();
+
+      if (!results || results.length === 0) {
+        panel.innerHTML = '<p class="pub-cite-loading">No citing papers found in OpenAlex.</p>';
+        return;
+      }
+
+      const shown = results.length;
+      const more  = total - shown;
+
+      let html = `<p class="pub-cite-count">Showing ${shown} of ${total} citing paper${total !== 1 ? 's' : ''}</p><ul class="pub-cite-list">`;
+      for (const w of results) {
+        const authors = (w.authorships || []).slice(0, 3).map(a => a.author?.display_name).filter(Boolean).join(', ');
+        const suffix  = (w.authorships || []).length > 3 ? ' et al.' : '';
+        const doiHref = w.doi ? `https://doi.org/${w.doi.replace(/^https?:\/\/doi\.org\//i, '')}` : null;
+        const link    = doiHref ? `<a href="${doiHref}" target="_blank" rel="noopener">DOI ↗</a>` : '';
+        const cites   = w.cited_by_count > 0 ? `<span style="opacity:0.5;margin-left:0.5rem;">${w.cited_by_count} citations</span>` : '';
+        html += `<li><strong>${w.title || '(no title)'}</strong>${authors}${suffix}${w.publication_year ? ' (' + w.publication_year + ')' : ''} ${link}${cites}</li>`;
+      }
+      html += '</ul>';
+      if (more > 0) {
+        const doiSearch = `https://openalex.org/works?filter=cites:${workId}&sort=cited_by_count:desc`;
+        html += `<p style="margin-top:0.6rem;font-size:0.775rem;color:var(--color-muted);">+${more} more — <a href="${doiSearch}" target="_blank" rel="noopener" style="color:var(--color-accent);">view all on OpenAlex ↗</a></p>`;
+      }
+      panel.innerHTML = html;
+    } catch (e) {
+      panel.innerHTML = '<p class="pub-cite-loading">Could not load citing papers.</p>';
+    }
+  }
+})();
+</script>
 
 {% endblock %}
