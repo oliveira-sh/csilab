@@ -50,6 +50,18 @@ years:
         author_countries:
           - BR
           - IT
+        cited_by_count: 2
+        citing_papers:
+          - title: >-
+              Network-informed pathways to sustainable energy Access: A graph mining approach for accelerating clean energy transitions in
+              developing countries
+            authors: Xiao-Bing Zhang, Sidique Gawusu, Seidu Abdulai Jamatutu et al.
+            year: 2026
+            url: https://doi.org/10.1016/j.energy.2026.140766
+          - title: A Distance-Driven Centroid Method for Community Detection Using Influential Nodes in Social Networks
+            authors: Srinivas Amedapu, R. Leela Velusamy
+            year: 2026
+            url: https://doi.org/10.3390/app16073329
       - authors: Pedro Silva, Guilherme Silva, Pablo Coelho, Vander L. S. Freitas, Gladston Moreira, David Menotti, Eduardo Luz
         title: "PD-Loss: Proxy-Decidability for Efficient Metric Learning"
         journal: Unknown venue
@@ -208,26 +220,6 @@ years:
         author_countries:
           - BR
           - MD
-      - authors: Guilherme O. Santos, Luís Vieira, Giulio Rossetti, Carlos H. G. Ferreira, Gladston Moreira
-        title: A high-performance evolutionary multiobjective community detection algorithm
-        journal: ISTI Open Portal
-        oa_id: W4416333861
-        url: https://doi.org/10.1007/s13278-025-01519-7
-        cited_by_count: 2
-        author_countries:
-          - BR
-          - IT
-        citing_papers:
-          - title: >-
-              Network-informed pathways to sustainable energy Access: A graph mining approach for accelerating clean energy transitions in
-              developing countries
-            authors: Xiao-Bing Zhang, Sidique Gawusu, Seidu Abdulai Jamatutu et al.
-            year: 2026
-            url: https://doi.org/10.1016/j.energy.2026.140766
-          - title: A Distance-Driven Centroid Method for Community Detection Using Influential Nodes in Social Networks
-            authors: Srinivas Amedapu, R. Leela Velusamy
-            year: 2026
-            url: https://doi.org/10.3390/app16073329
       - authors: Rayson Laroca, Valter Estevam, Gladston Moreira, Rodrigo Minetto, David Menotti
         title: "Advancing Multinational License Plate Recognition Through Synthetic and Real Data Fusion: A Comprehensive Evaluation"
         journal: IET Intelligent Transport Systems
@@ -576,14 +568,6 @@ years:
         url: https://doi.org/10.1007/978-3-031-55673-9_5
         author_countries:
           - BR
-      - authors: Gladston Moreira, Luís Paquete, Luiz H. Duczmal, David Menotti, Ricardo H. C. Takahashi
-        title: Spatial Cluster Detection Through a Dynamic Programming Approach
-        journal: Unknown venue
-        oa_id: W4402160905
-        url: https://doi.org/10.1007/978-1-4614-8033-4_40
-        author_countries:
-          - BR
-          - PT
   - year: 2023
     items:
       - authors: >-
@@ -634,22 +618,43 @@ years:
             year: 2025
             url: https://doi.org/10.1007/978-3-031-78736-2_2
       - authors: >-
-          Gabriel Corrêa Veríssimo, Simone Queiroz Pantaleão, Philipe Oliveira Fernandes, Jadson Castro Gertrudes, Thales Kronenberger,
-          Káthia M. Honório, Vinícius Gonçalves Maltarollo
+          Gabriel Corrêa Veríssimo, Simone Queiroz Panteleão, Jadson Castro Gertrudes, Thales Kronenberger, Káthia M. Honório, Vinícius
+          Gonçalves Maltarollo
         title: "MASSA Algorithm: automated rational sampling of training and test subsets for QSAR modelling"
         journal: ChemRxiv
-        oa_id: W4387182051
-        url: https://doi.org/10.26434/chemrxiv-2022-dct7l-v3
-        cited_by_count: 1
+        oa_id: W4376612673
+        cited_by_count: 3
         author_countries:
           - BR
           - DE
         citing_papers:
+          - title: Aminopyrimidine Derivatives as Multiflavivirus Antiviral Compounds Identified from a Consensus Virtual Screening Approach
+            authors: Mateus Sá Magalhães Serafim, Thales Kronenberger, Rafael E. O. Rocha et al.
+            year: 2024
+            url: https://doi.org/10.1021/acs.jcim.3c01505
+            cited_by_count: 12
+          - title: "Overcoming class imbalance in drug discovery problems: Graph neural networks and balancing approaches"
+            authors: Rafael Lopes Almeida, Vinícius Gonçalves Maltarollo, Frederico Coelho
+            year: 2023
+            url: https://doi.org/10.1016/j.jmgm.2023.108627
+            cited_by_count: 7
+          - title: Understanding the Enzyme (<i>S</i>)-Norcoclaurine Synthase Promiscuity to Aldehydes and Ketones
+            authors: Brunno Salvatti, Marcelo Chagas, Phillipe O. Fernandes et al.
+            year: 2024
+            url: https://doi.org/10.1021/acs.jcim.3c01773
+            cited_by_count: 6
           - title: "MASSA Algorithm: automated rational sampling of training and test subsets for QSAR modelling"
             authors: Gabriel Corrêa Veríssimo, Simone Queiroz Pantaleão, Philipe Oliveira Fernandes et al.
             year: 2023
             url: https://doi.org/10.26434/chemrxiv-2022-dct7l-v3
             cited_by_count: 1
+        access_links:
+          - url: https://doi.org/10.26434/chemrxiv-2022-dct7l-v2
+            journal: ChemRxiv
+          - url: https://doi.org/10.26434/chemrxiv-2022-dct7l-v3
+            journal: ChemRxiv
+          - url: https://doi.org/10.26434/chemrxiv-2022-dct7l
+            journal: ChemRxiv
       - authors: Gabriel Porto Oliveira, Jadson Castro Gertrudes, Roberta B. Oliveira
         title: Spending pattern visualization using unsupervised machine learning
         journal: Unknown venue
@@ -776,33 +781,6 @@ years:
         url: https://doi.org/10.1016/j.simpa.2023.100530
         author_countries:
           - BR
-      - authors: >-
-          Gabriel Corrêa Veríssimo, Simone Queiroz Panteleão, Jadson Castro Gertrudes, Thales Kronenberger, Káthia M. Honório, Vinícius
-          Gonçalves Maltarollo
-        title: "MASSA Algorithm: automated rational sampling of training and test subsets for QSAR modelling"
-        journal: ChemRxiv
-        oa_id: W4376612673
-        url: https://doi.org/10.26434/chemrxiv-2022-dct7l-v2
-        cited_by_count: 3
-        author_countries:
-          - BR
-          - DE
-        citing_papers:
-          - title: Aminopyrimidine Derivatives as Multiflavivirus Antiviral Compounds Identified from a Consensus Virtual Screening Approach
-            authors: Mateus Sá Magalhães Serafim, Thales Kronenberger, Rafael E. O. Rocha et al.
-            year: 2024
-            url: https://doi.org/10.1021/acs.jcim.3c01505
-            cited_by_count: 12
-          - title: "Overcoming class imbalance in drug discovery problems: Graph neural networks and balancing approaches"
-            authors: Rafael Lopes Almeida, Vinícius Gonçalves Maltarollo, Frederico Coelho
-            year: 2023
-            url: https://doi.org/10.1016/j.jmgm.2023.108627
-            cited_by_count: 7
-          - title: Understanding the Enzyme (<i>S</i>)-Norcoclaurine Synthase Promiscuity to Aldehydes and Ketones
-            authors: Brunno Salvatti, Marcelo Chagas, Phillipe O. Fernandes et al.
-            year: 2024
-            url: https://doi.org/10.1021/acs.jcim.3c01773
-            cited_by_count: 6
       - authors: Leonardo Bacelar Lima Santos, Tathiane Mayumi Anazawa, Leonardo N. Ferreira, Vander L. S. Freitas
         title: "Editorial: Integrating physical and social sciences towards the sustainable development goals"
         journal: Frontiers in Physics
@@ -1445,16 +1423,6 @@ years:
             year: 2023
             url: https://doi.org/10.21203/rs.3.rs-2935871/v1
             cited_by_count: 6
-      - authors: >-
-          Gabriel Corrêa Veríssimo, Simone Queiroz Panteleão, Jadson Castro Gertrudes, Thales Kronenberger, Káthia M. Honório, Vinícius
-          Gonçalves Maltarollo
-        title: "MASSA Algorithm: automated rational sampling of training and test subsets for QSAR modelling"
-        journal: ChemRxiv
-        oa_id: W4292181590
-        url: https://doi.org/10.26434/chemrxiv-2022-dct7l
-        author_countries:
-          - BR
-          - DE
       - authors: Gabriel Peres Nobre, Carlos H. G. Ferreira, Jussara M. Almeida
         title: More of the Same? A Study of Images Shared on Mastodon's Federated Timeline
         journal: Zenodo (CERN European Organization for Nuclear Research)
@@ -3633,6 +3601,18 @@ years:
             cited_by_count: 38
   - year: 2017
     items:
+      - authors: Gladston Moreira, Luís Paquete, Luiz H. Duczmal, David Menotti, Ricardo H. C. Takahashi
+        title: Spatial Cluster Detection Through a Dynamic Programming Approach
+        journal: Unknown venue
+        oa_id: W2754367656
+        author_countries:
+          - BR
+          - PT
+        access_links:
+          - url: https://doi.org/10.1007/978-1-4614-8414-1_40-1
+            journal: Unknown venue
+          - url: https://doi.org/10.1007/978-1-4614-8033-4_40
+            journal: Unknown venue
       - authors: Eduardo Luz, Gladston Moreira, Luiz S. Oliveira, William Robson Schwartz, David Menotti
         title: Learning Deep Off-the-Person Heart Biometrics Representations
         journal: IEEE Transactions on Information Forensics and Security
@@ -4053,7 +4033,6 @@ years:
         title: Evaluating a hierarchical approach for heartbeat classification from ECG
         journal: International Journal of Bioinformatics Research and Applications
         oa_id: W2589917233
-        url: https://doi.org/10.1504/ijbra.2017.083148
         cited_by_count: 4
         author_countries:
           - BR
@@ -4078,21 +4057,11 @@ years:
             year: 2020
             url: https://doi.org/10.21786/bbrc/13.14/94
             cited_by_count: 1
-      - authors: Gladston Moreira, Luís Paquete, Luiz H. Duczmal, David Menotti, Ricardo H. C. Takahashi
-        title: Spatial Cluster Detection Through a Dynamic Programming Approach
-        journal: Unknown venue
-        oa_id: W2754367656
-        url: https://doi.org/10.1007/978-1-4614-8414-1_40-1
-        author_countries:
-          - BR
-          - PT
-      - authors: David Menotti, Luiz Henrique de Campos Merschmann, Eduardo Luz, Gladston Moreira
-        title: Evaluating a hierarchical approach for heartbeat classification from ECG
-        journal: International Journal of Bioinformatics Research and Applications
-        oa_id: W4235832271
-        url: https://doi.org/10.1504/ijbra.2017.10003488
-        author_countries:
-          - BR
+        access_links:
+          - url: https://doi.org/10.1504/ijbra.2017.083148
+            journal: International Journal of Bioinformatics Research and Applications
+          - url: https://doi.org/10.1504/ijbra.2017.10003488
+            journal: International Journal of Bioinformatics Research and Applications
       - authors: Conrado A. B. Galdino, Stefânia P. R. Ventura, Gladston Moreira
         title: Unveiling a spatial tail breakage outbreak in a lizard population
         journal: Amphibia-Reptilia

@@ -194,6 +194,85 @@ function groupByYear(entries) {
   return byYear;
 }
 
+// ── Deduplication ─────────────────────────────────────────────────────────────
+// Same paper can appear under multiple OpenAlex IDs (preprint + journal, or
+// different indexing records). Detect by normalised title, merge access links,
+// citations, and citing_papers into one card.
+
+const IS_PREPRINT = /chemrxiv|arxiv|biorxiv|medrxiv|ssrn|isti open portal|preprint/i;
+
+function normaliseTitle(t) {
+  return (t || '').toLowerCase().replace(/[^\w\s]/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function deduplicateEntries(entries) {
+  // Group by normalised title
+  const groups = new Map();
+  for (const e of entries) {
+    const key = normaliseTitle(e.entry.title);
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(e);
+  }
+
+  const result = [];
+  for (const [, group] of groups) {
+    if (group.length === 1) { result.push(group[0]); continue; }
+
+    // Sort: published journal first, then by citation count desc, then year asc
+    group.sort((a, b) => {
+      const aPreprint = IS_PREPRINT.test(a.entry.journal || '');
+      const bPreprint = IS_PREPRINT.test(b.entry.journal || '');
+      if (aPreprint !== bPreprint) return aPreprint ? 1 : -1;
+      const citeDiff = (b.entry.cited_by_count || 0) - (a.entry.cited_by_count || 0);
+      if (citeDiff !== 0) return citeDiff;
+      return (a.year || 0) - (b.year || 0);
+    });
+
+    const primary = { year: group[0].year, entry: { ...group[0].entry } };
+
+    // Collect unique access links across all variants
+    const seenUrls = new Set();
+    const links = [];
+    for (const g of group) {
+      if (g.entry.url && !seenUrls.has(g.entry.url)) {
+        seenUrls.add(g.entry.url);
+        const link = { url: g.entry.url, journal: g.entry.journal };
+        if (g.entry.badge) link.badge = g.entry.badge;
+        links.push(link);
+      }
+    }
+    if (links.length > 1) {
+      primary.entry.access_links = links;
+      delete primary.entry.url;
+      delete primary.entry.badge;
+    }
+
+    // Take max cited_by_count
+    const maxCited = Math.max(...group.map(g => g.entry.cited_by_count || 0));
+    if (maxCited > 0) primary.entry.cited_by_count = maxCited;
+    else delete primary.entry.cited_by_count;
+
+    // Merge citing_papers, dedup by normalised title, keep top 10 by citations
+    const seenCite = new Set();
+    const allCiting = [];
+    for (const g of group) {
+      for (const cp of (g.entry.citing_papers || [])) {
+        const ck = normaliseTitle(cp.title);
+        if (!seenCite.has(ck)) { seenCite.add(ck); allCiting.push(cp); }
+      }
+    }
+    if (allCiting.length > 0) {
+      allCiting.sort((a, b) => (b.cited_by_count || 0) - (a.cited_by_count || 0));
+      primary.entry.citing_papers = allCiting.slice(0, 10);
+    }
+
+    result.push(primary);
+  }
+
+  console.log(`  Deduplicated: ${entries.length} → ${result.length} entries`);
+  return result;
+}
+
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 async function main() {
@@ -321,8 +400,11 @@ async function main() {
   }
   console.log(`  Done — citing papers stored for ${citesFetched} works`);
 
-  // 7. Write
-  const byYear = groupByYear(entries);
+  // 7. Deduplicate (same paper under multiple OpenAlex IDs)
+  const deduped = deduplicateEntries(entries);
+
+  // 8. Write
+  const byYear = groupByYear(deduped);
   const years  = Object.keys(byYear)
     .map(Number).sort((a, b) => b - a)
     .map(year => ({ year, items: byYear[year] }));

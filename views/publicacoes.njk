@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.25rem;
-  margin: 2rem 0 1.25rem;
+  margin: 2rem 0 2.5rem;
 }
 .pub-chart-card {
   background: var(--color-surface);
@@ -28,63 +28,6 @@
   .pub-charts { grid-template-columns: 1fr; }
   .pub-chart-canvas-wrap { height: 140px; }
 }
-
-/* World map */
-.pub-map-card {
-  background: var(--color-surface);
-  border: 1px solid rgba(86,101,115,0.2);
-  border-radius: 10px;
-  padding: 1.25rem 1.5rem 0.75rem;
-  margin-bottom: 1.5rem;
-  position: relative;
-  overflow: hidden;
-}
-.pub-map-card svg { width: 100%; height: auto; display: block; }
-.pub-map-tip {
-  position: absolute;
-  pointer-events: none;
-  background: #0B0C10;
-  border: 1px solid rgba(86,101,115,0.45);
-  color: #E2E8F0;
-  font-family: var(--font-secondary), sans-serif;
-  font-size: 0.8rem;
-  padding: 0.25rem 0.55rem;
-  border-radius: 4px;
-  white-space: nowrap;
-  opacity: 0;
-  transition: opacity 0.1s;
-  z-index: 5;
-}
-
-/* Active filter badge */
-.pub-active-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 1.25rem;
-}
-.pub-filter-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-  padding: 0.25rem 0.7rem;
-  border-radius: 999px;
-  font-size: 0.775rem;
-  background: rgba(233,79,55,0.12);
-  border: 1px solid rgba(233,79,55,0.3);
-  color: var(--color-accent);
-}
-.pub-filter-badge button {
-  background: none;
-  border: none;
-  color: var(--color-accent);
-  cursor: pointer;
-  padding: 0;
-  font-size: 0.9rem;
-  line-height: 1;
-  opacity: 0.7;
-}
-.pub-filter-badge button:hover { opacity: 1; }
 
 /* Cited-by */
 .pub-cite-btn {
@@ -137,13 +80,24 @@
   margin-bottom: 0.6rem;
 }
 
-/* No-results message */
-.pub-no-results {
-  display: none;
-  text-align: center;
-  padding: 3rem 1rem;
-  color: var(--color-muted);
-  font-size: 0.9375rem;
+/* Multiple access links (merged duplicates) */
+.pub-access-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+}
+.pub-access-link {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-style: normal;
+  font-size: 0.8125rem;
+}
+.pub-access-link:hover { text-decoration: underline; }
+.pub-access-sep {
+  color: rgba(86,101,115,0.5);
+  font-style: normal;
+  font-size: 0.75rem;
 }
 </style>
 {% endblock %}
@@ -176,75 +130,79 @@
       </div>
     </div>
 
-    {# ── World map ── #}
-    {% if data.publications.country_counts %}
-    <div class="pub-map-card" data-aos="fade-up">
-      <div class="pub-chart-title">
-        {{ page.chart_world_label or "Global Collaboration" }}
-        <span style="font-weight:400;text-transform:none;letter-spacing:0;font-size:0.75rem;opacity:0.6;margin-left:0.5rem;">— click a country to filter</span>
-      </div>
-      <div id="pub-worldmap"></div>
-    </div>
-    {% endif %}
-
-    {# ── Active filter badges ── #}
-    <div class="pub-active-filters" id="active-filters"></div>
-
     {# ── Publication list ── #}
     {% for year_group in data.publications.years %}
-    <section class="pub-year-section" data-year="{{ year_group.year }}">
-      <h2 class="pub-year-heading">{{ year_group.year }}</h2>
-      <div class="pub-list">
-        {% for pub in year_group.items %}
-        <div class="pub-item" data-aos="fade-up" data-countries="{{ pub.author_countries | join(',') if pub.author_countries else '' }}">
-          <div class="pub-authors">{{ pub.authors }}</div>
-          <div class="pub-title">{{ pub.title }}</div>
-          <div class="pub-venue">
-            {% if pub.venue_prefix %}{{ pub.venue_prefix | safe }}{% endif %}
+    <h2 class="pub-year-heading">{{ year_group.year }}</h2>
+    <div class="pub-list">
+      {% for pub in year_group.items %}
+      <div class="pub-item" data-aos="fade-up">
+        <div class="pub-authors">{{ pub.authors }}</div>
+        <div class="pub-title">{{ pub.title }}</div>
+        <div class="pub-venue">
+          {% if pub.venue_prefix %}{{ pub.venue_prefix | safe }}{% endif %}
+
+          {# Single URL (normal case) #}
+          {% if pub.url and not pub.access_links %}
             <em>{{ pub.journal }}</em>{% if pub.venue_suffix %}, {{ pub.venue_suffix }}{% endif %}{% if pub.venue_extra %} {{ pub.venue_extra | safe }}{% endif %}.
-            {% if pub.url %}<a href="{{ pub.url }}" target="_blank">{{ page.access_text }}</a>{% endif %}
+            <a href="{{ pub.url }}" target="_blank">{{ page.access_text or "Access" }}</a>
             {% if pub.badge %}<span class="pub-badge">{{ pub.badge }}</span>{% endif %}
-          </div>
-          {% if pub.citing_papers and pub.citing_papers | length > 0 %}
-          <div>
-            <button class="pub-cite-btn" aria-expanded="false" onclick="
-              var p=this.nextElementSibling;
-              var open=p.classList.toggle('open');
-              this.setAttribute('aria-expanded',open);
-            ">
-              <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm.75 12h-1.5V7h1.5v5zm0-6.5h-1.5v-1.5h1.5v1.5z"/></svg>
-              Cited by {{ pub.cited_by_count }}
-            </button>
-            <div class="pub-cite-panel">
-              <p class="pub-cite-count">Showing {{ pub.citing_papers | length }} of {{ pub.cited_by_count }} citing paper{{ 's' if pub.cited_by_count != 1 else '' }}</p>
-              <ul class="pub-cite-list">
-                {% for cp in pub.citing_papers %}
-                <li>
-                  <strong>{{ cp.title }}</strong>
-                  {{ cp.authors }}{% if cp.year %} ({{ cp.year }}){% endif %}
-                  {% if cp.url %}<a href="{{ cp.url }}" target="_blank" rel="noopener">DOI ↗</a>{% endif %}
-                  {% if cp.cited_by_count %}<span style="opacity:0.5;margin-left:0.5rem;">{{ cp.cited_by_count }} citations</span>{% endif %}
-                </li>
-                {% endfor %}
-              </ul>
-              {% if pub.cited_by_count > pub.citing_papers | length %}
-              <p style="margin-top:0.6rem;font-size:0.775rem;color:var(--color-muted);">
-                +{{ pub.cited_by_count - (pub.citing_papers | length) }} more —
-                <a href="https://openalex.org/works?filter=cites:{{ pub.oa_id }}&sort=cited_by_count:desc" target="_blank" rel="noopener" style="color:var(--color-accent);">view all on OpenAlex ↗</a>
-              </p>
-              {% endif %}
-            </div>
-          </div>
+
+          {# Multiple access links (merged duplicates) #}
+          {% elif pub.access_links %}
+            <em>{{ pub.journal }}</em>{% if pub.venue_suffix %}, {{ pub.venue_suffix }}{% endif %}{% if pub.venue_extra %} {{ pub.venue_extra | safe }}{% endif %}.
+            <span class="pub-access-links">
+              {% for link in pub.access_links %}
+                {% if not loop.first %}<span class="pub-access-sep">·</span>{% endif %}
+                <a href="{{ link.url }}" target="_blank" class="pub-access-link" title="{{ link.journal }}">
+                  {{ page.access_text or "Access" }}{% if pub.access_links | length > 1 %} {{ loop.index }}{% endif %}
+                </a>
+                {% if link.badge %}<span class="pub-badge">{{ link.badge }}</span>{% endif %}
+              {% endfor %}
+            </span>
+
+          {# No URL #}
+          {% else %}
+            <em>{{ pub.journal }}</em>{% if pub.venue_suffix %}, {{ pub.venue_suffix }}{% endif %}{% if pub.venue_extra %} {{ pub.venue_extra | safe }}{% endif %}.
+            {% if pub.badge %}<span class="pub-badge">{{ pub.badge }}</span>{% endif %}
           {% endif %}
         </div>
-        {% endfor %}
-      </div>
-    </section>
-    {% endfor %}
 
-    <div id="pub-no-results" class="pub-no-results">
-      No publications match the selected filters.
+        {# Cited-by panel #}
+        {% if pub.citing_papers and pub.citing_papers | length > 0 %}
+        <div>
+          <button class="pub-cite-btn" aria-expanded="false" onclick="
+            var p=this.nextElementSibling;
+            var open=p.classList.toggle('open');
+            this.setAttribute('aria-expanded',open);
+          ">
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm.75 12h-1.5V7h1.5v5zm0-6.5h-1.5v-1.5h1.5v1.5z"/></svg>
+            Cited by {{ pub.cited_by_count }}
+          </button>
+          <div class="pub-cite-panel">
+            <p class="pub-cite-count">Showing {{ pub.citing_papers | length }} of {{ pub.cited_by_count }} citing paper{{ 's' if pub.cited_by_count != 1 else '' }}</p>
+            <ul class="pub-cite-list">
+              {% for cp in pub.citing_papers %}
+              <li>
+                <strong>{{ cp.title }}</strong>
+                {{ cp.authors }}{% if cp.year %} ({{ cp.year }}){% endif %}
+                {% if cp.url %}<a href="{{ cp.url }}" target="_blank" rel="noopener">DOI ↗</a>{% endif %}
+                {% if cp.cited_by_count %}<span style="opacity:0.5;margin-left:0.5rem;">{{ cp.cited_by_count }} citations</span>{% endif %}
+              </li>
+              {% endfor %}
+            </ul>
+            {% if pub.cited_by_count > pub.citing_papers | length %}
+            <p style="margin-top:0.6rem;font-size:0.775rem;color:var(--color-muted);">
+              +{{ pub.cited_by_count - (pub.citing_papers | length) }} more —
+              <a href="https://openalex.org/works?filter=cites:{{ pub.oa_id }}&sort=cited_by_count:desc" target="_blank" rel="noopener" style="color:var(--color-accent);">view all on OpenAlex ↗</a>
+            </p>
+            {% endif %}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+      {% endfor %}
     </div>
+    {% endfor %}
 
     <div style="margin:4rem 0 2rem;padding:2rem;background:var(--color-surface);border-radius:8px;border:1px solid rgba(86,101,115,0.2);text-align:center;">
       <p class="text-lavender" style="margin-bottom:1rem;">{{ page.github_text }}</p>
@@ -294,155 +252,5 @@
   });
 })();
 </script>
-
-{# ── D3 World Choropleth ── #}
-{% if data.publications.country_counts %}
-<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
-<script>
-(function () {
-  const counts = {{ data.publications.country_counts | dump | safe }};
-  if (!counts || !Object.keys(counts).length) return;
-
-  const a2n = {
-    AF:4,AL:8,DZ:12,AD:20,AO:24,AG:28,AR:32,AM:51,AU:36,AT:40,AZ:31,
-    BS:44,BH:48,BD:50,BB:52,BY:112,BE:56,BZ:84,BJ:204,BT:64,BO:68,BA:70,
-    BW:72,BR:76,BN:96,BG:100,BF:854,BI:108,CV:132,KH:116,CM:120,CA:124,
-    CF:140,TD:148,CL:152,CN:156,CO:170,KM:174,CG:178,CD:180,CR:188,HR:191,
-    CU:192,CY:196,CZ:203,DK:208,DJ:262,DM:212,DO:214,EC:218,EG:818,SV:222,
-    GQ:226,ER:232,EE:233,SZ:748,ET:231,FJ:242,FI:246,FR:250,GA:266,GM:270,
-    GE:268,DE:276,GH:288,GR:300,GD:308,GT:320,GN:324,GW:624,GY:328,HT:332,
-    HN:340,HU:348,IS:352,IN:356,ID:360,IR:364,IQ:368,IE:372,IL:376,IT:380,
-    JM:388,JP:392,JO:400,KZ:398,KE:404,KI:296,KP:408,KR:410,KW:414,KG:417,
-    LA:418,LV:428,LB:422,LS:426,LR:430,LY:434,LI:438,LT:440,LU:442,MG:450,
-    MW:454,MY:458,MV:462,ML:466,MT:470,MH:584,MR:478,MU:480,MX:484,FM:583,
-    MD:498,MC:492,MN:496,ME:499,MA:504,MZ:508,MM:104,NA:516,NR:520,NP:524,
-    NL:528,NZ:554,NI:558,NE:562,NG:566,MK:807,NO:578,OM:512,PK:586,PW:585,
-    PA:591,PG:598,PY:600,PE:604,PH:608,PL:616,PT:620,QA:634,RO:642,RU:643,
-    RW:646,KN:659,LC:662,VC:670,WS:882,SM:674,ST:678,SA:682,SN:686,RS:688,
-    SC:690,SL:694,SG:702,SK:703,SI:705,SB:90,SO:706,ZA:710,SS:728,ES:724,
-    LK:144,SD:729,SR:740,SE:752,CH:756,SY:760,TW:158,TJ:762,TZ:834,TH:764,
-    TL:626,TG:768,TO:776,TT:780,TN:788,TR:792,TM:795,UG:800,UA:804,AE:784,
-    GB:826,US:840,UY:858,UZ:860,VU:548,VE:862,VN:704,YE:887,ZM:894,ZW:716
-  };
-
-  const byId = {};
-  for (const [a2, n] of Object.entries(counts)) {
-    const num = a2n[a2];
-    if (num != null) byId[num] = { a2, n };
-  }
-
-  const maxN  = Math.max(...Object.values(counts));
-  const color = d3.scaleLog()
-    .domain([1, Math.max(2, maxN)])
-    .range(['rgba(233,79,55,0.22)', '#E94F37'])
-    .clamp(true);
-
-  const W = 960, H = 490;
-  const wrap = document.getElementById('pub-worldmap');
-  const svg  = d3.select(wrap).append('svg')
-    .attr('viewBox', `0 0 ${W} ${H}`)
-    .attr('preserveAspectRatio', 'xMidYMid meet');
-
-  const tip = document.createElement('div');
-  tip.className = 'pub-map-tip';
-  wrap.appendChild(tip);
-
-  const proj    = d3.geoNaturalEarth1().scale(153).translate([W / 2, H / 2]);
-  const geoPath = d3.geoPath().projection(proj);
-
-  fetch('https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json')
-    .then(r => r.json())
-    .then(world => {
-      svg.selectAll('path')
-        .data(topojson.feature(world, world.objects.countries).features)
-        .join('path')
-        .attr('d', geoPath)
-        .attr('fill', d => { const info = byId[+d.id]; return info ? color(info.n) : '#253040'; })
-        .attr('stroke', 'rgba(86,101,115,0.22)')
-        .attr('stroke-width', 0.4)
-        .attr('class', d => byId[+d.id] ? 'map-country clickable' : 'map-country')
-        .style('cursor', d => byId[+d.id] ? 'pointer' : 'default')
-        .on('mousemove', function (ev, d) {
-          const info = byId[+d.id];
-          if (!info) return;
-          const r = wrap.getBoundingClientRect();
-          tip.style.opacity = '1';
-          tip.style.left = (ev.clientX - r.left + 14) + 'px';
-          tip.style.top  = (ev.clientY - r.top  - 36) + 'px';
-          tip.textContent = info.a2 + ' \u2014 ' + info.n + ' paper' + (info.n !== 1 ? 's' : '');
-        })
-        .on('mouseleave', () => { tip.style.opacity = '0'; })
-        .on('click', function (ev, d) {
-          const info = byId[+d.id];
-          if (!info) return;
-          window._pubActiveCountry = (window._pubActiveCountry === info.a2) ? null : info.a2;
-          updateMapHighlight();
-          applyFilters();
-        });
-    })
-    .catch(() => {});
-
-  function updateMapHighlight() {
-    const cc = window._pubActiveCountry;
-    svg.selectAll('.map-country')
-      .attr('stroke', d => { const info = byId[+d.id]; return (info && info.a2 === cc) ? '#E94F37' : 'rgba(86,101,115,0.22)'; })
-      .attr('stroke-width', d => { const info = byId[+d.id]; return (info && info.a2 === cc) ? 1.5 : 0.4; });
-  }
-
-  window._pubUpdateMapHighlight = updateMapHighlight;
-})();
-</script>
-
-<script>
-(function () {
-  window._pubActiveCountry = null;
-
-  const activeFiltersEl = document.getElementById('active-filters');
-  const noResults       = document.getElementById('pub-no-results');
-  const countryCounts   = {{ data.publications.country_counts | dump | safe }};
-
-  window.applyFilters = function () {
-    const country = window._pubActiveCountry;
-    let totalVisible = 0;
-
-    document.querySelectorAll('.pub-year-section').forEach(section => {
-      let sectionVisible = 0;
-      section.querySelectorAll('.pub-item').forEach(item => {
-        let show = true;
-        if (country) {
-          const cc = (item.dataset.countries || '').split(',');
-          show = cc.includes(country);
-        }
-        item.style.display = show ? '' : 'none';
-        if (show) sectionVisible++;
-      });
-      section.style.display = sectionVisible > 0 ? '' : 'none';
-      totalVisible += sectionVisible;
-    });
-
-    noResults.style.display = totalVisible === 0 ? 'block' : 'none';
-
-    // Update active filter badge
-    activeFiltersEl.innerHTML = '';
-    if (country) {
-      const n = countryCounts[country] || 0;
-      const badge = document.createElement('div');
-      badge.className = 'pub-filter-badge';
-      badge.innerHTML = 'Country: <strong style="margin-left:0.2rem;">' + country + '</strong>'
-        + '<span style="opacity:0.6;margin-left:0.2rem;">(' + n + ' papers)</span>'
-        + '<button title="Clear" onclick="clearCountryFilter()">\u00d7</button>';
-      activeFiltersEl.appendChild(badge);
-    }
-  };
-
-  window.clearCountryFilter = function () {
-    window._pubActiveCountry = null;
-    if (window._pubUpdateMapHighlight) window._pubUpdateMapHighlight();
-    applyFilters();
-  };
-})();
-</script>
-{% endif %}
 
 {% endblock %}
