@@ -292,8 +292,37 @@ async function main() {
   console.log(`  Country contributions: ${Object.keys(country_counts).length} countries (top: ${topCountries})`);
   console.log(`  Citations timeline: ${Object.keys(citations_by_year).length} years`);
 
-  // 6. Write (fresh data only — no merge with existing)
-  const byYear = groupByYear(filtered.map(workToEntry));
+  // 6. Build entries, then fetch citing papers for each cited work
+  const entries = filtered.map(workToEntry);
+
+  const CITE_SELECT = 'id,doi,title,authorships,publication_year,cited_by_count';
+  const cited = entries.filter(({ entry }) => entry.oa_id && entry.cited_by_count > 0);
+  console.log(`\nFetching citing papers for ${cited.length} works...`);
+  let citesFetched = 0;
+  for (const { entry } of cited) {
+    try {
+      const url = `${OPENALEX_BASE}/works?filter=cites:${entry.oa_id}&sort=cited_by_count:desc&per-page=10&select=${CITE_SELECT}`;
+      const { results } = await fetchJson(url);
+      if (results && results.length > 0) {
+        entry.citing_papers = results.map(w => {
+          const auths  = (w.authorships || []).slice(0, 3).map(a => a.author?.display_name).filter(Boolean);
+          const suffix = (w.authorships || []).length > 3 ? ' et al.' : '';
+          const doi    = w.doi ? w.doi.replace(/^https?:\/\/doi\.org\//i, '') : null;
+          const cp     = { title: w.title || '(no title)', authors: auths.join(', ') + suffix };
+          if (w.publication_year) cp.year = w.publication_year;
+          if (doi) cp.url = `https://doi.org/${doi}`;
+          if (w.cited_by_count > 0) cp.cited_by_count = w.cited_by_count;
+          return cp;
+        });
+        citesFetched++;
+      }
+    } catch (_) { /* skip on error */ }
+    await new Promise(r => setTimeout(r, 120)); // polite rate limit
+  }
+  console.log(`  Done — citing papers stored for ${citesFetched} works`);
+
+  // 7. Write
+  const byYear = groupByYear(entries);
   const years  = Object.keys(byYear)
     .map(Number).sort((a, b) => b - a)
     .map(year => ({ year, items: byYear[year] }));

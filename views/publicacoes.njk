@@ -56,62 +56,12 @@
   z-index: 5;
 }
 
-/* Year filter pills */
-.pub-year-filters {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-bottom: 2rem;
-  align-items: center;
-}
-.pub-year-pill {
-  padding: 0.3rem 0.85rem;
-  border-radius: 999px;
-  font-size: 0.8125rem;
-  font-family: var(--font-primary);
-  font-weight: 600;
-  border: 1px solid rgba(86,101,115,0.28);
-  background: rgba(86,101,115,0.08);
-  color: var(--color-muted);
-  cursor: pointer;
-  transition: border-color 0.15s, background 0.15s, color 0.15s;
-  white-space: nowrap;
-}
-.pub-year-pill:hover {
-  border-color: rgba(233,79,55,0.4);
-  color: var(--color-text);
-}
-.pub-year-pill.active {
-  background: rgba(233,79,55,0.15);
-  border-color: rgba(233,79,55,0.55);
-  color: var(--color-accent);
-}
-.pub-filter-clear {
-  padding: 0.3rem 0.85rem;
-  border-radius: 999px;
-  font-size: 0.8125rem;
-  font-family: var(--font-primary);
-  font-weight: 600;
-  border: 1px solid rgba(233,79,55,0.35);
-  background: rgba(233,79,55,0.1);
-  color: var(--color-accent);
-  cursor: pointer;
-  display: none;
-  align-items: center;
-  gap: 0.35rem;
-  transition: background 0.15s;
-  margin-left: 0.5rem;
-}
-.pub-filter-clear:hover { background: rgba(233,79,55,0.2); }
-.pub-filter-clear.visible { display: inline-flex; }
-
 /* Active filter badge */
 .pub-active-filters {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 1.25rem;
-  min-height: 0;
 }
 .pub-filter-badge {
   display: inline-flex;
@@ -181,7 +131,6 @@
 .pub-cite-list li strong { color: var(--color-text); display: block; }
 .pub-cite-list li a { color: var(--color-accent); text-decoration: none; font-size: 0.775rem; }
 .pub-cite-list li a:hover { text-decoration: underline; }
-.pub-cite-loading { font-size: 0.8125rem; color: var(--color-muted); font-style: italic; }
 .pub-cite-count {
   font-size: 0.775rem;
   color: var(--color-muted);
@@ -230,18 +179,13 @@
     {# ── World map ── #}
     {% if data.publications.country_counts %}
     <div class="pub-map-card" data-aos="fade-up">
-      <div class="pub-chart-title">{{ page.chart_world_label or "Global Collaboration" }} <span id="map-hint" style="font-weight:400;text-transform:none;letter-spacing:0;font-size:0.75rem;opacity:0.6;margin-left:0.5rem;">— click a country to filter</span></div>
+      <div class="pub-chart-title">
+        {{ page.chart_world_label or "Global Collaboration" }}
+        <span style="font-weight:400;text-transform:none;letter-spacing:0;font-size:0.75rem;opacity:0.6;margin-left:0.5rem;">— click a country to filter</span>
+      </div>
       <div id="pub-worldmap"></div>
     </div>
     {% endif %}
-
-    {# ── Year filter pills ── #}
-    <div class="pub-year-filters" id="year-filters">
-      <button class="pub-year-pill active" data-year="all">All years</button>
-      {% for year_group in data.publications.years %}
-      <button class="pub-year-pill" data-year="{{ year_group.year }}">{{ year_group.year }} <span style="opacity:0.55;font-weight:400;">({{ year_group.items | length }})</span></button>
-      {% endfor %}
-    </div>
 
     {# ── Active filter badges ── #}
     <div class="pub-active-filters" id="active-filters"></div>
@@ -261,14 +205,34 @@
             {% if pub.url %}<a href="{{ pub.url }}" target="_blank">{{ page.access_text }}</a>{% endif %}
             {% if pub.badge %}<span class="pub-badge">{{ pub.badge }}</span>{% endif %}
           </div>
-          {% if pub.oa_id and pub.cited_by_count and pub.cited_by_count > 0 %}
+          {% if pub.citing_papers and pub.citing_papers | length > 0 %}
           <div>
-            <button class="pub-cite-btn" data-id="{{ pub.oa_id }}" data-total="{{ pub.cited_by_count }}" aria-expanded="false">
-              <svg width="13" height="13" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm.75 12h-1.5V7h1.5v5zm0-6.5h-1.5v-1.5h1.5v1.5z"/></svg>
+            <button class="pub-cite-btn" aria-expanded="false" onclick="
+              var p=this.nextElementSibling;
+              var open=p.classList.toggle('open');
+              this.setAttribute('aria-expanded',open);
+            ">
+              <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm.75 12h-1.5V7h1.5v5zm0-6.5h-1.5v-1.5h1.5v1.5z"/></svg>
               Cited by {{ pub.cited_by_count }}
             </button>
-            <div class="pub-cite-panel" id="cite-{{ pub.oa_id }}">
-              <div class="pub-cite-loading">Loading citing papers…</div>
+            <div class="pub-cite-panel">
+              <p class="pub-cite-count">Showing {{ pub.citing_papers | length }} of {{ pub.cited_by_count }} citing paper{{ 's' if pub.cited_by_count != 1 else '' }}</p>
+              <ul class="pub-cite-list">
+                {% for cp in pub.citing_papers %}
+                <li>
+                  <strong>{{ cp.title }}</strong>
+                  {{ cp.authors }}{% if cp.year %} ({{ cp.year }}){% endif %}
+                  {% if cp.url %}<a href="{{ cp.url }}" target="_blank" rel="noopener">DOI ↗</a>{% endif %}
+                  {% if cp.cited_by_count %}<span style="opacity:0.5;margin-left:0.5rem;">{{ cp.cited_by_count }} citations</span>{% endif %}
+                </li>
+                {% endfor %}
+              </ul>
+              {% if pub.cited_by_count > pub.citing_papers | length %}
+              <p style="margin-top:0.6rem;font-size:0.775rem;color:var(--color-muted);">
+                +{{ pub.cited_by_count - (pub.citing_papers | length) }} more —
+                <a href="https://openalex.org/works?filter=cites:{{ pub.oa_id }}&sort=cited_by_count:desc" target="_blank" rel="noopener" style="color:var(--color-accent);">view all on OpenAlex ↗</a>
+              </p>
+              {% endif %}
             </div>
           </div>
           {% endif %}
@@ -303,10 +267,10 @@
   const citeYears  = Object.keys(_citeRaw).map(Number).sort((a, b) => a - b).map(String);
   const citeValues = citeYears.map(y => _citeRaw[y] || 0);
 
-  Chart.defaults.color          = '#8892B0';
-  Chart.defaults.borderColor    = 'rgba(86,101,115,0.18)';
-  Chart.defaults.font.family    = '"Inter", sans-serif';
-  Chart.defaults.font.size      = 11;
+  Chart.defaults.color       = '#8892B0';
+  Chart.defaults.borderColor = 'rgba(86,101,115,0.18)';
+  Chart.defaults.font.family = '"Inter", sans-serif';
+  Chart.defaults.font.size   = 11;
 
   const sharedScales = {
     x: { grid: { color: 'rgba(86,101,115,0.13)' }, ticks: { maxRotation: 45 } },
@@ -314,44 +278,18 @@
   };
   const sharedPlugins = {
     legend: { display: false },
-    tooltip: {
-      backgroundColor: '#1F2833',
-      borderColor: 'rgba(86,101,115,0.4)',
-      borderWidth: 1,
-      titleColor: '#E2E8F0',
-      bodyColor: '#8892B0',
-    },
+    tooltip: { backgroundColor: '#1F2833', borderColor: 'rgba(86,101,115,0.4)', borderWidth: 1, titleColor: '#E2E8F0', bodyColor: '#8892B0' },
   };
 
   new Chart(document.getElementById('chart-papers'), {
     type: 'bar',
-    data: {
-      labels: years,
-      datasets: [{
-        data: perYear,
-        backgroundColor: 'rgba(233,79,55,0.65)',
-        borderColor:     'rgba(233,79,55,0.9)',
-        borderWidth: 1,
-        borderRadius: 3,
-        hoverBackgroundColor: 'rgba(233,79,55,0.85)',
-      }],
-    },
+    data: { labels: years, datasets: [{ data: perYear, backgroundColor: 'rgba(233,79,55,0.65)', borderColor: 'rgba(233,79,55,0.9)', borderWidth: 1, borderRadius: 3, hoverBackgroundColor: 'rgba(233,79,55,0.85)' }] },
     options: { responsive: true, maintainAspectRatio: false, plugins: sharedPlugins, scales: sharedScales },
   });
 
   new Chart(document.getElementById('chart-citations'), {
     type: 'bar',
-    data: {
-      labels: citeYears,
-      datasets: [{
-        data: citeValues,
-        backgroundColor: 'rgba(86,101,115,0.55)',
-        borderColor:     'rgba(86,101,115,0.85)',
-        borderWidth: 1,
-        borderRadius: 3,
-        hoverBackgroundColor: 'rgba(86,101,115,0.75)',
-      }],
-    },
+    data: { labels: citeYears, datasets: [{ data: citeValues, backgroundColor: 'rgba(86,101,115,0.55)', borderColor: 'rgba(86,101,115,0.85)', borderWidth: 1, borderRadius: 3, hoverBackgroundColor: 'rgba(86,101,115,0.75)' }] },
     options: { responsive: true, maintainAspectRatio: false, plugins: sharedPlugins, scales: sharedScales },
   });
 })();
@@ -388,10 +326,6 @@
     GB:826,US:840,UY:858,UZ:860,VU:548,VE:862,VN:704,YE:887,ZM:894,ZW:716
   };
 
-  // Build reverse: numeric → alpha-2
-  const n2a = {};
-  for (const [a2, n] of Object.entries(a2n)) n2a[n] = a2;
-
   const byId = {};
   for (const [a2, n] of Object.entries(counts)) {
     const num = a2n[a2];
@@ -414,7 +348,7 @@
   tip.className = 'pub-map-tip';
   wrap.appendChild(tip);
 
-  const proj = d3.geoNaturalEarth1().scale(153).translate([W / 2, H / 2]);
+  const proj    = d3.geoNaturalEarth1().scale(153).translate([W / 2, H / 2]);
   const geoPath = d3.geoPath().projection(proj);
 
   fetch('https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json')
@@ -424,10 +358,7 @@
         .data(topojson.feature(world, world.objects.countries).features)
         .join('path')
         .attr('d', geoPath)
-        .attr('fill', d => {
-          const info = byId[+d.id];
-          return info ? color(info.n) : '#253040';
-        })
+        .attr('fill', d => { const info = byId[+d.id]; return info ? color(info.n) : '#253040'; })
         .attr('stroke', 'rgba(86,101,115,0.22)')
         .attr('stroke-width', 0.4)
         .attr('class', d => byId[+d.id] ? 'map-country clickable' : 'map-country')
@@ -445,12 +376,7 @@
         .on('click', function (ev, d) {
           const info = byId[+d.id];
           if (!info) return;
-          const cc = info.a2;
-          if (window._pubActiveCountry === cc) {
-            window._pubActiveCountry = null;
-          } else {
-            window._pubActiveCountry = cc;
-          }
+          window._pubActiveCountry = (window._pubActiveCountry === info.a2) ? null : info.a2;
           updateMapHighlight();
           applyFilters();
         });
@@ -460,77 +386,52 @@
   function updateMapHighlight() {
     const cc = window._pubActiveCountry;
     svg.selectAll('.map-country')
-      .attr('stroke', d => {
-        const info = byId[+d.id];
-        return (info && info.a2 === cc) ? '#E94F37' : 'rgba(86,101,115,0.22)';
-      })
-      .attr('stroke-width', d => {
-        const info = byId[+d.id];
-        return (info && info.a2 === cc) ? 1.5 : 0.4;
-      });
+      .attr('stroke', d => { const info = byId[+d.id]; return (info && info.a2 === cc) ? '#E94F37' : 'rgba(86,101,115,0.22)'; })
+      .attr('stroke-width', d => { const info = byId[+d.id]; return (info && info.a2 === cc) ? 1.5 : 0.4; });
   }
 
   window._pubUpdateMapHighlight = updateMapHighlight;
 })();
 </script>
-{% endif %}
 
-{# ── Filter + Cited-by JS ── #}
 <script>
 (function () {
-  window._pubActiveYear    = 'all';
   window._pubActiveCountry = null;
 
-  const yearFilterBar  = document.getElementById('year-filters');
   const activeFiltersEl = document.getElementById('active-filters');
-  const noResults      = document.getElementById('pub-no-results');
+  const noResults       = document.getElementById('pub-no-results');
+  const countryCounts   = {{ data.publications.country_counts | dump | safe }};
 
-  // ── Year pills ──
-  yearFilterBar.querySelectorAll('.pub-year-pill').forEach(btn => {
-    btn.addEventListener('click', () => {
-      window._pubActiveYear = btn.dataset.year;
-      yearFilterBar.querySelectorAll('.pub-year-pill').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      applyFilters();
-    });
-  });
-
-  // ── Apply filters ──
-  window.applyFilters = function applyFilters() {
-    const year    = window._pubActiveYear || 'all';
+  window.applyFilters = function () {
     const country = window._pubActiveCountry;
-
     let totalVisible = 0;
 
     document.querySelectorAll('.pub-year-section').forEach(section => {
-      const sYear = String(section.dataset.year);
-      const yearMatch = (year === 'all' || year === sYear);
-
       let sectionVisible = 0;
       section.querySelectorAll('.pub-item').forEach(item => {
-        let countryMatch = true;
+        let show = true;
         if (country) {
           const cc = (item.dataset.countries || '').split(',');
-          countryMatch = cc.includes(country);
+          show = cc.includes(country);
         }
-        const visible = yearMatch && countryMatch;
-        item.style.display = visible ? '' : 'none';
-        if (visible) sectionVisible++;
+        item.style.display = show ? '' : 'none';
+        if (show) sectionVisible++;
       });
-
-      section.style.display = (yearMatch && sectionVisible > 0) ? '' : 'none';
+      section.style.display = sectionVisible > 0 ? '' : 'none';
       totalVisible += sectionVisible;
     });
 
     noResults.style.display = totalVisible === 0 ? 'block' : 'none';
 
-    // Update active filter badges
+    // Update active filter badge
     activeFiltersEl.innerHTML = '';
     if (country) {
+      const n = countryCounts[country] || 0;
       const badge = document.createElement('div');
       badge.className = 'pub-filter-badge';
-      const n = ({{ data.publications.country_counts | dump | safe }})[country] || 0;
-      badge.innerHTML = `Country: <strong style="margin-left:0.2rem;">${country}</strong> <span style="opacity:0.6;margin-left:0.2rem;">(${n} papers)</span> <button title="Clear" onclick="clearCountryFilter()">&#x2715;</button>`;
+      badge.innerHTML = 'Country: <strong style="margin-left:0.2rem;">' + country + '</strong>'
+        + '<span style="opacity:0.6;margin-left:0.2rem;">(' + n + ' papers)</span>'
+        + '<button title="Clear" onclick="clearCountryFilter()">\u00d7</button>';
       activeFiltersEl.appendChild(badge);
     }
   };
@@ -540,61 +441,8 @@
     if (window._pubUpdateMapHighlight) window._pubUpdateMapHighlight();
     applyFilters();
   };
-
-  // ── Cited-by panels ──
-  document.querySelectorAll('.pub-cite-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const id    = btn.dataset.id;
-      const panel = document.getElementById('cite-' + id);
-      if (!panel) return;
-
-      const isOpen = panel.classList.contains('open');
-      panel.classList.toggle('open', !isOpen);
-      btn.setAttribute('aria-expanded', String(!isOpen));
-
-      // Fetch only once
-      if (!isOpen && !panel.dataset.loaded) {
-        panel.dataset.loaded = '1';
-        fetchCiting(id, parseInt(btn.dataset.total, 10) || 0, panel);
-      }
-    });
-  });
-
-  async function fetchCiting(workId, total, panel) {
-    try {
-      const url = `https://api.openalex.org/works?filter=cites:${workId}&sort=cited_by_count:desc&per-page=10&select=id,doi,title,authorships,publication_year,cited_by_count`;
-      const res  = await fetch(url, { headers: { 'User-Agent': 'csilab-site/1.0' } });
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      const { results } = await res.json();
-
-      if (!results || results.length === 0) {
-        panel.innerHTML = '<p class="pub-cite-loading">No citing papers found in OpenAlex.</p>';
-        return;
-      }
-
-      const shown = results.length;
-      const more  = total - shown;
-
-      let html = `<p class="pub-cite-count">Showing ${shown} of ${total} citing paper${total !== 1 ? 's' : ''}</p><ul class="pub-cite-list">`;
-      for (const w of results) {
-        const authors = (w.authorships || []).slice(0, 3).map(a => a.author?.display_name).filter(Boolean).join(', ');
-        const suffix  = (w.authorships || []).length > 3 ? ' et al.' : '';
-        const doiHref = w.doi ? `https://doi.org/${w.doi.replace(/^https?:\/\/doi\.org\//i, '')}` : null;
-        const link    = doiHref ? `<a href="${doiHref}" target="_blank" rel="noopener">DOI ↗</a>` : '';
-        const cites   = w.cited_by_count > 0 ? `<span style="opacity:0.5;margin-left:0.5rem;">${w.cited_by_count} citations</span>` : '';
-        html += `<li><strong>${w.title || '(no title)'}</strong>${authors}${suffix}${w.publication_year ? ' (' + w.publication_year + ')' : ''} ${link}${cites}</li>`;
-      }
-      html += '</ul>';
-      if (more > 0) {
-        const doiSearch = `https://openalex.org/works?filter=cites:${workId}&sort=cited_by_count:desc`;
-        html += `<p style="margin-top:0.6rem;font-size:0.775rem;color:var(--color-muted);">+${more} more — <a href="${doiSearch}" target="_blank" rel="noopener" style="color:var(--color-accent);">view all on OpenAlex ↗</a></p>`;
-      }
-      panel.innerHTML = html;
-    } catch (e) {
-      panel.innerHTML = '<p class="pub-cite-loading">Could not load citing papers.</p>';
-    }
-  }
 })();
 </script>
+{% endif %}
 
 {% endblock %}
